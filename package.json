@@ -1,0 +1,21 @@
+{
+  "name": "piu-terminais",
+  "version": "1.0.0",
+  "description": "Consulta pública do Projeto de Intervenção Urbana dos Terminais de ônibus municipais de São Paulo",
+  "main": "index.js",
+  "scripts": {
+    "test": "opa"
+  },
+  "author": "thomas yuba",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.4"
+  },
+  "dependencies": {
+    "gulp-cssnano": "^2.1.2"
+  }
+}
