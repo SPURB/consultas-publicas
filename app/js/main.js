@@ -2,6 +2,7 @@ var app = new Vue({
     el: '#comments',
     data:{
         comments: [],
+        data_test: 'antes'
     },
  
     mounted: function(){
@@ -10,10 +11,15 @@ var app = new Vue({
  
     methods:{
         getAllcomments: function(){
-            axios.get("http://spurbcp13343/piu-terminais/api/")
+            var app = this;
+            axios.get("http://localhost/piu-terminais/api/")
                 .then(function(response){
-                    app.comments = response.data.comments;
+                    // app.comments = response.data.comments;
+                    app.comments = response.data.comments
                 });
+        },
+        teste: function(){
+            console.log(this.comments[0].comment_ID);
         }
     }
 });
