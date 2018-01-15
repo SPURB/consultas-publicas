@@ -1,46 +1,27 @@
-### PIU Terminais
-> Consulta pública do Projeto de Intervenção Urbana dos Terminais de ônibus municipais de São Paulo
+# piu-terminais
 
+> Consulta pública do Projeto de Intervenção Urbana dos terminais de ônibus municipais de São Paulo 
 
-### Pré-requisitos
-- Node
-- Gulp
-- Servidor Apache com MySQL
+## Build Setup
 
+``` bash
+# install dependencies
+npm install
 
-### Montar
-- Clonar este repositório.
-- No seu servidor criar banco MySQL com o arquivo sql exemplo ``DB_exemplo.sql``
-- Altere a linha 3 e 4 arquivo api/index.php referente às informações do seu DB
-```
-// include "dbinfo.php"; //exclua ou comente esta linha
-$connection = new mysqli($db_host, $db_user, $db_pass, $db_name); // substitua as variáveis pelas informações do seu banco
-```
+# serve with hot reload at localhost:8080
+npm run dev
 
+# build for production with minification
+npm run build
 
-### Instalar dependências
-```
-npm install 
-```
+# build for production and view the bundle analyzer report
+npm run build --report
 
+# run unit tests
+npm run unit
 
-### Desenvolver
-> Na pasta do projeto
-> Monta front-end do projeto em localhost:3000
-```
-gulp watch
-
+# run all tests
+npm test
 ```
 
-### Publicar
-> Preparar arquivos arquivos para produção
-```
-#gulp useref
-
-```
-
-> Os arquivos a serem publicados são ``/dist`` e ``/api``
-
-
-## Licença
-> MIT
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

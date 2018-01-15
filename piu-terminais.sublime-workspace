@@ -1,0 +1,1180 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"dat",
+				"date-time"
+			],
+			[
+				"app",
+				"approved"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"cm",
+				"comments"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"ge",
+				"getAllcomments"
+			],
+			[
+				"api",
+				"api_url"
+			],
+			[
+				"wp_dere",
+				"wp_deregister_style\tWP Function"
+			],
+			[
+				"DB",
+				"DB_NAME\tWP Constant"
+			],
+			[
+				"tras",
+				"transition"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"border-",
+				"border-top"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"wp_enqueue_",
+				"wp_enqueue_script\tWP Function"
+			],
+			[
+				"the_ti",
+				"the_title\tWP Function"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"get_sty",
+				"get_stylesheet_uri\tWP Function"
+			],
+			[
+				"padding-",
+				"padding-right"
+			],
+			[
+				"remov",
+				"remove_filter\tWP Function"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"bord-r",
+				"border-radius"
+			],
+			[
+				"hide",
+				"hidePng"
+			],
+			[
+				"sho",
+				"showPng"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"png",
+				"png_1"
+			],
+			[
+				"onmou",
+				"onmouseleave\tAttr"
+			],
+			[
+				"png_",
+				"png_2"
+			],
+			[
+				"getEl",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"onmouse",
+				"onmouseover\tAttr"
+			],
+			[
+				"getEle",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"add",
+				"addEventListener\t( type: DOMString, callback: EventListener, capture?: boolean ): void EventTarget"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"mapVi",
+				"mapViewZoom"
+			],
+			[
+				"resu",
+				"results"
+			],
+			[
+				"FOrm",
+				"FormMap"
+			],
+			[
+				"submi",
+				"submitPoint"
+			],
+			[
+				"sea",
+				"searchRadius"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"tr",
+				"three"
+			],
+			[
+				"tw",
+				"twelve"
+			],
+			[
+				"remove",
+				"removeClass\t.removeClass()"
+			],
+			[
+				"getE",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"displ",
+				"display_none"
+			],
+			[
+				"co",
+				"columns"
+			],
+			[
+				"re",
+				"referencia"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"c",
+				"Charfield"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"bro",
+				"browserSync"
+			],
+			[
+				"live",
+				"livereload"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"leve",
+				"level_count"
+			],
+			[
+				"to",
+				"toString\t(): string String"
+			],
+			[
+				"consoel",
+				"console_log"
+			],
+			[
+				"first",
+				"firstChild\t(): Node TreeWalker"
+			],
+			[
+				"consoe",
+				"console_log"
+			],
+			[
+				"ke",
+				"keypress\t.keypress()"
+			],
+			[
+				"ind",
+				"indexLevel"
+			],
+			[
+				"activ",
+				"active_element_children"
+			],
+			[
+				"MENU",
+				"menuToggle"
+			],
+			[
+				"menu",
+				"menuToggle"
+			],
+			[
+				"slide",
+				"slideToggle\t.slideToggle()"
+			],
+			[
+				"de",
+				"delay\t.delay()"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"sli",
+				"slideUp\t.slideUp()"
+			],
+			[
+				"span",
+				"span_toggle"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"e",
+				"expanded"
+			],
+			[
+				"expa",
+				"expansor"
+			],
+			[
+				"po",
+				"pointer"
+			],
+			[
+				"nav",
+				"nav-0"
+			],
+			[
+				"expand",
+				"expandable"
+			],
+			[
+				"has",
+				"hasClass\t.hasClass()"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"tran",
+				"transparent"
+			],
+			[
+				"toggle",
+				"toggleClass\t.toggleClass()"
+			],
+			[
+				"segundo",
+				"segundo_nivel"
+			],
+			[
+				"prim",
+				"primeiro_nivel"
+			],
+			[
+				"prm",
+				"primeiro_nivel"
+			],
+			[
+				"map",
+				"map\t$.map()"
+			],
+			[
+				"child",
+				"children\t.children()"
+			],
+			[
+				"cl",
+				"click\t.click()"
+			],
+			[
+				"chil",
+				"children\t.children()"
+			],
+			[
+				"getelem",
+				"getElementsByTagName\t( localName: DOMString ): HTMLCollection Element"
+			],
+			[
+				"console",
+				"console_log"
+			],
+			[
+				"addEve",
+				"addEventListener\t( type: DOMString, callback: EventListener, capture?: boolean ): void EventTarget"
+			],
+			[
+				"ni",
+				"nivel"
+			],
+			[
+				"getElemen",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"for",
+				"for"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"getElem",
+				"getElementsByTagName\t( localName: DOMString ): HTMLCollection Element"
+			],
+			[
+				"getElementsBy",
+				"getElementsByTagName\t( localName: DOMString ): HTMLCollection Document"
+			],
+			[
+				"get",
+				"get\tGet Elements"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"th",
+				"thead\tTag"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"data",
+				"data_type"
+			],
+			[
+				"ty",
+				"typeof"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"altera",
+				"alteração"
+			],
+			[
+				"item",
+				"item-alterado"
+			],
+			[
+				"magin",
+				"margin-top"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/components/Admin.vue",
+			"settings":
+			{
+				"buffer_size": 2060,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/components/Header.vue",
+			"settings":
+			{
+				"buffer_size": 725,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/components/Footer.vue",
+			"settings":
+			{
+				"buffer_size": 298,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 236.0,
+		"last_filter": "set Syntax: java",
+		"selected_items":
+		[
+			[
+				"set Syntax: java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set syntax: V",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"set syntax: p",
+				"Set Syntax: PHP"
+			],
+			[
+				"setsql",
+				"Set Syntax: SQL"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"javs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html\t",
+				"Set Syntax: HTML"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set syntax h",
+				"Set Syntax: HTML"
+			],
+			[
+				"bro",
+				"Preferences: Browse Packages"
+			],
+			[
+				"br",
+				"Preferences: Browse Packages"
+			],
+			[
+				"jin",
+				"Set Syntax: Jinja2"
+			],
+			[
+				"set jij",
+				"Set Syntax: Jinja2"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/piu-terminais",
+		"/C/xampp/htdocs/piu-terminais/src",
+		"/C/xampp/htdocs/piu-terminais/src/assets",
+		"/C/xampp/htdocs/piu-terminais/src/components"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/piu-terminais/src/main.js",
+		"/C/xampp/htdocs/piu-terminais/index.html",
+		"/C/xampp/htdocs/piu-terminais/src/components/Header.vue",
+		"/C/xampp/htdocs/piu-terminais/src/router/index.js",
+		"/C/xampp/htdocs/piu-terminais/src/App.vue",
+		"/C/Users/e059145/Desktop/piu-terminais_failed-gulp/app/scss/styles.scss",
+		"/C/xampp/htdocs/piu-terminais/static/vendor/materialize-src/README.md",
+		"/C/Users/e059145/Desktop/piu-terminais_failed-gulp/app/index.html",
+		"/C/xampp/htdocs/piu-terminais/src/assets/_variables.scss",
+		"/C/Users/e059145/Desktop/piu-terminais_failed-gulp/app/scss/_variables.scss",
+		"/C/xampp/htdocs/piu-terminais/src/components/Footer.vue",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.554/ACESSOS.txt",
+		"/C/Users/e059145/Desktop/ACESSOS.txt",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.935/MINUTA-PARTICIPATIVA.txt",
+		"/C/xampp/htdocs/piu-terminais/src/components/Admin.vue",
+		"/C/xampp/htdocs/piu-terminais/piu-terminais.sublime-project",
+		"/C/xampp/htdocs/piu-terminais/config/index.js",
+		"/C/Users/e059145/Desktop/piu-terminais/config/index.js",
+		"/C/Users/e059145/Desktop/piu-terminais/config/prod.env.js",
+		"/C/Users/e059145/Desktop/piu-terminais/.gitignore",
+		"/C/xampp/htdocs/piu-terminais/src/components/Hola.vue",
+		"/C/xampp/htdocs/piu-terminais/.gitignore",
+		"/C/xampp/htdocs/piu-terminais/src/components/HelloWorld.vue",
+		"/C/xampp/htdocs/teste/dist/index.html",
+		"/C/xampp/htdocs/piu-terminais/dist/index.html",
+		"/C/xampp/htdocs/teste/index.html",
+		"/C/xampp/htdocs/piu-terminais/package-lock.json",
+		"/C/xampp/htdocs/piu-terminais/README.md",
+		"/C/xampp/htdocs/piu-terminais/package.json",
+		"/C/xampp/htdocs/piu-terminais/app/js/main.js",
+		"/C/xampp/htdocs/piu-terminais/app/index.html",
+		"/C/xampp/htdocs/piu-terminais/app/js/App.vue",
+		"/C/xampp/htdocs/piu-terminais/app/scss/_variables.scss",
+		"/C/xampp/htdocs/piu-terminais/app/scss/styles.scss",
+		"/C/xampp/htdocs/piu-terminais/gulpfile.js",
+		"/C/xampp/htdocs/piu-terminais/app/scss/variables.scss",
+		"/C/xampp/htdocs/piu-terminais/app/css/styles.scss",
+		"/C/xampp/htdocs/piu-terminais/app/css/styles.css",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/comments.php",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.398/ACESSOS.txt",
+		"/C/xampp/htdocs/vue-component-example/index.html",
+		"/C/xampp/htdocs/vue-component-example/src/main.js",
+		"/C/xampp/htdocs/vue-component-example/src/components/a/component.json",
+		"/C/xampp/htdocs/vue-component-example/src/components/a/index.js",
+		"/C/xampp/htdocs/vue-component-example/src/components/a/template.html",
+		"/C/Users/e059145/Desktop/piu-terminais_failed-webpack/src/main.js",
+		"/C/Users/e059145/Desktop/piu-terminais_failed-webpack/src/App.vue",
+		"/C/Users/e059145/Desktop/piu-terminais_failed-webpack/index.html",
+		"/C/xampp/htdocs/piu-terminais_api/admin.php",
+		"/C/xampp/htdocs/piu-terminais/app/js/lib/axios.js",
+		"/C/Users/e059145/Desktop/piu-terminais_failed-webpack/README.md",
+		"/C/xampp/htdocs/piu-terminais/app/scss/another-stylesheet.scss",
+		"/C/xampp/htdocs/piu-terminais/api/DB_example.sql",
+		"/C/xampp/htdocs/piu-terminais_api/.gitignore",
+		"/C/xampp/htdocs/piu-terminais/api/api.php",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/style.css",
+		"/C/xampp/htdocs/piu-terminais/dist/js/main.min.js",
+		"/C/xampp/htdocs/piu-terminais/app/js/lib/a-library.js",
+		"/C/xampp/htdocs/piu-terminais/app/js/lib/another-library.js",
+		"/C/xampp/htdocs/piu-terminais_api/api.php",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.546/MINUTA-PARTICIPATIVA.txt",
+		"/C/xampp/htdocs/piu-terminais/api/index.php",
+		"/C/xampp/htdocs/piu-terminais/webpack.config.js",
+		"/C/xampp/htdocs/piu-terminais/dbinfo.php",
+		"/C/xampp/htdocs/piu-terminais/api.php",
+		"/C/xampp/htdocs/piu-terminais/index.php",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.467/BACKUP.txt",
+		"/C/xampp/htdocs/piu-terminais/assets/js/app.js",
+		"/C/xampp/htdocs/piu-terminais/admin/index.php",
+		"/C/xampp/htdocs/piu-terminais/vendor/crud.sql",
+		"/C/xampp/htdocs/piu-terminais/assets/db_collumns_admin.txt",
+		"/C/xampp/htdocs/piu-terminais/app.js",
+		"/C/xampp/htdocs/piu-terminais/comando-sql.txt",
+		"/C/xampp/htdocs/vue-crud/app.js",
+		"/C/xampp/htdocs/vue-crud/api.php",
+		"/C/xampp/htdocs/vue-crud/index.php",
+		"/L/Len/httdocs/dadobrettas/wp-config.php",
+		"/C/xampp/htdocs/ddbrtts/wp-content/themes/dadobrettas/functions.php",
+		"/C/xampp/htdocs/ddbrtts/wp-content/themes/dadobrettas/index.php",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.132/BACKUP.txt",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.921/MINUTA-PARTICIPATIVA.txt",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.132/ACESSOS.txt",
+		"/C/Users/e059145/Downloads/revisodaleideusoeocupaodosolo.wordpress.2018-01-10.xml",
+		"/L/Len/httdocs/dadobrettas/acessos.txt",
+		"/C/xampp/htdocs/ddbrtts/wp-config.php",
+		"/C/xampp/htdocs/revisao-oucab/wp-config.php",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/functions.php",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.025/ACESSOS.txt",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/css/style-home.css",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/page-index.php",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/js/piu-pacaembu.js",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.416/ACESSOS.txt",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.674/MINUTA-PARTICIPATIVA.txt",
+		"/C/xampp/htdocs/gestaourbana/wp-config.php",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.399/MINUTA-PARTICIPATIVA.txt",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.181/ACESSOS.txt",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.281/BACKUP.txt",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/.project",
+		"/C/Users/e059145/AppData/Local/Temp/scp28531/home/smdu/gestaourbana.prefeitura.sp.gov.br/public/wp-content/themes/gestaourbana-1.4/page-index.php",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/index.php",
+		"/C/Users/e059145/Desktop/index.php",
+		"/C/Users/e059145/AppData/Local/Temp/scp14313/home/smdu/gestaourbana.prefeitura.sp.gov.br/public/wp-content/themes/gestaourbana-1.2-backup/style.css",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.817/MINUTA-PARTICIPATIVA.txt",
+		"/C/Users/e059145/Desktop/functions.php",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/index.php",
+		"/C/xampp/htdocs/gestaourbana/index.php",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.618/ACESSOS.txt",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/functions.php",
+		"/C/Users/e059145/Desktop/troca de cores.txt",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-interna.css",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-noticias-interna.css",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-noticias.css",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-home.css",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-contato.css",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-centro-aberto-interna.css",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-biblioteca.css",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-agenda-interna.css",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/style.css",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.234/ACESSOS.txt",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-piu-pacaembu.css",
+		"/C/xampp/htdocs/piu-terminais/db_collumns_admin.txt",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.920/ACESSOS.txt",
+		"/C/Users/e059145/Desktop/piu-pacaembu.txt",
+		"/C/Program Files (x86)/FileZilla FTP Client/AUTHORS",
+		"/C/Program Files (x86)/FileZilla FTP Client/resources/defaultfilters.xml",
+		"/C/Users/e059145/AppData/Local/Temp/fz3temp-2/index.php",
+		"/C/Users/e059145/Desktop/dadobrettas/index.php",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.229/MINUTA-PARTICIPATIVA.txt"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.3\\css",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.3",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\plugins\\simple-download-monitor",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\plugins\\flexy-breadcrumb",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\plugins\\popup-maker",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\plugins\\quick-pagepost-redirect-plugin",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\plugins\\wp-design-maps-places",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.2",
+			"C:\\xampp\\htdocs\\gestaourbana",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.3",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.2",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.3",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.3\\css",
+			"C:\\xampp\\htdocs\\gestaourbana",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.3\\css",
+			"C:\\xampp\\htdocs\\revisaolpuos\\wp-content\\themes\\minuta-gestaourbana",
+			"C:\\xampp\\htdocs\\piu-anhembi",
+			"C:\\xampp\\htdocs\\revisaolpuos\\wp-content\\plugins\\dialogue",
+			"C:\\xampp\\htdocs\\piu-anhembi\\wp-content\\themes\\minuta-gestaourbana",
+			"C:\\xampp\\htdocs\\revisaolpuos\\wp-content\\plugins\\dialogue",
+			"C:\\xampp\\htdocs\\piu-anhembi\\wp-content\\themes\\minuta-gestaourbana",
+			"C:\\xampp\\htdocs\\revisaolpuos\\wp-content\\plugins\\dialogue",
+			"C:\\xampp\\htdocs\\piu-anhembi\\wp-content\\themes\\minuta-gestaourbana",
+			"C:\\xampp\\htdocs\\revisaolpuos\\wp-content\\plugins\\dialogue",
+			"C:\\xampp\\htdocs\\piu-anhembi\\wp-content\\themes\\minuta-gestaourbana",
+			"C:\\xampp\\htdocs\\revisaolpuos\\wp-content\\plugins\\dialogue",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.3",
+			"\\\\emurbcp11425\\DDE\\cartografias",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.2",
+			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.2\\js",
+			"C:\\Users\\e059145\\Desktop\\gmapsToKML\\front\\node_modules\\vue2-google-maps\\src",
+			"C:\\Users\\e059145\\Desktop\\gmapsToKML\\front\\node_modules\\vue2-google-maps",
+			"C:\\xampp\\htdocs\\revisaolpuos.gestaourbana.prefeitura.sp.gov.br\\wp-content\\themes\\minuta-gestaourbana\\scripts",
+			"C:\\xampp\\htdocs\\consultaspublicas\\consultaspublicas\\reporter",
+			"C:\\Users\\e059145\\Documents\\GestaoUrbanaDev\\gestaourbana\\",
+			"C:\\Users\\e059145\\Documents\\GestaoUrbanaDev\\gestaourbana\\static\\css",
+			"C:\\Users\\e059145\\Documents\\GestaoUrbanaDev\\gestaourbana\\static\\css\\src",
+			"C:\\Users\\e059145\\Documents\\GestaoUrbanaDev\\gestaourbana\\static\\css",
+			"C:\\Users\\e059145\\Documents\\GestaoUrbanaDev\\gestaourbana\\static\\css\\vendor",
+			"C:\\xampp\\htdocs\\gestaourbanasp",
+			"C:\\xampp\\htdocs\\gestaourbanasp\\gestaourbana",
+			"C:\\xampp\\htdocs\\estoque-de-vetores",
+			"C:\\xampp\\htdocs\\gestaourbana.prefeitura.sp.gov.br\\wp-content\\themes\\gestaourbana-1.2",
+			"C:\\xampp\\htdocs\\gestaourbana.prefeitura.sp.gov.br\\wp-content\\themes\\gestaourbana-1.2\\css",
+			"C:\\xampp\\htdocs\\gestaourbana.prefeitura.sp.gov.br\\wp-content\\themes\\gestaourbana-1.2",
+			"C:\\xampp\\htdocs\\gestaourbana.prefeitura.sp.gov.br\\wp-content\\themes\\gestaourbana-1.2-backup",
+			"C:\\xampp\\htdocs\\gestaourbana.prefeitura.sp.gov.br\\wp-content\\themes\\gestaourbana-1.2",
+			"C:\\xampp\\htdocs\\gestaourbana.prefeitura.sp.gov.br",
+			"C:\\xampp\\htdocs\\gestaourbana.prefeitura.sp.gov.br\\wp-content\\themes\\gestaourbana-1.2",
+			"C:\\xampp\\htdocs\\gestaourbana.prefeitura.sp.gov.br",
+			"C:\\xampp\\htdocs\\gestaourbana.prefeitura.sp.gov.br\\wp-content\\themes\\gestaourbana-1.2",
+			"C:\\xampp\\htdocs\\revisao-oucab\\wp-content\\themes\\minuta-gestaourbana",
+			"C:\\xampp\\htdocs\\revisao-oucab\\wp-content",
+			"C:\\xampp\\htdocs\\revisao-oucab\\wp-content\\themes\\minuta-gestaourbana"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"materialize",
+			"\"",
+			"port",
+			"http-server",
+			"\\",
+			"member",
+			"members",
+			"$conn",
+			"wp_comments",
+			",",
+			"#wrapper-third-home .titulo-secao",
+			"fifth",
+			"page-index",
+			"00ccff",
+			"purb",
+			"#D7322F",
+			"#news",
+			"a",
+			"#adacac",
+			"WPCACHEHOME",
+			"http://spurbcp13343",
+			"510xX",
+			"657",
+			"657xX",
+			"170xX",
+			"150xX",
+			"'96xX'",
+			"short-name",
+			"wp_enqueue",
+			"wp_enqueu",
+			"1.0.3",
+			"wp_enqueue",
+			"wp_enqueue_style",
+			"wp_enqueue_styles",
+			"flexy-breadcrumb",
+			"public",
+			"wp_enqueue",
+			"wp_enqu",
+			"wp_enqueue",
+			"wp_enqueue_script",
+			"db_constants",
+			"ajax-cadastro",
+			"'DB_NAME'",
+			"theme",
+			"newsletter",
+			"$matches",
+			"960",
+			"border",
+			"960",
+			"evento",
+			"@media screen",
+			".section-title-see-all",
+			"Arial, Helvetica,",
+			"#wrapper-third-home .bottom-news",
+			"#wrapper-second-home #banner-slide",
+			"960",
+			"border-bott",
+			"5",
+			"noticias",
+			"thumb",
+			"270",
+			"footer",
+			"projetos",
+			"noticia",
+			"noticias",
+			"contato",
+			"biblioteca",
+			"noticias",
+			"slug",
+			"news-text",
+			"960",
+			"nth",
+			"video",
+			"popmake_popup_is_loadable",
+			".js",
+			"enqueue",
+			"noticias",
+			"minhoc",
+			"custom-fields",
+			"supports",
+			"\n\n\n",
+			"[commentable id=\"paragraph-",
+			"[/commentable]",
+			"debug",
+			"titulo]",
+			"titulo",
+			"#titulo",
+			"titulo_no",
+			"fourth-home",
+			"fourth",
+			"item",
+			"add_theme_support",
+			"thumbnail",
+			"thumb",
+			"theme",
+			" &$output, $item, $depth = 0, $args = array(), $id = 0 ",
+			"Walker_Nav_Menu",
+			"start_lvl",
+			"start_el",
+			"wp_get_attachment_image",
+			"560",
+			"footer",
+			"border-top",
+			"footer",
+			"3%",
+			"560",
+			"media",
+			"#wrapper-third-home .bottom-news",
+			"wrapper-third-home",
+			"#wrapper-third-home .bottom-news",
+			"bottom-news",
+			"960",
+			"get",
+			"  ",
+			"\n$",
+			"#wrapper-third-home .bottom-news",
+			"element {\n\n}\n#wrapper-third-home .bottom-news",
+			"firsto",
+			"second",
+			"cell",
+			"}\n",
+			"#wrapper-third-home .bottom-news .news",
+			"bottom-news table",
+			"top-news",
+			"stylesheet_directory",
+			"===============================================================================",
+			"ssh",
+			"shell"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/components/Admin.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2060,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1259,
+								1259
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/components/Header.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 725,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								725,
+								725
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/components/Footer.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "piu-terminais.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 508.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 194.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
