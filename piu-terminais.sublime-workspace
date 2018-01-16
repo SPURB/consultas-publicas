@@ -4,16 +4,40 @@
 		"selected_items":
 		[
 			[
+				"comm",
+				"comment_ID"
+			],
+			[
+				"error",
+				"errorMessage"
+			],
+			[
+				"click",
+				"clickMember"
+			],
+			[
+				"clic",
+				"clickMember"
+			],
+			[
+				"clci",
+				"clickMember"
+			],
+			[
+				"app",
+				"approval"
+			],
+			[
+				"api",
+				"apiPath"
+			],
+			[
 				"mar",
 				"margin-bottom"
 			],
 			[
 				"dat",
 				"date-time"
-			],
-			[
-				"app",
-				"approved"
 			],
 			[
 				"font",
@@ -34,10 +58,6 @@
 			[
 				"ge",
 				"getAllcomments"
-			],
-			[
-				"api",
-				"api_url"
 			],
 			[
 				"wp_dere",
@@ -491,33 +511,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/components/Admin.vue",
-			"settings":
-			{
-				"buffer_size": 2060,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/components/Header.vue",
-			"settings":
-			{
-				"buffer_size": 725,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/components/Footer.vue",
-			"settings":
-			{
-				"buffer_size": 298,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -652,34 +645,49 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/piu-terminais",
-		"/C/xampp/htdocs/piu-terminais/src",
-		"/C/xampp/htdocs/piu-terminais/src/assets",
-		"/C/xampp/htdocs/piu-terminais/src/components"
+		"/C/xampp/htdocs/piu-terminais/static",
+		"/C/xampp/htdocs/vue-crud"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/vue-crud/app.js",
+		"/C/xampp/htdocs/vue-crud/api.php",
+		"/C/Users/e059145/Desktop/axios/examples/get/server.js",
+		"/C/xampp/htdocs/piu-terminais/src/components/Admin.vue",
+		"/C/xampp/htdocs/piu-terminais/static/api.php",
+		"/C/Users/e059145/Desktop/axios/examples/get/index.html",
+		"/C/Users/e059145/Desktop/axios/examples/post/index.html",
+		"/C/Users/e059145/Desktop/axios/examples/post/server.js",
+		"//emurbcp11425/DDE/estoque-de-vetores/assets/php/inside.php",
+		"/C/xampp/htdocs/piu-terminais/config/index.js",
+		"/C/xampp/htdocs/piu-terminais/api/index.php",
+		"/C/xampp/htdocs/vue-crud/index.php",
+		"/C/xampp/htdocs/piu-terminais/src/router/index.js",
+		"/C/xampp/htdocs/vue-crud/modal.php",
+		"/C/xampp/htdocs/vue-crud/estrutura.txt",
+		"/C/Users/e059145/Desktop/comments.php",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.338/ACESSOS.txt",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/comments.php",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.578/ACESSOS.txt",
+		"/C/xampp/htdocs/piu-terminais/src/components/Footer.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/Header.vue",
+		"/C/xampp/htdocs/piu-terminais/.gitignore",
 		"/C/xampp/htdocs/piu-terminais/src/main.js",
 		"/C/xampp/htdocs/piu-terminais/index.html",
-		"/C/xampp/htdocs/piu-terminais/src/components/Header.vue",
-		"/C/xampp/htdocs/piu-terminais/src/router/index.js",
 		"/C/xampp/htdocs/piu-terminais/src/App.vue",
 		"/C/Users/e059145/Desktop/piu-terminais_failed-gulp/app/scss/styles.scss",
 		"/C/xampp/htdocs/piu-terminais/static/vendor/materialize-src/README.md",
 		"/C/Users/e059145/Desktop/piu-terminais_failed-gulp/app/index.html",
 		"/C/xampp/htdocs/piu-terminais/src/assets/_variables.scss",
 		"/C/Users/e059145/Desktop/piu-terminais_failed-gulp/app/scss/_variables.scss",
-		"/C/xampp/htdocs/piu-terminais/src/components/Footer.vue",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.554/ACESSOS.txt",
 		"/C/Users/e059145/Desktop/ACESSOS.txt",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.935/MINUTA-PARTICIPATIVA.txt",
-		"/C/xampp/htdocs/piu-terminais/src/components/Admin.vue",
 		"/C/xampp/htdocs/piu-terminais/piu-terminais.sublime-project",
-		"/C/xampp/htdocs/piu-terminais/config/index.js",
 		"/C/Users/e059145/Desktop/piu-terminais/config/index.js",
 		"/C/Users/e059145/Desktop/piu-terminais/config/prod.env.js",
 		"/C/Users/e059145/Desktop/piu-terminais/.gitignore",
 		"/C/xampp/htdocs/piu-terminais/src/components/Hola.vue",
-		"/C/xampp/htdocs/piu-terminais/.gitignore",
 		"/C/xampp/htdocs/piu-terminais/src/components/HelloWorld.vue",
 		"/C/xampp/htdocs/teste/dist/index.html",
 		"/C/xampp/htdocs/piu-terminais/dist/index.html",
@@ -696,7 +704,6 @@
 		"/C/xampp/htdocs/piu-terminais/app/scss/variables.scss",
 		"/C/xampp/htdocs/piu-terminais/app/css/styles.scss",
 		"/C/xampp/htdocs/piu-terminais/app/css/styles.css",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/comments.php",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.398/ACESSOS.txt",
 		"/C/xampp/htdocs/vue-component-example/index.html",
 		"/C/xampp/htdocs/vue-component-example/src/main.js",
@@ -719,7 +726,6 @@
 		"/C/xampp/htdocs/piu-terminais/app/js/lib/another-library.js",
 		"/C/xampp/htdocs/piu-terminais_api/api.php",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.546/MINUTA-PARTICIPATIVA.txt",
-		"/C/xampp/htdocs/piu-terminais/api/index.php",
 		"/C/xampp/htdocs/piu-terminais/webpack.config.js",
 		"/C/xampp/htdocs/piu-terminais/dbinfo.php",
 		"/C/xampp/htdocs/piu-terminais/api.php",
@@ -731,9 +737,6 @@
 		"/C/xampp/htdocs/piu-terminais/assets/db_collumns_admin.txt",
 		"/C/xampp/htdocs/piu-terminais/app.js",
 		"/C/xampp/htdocs/piu-terminais/comando-sql.txt",
-		"/C/xampp/htdocs/vue-crud/app.js",
-		"/C/xampp/htdocs/vue-crud/api.php",
-		"/C/xampp/htdocs/vue-crud/index.php",
 		"/L/Len/httdocs/dadobrettas/wp-config.php",
 		"/C/xampp/htdocs/ddbrtts/wp-content/themes/dadobrettas/functions.php",
 		"/C/xampp/htdocs/ddbrtts/wp-content/themes/dadobrettas/index.php",
@@ -774,18 +777,7 @@
 		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-contato.css",
 		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-centro-aberto-interna.css",
 		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-biblioteca.css",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-agenda-interna.css",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/style.css",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.234/ACESSOS.txt",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-piu-pacaembu.css",
-		"/C/xampp/htdocs/piu-terminais/db_collumns_admin.txt",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.920/ACESSOS.txt",
-		"/C/Users/e059145/Desktop/piu-pacaembu.txt",
-		"/C/Program Files (x86)/FileZilla FTP Client/AUTHORS",
-		"/C/Program Files (x86)/FileZilla FTP Client/resources/defaultfilters.xml",
-		"/C/Users/e059145/AppData/Local/Temp/fz3temp-2/index.php",
-		"/C/Users/e059145/Desktop/dadobrettas/index.php",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.229/MINUTA-PARTICIPATIVA.txt"
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-agenda-interna.css"
 	],
 	"find":
 	{
@@ -857,6 +849,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"update",
 			"materialize",
 			"\"",
 			"port",
@@ -983,8 +976,7 @@
 			"top-news",
 			"stylesheet_directory",
 			"===============================================================================",
-			"ssh",
-			"shell"
+			"ssh"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1002,96 +994,13 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/components/Admin.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2060,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1259,
-								1259
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/components/Header.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 725,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								725,
-								725
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/components/Footer.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 298,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								194,
-								194
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -1112,6 +1021,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -1122,6 +1037,7 @@
 		"rows":
 		[
 			0.0,
+			0.742297304987,
 			1.0
 		]
 	},
@@ -1172,7 +1088,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 194.0,
+	"side_bar_width": 289.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

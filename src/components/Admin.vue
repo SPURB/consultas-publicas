@@ -13,7 +13,9 @@
 					<p>Email: {{ comment.comment_author_email }}</p>
 					<p>Comentário: {{ comment.comment_content }}</p>
 					<div class="card-action">
-						<a class="btn-large approve">Aprovar Comentário</a>
+						<a 
+							class="btn-large approve" 
+							@click="changeApproval(comment.comment_ID, comment.comment_approved)">Aprovar Comentário</a>
 					</div>
 				</div>
 			</div>
@@ -33,7 +35,9 @@
 					<p>Email: {{ comment.comment_author_email }}</p>
 					<p>Comentário: {{ comment.comment_content }}</p>
 					<div class="card-action">
-						<a class="btn-flat remove red-text text-lighten-1">Remover comentário</a>
+						<a 
+							class="btn-flat remove red-text text-lighten-1" 
+							@click="changeApproval()">Remover comentário</a>
 					</div>
 				</div>
 			</div>
@@ -49,7 +53,11 @@ export default {
   name: 'Admin',
   data () {
 	return {
+		apiPath: 'http://spurbcp13343/piu-terminais/static/api.php', 
 		comments: [],
+		errorMessage: '',
+		successMessage: '',
+		clickMember: {}
 	}
   },
   mounted: function(){
@@ -57,12 +65,36 @@ export default {
   },
   methods: {
 	getAllcomments: function(){
-		var app = this;
-		axios.get("http://spurbcp13343/piu-terminais/api/")
+		let app = this;
+		axios.get(app.apiPath)
 			.then(function(response){
 				app.comments = response.data.comments;
 			});
 	},
+	changeApproval: function(id, approval){
+		let app = this;
+		let memForm = app.toFormData(app.clickMember);
+		axios.post(app.apiPath + '?crud=update', memForm)
+			.then(function(response){
+				//console.log(response);
+				app.clickMember = {};
+				if(response.data.error){
+					app.errorMessage = response.data.message;
+				}
+				else{
+					app.successMessage = response.data.message
+					app.getAllcomments();
+				}
+			});
+	},
+	toFormData: function(obj){
+		var form_data = new FormData();
+		for(var key in obj){
+			form_data.append(key, obj[key]);
+		}
+		return form_data;
+	},
+
   }
 }
 </script>

@@ -14,3 +14,5 @@ dbinfo.php
 *.ntvs*
 *.njsproj
 *.sln
+*.sublime-project
+*.sublime-workspace
