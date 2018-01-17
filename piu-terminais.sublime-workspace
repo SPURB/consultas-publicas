@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin"
+			],
+			[
+				"b",
+				"btn-large"
+			],
+			[
+				"progr",
+				"Progressbar"
+			],
+			[
+				"chapter",
+				"chapter-title"
+			],
+			[
 				"comm",
 				"comment_ID"
 			],
@@ -30,10 +46,6 @@
 			[
 				"api",
 				"apiPath"
-			],
-			[
-				"mar",
-				"margin-bottom"
 			],
 			[
 				"dat",
@@ -502,50 +514,67 @@
 			[
 				"item",
 				"item-alterado"
-			],
-			[
-				"magin",
-				"margin-top"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "<?php\n\necho json_encode($out);\ndie();\n?>",
-			"file": "static/teste.php",
-			"file_size": 28,
-			"file_write_time": 131606094898627994,
+			"file": "src/router/index.js",
 			"settings":
 			{
-				"buffer_size": 40,
+				"buffer_size": 1260,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<template>\n<div class=\"capitulo_2\">\n    <div class=\"row\">\n      <div class=\"col s12 chapter-content\">\n        <h2 class=\"chapter-title\">{{ title }}</h2>\n        <p> <strong>Capítulo {{ chapter_id  }}</strong>. Dolor sit amet, mei id dicat periculis concludaturque, et antiopam inimicus mea, an justo dolorum sed. Mazim expetenda instructior ex qui. An munere copiosae eum, duis blandit no has. Magna reque duo an, an sint volutpat sea, ne luptatum laboramus ius. Mel nullam officiis oportere et. Ad fugit quodsi perfecto sit, nam latine necessitatibus. Ad per veniam commodo, ex ius elit eruditi. Dolor nostro explicari no nam. Ne pri quis erant quidam. Eos veri minim te. Hinc commodo aliquip ut pro, pro at verterem consetetur, et est sumo errem.</p>\n        <img :src=\"require('../../assets/img.png')\" />\n      </div>\n    </div>\n</div>\n</template>\n\n<script>\n\nexport default {\n  name: 'Capitulo_2',\n  data () {\n    return {\n      chapter_id: 2,\n      title: 'Capitulo 2',\n    }\n  }\n}\n</script>\n\n<style lang=\"scss\" scoped>\n</style>",
+			"file": "src/components/pages/Capitulo_2.vue",
+			"file_size": 1093,
+			"file_write_time": 131606920448060152,
+			"settings":
+			{
+				"buffer_size": 1032,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "static/api.php",
+			"contents": "<template>\n<div class=\"capitulo_3\">\n    <div class=\"row\">\n      <div class=\"col s12 chapter-content\">\n        <h2 class=\"chapter-title\">{{ title }}</h2>\n        <p> <strong>Capítulo {{ chapter_id  }}</strong>. Dolor sit amet, mei id dicat periculis concludaturque, et antiopam inimicus mea, an justo dolorum sed. Mazim expetenda instructior ex qui. An munere copiosae eum, duis blandit no has. Magna reque duo an, an sint volutpat sea, ne luptatum laboramus ius. Mel nullam officiis oportere et. Ad fugit quodsi perfecto sit, nam latine necessitatibus. Ad per veniam commodo, ex ius elit eruditi. Dolor nostro explicari no nam. Ne pri quis erant quidam. Eos veri minim te. Hinc commodo aliquip ut pro, pro at verterem consetetur, et est sumo errem.</p>\n        <img :src=\"require('../../assets/img.png')\" />\n      </div>\n    </div>\n</div>\n</template>\n\n<script>\n\nexport default {\n  name: 'Capitulo_3',\n  data () {\n    return {\n      chapter_id: 3,\n      title: 'Capitulo 3',\n    }\n  }\n}\n</script>\n\n<style lang=\"scss\" scoped>\n</style>",
+			"file": "src/components/pages/Capitulo_3.vue",
+			"file_size": 1093,
+			"file_write_time": 131606920495526118,
 			"settings":
 			{
-				"buffer_size": 1543,
+				"buffer_size": 1032,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/components/Admin.vue",
+			"file": "src/components/pages/Capitulo_1.vue",
 			"settings":
 			{
-				"buffer_size": 2861,
+				"buffer_size": 1034,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/components/Teste.vue",
+			"file": "src/App.vue",
 			"settings":
 			{
-				"buffer_size": 684,
+				"buffer_size": 427,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/shared/Footer.vue",
+			"settings":
+			{
+				"buffer_size": 514,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -558,7 +587,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 236.0,
+		"height": 392.0,
 		"last_filter": "set Syntax: java",
 		"selected_items":
 		[
@@ -684,22 +713,39 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/piu-terminais",
-		"/C/xampp/htdocs/piu-terminais/config",
 		"/C/xampp/htdocs/piu-terminais/src",
+		"/C/xampp/htdocs/piu-terminais/src/assets",
 		"/C/xampp/htdocs/piu-terminais/src/components",
-		"/C/xampp/htdocs/piu-terminais/static",
-		"/C/xampp/htdocs/vue-crud"
+		"/C/xampp/htdocs/piu-terminais/src/components/pages",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared",
+		"/C/xampp/htdocs/piu-terminais/src/router",
+		"/C/xampp/htdocs/piu-terminais/static"
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/piu-terminais/src/router/index.js",
+		"/C/xampp/htdocs/piu-terminais/src/components/Admin.vue",
+		"/C/xampp/htdocs/my-project/src/router/index.js",
+		"/C/xampp/htdocs/my-project/src/components/HelloWorld.vue",
+		"/C/xampp/htdocs/my-project/src/App.vue",
+		"/C/xampp/htdocs/piu-terminais/src/App.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Progressbar.vue",
+		"/C/Users/e059145/Desktop/piu-terminais_failed-webpack/src/App.vue",
+		"/C/xampp/htdocs/piu-terminais/src/main.js",
 		"/C/xampp/htdocs/piu-terminais/config/index.js",
+		"/C/xampp/htdocs/piu-terminais/index.html",
+		"/C/xampp/htdocs/piu-terminais/static/api.php",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footer.vue",
+		"/C/xampp/htdocs/piu-terminais/static/teste.php",
+		"/C/xampp/htdocs/piu-terminais/src/components/Teste.vue",
+		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/xampp/apache/README.txt",
 		"/C/Users/e059145/Desktop/index.js",
+		"/C/xampp/htdocs/piu-terminais/README.md",
+		"/C/xampp/htdocs/piu-terminais/src/router/index.js",
 		"/C/xampp/htdocs/vue-crud/app.js",
 		"/C/xampp/htdocs/vue-crud/api.php",
 		"/C/Users/e059145/Desktop/axios/examples/get/server.js",
-		"/C/xampp/htdocs/piu-terminais/src/components/Admin.vue",
-		"/C/xampp/htdocs/piu-terminais/static/api.php",
 		"/C/Users/e059145/Desktop/axios/examples/get/index.html",
 		"/C/Users/e059145/Desktop/axios/examples/post/index.html",
 		"/C/Users/e059145/Desktop/axios/examples/post/server.js",
@@ -715,9 +761,6 @@
 		"/C/xampp/htdocs/piu-terminais/src/components/Footer.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/Header.vue",
 		"/C/xampp/htdocs/piu-terminais/.gitignore",
-		"/C/xampp/htdocs/piu-terminais/src/main.js",
-		"/C/xampp/htdocs/piu-terminais/index.html",
-		"/C/xampp/htdocs/piu-terminais/src/App.vue",
 		"/C/Users/e059145/Desktop/piu-terminais_failed-gulp/app/scss/styles.scss",
 		"/C/xampp/htdocs/piu-terminais/static/vendor/materialize-src/README.md",
 		"/C/Users/e059145/Desktop/piu-terminais_failed-gulp/app/index.html",
@@ -736,7 +779,6 @@
 		"/C/xampp/htdocs/piu-terminais/dist/index.html",
 		"/C/xampp/htdocs/teste/index.html",
 		"/C/xampp/htdocs/piu-terminais/package-lock.json",
-		"/C/xampp/htdocs/piu-terminais/README.md",
 		"/C/xampp/htdocs/piu-terminais/package.json",
 		"/C/xampp/htdocs/piu-terminais/app/js/main.js",
 		"/C/xampp/htdocs/piu-terminais/app/index.html",
@@ -754,7 +796,6 @@
 		"/C/xampp/htdocs/vue-component-example/src/components/a/index.js",
 		"/C/xampp/htdocs/vue-component-example/src/components/a/template.html",
 		"/C/Users/e059145/Desktop/piu-terminais_failed-webpack/src/main.js",
-		"/C/Users/e059145/Desktop/piu-terminais_failed-webpack/src/App.vue",
 		"/C/Users/e059145/Desktop/piu-terminais_failed-webpack/index.html",
 		"/C/xampp/htdocs/piu-terminais_api/admin.php",
 		"/C/xampp/htdocs/piu-terminais/app/js/lib/axios.js",
@@ -809,27 +850,19 @@
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.817/MINUTA-PARTICIPATIVA.txt",
 		"/C/Users/e059145/Desktop/functions.php",
 		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/index.php",
-		"/C/xampp/htdocs/gestaourbana/index.php",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.618/ACESSOS.txt",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/functions.php",
-		"/C/Users/e059145/Desktop/troca de cores.txt",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-interna.css",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-noticias-interna.css",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-noticias.css",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-home.css",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-contato.css",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-centro-aberto-interna.css",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.3/css/style-biblioteca.css"
+		"/C/xampp/htdocs/gestaourbana/index.php"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
 		"height": 104.0,
 		"where_history":
 		[
+			"C:\\xampp\\htdocs\\piu-terminais",
+			"C:\\xampp\\apache",
 			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.3\\css",
 			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.3",
 			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\plugins\\simple-download-monitor",
@@ -891,6 +924,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"bundle",
+			"<VirtualHost *:80>",
+			"publicPath",
 			"update",
 			"materialize",
 			"\"",
@@ -1015,10 +1051,7 @@
 			"}\n",
 			"#wrapper-third-home .bottom-news .news",
 			"bottom-news table",
-			"top-news",
-			"stylesheet_directory",
-			"===============================================================================",
-			"ssh"
+			"top-news"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1036,29 +1069,61 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "static/teste.php",
+					"file": "src/router/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 40,
+						"buffer_size": 1260,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								30,
-								30
+								1085,
+								1085
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/components/pages/Capitulo_2.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1032,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								926,
+								926
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1068,26 +1133,57 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "static/api.php",
+					"buffer": 2,
+					"file": "src/components/pages/Capitulo_3.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1543,
+						"buffer_size": 1032,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								923,
-								923
+								926,
+								926
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/components/pages/Capitulo_1.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1034,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								948,
+								948
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1097,49 +1193,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/components/Admin.vue",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 2861,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/components/Teste.vue",
+					"buffer": 4,
+					"file": "src/App.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 684,
+						"buffer_size": 427,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								320,
-								320
+								427,
+								427
 							]
 						],
 						"settings":
@@ -1150,7 +1217,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/components/shared/Footer.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								514,
+								514
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1223,7 +1318,7 @@
 		"selected_items":
 		[
 		],
-		"width": 508.0
+		"width": 418.0
 	},
 	"selected_group": 0,
 	"settings":
@@ -1233,7 +1328,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 289.0,
+	"side_bar_width": 277.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
