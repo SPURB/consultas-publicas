@@ -53,7 +53,7 @@ export default {
   name: 'Admin',
   data () {
 	return {
-		apiPath: 'http://spurbcp13343/piu-terminais/static/api.php', 
+		apiPath: 'http://localhost/piu-terminais/static/api.php', 
 		comments: [],
 		errorMessage: '',
 		successMessage: '',
@@ -83,7 +83,8 @@ export default {
 				}
 				else{
 					app.successMessage = response.data.message
-					app.getAllcomments();
+					// app.getAllcomments();
+					console.log(response)
 				}
 			});
 	},

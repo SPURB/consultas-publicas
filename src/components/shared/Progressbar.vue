@@ -1,15 +1,15 @@
 <template>
-  <div class="footer">
+  <div class="progressbar">
     <span>{{ msg }}</span>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Footer',
+  name: 'Progressbar',
   data () {
     return {
-      msg: 'Footer'
+      msg: 'Progressbar'
     }
   }
 }

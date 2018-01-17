@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-	// header('Access-Control-Allow-Origin: *');
+	header('Access-Control-Allow-Origin: *');
 	header('Access-Control-Allow-Methods: POST, GET, DELETE, PUT, PATCH, OPTIONS');
 	header('Access-Control-Allow-Headers: token, Content-Type');
 	header('Access-Control-Max-Age: 1728000');
@@ -38,20 +38,15 @@ if($crud = 'read'){
 }
 
 if($crud == 'update'){
-	// $comment_ID = $_POST['comment_ID'];
-	// $comment_approved = $_POST['comment_approved'];
-	// $out['message'] = $comment_ID . " | " . $comment_approved;
+	$out = "change api.php to update";
+}
 
-	// $sql = "update wp_comments set comment_approved='$comment_approved' where comment_ID='$comment_ID'";
-	// $query = $conn->query($sql);
+if($crud == 'delete'){
+	$out = "change api.php to delete";
+}
 
-	// if($query){
-		// $out['message'] = "Member Updated Successfully";
-	// }
-	// else{
-		$out['error'] = true;
-		$out['message'] = "Could not update Member";
-	// }
+if($crud == 'create'){
+	$out = "change api.php to create";
 }
 
 $connection->close();
