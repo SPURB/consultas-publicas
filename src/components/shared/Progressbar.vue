@@ -5,11 +5,13 @@
 </template>
 
 <script>
+import { eventBus } from '../../main';
+
 export default {
   name: 'Progressbar',
   data () {
     return {
-      msg: 'Progressbar'
+      msg: 'Progressbar', 
     }
   }
 }

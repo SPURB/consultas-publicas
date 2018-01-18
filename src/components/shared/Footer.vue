@@ -2,9 +2,9 @@
   <div class="footer">
         <div class="row">
             <div class="col s6 offset-s6">
-                 <router-link to="/capitulo_2" class="waves-effect waves-light btn-large">Próximo</router-link>
+                 <router-link :to="nextItem()" class="waves-effect waves-light btn-large">Próximo</router-link>
+                 <button @click="showMeRoute()">Route</button>
             </div>
-            <p>loaded id: {{ id }}</p>
         </div>
   </div>
 </template>
@@ -12,9 +12,17 @@
 <script>
 export default {
   name: 'Footer',
-  data () {
+  data(){
     return {
-        id: this.$route.params.id
+
+    }
+  },
+  methods:{
+    nextItem: function (){
+      return '/2'
+    },
+    showMeRoute: function(){
+      console.log(this.$route)
     }
   }
 }

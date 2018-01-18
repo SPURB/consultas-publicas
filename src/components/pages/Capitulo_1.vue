@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import {eventBus} from '../../main';
 
 export default {
   name: 'Capitulo_1',
@@ -19,7 +20,7 @@ export default {
       chapter_id: 1,
       title: 'Capitulo 1',
     }
-  }
+  }, 
 }
 </script>
 

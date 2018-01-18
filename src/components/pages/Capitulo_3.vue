@@ -16,7 +16,6 @@ export default {
   name: 'Capitulo_3',
   data () {
     return {
-      id: this.$route.params.id,
       chapter_id: 3,
       title: 'Capitulo 3',
     }

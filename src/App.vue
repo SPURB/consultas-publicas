@@ -9,8 +9,9 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
 }
+
 </script>
 
 <style lang="scss">
@@ -22,5 +23,4 @@ img {
     display: block;
     margin: 0 auto;
 }
-
 </style>
