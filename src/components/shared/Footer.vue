@@ -1,35 +1,59 @@
 <template>
-  <div class="footer">
-        <div class="row">
-            <div class="col s6 offset-s6">
-                 <router-link :to="nextItem()" class="waves-effect waves-light btn-large">Próximo</router-link>
-                 <button @click="showMeRoute()">Route</button>
-            </div>
-        </div>
-  </div>
+	<div class="footer">
+				<div class="row">
+						<div class="col s6" v-if="displaylefttbutton == true">
+								 <router-link :to="previousItem()" class="waves-effect waves-light btn-large left">Anterior</router-link>
+								 <!-- <button @click="commentEnable()">enable comments</button> -->
+						</div>
+						<div class="col s6" v-if="displayrightbutton == true">
+								 <router-link :to="nextItem()" class="waves-effect waves-light btn-large right">Próximo</router-link>
+								 <!-- <button @click="commentEnable()">enable comments</button> -->
+						</div>
+				</div>
+
+	</div>
 </template>
 
 <script>
 export default {
-  name: 'Footer',
-  data(){
-    return {
-
-    }
-  },
-  methods:{
-    nextItem: function (){
-      return '/2'
-    },
-    showMeRoute: function(){
-      console.log(this.$route)
-    }
-  }
+	name: 'Footer',
+	data(){
+		return {
+			displayrightbutton: true,
+			displaylefttbutton: true, 
+			navitems: []
+		}
+	},
+	computed: {
+		postid: function(){
+			return this.$route.meta.postid
+		}, 
+		numchapters: function(){
+			return this.$store.state.numchapters
+		}
+	},
+	methods:{
+		previousItem: function (){
+			return '/1'
+		},
+		nextItem: function (){
+			return '/3'
+		},
+		commentEnable: function(){
+			this.$store.state.comments = true;
+		}
+	}
 }
 </script>
 
 <style lang="scss" scoped>
-    .btn-large{
-        float: right
-    }
+@import "../../assets/variables.scss";
+
+.right{
+	float: right
+}
+.left{
+	float: left
+}
+
 </style>

@@ -11,7 +11,6 @@ import Admin from '@/components/pages/Admin'
 import Capitulo_1 from '@/components/pages/Capitulo_1'
 import Capitulo_2 from '@/components/pages/Capitulo_2'
 import Capitulo_3 from '@/components/pages/Capitulo_3'
-import Quote from '@/components/Quote'
 
 
 Vue.use(Router)
@@ -24,7 +23,7 @@ const router = new Router({
     },
     {
       path: '/1',
-      name: 'Capitulo_1',
+      name: 'Capitulo 1',
       components: {
         header: Header,
         progressbar: Progressbar,
@@ -33,13 +32,11 @@ const router = new Router({
       },
       meta: { 
         postid: 1,
-        lastpost: false, 
-        isadmin: false, 
       }
     },
     {
       path: '/2',
-      name: 'Capitulo_2',
+      name: 'Capitulo 2',
       components: {
         header: Header,
         progressbar: Progressbar,
@@ -48,13 +45,11 @@ const router = new Router({
       },
       meta: { 
         postid: 2,
-        lastpost: false, 
-        isadmin: false, 
       }
     },
     {
       path: '/3',
-      name: 'Capitulo_3',
+      name: 'Capitulo 3',
       components: {
         header: Header,
         progressbar: Progressbar,
@@ -63,21 +58,14 @@ const router = new Router({
       }, 
       meta: { 
         postid: 3,
-        lastpost: true, 
-        isadmin: false, 
       }
     },
     {
       path: '/admin',
-      name: 'Admin',
       components: {
         header: Header,
         default: Admin,
-        footer: Footer
-      }, 
-      meta: { 
-        isadmin: true, 
-      }
+      } 
     }
   ]
 })

@@ -53,7 +53,6 @@ export default {
   name: 'Admin',
   data () {
 	return {
-		apiPath: 'http://localhost/piu-terminais/static/api.php', 
 		comments: [],
 		errorMessage: '',
 		successMessage: '',
@@ -66,7 +65,7 @@ export default {
   methods: {
 	getAllcomments: function(){
 		let app = this;
-		axios.get(app.apiPath)
+		axios.get('')
 			.then(function(response){
 				app.comments = response.data.comments;
 			});
@@ -74,7 +73,7 @@ export default {
 	changeApproval: function(id, approval){
 		let app = this;
 		let memForm = app.toFormData(app.clickMember);
-		axios.post(app.apiPath + '?crud=update', memForm)
+		axios.post('?crud=update', memForm)
 			.then(function(response){
 				//console.log(response);
 				app.clickMember = {};
@@ -101,6 +100,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/variables.scss";
+
 h3{
 	font-size: 36px;
 	font-weight:500

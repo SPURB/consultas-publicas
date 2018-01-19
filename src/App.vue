@@ -8,19 +8,12 @@
 </template>
 
 <script>
+
 export default {
   name: 'App',
 }
-
 </script>
 
 <style lang="scss">
-.chapter-title{
-  font-size:36px 
-}
-img {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-}
+@import "assets/main.scss";
 </style>
