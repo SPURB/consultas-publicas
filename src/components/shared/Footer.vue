@@ -1,16 +1,15 @@
 <template>
 	<div class="footer">
-				<div class="row">
-						<div class="col s6" v-if="displaylefttbutton == true">
-								 <router-link :to="previousItem()" class="waves-effect waves-light btn-large left">Anterior</router-link>
-								 <!-- <button @click="commentEnable()">enable comments</button> -->
-						</div>
-						<div class="col s6" v-if="displayrightbutton == true">
-								 <router-link :to="nextItem()" class="waves-effect waves-light btn-large right">Próximo</router-link>
-								 <!-- <button @click="commentEnable()">enable comments</button> -->
-						</div>
-				</div>
-
+		<div class="row">
+			<div class="col s6" v-if="displaylefttbutton == true">
+					 <router-link :to="previousItem()" class="waves-effect waves-light btn-large left">Anterior</router-link>
+					 <!-- <button @click="commentEnable()">enable comments</button> -->
+			</div>
+			<div class="col s6" v-if="displayrightbutton == true">
+					 <router-link :to="nextItem()" class="waves-effect waves-light btn-large right">Próximo</router-link>
+					 <!-- <button @click="commentEnable()">enable comments</button> -->
+			</div>
+		</div>
 	</div>
 </template>
 

@@ -4,12 +4,32 @@
 		"selected_items":
 		[
 			[
-				"na",
-				"navitems"
+				"n",
+				"nth\tnth()"
+			],
+			[
+				"fis",
+				"firstpost"
 			],
 			[
 				"nav",
-				"navitem"
+				"navitems"
+			],
+			[
+				"first",
+				"firstview"
+			],
+			[
+				"na",
+				"navpreviousnext"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"pa",
+				"path"
 			],
 			[
 				"lo",
@@ -90,10 +110,6 @@
 			[
 				"font",
 				"font-size"
-			],
-			[
-				"pa",
-				"padding"
 			],
 			[
 				"cm",
@@ -324,10 +340,6 @@
 				"console_log"
 			],
 			[
-				"first",
-				"firstChild\t(): Node TreeWalker"
-			],
-			[
 				"consoe",
 				"console_log"
 			],
@@ -502,18 +514,6 @@
 			[
 				"th",
 				"thead\tTag"
-			],
-			[
-				"bac",
-				"background-color"
-			],
-			[
-				"inline",
-				"inline-block"
-			],
-			[
-				"inlin",
-				"inline-block"
 			]
 		]
 	},
@@ -523,42 +523,8 @@
 			"file": "src/components/shared/Progressbar.vue",
 			"settings":
 			{
-				"buffer_size": 1264,
+				"buffer_size": 2503,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/components/pages/Capitulo_1.vue",
-			"settings":
-			{
-				"buffer_size": 1205,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/components/pages/Capitulo_2.vue",
-			"settings":
-			{
-				"buffer_size": 1036,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/components/pages/Capitulo_3.vue",
-			"settings":
-			{
-				"buffer_size": 1036,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"settings":
-			{
-				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
@@ -566,75 +532,9 @@
 			"file": "src/components/shared/Footer.vue",
 			"settings":
 			{
-				"buffer_size": 805,
+				"buffer_size": 1193,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/store/store.js",
-			"settings":
-			{
-				"buffer_size": 150,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "store.js"
-			}
-		},
-		{
-			"file": "src/App.vue",
-			"settings":
-			{
-				"buffer_size": 359,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/main.js",
-			"settings":
-			{
-				"buffer_size": 409,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/assets/_mainstyles.scss",
-			"settings":
-			{
-				"buffer_size": 119,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 689,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": ".chapter-title{\n  font-size:36px; \n  color:pink\n\n}\nimg {\n    max-width: 100%;\n    display: block;\n    margin: 0 auto;\n}\n",
-			"file": "src/mainstyles.scss",
-			"file_size": 130,
-			"file_write_time": 131608606299471955,
-			"settings":
-			{
-				"buffer_size": 120,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/router/index.js",
-			"settings":
-			{
-				"buffer_size": 1433,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -771,22 +671,36 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/piu-terminais",
-		"/C/xampp/htdocs/piu-terminais/src"
+		"/C/xampp/htdocs/piu-terminais/src",
+		"/C/xampp/htdocs/piu-terminais/src/components",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/piu-terminais/src/router/index.js",
+		"/C/xampp/htdocs/piu-terminais/src/main.js",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_2.vue",
+		"/C/xampp/htdocs/piu-terminais/index.html",
+		"/C/xampp/htdocs/piu-terminais/src/store/store.js",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footer.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Admin.vue",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.718/ACESSOS.txt",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/css/style-home.css",
+		"/C/xampp/htdocs/dbinfo.php",
+		"/C/xampp/htdocs/api.php",
+		"/C/xampp/htdocs/piu-terminais/src/assets/variables.scss",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Progressbar.vue",
+		"/C/xampp/htdocs/piu-terminais/src/assets/main.scss",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_3.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Header.vue",
+		"/C/xampp/htdocs/piu-terminais/src/App.vue",
+		"/C/xampp/htdocs/piu-terminais/package.json",
+		"/C/xampp/htdocs/piu-terminais/src/mainstyles.scss",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_1.vue",
 		"/C/Users/e059145/Downloads/materialize-src/README.md",
 		"/C/xampp/htdocs/piu-terminais/src/assets/vendor/materialize.scss",
 		"/C/xampp/htdocs/piu-terminais/src/assets/styles/main.scss",
-		"/C/xampp/htdocs/piu-terminais/src/main.js",
-		"/C/xampp/htdocs/piu-terminais/src/App.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_1.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/shared/Header.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/shared/Progressbar.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footer.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/Quote.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_2.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_3.vue",
 		"/C/xampp/htdocs/piu-terminais/.gitignore",
 		"/C/xampp/htdocs/piu-terminais/src/components/Admin.vue",
 		"/C/xampp/htdocs/my-project/src/router/index.js",
@@ -794,7 +708,6 @@
 		"/C/xampp/htdocs/my-project/src/App.vue",
 		"/C/Users/e059145/Desktop/piu-terminais_failed-webpack/src/App.vue",
 		"/C/xampp/htdocs/piu-terminais/config/index.js",
-		"/C/xampp/htdocs/piu-terminais/index.html",
 		"/C/xampp/htdocs/piu-terminais/static/api.php",
 		"/C/xampp/htdocs/piu-terminais/static/teste.php",
 		"/C/xampp/htdocs/piu-terminais/src/components/Teste.vue",
@@ -803,7 +716,6 @@
 		"/C/xampp/apache/README.txt",
 		"/C/Users/e059145/Desktop/index.js",
 		"/C/xampp/htdocs/piu-terminais/README.md",
-		"/C/xampp/htdocs/piu-terminais/src/router/index.js",
 		"/C/xampp/htdocs/vue-crud/app.js",
 		"/C/xampp/htdocs/vue-crud/api.php",
 		"/C/Users/e059145/Desktop/axios/examples/get/server.js",
@@ -839,7 +751,6 @@
 		"/C/xampp/htdocs/piu-terminais/dist/index.html",
 		"/C/xampp/htdocs/teste/index.html",
 		"/C/xampp/htdocs/piu-terminais/package-lock.json",
-		"/C/xampp/htdocs/piu-terminais/package.json",
 		"/C/xampp/htdocs/piu-terminais/app/js/main.js",
 		"/C/xampp/htdocs/piu-terminais/app/index.html",
 		"/C/xampp/htdocs/piu-terminais/app/js/App.vue",
@@ -893,16 +804,7 @@
 		"/C/xampp/htdocs/revisao-oucab/wp-config.php",
 		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/functions.php",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.025/ACESSOS.txt",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/css/style-home.css",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/page-index.php",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/js/piu-pacaembu.js",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.416/ACESSOS.txt",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.674/MINUTA-PARTICIPATIVA.txt",
-		"/C/xampp/htdocs/gestaourbana/wp-config.php",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.399/MINUTA-PARTICIPATIVA.txt",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.181/ACESSOS.txt",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.281/BACKUP.txt",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/.project"
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/page-index.php"
 	],
 	"find":
 	{
@@ -976,6 +878,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"barwidth",
+			"nextPage",
+			"third",
 			"materialize/",
 			"components/",
 			"bundle",
@@ -1100,10 +1005,7 @@
 			"#wrapper-third-home .bottom-news",
 			"element {\n\n}\n#wrapper-third-home .bottom-news",
 			"firsto",
-			"second",
-			"cell",
-			"}\n",
-			"#wrapper-third-home .bottom-news .news"
+			"second"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1121,7 +1023,7 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1130,377 +1032,64 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1264,
+						"buffer_size": 2503,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								970,
-								970
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/components/pages/Capitulo_1.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1205,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								800,
-								800
+								2319,
+								2319
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/components/pages/Capitulo_2.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1036,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								798,
-								798
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/components/pages/Capitulo_3.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1036,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1036,
-								1036
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"default_dir": "C:\\xampp\\htdocs\\piu-terminais\\src\\assets\\styles",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/components/shared/Footer.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 805,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								663,
-								663
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/store/store.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 150,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								150,
-								150
-							]
-						],
-						"settings":
-						{
-							"auto_name": "store.js",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/App.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 359,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								349,
-								349
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "src/main.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 409,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								409,
-								409
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "src/assets/_mainstyles.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 119,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								119,
-								119
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 966.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 10,
-					"file": "index.html",
+					"buffer": 1,
+					"file": "src/components/shared/Footer.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 689,
+						"buffer_size": 1193,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								689,
-								689
+								608,
+								608
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 84.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "src/mainstyles.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 120,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								120,
-								120
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "src/router/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1433,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								791,
-								791
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 195.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1508,7 +1097,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 21.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -1523,6 +1112,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -1533,6 +1128,7 @@
 		"rows":
 		[
 			0.0,
+			0.699171395481,
 			1.0
 		]
 	},
@@ -1573,7 +1169,7 @@
 		"selected_items":
 		[
 		],
-		"width": 508.0
+		"width": 436.0
 	},
 	"selected_group": 0,
 	"settings":
@@ -1583,7 +1179,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 367.0,
+	"side_bar_width": 262.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
