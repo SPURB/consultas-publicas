@@ -4,7 +4,9 @@ import Router from 'vue-router'
 // shared
 import Header from '@/components/shared/Header'
 import Progressbar from '@/components/shared/Progressbar'
-import Footer from '@/components/shared/Footer'
+import Modalcomponent from '@/components/shared/Modalcomponent'
+import Comments from '@/components/shared/Comments'
+import Footernav from '@/components/shared/Footernav'
 
 // pages
 import Admin from '@/components/pages/Admin'
@@ -28,7 +30,9 @@ const router = new Router({
         header: Header,
         progressbar: Progressbar,
         default: Capitulo_1,
-        footer: Footer
+        modalcomponent: Modalcomponent,
+        comments: Comments,
+        footernav: Footernav
       },
       meta: { 
         postid: 1,
@@ -41,7 +45,9 @@ const router = new Router({
         header: Header,
         progressbar: Progressbar,
         default: Capitulo_2,
-        footer: Footer
+        modalcomponent: Modalcomponent,
+        comments: Comments,
+        footernav: Footernav
       },
       meta: { 
         postid: 2,
@@ -54,11 +60,20 @@ const router = new Router({
         header: Header,
         progressbar: Progressbar,
         default: Capitulo_3,
-        footer: Footer
+        modalcomponent: Modalcomponent,
+        comments: Comments,
+        footernav: Footernav
       }, 
       meta: { 
         postid: 3,
       }
+    },
+    {
+      path: '/usercheck',
+      components: {
+        header: Header,
+        default: Admin,
+      } 
     },
     {
       path: '/admin',

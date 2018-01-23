@@ -529,6 +529,15 @@
 			}
 		},
 		{
+			"contents": "fgbruno@uol.com.br\nOagjl0CCdfcYZnBu&j4ML$G)\n",
+			"settings":
+			{
+				"buffer_size": 44,
+				"line_ending": "Windows",
+				"name": "fgbruno@uol.com.br"
+			}
+		},
+		{
 			"file": "src/components/shared/Footer.vue",
 			"settings":
 			{
@@ -677,6 +686,8 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/piu-terminais/dist/api.php",
+		"/C/xampp/htdocs/piu-terminais/dist/dbinfo.php",
 		"/C/xampp/htdocs/piu-terminais/src/router/index.js",
 		"/C/xampp/htdocs/piu-terminais/src/main.js",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_2.vue",
@@ -802,13 +813,11 @@
 		"/L/Len/httdocs/dadobrettas/acessos.txt",
 		"/C/xampp/htdocs/ddbrtts/wp-config.php",
 		"/C/xampp/htdocs/revisao-oucab/wp-config.php",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/functions.php",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.025/ACESSOS.txt",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/page-index.php"
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/functions.php"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -1023,7 +1032,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1053,6 +1062,34 @@
 						"translation.y": 966.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 44,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "fgbruno@uol.com.br",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
 					"type": "text"
 				}
@@ -1063,7 +1100,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "src/components/shared/Footer.vue",
 					"semi_transient": false,
 					"settings":
@@ -1089,7 +1126,7 @@
 						"translation.y": 84.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

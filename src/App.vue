@@ -3,7 +3,9 @@
     <router-view name="header"></router-view>
     <router-view name="progressbar"></router-view>
     <router-view name="default"></router-view>
-    <router-view name="footer"></router-view>
+    <router-view name="modalcomponent"></router-view>
+    <router-view name="comments"></router-view>
+    <router-view name="footernav"></router-view>
   </div>
 </template>
 

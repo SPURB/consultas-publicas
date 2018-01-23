@@ -1,30 +1,24 @@
 <template>
-	<div class="progressbar">
-	<ul>
-		<li>Cap {{postid}}/{{numchapters}}</li>
-		<li v-for="navitem in navpreviousnext" class="links">
-			<router-link v-if="firstpost == true" :to="navitem.path" class="first"></router-link>
-			<router-link v-if="firstpost == false && lastpost == false" :to="navitem.path" ></router-link>
-			<router-link v-if="lastpost == true" :to="navitem.path"></router-link>
-		</li>
-	</ul>
-
- 	<svg width="100%" height="5">
-		<rect width="100%" height="6" style="fill:rgb(224,224,224)" />
-		<rect v-bind:width="svgwidth" height="6" style="fill:rgb(79,79,79)" />
-	</svg>
-
+	<div class="footernav">
+		<div class="row">
+      <div class="col s12">
+				<div v-for="navitem in navpreviousnext" class="links">
+					<router-link :to="navitem.path" tag="a" class="btn-flat first" v-if="firstpost == true"></router-link>
+					<router-link :to="navitem.path" tag="a" class="btn-flat both"  v-if="firstpost == false && lastpost == false" ></router-link>
+					<router-link :to="navitem.path" tag="a" class="btn-flat last"  v-if="lastpost == true" ></router-link>
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
 
 <script>
- 
 export default {
-	name: 'Progressbar',
-	data () {
+	name: 'Footernav',
+	data(){
 		return {
 			navitems: [],
-			navpreviousnext:[],
+			navpreviousnext:[], 
 			firstview: false
 		}
 	},
@@ -39,16 +33,11 @@ export default {
 		app.firstview = true
 	},
 	computed: {
-		numchapters: function(){
-			const navitems = this.navitems.length 
-			this.$store.state.numchapters = navitems // send total number of chapters to vuex
-			return navitems
-		}, 
 		postid: 			function(){ return this.$route.meta.postid },
 		firstpost:		function(){ return this.$route.meta.postid == 1 ? true : false },
 		lastpost: 		function(){ return this.$route.meta.postid == this.navitems.length ? true : false },
-		svgwidth: 		function(){ return (this.$route.meta.postid / this.navitems.length)*100 + '%'},
-	}, 
+		numchapters: 	function(){ return this.$store.state.numchapters }
+	},
 	watch:{
 		'$route' (to, from) {
 			let app = this
@@ -73,6 +62,11 @@ export default {
 				}
 			})
 		}
+	},
+	methods:{
+		commentEnable: function(){
+			this.$store.state.comments = true;
+		}
 	}
 }
 </script>
@@ -80,28 +74,26 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
 
-p {
-	margin-bottom:0;
-	span {
-		padding: 0 0.65rem 0 0
-	}
+// two buttons displayed
+div.links:first-of-type{ float: left }
+div.links:last-of-type{ float: right }
+
+div.links:nth-child(1) a:after{ content: 'Voltar'; }
+div.links:nth-child(1) a.first:after,
+div.links:nth-child(2) a:after {
+	content: 'Próximo'
 }
 
-li {
-	float: left;
-	padding: 0 0.75em 0 0;
-	a { color: $primary-grey }
-}
+a { background-color: $primary-light-grey; }
+a.last { 
+	background-color: $primary-light-grey;
+	margin-right:100%;
+} // last route
 
-
-li.links:nth-child(2) a:after{
-	content: '<<';
-
-}
-
-li.links:nth-child(2) a.first:after,
-li.links:nth-child(3) a:after{
-	content: '>>'
+a.first, // first route 
+div.links:nth-child(2) a { // two buttons displayed route
+	background-color: $primary-grey;
+	color: $font-white-dark-bkg
 }
 
 </style>

@@ -1,12 +1,23 @@
 @import "./variables.scss";
 
+// REGRAS GLOBAIS
+html{
+font-family: $font-stack;
+}
+
 .chapter-title{
-  font-size:36px; 
-  color:$main-color
+	font-size:36px; 
+	color: $main-color
 
 }
 img {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+}
+
+@media (min-width: 960px)  {
+		.flow-text {
+			font-size: 1rem
+		}
 }
