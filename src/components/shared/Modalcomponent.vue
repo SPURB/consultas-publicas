@@ -13,24 +13,24 @@
 						</div>
 						<div class="modal-body">
 							<slot name="body">
+								<form>
+									<div class="input-field col s12">
+										<input v-validate="'required|email'" id="email" type="email" class="validate" v-model="email">
+										<label for="email">Email*</label>
+										<span class="helper-text" data-error="Email incorreto" data-success="Email ok!">*Seu email não será divulgado</span>
+									</div>
+
 									<div class="input-field col s12">
 										<input id="name" type="text" class="validate" v-model="name">
-										<label for="name">Nome Sobrenome</label>
+										<label for="name">Nome Sobrenome (organização)</label>
+										<span class="helper-text" data-success="Nome ok!"></span>
 									</div>
-									<div class="input-field col s12">
-										<input id="email" type="email" class="validate" v-model="email">
-										<label for="email">Email*</label>
-										<span class="helper-text" data-error="O email está incorreto" data-success="right">*Seu email não será divulgado</span>
-									</div>
-							</slot>
-						</div>
 
-						<div class="modal-footer">
-							<slot name="footer">
-								<div class="commentaction">
-									<button  @click="close" class="btn-flat cancel">Cancelar</button>
-									<button class="btn-flat send">Habilitar</button>
-								</div>
+									<div class="commentaction">
+										<button  @click="close" class="btn-flat" id="cancel">Cancelar</button>
+										<button @click="enable" class="btn-flat" id="send">Habilitar</button>
+									</div>
+								</form>
 							</slot>
 						</div>
 					</div>
@@ -57,8 +57,26 @@ export default {
 	methods: {
 		close: function(){
 			this.$store.state.showmodal = false
+		},
+		enable: function(){
+			var app = this
+			var hasErrors = function(){
+				if (app.email == '' || app.errors.any() == true || app.name == '') {
+					return true
+				}
+				else { return false }
+			}()
+
+			if(!hasErrors){
+				console.log('email ok: ' + this.email)
+				console.log('nome ok: ' + this.name)
+				this.close()
+			}
+			else if(hasErrors){
+				console.log('email errado: ' + this.email)
+			}
 		}
-	},
+	}
 }
 </script>
 
@@ -82,11 +100,11 @@ h2{
 
 .commentaction{
 	margin: 12% 0 8%;
-	button.cancel{ 
+	button#cancel{ 
 		background-color: $primary-light-grey; 
 		font-weight: 700;
 	}
-	button.send{
+	button#send{
 		background-color: $primary-grey;
 		color: $font-white-dark-bkg;
 		font-weight: 700;
@@ -96,7 +114,7 @@ h2{
 
 .modal-body{
 	.input-field{
-		margin-top:2rem
+		margin-top:3rem
 	}
 }
 .modal-mask {

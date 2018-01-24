@@ -4,12 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
-
 import { store } from './store/store';
+import VeeValidate from 'vee-validate';
 
-axios.defaults.baseURL = 'api.php'
+Vue.use(VeeValidate);
 
 Vue.config.productionTip = false
+axios.defaults.baseURL = 'api.php'
 
 /* eslint-disable no-new */
 new Vue({
