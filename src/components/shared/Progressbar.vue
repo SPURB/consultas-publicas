@@ -44,7 +44,7 @@ export default {
 			this.$store.state.numchapters = navitems // send total number of chapters to vuex
 			return navitems
 		}, 
-		postid: 			function(){ return this.$route.meta.postid },
+		postid: 		function(){ return this.$route.meta.postid },
 		firstpost:		function(){ return this.$route.meta.postid == 1 ? true : false },
 		lastpost: 		function(){ return this.$route.meta.postid == this.navitems.length ? true : false },
 		svgwidth: 		function(){ return (this.$route.meta.postid / this.navitems.length)*100 + '%'},

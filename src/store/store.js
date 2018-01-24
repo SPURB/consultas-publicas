@@ -7,5 +7,6 @@ export const store = new Vuex.Store({
     state: {
         comments: false,
         numchapters: 0, 
+        showmodal: true
     }
 });

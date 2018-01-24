@@ -4,12 +4,24 @@
 		"selected_items":
 		[
 			[
-				"n",
-				"nth\tnth()"
+				"submit",
+				"submitUser"
+			],
+			[
+				"fon",
+				"font-size"
 			],
 			[
 				"fis",
-				"firstpost"
+				"first"
+			],
+			[
+				"fir",
+				"first"
+			],
+			[
+				"n",
+				"nth\tnth()"
 			],
 			[
 				"nav",
@@ -114,10 +126,6 @@
 			[
 				"cm",
 				"comments"
-			],
-			[
-				"fon",
-				"font-family"
 			],
 			[
 				"ge",
@@ -506,42 +514,16 @@
 			[
 				"text",
 				"text-decoration"
-			],
-			[
-				"border-r",
-				"border-right"
-			],
-			[
-				"th",
-				"thead\tTag"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "src/components/shared/Progressbar.vue",
+			"file": "src/components/shared/Modalcomponent.vue",
 			"settings":
 			{
-				"buffer_size": 2503,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "fgbruno@uol.com.br\nOagjl0CCdfcYZnBu&j4ML$G)\n",
-			"settings":
-			{
-				"buffer_size": 44,
-				"line_ending": "Windows",
-				"name": "fgbruno@uol.com.br"
-			}
-		},
-		{
-			"file": "src/components/shared/Footer.vue",
-			"settings":
-			{
-				"buffer_size": 1193,
+				"buffer_size": 2009,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -554,7 +536,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 236.0,
 		"last_filter": "set Syntax: java",
 		"selected_items":
 		[
@@ -681,17 +663,37 @@
 	[
 		"/C/xampp/htdocs/piu-terminais",
 		"/C/xampp/htdocs/piu-terminais/src",
+		"/C/xampp/htdocs/piu-terminais/src/assets",
 		"/C/xampp/htdocs/piu-terminais/src/components",
-		"/C/xampp/htdocs/piu-terminais/src/components/shared"
+		"/C/xampp/htdocs/piu-terminais/src/components/pages",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared",
+		"/C/xampp/htdocs/piu-terminais/src/router",
+		"/C/xampp/htdocs/piu-terminais/src/store",
+		"/C/Users/e059145/Desktop"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Comments.vue",
+		"/C/xampp/htdocs/piu-terminais/src/App.vue",
+		"/C/xampp/htdocs/piu-terminais/src/router/index.js",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footernav.vue",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.206/ACESSOS.txt",
+		"/C/Users/e059145/Desktop/bkp.local.html",
+		"/C/Users/e059145/Desktop/bkp.prod.html",
+		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/functions.php",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Progressbar.vue",
+		"/C/xampp/htdocs/piu-terminais/src/assets/main.scss",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Header.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_1.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_2.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_3.vue",
+		"/C/xampp/htdocs/piu-terminais/src/assets/variables.scss",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_4.vue",
+		"/C/xampp/htdocs/piu-terminais/index.html",
+		"/C/xampp/htdocs/index.html",
 		"/C/xampp/htdocs/piu-terminais/dist/api.php",
 		"/C/xampp/htdocs/piu-terminais/dist/dbinfo.php",
-		"/C/xampp/htdocs/piu-terminais/src/router/index.js",
 		"/C/xampp/htdocs/piu-terminais/src/main.js",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_2.vue",
-		"/C/xampp/htdocs/piu-terminais/index.html",
 		"/C/xampp/htdocs/piu-terminais/src/store/store.js",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footer.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/Admin.vue",
@@ -699,15 +701,8 @@
 		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/css/style-home.css",
 		"/C/xampp/htdocs/dbinfo.php",
 		"/C/xampp/htdocs/api.php",
-		"/C/xampp/htdocs/piu-terminais/src/assets/variables.scss",
-		"/C/xampp/htdocs/piu-terminais/src/components/shared/Progressbar.vue",
-		"/C/xampp/htdocs/piu-terminais/src/assets/main.scss",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_3.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/shared/Header.vue",
-		"/C/xampp/htdocs/piu-terminais/src/App.vue",
 		"/C/xampp/htdocs/piu-terminais/package.json",
 		"/C/xampp/htdocs/piu-terminais/src/mainstyles.scss",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_1.vue",
 		"/C/Users/e059145/Downloads/materialize-src/README.md",
 		"/C/xampp/htdocs/piu-terminais/src/assets/vendor/materialize.scss",
 		"/C/xampp/htdocs/piu-terminais/src/assets/styles/main.scss",
@@ -805,19 +800,11 @@
 		"/C/xampp/htdocs/piu-terminais/comando-sql.txt",
 		"/L/Len/httdocs/dadobrettas/wp-config.php",
 		"/C/xampp/htdocs/ddbrtts/wp-content/themes/dadobrettas/functions.php",
-		"/C/xampp/htdocs/ddbrtts/wp-content/themes/dadobrettas/index.php",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.132/BACKUP.txt",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.921/MINUTA-PARTICIPATIVA.txt",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.132/ACESSOS.txt",
-		"/C/Users/e059145/Downloads/revisodaleideusoeocupaodosolo.wordpress.2018-01-10.xml",
-		"/L/Len/httdocs/dadobrettas/acessos.txt",
-		"/C/xampp/htdocs/ddbrtts/wp-config.php",
-		"/C/xampp/htdocs/revisao-oucab/wp-config.php",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/functions.php"
+		"/C/xampp/htdocs/ddbrtts/wp-content/themes/dadobrettas/index.php"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -884,9 +871,12 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"both",
+			"footer",
+			"Footer",
 			"barwidth",
 			"nextPage",
 			"third",
@@ -1011,10 +1001,7 @@
 			"get",
 			"  ",
 			"\n$",
-			"#wrapper-third-home .bottom-news",
-			"element {\n\n}\n#wrapper-third-home .bottom-news",
-			"firsto",
-			"second"
+			"#wrapper-third-home .bottom-news"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1032,24 +1019,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/components/shared/Progressbar.vue",
+					"file": "src/components/shared/Modalcomponent.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2503,
+						"buffer_size": 2009,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2319,
-								2319
+								499,
+								499
 							]
 						],
 						"settings":
@@ -1057,76 +1044,12 @@
 							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 966.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 44,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								44,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": "fgbruno@uol.com.br",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 2,
-					"file": "src/components/shared/Footer.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1193,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								608,
-								608
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 84.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1149,12 +1072,6 @@
 				0,
 				1,
 				1
-			],
-			[
-				0,
-				1,
-				1,
-				2
 			]
 		],
 		"cols":
@@ -1165,7 +1082,6 @@
 		"rows":
 		[
 			0.0,
-			0.699171395481,
 			1.0
 		]
 	},
@@ -1216,7 +1132,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 262.0,
+	"side_bar_width": 276.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
