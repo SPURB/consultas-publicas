@@ -1,6 +1,7 @@
 <template>
 	<div class="footernav">
 		<div class="row">
+			<div class="divider bottom"></div>
       <div class="col s12">
 				<div v-for="navitem in navpreviousnext" class="links">
 					<router-link :to="navitem.path" tag="a" class="btn-flat first" v-if="firstpost == true"></router-link>
@@ -74,15 +75,15 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
 
+div.divider.bottom{ margin: 1rem}
+
 // two buttons displayed
 div.links:first-of-type{ float: left }
 div.links:last-of-type{ float: right }
 
 div.links:nth-child(1) a:after{ content: 'Voltar'; }
 div.links:nth-child(1) a.first:after,
-div.links:nth-child(2) a:after {
-	content: 'Próximo'
-}
+div.links:nth-child(2) a:after { content: 'Próximo'}
 
 a { background-color: $primary-light-grey; }
 a.last { 
@@ -95,5 +96,6 @@ div.links:nth-child(2) a { // two buttons displayed route
 	background-color: $primary-grey;
 	color: $font-white-dark-bkg
 }
+
 
 </style>

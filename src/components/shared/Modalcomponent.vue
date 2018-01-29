@@ -22,7 +22,7 @@
 
 									<div class="input-field col s12">
 										<input id="name" type="text" class="validate" v-model="name">
-										<label for="name">Nome Sobrenome (organização)</label>
+										<label for="name">Nome Sobrenome</label>
 										<span class="helper-text" data-success="Nome ok!"></span>
 									</div>
 
@@ -68,12 +68,19 @@ export default {
 			}()
 
 			if(!hasErrors){
-				console.log('email ok: ' + this.email)
-				console.log('nome ok: ' + this.name)
+				this.$store.state.email = this.email
+				this.$store.state.name = this.name
+				this.$store.state.comments = true
+
+				// add recaptcha to head
+				let recaptchaScript = document.createElement('script')
+				recaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit')
+				document.head.appendChild(recaptchaScript)
+
 				this.close()
 			}
 			else if(hasErrors){
-				console.log('email errado: ' + this.email)
+				console.log('email incorreto: ' + this.email)
 			}
 		}
 	}

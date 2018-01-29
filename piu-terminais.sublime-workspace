@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"dis",
+				"disabled"
+			],
+			[
+				"input",
+				"input-field"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"show",
+				"showmodal"
+			],
+			[
 				"submit",
 				"submitUser"
 			],
@@ -70,10 +86,6 @@
 			[
 				"selec",
 				"selected"
-			],
-			[
-				"mar",
-				"margin"
 			],
 			[
 				"b",
@@ -502,18 +514,6 @@
 			[
 				"get",
 				"get\tGet Elements"
-			],
-			[
-				"cur",
-				"cursor"
-			],
-			[
-				"wid",
-				"width"
-			],
-			[
-				"text",
-				"text-decoration"
 			]
 		]
 	},
@@ -523,9 +523,29 @@
 			"file": "src/components/shared/Modalcomponent.vue",
 			"settings":
 			{
-				"buffer_size": 2009,
+				"buffer_size": 3818,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/main.js",
+			"settings":
+			{
+				"buffer_size": 533,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Microsoft Windows [versÆo 10.0.10586]\n(c) 2015 Microsoft Corporation. Todos os direitos reservados.\n\nC:\\xampp\\htdocs\\piu-terminais\\src\\components\\shared>cd ..\n\nC:\\xampp\\htdocs\\piu-terminais\\src\\components>cd ..\n\nC:\\xampp\\htdocs\\piu-terminais\\src>cd ..\n\nC:\\xampp\\htdocs\\piu-terminais>git status\nOn branch master\nYour branch is ahead of 'origin/master' by 1 commit.\n  (use \"git push\" to publish your local commits)\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n\tmodified:   package-lock.json\n\tmodified:   package.json\n\tmodified:   src/components/shared/Modalcomponent.vue\n\tmodified:   src/main.js\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n\nC:\\xampp\\htdocs\\piu-terminais>git add --all\nwarning: LF will be replaced by CRLF in package-lock.json.\nThe file will have its original line endings in your working directory.\nwarning: LF will be replaced by CRLF in package.json.\nThe file will have its original line endings in your working directory.\nwarning: LF will be replaced by CRLF in src/main.js.\nThe file will have its original line endings in your working directory.\n\nC:\\xampp\\htdocs\\piu-terminais>git commit -m \"add form validation\"\n[master dfd7bf1] add form validation\n 4 files changed, 44 insertions(+), 19 deletions(-)\n\nC:\\xampp\\htdocs\\piu-terminais>git status\nOn branch master\nYour branch is ahead of 'origin/master' by 2 commits.\n  (use \"git push\" to publish your local commits)\n\nnothing to commit, working tree clean\n\nC:\\xampp\\htdocs\\piu-terminais>git push\nTo https://github.com/SPURB/piu-terminais.git\n   993c38d..dfd7bf1  master -> master\n\nC:\\xampp\\htdocs\\piu-terminais>",
+			"settings":
+			{
+				"buffer_size": 1725,
+				"line_ending": "Windows",
+				"name": "*REPL* [shell]",
+				"read_only": true,
+				"scratch": true
 			}
 		}
 	],
@@ -669,24 +689,28 @@
 		"/C/xampp/htdocs/piu-terminais/src/components/shared",
 		"/C/xampp/htdocs/piu-terminais/src/router",
 		"/C/xampp/htdocs/piu-terminais/src/store",
-		"/C/Users/e059145/Desktop"
+		"/C/xampp/htdocs/piu-terminais/static"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Progressbar.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_3.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_2.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_1.vue",
+		"/C/xampp/htdocs/vue-crud/recaptcha/README.md",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footernav.vue",
+		"/C/xampp/htdocs/vue-crud/recaptcha/form.php",
+		"/C/xampp/htdocs/vue-crud/recaptcha/index.html",
+		"/C/xampp/htdocs/piu-terminais/src/assets/main.scss",
+		"/C/xampp/htdocs/piu-terminais/src/store/store.js",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Comments.vue",
 		"/C/xampp/htdocs/piu-terminais/src/App.vue",
 		"/C/xampp/htdocs/piu-terminais/src/router/index.js",
-		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footernav.vue",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.206/ACESSOS.txt",
 		"/C/Users/e059145/Desktop/bkp.local.html",
 		"/C/Users/e059145/Desktop/bkp.prod.html",
 		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/functions.php",
-		"/C/xampp/htdocs/piu-terminais/src/components/shared/Progressbar.vue",
-		"/C/xampp/htdocs/piu-terminais/src/assets/main.scss",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Header.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_1.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_2.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_3.vue",
 		"/C/xampp/htdocs/piu-terminais/src/assets/variables.scss",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_4.vue",
 		"/C/xampp/htdocs/piu-terminais/index.html",
@@ -694,7 +718,6 @@
 		"/C/xampp/htdocs/piu-terminais/dist/api.php",
 		"/C/xampp/htdocs/piu-terminais/dist/dbinfo.php",
 		"/C/xampp/htdocs/piu-terminais/src/main.js",
-		"/C/xampp/htdocs/piu-terminais/src/store/store.js",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footer.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/Admin.vue",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.718/ACESSOS.txt",
@@ -797,10 +820,7 @@
 		"/C/xampp/htdocs/piu-terminais/vendor/crud.sql",
 		"/C/xampp/htdocs/piu-terminais/assets/db_collumns_admin.txt",
 		"/C/xampp/htdocs/piu-terminais/app.js",
-		"/C/xampp/htdocs/piu-terminais/comando-sql.txt",
-		"/L/Len/httdocs/dadobrettas/wp-config.php",
-		"/C/xampp/htdocs/ddbrtts/wp-content/themes/dadobrettas/functions.php",
-		"/C/xampp/htdocs/ddbrtts/wp-content/themes/dadobrettas/index.php"
+		"/C/xampp/htdocs/piu-terminais/comando-sql.txt"
 	],
 	"find":
 	{
@@ -1028,15 +1048,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2009,
+						"buffer_size": 3818,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								499,
-								499
+								1564,
+								1564
 							]
 						],
 						"settings":
@@ -1046,7 +1066,117 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 533,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								533,
+								533
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1725,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1279,
+								1279
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"auto_indent": false,
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "shell",
+							"repl_id": "915bb6d54bf543988e0b797480faf16b",
+							"repl_restart_args":
+							{
+								"cmd":
+								{
+									"linux":
+									[
+										"bash",
+										"-i"
+									],
+									"osx":
+									[
+										"bash",
+										"-i"
+									],
+									"windows":
+									[
+										"cmd.exe"
+									]
+								},
+								"cmd_postfix": "\n",
+								"cwd": "$file_path",
+								"encoding":
+								{
+									"linux": "utf-8",
+									"osx": "utf-8",
+									"windows": "$win_cmd_encoding"
+								},
+								"env":
+								{
+								},
+								"external_id": "shell",
+								"suppress_echo": true,
+								"syntax": "Packages/Text/Plain text.tmLanguage",
+								"type": "subprocess"
+							},
+							"repl_sublime2": false,
+							"smart_indent": false,
+							"spell_check": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 420.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1072,6 +1202,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -1082,6 +1218,7 @@
 		"rows":
 		[
 			0.0,
+			0.54347826087,
 			1.0
 		]
 	},
@@ -1124,7 +1261,7 @@
 		],
 		"width": 436.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
