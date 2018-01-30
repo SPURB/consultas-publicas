@@ -685,6 +685,7 @@
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/piu-terminais/.gitignore",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footernav.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Modalcomponent.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Comments.vue",
@@ -735,7 +736,6 @@
 		"/C/xampp/htdocs/piu-terminais/src/assets/vendor/materialize.scss",
 		"/C/xampp/htdocs/piu-terminais/src/assets/styles/main.scss",
 		"/C/xampp/htdocs/piu-terminais/src/components/Quote.vue",
-		"/C/xampp/htdocs/piu-terminais/.gitignore",
 		"/C/xampp/htdocs/piu-terminais/src/components/Admin.vue",
 		"/C/xampp/htdocs/my-project/src/router/index.js",
 		"/C/xampp/htdocs/my-project/src/components/HelloWorld.vue",
