@@ -9,7 +9,7 @@
 		</li>
 	</ul>
 
- 	<svg width="100%" height="5">
+	<svg width="100%" height="5">
 		<rect width="100%" height="6" style="fill:rgb(224,224,224)" />
 		<rect v-bind:width="svgwidth" height="6" style="fill:rgb(79,79,79)" />
 	</svg>

@@ -3,10 +3,11 @@
 		<div class="row">
 			<div class="col s12">
 				<div class="divider"></div>
-				<h3 class="flow-text">Comentários</h3>
-				<div v-if="commentsenable" class="col s12" id="commentarea">
+				<h3 class="flow-text title">Comentários</h3>
+				<CommentsLoader></CommentsLoader>
+				<div v-if="commentsenable" class="col s10 offset-s1" id="commentarea">
 					<form>
-						<label for="comment">Comente o Capítulo {{ postid }} como {{ name }}</label>
+						<label for="comment">Comente o Capítulo {{ postid }} como {{ name }} (<a href="#" @click="showmodal">alterar</a>)</label>
 						<textarea id="comment" v-model="comment"></textarea>
 						<a href="#" class="btn-flat" @click="sendata" type="submit">Enviar comentário</a>
 						<vue-recaptcha 
@@ -15,15 +16,17 @@
 							@expired="onExpired"></vue-recaptcha>
 					</form>
 				</div>
-				<a v-else href="#" class="btn-flat" @click="showmodal()">Deixe seu comentário</a>
+				<a v-else href="#" class="btn-flat col s10 offset-s1" @click="showmodal()">Deixe seu comentário</a>
 			</div>
 		</div>
 	</div>
-
 </template>
 
 <script>
 import VueRecaptcha from 'vue-recaptcha';
+import CommentsLoader from '@/components/shared/CommentsLoader'
+import axios from 'axios'
+
 
 export default {
 	name: 'Comments',
@@ -43,14 +46,14 @@ export default {
 		showmodal() {
 			this.$store.state.showmodal = true
 		},
-    onVerify(response) {
-      // console.log('Verify: ' + response)
-      this.$store.state.usercheck = true
-    },
-    onExpired() {
-      // console.log('Expired')
-      this.$store.state.usercheck = false
-    },
+		onVerify(response) {
+			// console.log('Verify: ' + response)
+			this.$store.state.usercheck = true
+		},
+		onExpired() {
+			// console.log('Expired')
+			this.$store.state.usercheck = false
+		},
 		sendata() {
 			if (this.usercheck) {
 				let name = this.name	
@@ -58,10 +61,11 @@ export default {
 				let postid = this.postid
 				let comment = this.comment
 				// send this to server axios
- 				console.log("nome: " + name)
+				console.log("nome: " + name)
 				console.log("email: " + email)	
 				console.log("postid: " + postid)
 				console.log("comment: " + comment)
+
 				alert('Sua contribuição: "' + this.comment +'" foi enviado para moderação. Obrigado pela sua contribuição')
 			}
 			else{
@@ -69,7 +73,7 @@ export default {
 			}
 		}
 	}, 
-	components:{ VueRecaptcha }
+	components:{ VueRecaptcha, CommentsLoader }
 }
 </script>
 
@@ -79,7 +83,7 @@ export default {
 
 a.btn-flat{
 	background-color:$primary-light-grey;
-	margin: 0 10%;
+	// margin: 0 10%;
 	font-weight: 500;
 	display: block;
 	text-align: center;

@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"commn",
+				"comment_ID"
+			],
+			[
+				"comment",
+				"comment_ID"
+			],
+			[
+				"comm",
+				"commentarea"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"font-",
+				"font-kerning"
+			],
+			[
 				"dis",
 				"disabled"
 			],
@@ -100,10 +120,6 @@
 				"chapter-title"
 			],
 			[
-				"comm",
-				"comment_ID"
-			],
-			[
 				"error",
 				"errorMessage"
 			],
@@ -130,10 +146,6 @@
 			[
 				"dat",
 				"date-time"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"cm",
@@ -502,50 +514,19 @@
 			[
 				"for",
 				"for"
-			],
-			[
-				"getElem",
-				"getElementsByTagName\t( localName: DOMString ): HTMLCollection Element"
-			],
-			[
-				"getElementsBy",
-				"getElementsByTagName\t( localName: DOMString ): HTMLCollection Document"
-			],
-			[
-				"get",
-				"get\tGet Elements"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "src/components/shared/Modalcomponent.vue",
+			"file": "src/components/shared/CommentsLoader.vue",
 			"settings":
 			{
-				"buffer_size": 3818,
+				"buffer_size": 1080,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/main.js",
-			"settings":
-			{
-				"buffer_size": 533,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Microsoft Windows [versÆo 10.0.10586]\n(c) 2015 Microsoft Corporation. Todos os direitos reservados.\n\nC:\\xampp\\htdocs\\piu-terminais\\src\\components\\shared>cd ..\n\nC:\\xampp\\htdocs\\piu-terminais\\src\\components>cd ..\n\nC:\\xampp\\htdocs\\piu-terminais\\src>cd ..\n\nC:\\xampp\\htdocs\\piu-terminais>git status\nOn branch master\nYour branch is ahead of 'origin/master' by 1 commit.\n  (use \"git push\" to publish your local commits)\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n\tmodified:   package-lock.json\n\tmodified:   package.json\n\tmodified:   src/components/shared/Modalcomponent.vue\n\tmodified:   src/main.js\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n\nC:\\xampp\\htdocs\\piu-terminais>git add --all\nwarning: LF will be replaced by CRLF in package-lock.json.\nThe file will have its original line endings in your working directory.\nwarning: LF will be replaced by CRLF in package.json.\nThe file will have its original line endings in your working directory.\nwarning: LF will be replaced by CRLF in src/main.js.\nThe file will have its original line endings in your working directory.\n\nC:\\xampp\\htdocs\\piu-terminais>git commit -m \"add form validation\"\n[master dfd7bf1] add form validation\n 4 files changed, 44 insertions(+), 19 deletions(-)\n\nC:\\xampp\\htdocs\\piu-terminais>git status\nOn branch master\nYour branch is ahead of 'origin/master' by 2 commits.\n  (use \"git push\" to publish your local commits)\n\nnothing to commit, working tree clean\n\nC:\\xampp\\htdocs\\piu-terminais>git push\nTo https://github.com/SPURB/piu-terminais.git\n   993c38d..dfd7bf1  master -> master\n\nC:\\xampp\\htdocs\\piu-terminais>",
-			"settings":
-			{
-				"buffer_size": 1725,
 				"line_ending": "Windows",
-				"name": "*REPL* [shell]",
-				"read_only": true,
-				"scratch": true
+				"name": "commentLoad"
 			}
 		}
 	],
@@ -556,10 +537,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 236.0,
-		"last_filter": "set Syntax: java",
+		"height": 71.0,
+		"last_filter": "set syntax: Vu",
 		"selected_items":
 		[
+			[
+				"set syntax: Vu",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"vue",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"h",
+				"Set Syntax: HTML"
+			],
 			[
 				"set Syntax: java",
 				"Set Syntax: JavaScript"
@@ -688,42 +681,54 @@
 		"/C/xampp/htdocs/piu-terminais/src/components/pages",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared",
 		"/C/xampp/htdocs/piu-terminais/src/router",
-		"/C/xampp/htdocs/piu-terminais/src/store",
-		"/C/xampp/htdocs/piu-terminais/static"
+		"/C/xampp/htdocs/vue-crud"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footernav.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Modalcomponent.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Comments.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Admin.vue",
+		"/C/xampp/htdocs/consultas.php",
+		"/C/xampp/htdocs/piu-terminais/index.html",
+		"/C/xampp/htdocs/piu-terminais/src/main.js",
+		"/C/xampp/htdocs/piu-terminais/src/App.vue",
+		"/C/xampp/htdocs/form.php",
+		"/C/xampp/htdocs/vue-crud/app.js",
+		"/C/xampp/htdocs/vue-crud/modal.php",
+		"/C/xampp/htdocs/dbinfo.php",
+		"/C/xampp/htdocs/vue-crud/api.php",
+		"/C/xampp/htdocs/api_100.php",
+		"/C/xampp/htdocs/update.php",
+		"/C/xampp/htdocs/text.txt",
+		"/C/xampp/htdocs/index.html",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Progressbar.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/Header.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_3.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_2.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_1.vue",
-		"/C/xampp/htdocs/vue-crud/recaptcha/README.md",
-		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footernav.vue",
-		"/C/xampp/htdocs/vue-crud/recaptcha/form.php",
-		"/C/xampp/htdocs/vue-crud/recaptcha/index.html",
-		"/C/xampp/htdocs/piu-terminais/src/assets/main.scss",
+		"/C/xampp/htdocs/api.php",
+		"/C/xampp/htdocs/recaptcha/main.js",
+		"/C/xampp/htdocs/recaptcha/index.html",
 		"/C/xampp/htdocs/piu-terminais/src/store/store.js",
-		"/C/xampp/htdocs/piu-terminais/src/components/shared/Comments.vue",
-		"/C/xampp/htdocs/piu-terminais/src/App.vue",
+		"/C/xampp/htdocs/vue-crud/recaptcha/index.html",
+		"/C/xampp/htdocs/piu-terminais/dist/form.php",
+		"/C/xampp/htdocs/piu-terminais/src/assets/variables.scss",
+		"/C/Users/e059145/Downloads/autosize-master/src/autosize.js",
+		"/C/xampp/htdocs/vue-crud/recaptcha/README.md",
+		"/C/xampp/htdocs/vue-crud/recaptcha/form.php",
+		"/C/xampp/htdocs/piu-terminais/src/assets/main.scss",
 		"/C/xampp/htdocs/piu-terminais/src/router/index.js",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.206/ACESSOS.txt",
 		"/C/Users/e059145/Desktop/bkp.local.html",
 		"/C/Users/e059145/Desktop/bkp.prod.html",
 		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/functions.php",
-		"/C/xampp/htdocs/piu-terminais/src/components/shared/Header.vue",
-		"/C/xampp/htdocs/piu-terminais/src/assets/variables.scss",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_4.vue",
-		"/C/xampp/htdocs/piu-terminais/index.html",
-		"/C/xampp/htdocs/index.html",
 		"/C/xampp/htdocs/piu-terminais/dist/api.php",
 		"/C/xampp/htdocs/piu-terminais/dist/dbinfo.php",
-		"/C/xampp/htdocs/piu-terminais/src/main.js",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footer.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Admin.vue",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.718/ACESSOS.txt",
 		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/css/style-home.css",
-		"/C/xampp/htdocs/dbinfo.php",
-		"/C/xampp/htdocs/api.php",
 		"/C/xampp/htdocs/piu-terminais/package.json",
 		"/C/xampp/htdocs/piu-terminais/src/mainstyles.scss",
 		"/C/Users/e059145/Downloads/materialize-src/README.md",
@@ -745,8 +750,6 @@
 		"/C/xampp/apache/README.txt",
 		"/C/Users/e059145/Desktop/index.js",
 		"/C/xampp/htdocs/piu-terminais/README.md",
-		"/C/xampp/htdocs/vue-crud/app.js",
-		"/C/xampp/htdocs/vue-crud/api.php",
 		"/C/Users/e059145/Desktop/axios/examples/get/server.js",
 		"/C/Users/e059145/Desktop/axios/examples/get/index.html",
 		"/C/Users/e059145/Desktop/axios/examples/post/index.html",
@@ -754,7 +757,6 @@
 		"//emurbcp11425/DDE/estoque-de-vetores/assets/php/inside.php",
 		"/C/xampp/htdocs/piu-terminais/api/index.php",
 		"/C/xampp/htdocs/vue-crud/index.php",
-		"/C/xampp/htdocs/vue-crud/modal.php",
 		"/C/xampp/htdocs/vue-crud/estrutura.txt",
 		"/C/Users/e059145/Desktop/comments.php",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.338/ACESSOS.txt",
@@ -810,17 +812,7 @@
 		"/C/xampp/htdocs/piu-terminais/app/js/lib/another-library.js",
 		"/C/xampp/htdocs/piu-terminais_api/api.php",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.546/MINUTA-PARTICIPATIVA.txt",
-		"/C/xampp/htdocs/piu-terminais/webpack.config.js",
-		"/C/xampp/htdocs/piu-terminais/dbinfo.php",
-		"/C/xampp/htdocs/piu-terminais/api.php",
-		"/C/xampp/htdocs/piu-terminais/index.php",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.467/BACKUP.txt",
-		"/C/xampp/htdocs/piu-terminais/assets/js/app.js",
-		"/C/xampp/htdocs/piu-terminais/admin/index.php",
-		"/C/xampp/htdocs/piu-terminais/vendor/crud.sql",
-		"/C/xampp/htdocs/piu-terminais/assets/db_collumns_admin.txt",
-		"/C/xampp/htdocs/piu-terminais/app.js",
-		"/C/xampp/htdocs/piu-terminais/comando-sql.txt"
+		"/C/xampp/htdocs/piu-terminais/webpack.config.js"
 	],
 	"find":
 	{
@@ -894,6 +886,13 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"deixe",
+			"comments",
+			"php",
+			"api.php",
+			"successMessage",
+			"success",
+			"send",
 			"both",
 			"footer",
 			"Footer",
@@ -1014,14 +1013,7 @@
 			"560",
 			"media",
 			"#wrapper-third-home .bottom-news",
-			"wrapper-third-home",
-			"#wrapper-third-home .bottom-news",
-			"bottom-news",
-			"960",
-			"get",
-			"  ",
-			"\n$",
-			"#wrapper-third-home .bottom-news"
+			"wrapper-third-home"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1044,144 +1036,39 @@
 			[
 				{
 					"buffer": 0,
-					"file": "src/components/shared/Modalcomponent.vue",
+					"file": "src/components/shared/CommentsLoader.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3818,
+						"buffer_size": 1080,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1564,
-								1564
+								799,
+								799
 							]
 						],
 						"settings":
 						{
+							"auto_name": "commentLoad",
 							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
-							"tab_size": 2,
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 252.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/main.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 533,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								533,
-								533
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1725,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1279,
-								1279
-							]
-						],
-						"settings":
-						{
-							"auto_complete": true,
-							"auto_indent": false,
-							"detect_indentation": false,
-							"gutter": false,
-							"history_arrows": true,
-							"indent_subsequent_lines": false,
-							"line_numbers": false,
-							"repl": true,
-							"repl_external_id": "shell",
-							"repl_id": "915bb6d54bf543988e0b797480faf16b",
-							"repl_restart_args":
-							{
-								"cmd":
-								{
-									"linux":
-									[
-										"bash",
-										"-i"
-									],
-									"osx":
-									[
-										"bash",
-										"-i"
-									],
-									"windows":
-									[
-										"cmd.exe"
-									]
-								},
-								"cmd_postfix": "\n",
-								"cwd": "$file_path",
-								"encoding":
-								{
-									"linux": "utf-8",
-									"osx": "utf-8",
-									"windows": "$win_cmd_encoding"
-								},
-								"env":
-								{
-								},
-								"external_id": "shell",
-								"suppress_echo": true,
-								"syntax": "Packages/Text/Plain text.tmLanguage",
-								"type": "subprocess"
-							},
-							"repl_sublime2": false,
-							"smart_indent": false,
-							"spell_check": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 420.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1204,21 +1091,21 @@
 				1
 			],
 			[
+				1,
 				0,
-				1,
-				1,
-				2
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.539394711886,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.54347826087,
 			1.0
 		]
 	},
@@ -1261,7 +1148,7 @@
 		],
 		"width": 436.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -1269,7 +1156,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 276.0,
+	"side_bar_width": 284.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

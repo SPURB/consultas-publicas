@@ -10,7 +10,6 @@ import VeeValidate from 'vee-validate';
 Vue.use(VeeValidate);
 
 Vue.config.productionTip = false
-axios.defaults.baseURL = 'api.php'
 
 /* eslint-disable no-new */
 new Vue({

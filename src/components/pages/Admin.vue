@@ -1,24 +1,29 @@
 <template>
 	<div class="admin">
+
+<!-- <p v-if="successMessage">{{ successMessage }}</p>
+<p v-if="errorMessage">{{ successMessage }}</p> -->
+
 	<div class="row">
 		<div class="col s12 section">
 			<h3>Aprovações pendentes</h3>
 			<div 
-				class="card" 
-				v-for="comment in comments" 
-				v-if="comment.comment_approved == false" >
+				class="card hoverable" 
+				v-for="comment in members" 
+				v-if="comment.public == false" >
 				<div class="card-content">
-					<p class="date-time">{{ comment.comment_date }}</p>
-					<p>Autor: {{ comment.comment_author }}</p>
-					<p>Email: {{ comment.comment_author_email }}</p>
-					<p>Comentário: {{ comment.comment_content }}</p>
+					<p class="date-time">{{ comment.date }}</p>
+					<p>Autor: {{ comment.name }}</p>
+					<p>Email: {{ comment.email }}</p>
+					<p>Comentário: {{ comment.content }}</p>
+					<p>Capítulo: {{ comment.postid }}</p>
 					<div class="card-action">
 						<a 
 							class="btn-large approve" 
-							@click="changeApproval(comment.comment_ID, comment.comment_approved)">Aprovar Comentário</a>
+							@click="changeApproval(comment.memid, comment.public)">Aprovar Comentário</a>
 					</div>
 				</div>
-			</div>
+			</div> 
 		</div>
 	</div>
 	<div class="divider"></div>
@@ -26,18 +31,18 @@
 		<div class="col s12 section">
 			<h3>Comentários aprovados</h3>
 			<div 
-				class="card" 
-				v-for="comment in comments" 
-				v-if="comment.comment_approved == true" >
+				class="card hoverable" 
+				v-for="comment in members" 
+				v-if="comment.public == true" >
 				<div class="card-content">
-					<p class="date-time">{{ comment.comment_date }}</p>
-					<p>Autor: {{ comment.comment_author }}</p>
-					<p>Email: {{ comment.comment_author_email }}</p>
-					<p>Comentário: {{ comment.comment_content }}</p>
+					<p class="date-time">{{ comment.date }}</p>
+					<p>Autor: {{ comment.name }}</p>
+					<p>Email: {{ comment.email }}</p>
+					<p>Capítulo: {{ comment.postid }}</p>
 					<div class="card-action">
 						<a 
 							class="btn-flat remove red-text text-lighten-1" 
-							@click="changeApproval()">Remover comentário</a>
+							@click="changeApproval(comment.memid, comment.public)">Remover comentário</a>
 					</div>
 				</div>
 			</div>
@@ -50,52 +55,67 @@
 import axios from 'axios';
 
 export default {
-  name: 'Admin',
-  data () {
+	name: 'Admin',
+	data () {
 	return {
-		comments: [],
+		members: [],
 		errorMessage: '',
 		successMessage: '',
-		clickMember: {}
 	}
-  },
-  mounted: function(){
-	this.getAllcomments();
-  },
-  methods: {
+	},
+	mounted: function(){
+	this.getAllcomments()
+	},
+	methods: {
 	getAllcomments: function(){
-		let app = this;
-		axios.get('')
+		let app = this
+		axios.get('consultas.php')
 			.then(function(response){
-				app.comments = response.data.comments;
-			});
+				// console.log(response);
+				if(response.data.error){
+					app.errorMessage = response.data.message;
+				}
+				else{
+					app.members = response.data.members;
+				}
+		});
 	},
 	changeApproval: function(id, approval){
-		let app = this;
-		let memForm = app.toFormData(app.clickMember);
-		axios.post('?crud=update', memForm)
+		const app = this
+
+		let invertApproval = function (){
+			if (approval == 0 ) {
+				approval = 1
+			}
+			else if(approval == 1){
+				approval = 0
+			}
+		}()
+
+		let memForm = app.toFormData({memid : id, public: approval})
+
+		axios.post('consultas.php?crud=update', memForm)
 			.then(function(response){
-				//console.log(response);
+				// console.log(response);
 				app.clickMember = {};
 				if(response.data.error){
 					app.errorMessage = response.data.message;
 				}
 				else{
 					app.successMessage = response.data.message
-					// app.getAllcomments();
-					console.log(response)
+					app.getAllcomments();
 				}
 			});
 	},
 	toFormData: function(obj){
-		var form_data = new FormData();
+		var form_data = new FormData()
 		for(var key in obj){
-			form_data.append(key, obj[key]);
+			form_data.append(key, obj[key])
 		}
-		return form_data;
+		return form_data
 	},
 
-  }
+	}
 }
 </script>
 

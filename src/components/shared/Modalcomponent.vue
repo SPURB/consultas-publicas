@@ -22,7 +22,7 @@
 
 									<div class="input-field col s12">
 										<input id="name" type="text" class="validate" v-model="name">
-										<label for="name">Nome Sobrenome</label>
+										<label for="name">Nome Sobrenome (organização) </label>
 										<span class="helper-text" data-success="Nome ok!"></span>
 									</div>
 

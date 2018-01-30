@@ -2,7 +2,7 @@
 	<div class="footernav">
 		<div class="row">
 			<div class="divider bottom"></div>
-      <div class="col s12">
+			<div class="col s12">
 				<div v-for="navitem in navpreviousnext" class="links">
 					<router-link :to="navitem.path" tag="a" class="btn-flat first" v-if="firstpost == true"></router-link>
 					<router-link :to="navitem.path" tag="a" class="btn-flat both"  v-if="firstpost == false && lastpost == false" ></router-link>
@@ -34,7 +34,7 @@ export default {
 		app.firstview = true
 	},
 	computed: {
-		postid: 			function(){ return this.$route.meta.postid },
+		postid: 		function(){ return this.$route.meta.postid },
 		firstpost:		function(){ return this.$route.meta.postid == 1 ? true : false },
 		lastpost: 		function(){ return this.$route.meta.postid == this.navitems.length ? true : false },
 		numchapters: 	function(){ return this.$store.state.numchapters }

@@ -2,7 +2,7 @@
 	<header class="header">
 		<div class="row">
 			<div class="col s12">
-			  <h1 class="logo-header">gestão<span>urbana</span><span>SP</span><span> | {{ title }}</span> </h1>
+				<h1 class="logo-header">gestão<span>urbana</span><span>SP</span><span> | {{ title }}</span> </h1>
 			</div>
 		</div>
 		<div class="divider"></div>
@@ -11,12 +11,12 @@
 
 <script>
 export default {
-  name: 'Header',
-  data () {
+	name: 'Header',
+	data () {
 	return {
-	  title: 'Consulta Pública PIU Terminais'
+		title: 'Consulta Pública PIU Terminais'
 	}
-  }
+	}
 }
 </script>
 
