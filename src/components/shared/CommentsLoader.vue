@@ -28,9 +28,9 @@ export default {
 	methods: {
 		getAllcomments() {
 			let app = this
-			axios.get('consultas.php')
+			axios.get('consultas.php?crud=read')
 				.then(function(response){
-					console.log(response);
+					// console.log(response);
 					if(response.data.error){
 						app.errorMessage = response.data.message;
 					}

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"geta",
+				"getAll"
+			],
+			[
+				"rand",
+				"rand1"
+			],
+			[
 				"commn",
 				"comment_ID"
 			],
@@ -506,27 +514,71 @@
 			[
 				"ni",
 				"nivel"
-			],
-			[
-				"getElemen",
-				"getElementById\t( elementId: DOMString ): Element Document"
-			],
-			[
-				"for",
-				"for"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "src/components/shared/Comments.vue",
+			"settings":
+			{
+				"buffer_size": 3314,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "src/components/shared/CommentsLoader.vue",
 			"settings":
 			{
-				"buffer_size": 1080,
+				"buffer_size": 1093,
 				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "commentLoad"
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/router/index.js",
+			"settings":
+			{
+				"buffer_size": 1577,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/store/store.js",
+			"settings":
+			{
+				"buffer_size": 234,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/main.js",
+			"settings":
+			{
+				"buffer_size": 496,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/pages/admin/Admin.vue",
+			"settings":
+			{
+				"buffer_size": 5340,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/consultas.php",
+			"settings":
+			{
+				"buffer_size": 2666,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -537,8 +589,8 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 71.0,
-		"last_filter": "set syntax: Vu",
+		"height": 392.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -679,17 +731,27 @@
 		"/C/xampp/htdocs/piu-terminais/src/assets",
 		"/C/xampp/htdocs/piu-terminais/src/components",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages",
-		"/C/xampp/htdocs/piu-terminais/src/components/shared",
-		"/C/xampp/htdocs/piu-terminais/src/router",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/admin",
+		"/C/xampp/htdocs/piu-terminais/src/store",
 		"/C/xampp/htdocs/vue-crud"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/piu-anhembi/wp-config.php",
+		"/C/xampp/htdocs/piu-anhembi/.htaccess",
+		"/C/xampp/htdocs/decreto-piu-nesp/wp-content/plugins/backwpup/sdk/Aws_v1/config.inc.php",
+		"/C/xampp/htdocs/piu-terminal-capelinha/wp-content/plugins/backwpup/sdk/Aws_v1/config.inc.php",
+		"/C/xampp/phpMyAdmin/config.inc.php",
+		"/C/xampp/htdocs/config.inc.php",
+		"/C/xampp/htdocs/opa.php",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Admin.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_2.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_3.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/shared/CommentsLoader.vue",
 		"/C/xampp/htdocs/piu-terminais/.gitignore",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footernav.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Modalcomponent.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Comments.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Admin.vue",
 		"/C/xampp/htdocs/consultas.php",
 		"/C/xampp/htdocs/piu-terminais/index.html",
 		"/C/xampp/htdocs/piu-terminais/src/main.js",
@@ -705,8 +767,6 @@
 		"/C/xampp/htdocs/index.html",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Progressbar.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Header.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_3.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_2.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_1.vue",
 		"/C/xampp/htdocs/api.php",
 		"/C/xampp/htdocs/recaptcha/main.js",
@@ -804,15 +864,7 @@
 		"/C/Users/e059145/Desktop/piu-terminais_failed-webpack/README.md",
 		"/C/xampp/htdocs/piu-terminais/app/scss/another-stylesheet.scss",
 		"/C/xampp/htdocs/piu-terminais/api/DB_example.sql",
-		"/C/xampp/htdocs/piu-terminais_api/.gitignore",
-		"/C/xampp/htdocs/piu-terminais/api/api.php",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/style.css",
-		"/C/xampp/htdocs/piu-terminais/dist/js/main.min.js",
-		"/C/xampp/htdocs/piu-terminais/app/js/lib/a-library.js",
-		"/C/xampp/htdocs/piu-terminais/app/js/lib/another-library.js",
-		"/C/xampp/htdocs/piu-terminais_api/api.php",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.546/MINUTA-PARTICIPATIVA.txt",
-		"/C/xampp/htdocs/piu-terminais/webpack.config.js"
+		"/C/xampp/htdocs/piu-terminais_api/.gitignore"
 	],
 	"find":
 	{
@@ -886,6 +938,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"clickMember",
 			"deixe",
 			"comments",
 			"php",
@@ -1012,8 +1065,7 @@
 			"3%",
 			"560",
 			"media",
-			"#wrapper-third-home .bottom-news",
-			"wrapper-third-home"
+			"#wrapper-third-home .bottom-news"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1031,29 +1083,28 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/components/shared/CommentsLoader.vue",
+					"file": "src/components/shared/Comments.vue",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1080,
+						"buffer_size": 3314,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								799,
-								799
+								1490,
+								1490
 							]
 						],
 						"settings":
 						{
-							"auto_name": "commentLoad",
 							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1061,14 +1112,182 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/components/shared/CommentsLoader.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1093,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/router/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								395,
+								395
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/store/store.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								234,
+								234
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								496,
+								496
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/components/pages/admin/Admin.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5340,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4369,
+								4369
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1302.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/xampp/htdocs/consultas.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								621,
+								621
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -1089,18 +1308,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.539394711886,
 			1.0
 		],
 		"rows":
@@ -1156,7 +1368,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 284.0,
+	"side_bar_width": 269.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

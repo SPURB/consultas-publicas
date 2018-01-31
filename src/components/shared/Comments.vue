@@ -56,24 +56,47 @@ export default {
 		},
 		sendata() {
 			if (this.usercheck) {
-				let name = this.name	
-				let email = this.$store.state.email
-				let postid = this.postid
-				let comment = this.comment
-				// send this to server axios
-				console.log("nome: " + name)
-				console.log("email: " + email)	
-				console.log("postid: " + postid)
-				console.log("comment: " + comment)
+				let memForm = this.toFormData({
+					name: this.name,
+					email: this.$store.state.email,
+					postid: this.postid,
+					content: this.comment
+				})
+
+				const app = this
+
+				axios.post('consultas.php?crud=comment', memForm)
+					.then(function(response){
+						if(response.data.error){
+							app.errorMessage = response.data.message;
+						}
+						else{
+							app.successMessage = response.data.message
+							app.getAllcomments();
+						}
+					}
+				)
 
 				alert('Sua contribuição: "' + this.comment +'" foi enviado para moderação. Obrigado pela sua contribuição')
+				this.comment = ''
 			}
 			else{
 				alert("Faça a sua validação no recapctha")
 			}
+		},
+
+		toFormData(obj) {
+			var form_data = new FormData()
+			for(var key in obj){
+				form_data.append(key, obj[key])
+			}
+			return form_data
 		}
 	}, 
-	components:{ VueRecaptcha, CommentsLoader }
+	components:{ 
+		VueRecaptcha, 
+		CommentsLoader 
+	}
 }
 </script>
 

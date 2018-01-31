@@ -1,5 +1,5 @@
 <?php
-include "dbinfo.php";
+include_once "dbinfo.php";
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 
 
@@ -15,25 +15,25 @@ if(isset($_GET['crud'])){
 	$crud = $_GET['crud'];
 }
 
-
 if($crud == 'read'){
-	$sql = "select * from members";
+	$sql = "SELECT memid, name, content, date, postid FROM members WHERE public = '1'";
 	$query = $conn->query($sql);
 	$members = array();
 
 	while($row = $query->fetch_array()){
 		array_push($members, $row);
 	}
-
 	$out['members'] = $members;
 }
 
-if($crud == 'create'){
+if($crud == 'comment'){
 
-	$firstname = $_POST['firstname'];
-	$lastname = $_POST['lastname'];
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$postid = $_POST['postid'];
+	$content = $_POST['content'];
 
-	$sql = "insert into members (firstname, lastname) values ('$firstname', '$lastname')";
+	$sql = "INSERT INTO members (name, email, postid, content) VALUES ('$name', '$email', '$postid', '$content')";
 	$query = $conn->query($sql);
 
 	if($query){
@@ -43,43 +43,89 @@ if($crud == 'create'){
 		$out['error'] = true;
 		$out['message'] = "Could not add Member";
 	}
-	
 }
 
-if($crud == 'update'){
 
-	$memid = $_POST['memid'];
-	$public = $_POST['public'];
+/* 
+ADMIN FUNCTIONS (requires a token from vue component)
+*/
+if (isset($_POST['token'])){
 
-	$sql = "update members set public='$public' where memid='$memid'";
-	$query = $conn->query($sql);
+	$token = $_POST['token'];
 
-	if($query){
-		$out['message'] = "Coment Updated Successfully";
+	if($crud == $token){
+
+		$sql = "SELECT * FROM members";
+		$query = $conn->query($sql);
+		$members = array();
+
+		while($row = $query->fetch_array()){
+			array_push($members, $row);
+		}
+		$out['members'] = $members;
+
+		if($query){
+			$out['message'] = "Sucesso";
+		}
+		else{
+			$out['error'] = true;
+			$out['message'] = "Falhou";
+		}
 	}
-	else{
-		$out['error'] = true;
-		$out['message'] = "Could not update Coment";
+
+	$approve = 'approve/' . $token;
+
+	if($crud == $approve){
+		$memid = $_POST['memid'];
+		$public = $_POST['public'];
+
+		$sql = "UPDATE members SET public='$public' WHERE memid='$memid'";
+		$query = $conn->query($sql);
+
+		if($query){
+			$out['message'] = "Comment Updated Successfully";
+		}
+		else{
+			$out['error'] = true;
+			$out['message'] = "Could not update Coment";
+		}
 	}
-	
+
+	$trash = 'trash/' . $token;
+
+	if($crud == $trash ){
+		$memid = $_POST['memid'];
+		$trash = $_POST['trash'];
+
+		$sql = "UPDATE members SET trash = '$trash' WHERE memid='$memid'";
+		$query = $conn->query($sql);
+
+		if($query){
+			$out['message'] = "Comment Updated Successfully";
+		}
+		else{
+			$out['error'] = true;
+			$out['message'] = "Could not update Comment";
+		}
+	}
 }
 
-if($crud == 'delete'){
+// if($crud == 'delete'){
 
-	$memid = $_POST['memid'];
+// 	$memid = $_POST['memid'];
 
-	$sql = "delete from members where memid='$memid'";
-	$query = $conn->query($sql);
+// 	$sql = "delete from members where memid='$memid'";
+// 	$query = $conn->query($sql);
 
-	if($query){
-		$out['message'] = "Member Deleted Successfully";
-	}
-	else{
-		$out['error'] = true;
-		$out['message'] = "Could not delete Member";
-	}
+// 	if($query){
+// 		$out['message'] = "Member Deleted Successfully";
+// 	}
+// 	else{
+// 		$out['error'] = true;
+// 		$out['message'] = "Could not delete Member";
+// 	}
 	
-}
+// }
 
 
 $conn->close();
@@ -87,9 +133,6 @@ $conn->close();
 header("Content-type: application/json");
 // header("Content-Type: text/html; charset=ISO-8859-1", true); 
 echo json_encode($out);
-// echo "<pre>";
-// var_dump($out);
-// echo "</pre>";
 die();
  
 ?>
