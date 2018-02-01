@@ -2,6 +2,7 @@
 	<div class="admin">
 	<!-- <p v-if="successMessage">{{ successMessage }}</p>
 	<p v-if="errorMessage">{{ successMessage }}</p> -->
+	<AdminLogin></AdminLogin>
 	<div id="isadmin" v-if="isadmin">
 		<div class="row">
 			<div class="col s12 section">
@@ -81,6 +82,7 @@
 </template>
 
 <script>
+import AdminLogin from '@/components/pages/admin/AdminLogin'
 import axios from 'axios';
 
 export default {
@@ -90,12 +92,12 @@ export default {
 			members: [],
 			errorMessage: '',
 			successMessage: '',
-			isadmin: true
+			isadmin: false
 		}
 	},
-	mounted: function(){
-		this.getAll()
-	},
+	// mounted: function(){
+	// 	this.getAll()
+	// },
 	methods: {
 		getAll() {
 			const tkn = this.createToken()
@@ -174,7 +176,10 @@ export default {
 			let rand1 = Math.random().toString(36).substr(2)
 			let rand2 = Math.random().toString(36).substr(2)
 			return rand1 + rand2
-		}, 
+		}
+	},
+	components: {
+		AdminLogin
 	}
 }
 </script>
@@ -202,7 +207,7 @@ div.card {
 	p.date-time{
 		margin-top:0;
 		font-size: 14px;
-		color:#828282
+		color:$primary-dark-grey
 	}
 	p {margin: 1.25em 0;}
 	div.card-action {

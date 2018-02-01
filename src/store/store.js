@@ -10,6 +10,7 @@ export const store = new Vuex.Store({
 		comments: false,
         usercheck: false,
 		email: '',
-		name: ''
+		name: '',
+        admin: false
 	}
 });

@@ -53,6 +53,23 @@ if (isset($_POST['token'])){
 
 	$token = $_POST['token'];
 
+	//Login 
+	$login = 'login/' . $token;
+
+	if ($crud == $login) {
+		if (isset($_POST['email']) and isset($_POST['pass'])){
+
+			include_once('admin.php');
+			// isAdmin('joao@ninguem.com','123456')// return "João" or false
+
+			$email = $_POST['email'];
+			$pass = $_POST['pass'];
+
+			$out['user'] = isAdmin($email, $pass);
+		}
+	}
+
+
 	if($crud == $token){
 
 		$sql = "SELECT * FROM members";

@@ -2,7 +2,10 @@
 	<header class="header">
 		<div class="row">
 			<div class="col s12">
-				<h1 class="logo-header">gestão<span>urbana</span><span>SP</span><span> | {{ title }}</span> </h1>
+				<h1 class="logo-header">
+					<a href="#">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a>
+					<span class="title"> | {{ title }}</span>
+				</h1>
 			</div>
 		</div>
 		<div class="divider"></div>
@@ -20,19 +23,22 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
 
 	header{
 		div.row{
 			margin-bottom: 0;
+			a,
 			h1.logo-header{
-				font-size: 36px;
+				font-size: 2rem;
 				color:#BDBDBD;
-				span:nth-of-type(1) {color:#000000};
-				span:nth-of-type(2n){color:#EB5757};
-				span:nth-of-type(3n){font-weight:100}
+			}
+			span.sp {color: #EB5757}
+			span.urbana{color: #000000}
+			span.title{
+				font-weight:300;
+				color:#BDBDBD
 			}
 		}
 	}

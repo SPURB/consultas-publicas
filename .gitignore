@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 /test/unit/coverage/
 dbinfo.php
+admin.php
 
 # Editor directories and files
 .idea

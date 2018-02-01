@@ -55,30 +55,31 @@ export default {
 			this.$store.state.usercheck = false
 		},
 		sendata() {
-			if (this.usercheck) {
-				let memForm = this.toFormData({
-					name: this.name,
-					email: this.$store.state.email,
-					postid: this.postid,
-					content: this.comment
+			const app = this
+			const tkn = app.createToken()
+
+			if (app.usercheck) {
+				let memForm = app.toFormData({
+					token: tkn,
+					name: app.name,
+					email: app.$store.state.email,
+					postid: app.postid,
+					content: app.comment
 				})
 
-				const app = this
-
-				axios.post('consultas.php?crud=comment', memForm)
+				axios.post('consultas.php?crud=comment/'+ tkn, memForm)
 					.then(function(response){
 						if(response.data.error){
-							app.errorMessage = response.data.message;
+							alert('Erro. Tente novamente.')
 						}
 						else{
-							app.successMessage = response.data.message
-							app.getAllcomments();
+							alert('Sua contribuição: "' + app.comment +'" foi enviado para moderação. Obrigado pela sua contribuição')
+							app.comment = ''
 						}
-					}
-				)
-
-				alert('Sua contribuição: "' + this.comment +'" foi enviado para moderação. Obrigado pela sua contribuição')
-				this.comment = ''
+					})
+					.catch(function (error){
+						alert(error)
+					})
 			}
 			else{
 				alert("Faça a sua validação no recapctha")
@@ -91,6 +92,11 @@ export default {
 				form_data.append(key, obj[key])
 			}
 			return form_data
+		},
+		createToken(){
+			let rand1 = Math.random().toString(36).substr(2)
+			let rand2 = Math.random().toString(36).substr(2)
+			return rand1 + rand2
 		}
 	}, 
 	components:{ 

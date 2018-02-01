@@ -1,0 +1,4 @@
+<FilesMatch "dbinfo\.php|admin\.php">
+order allow,deny
+deny from all
+</FilesMatch>
