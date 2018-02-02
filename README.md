@@ -1,6 +1,6 @@
-# piu-terminais
+# Consultas Públicas
 
-> Consulta pública do Projeto de Intervenção Urbana dos terminais de ônibus municipais de São Paulo 
+> Consulta públicas de Projetos de Intervenções Urbanas municipais de São Paulo 
 
 ## Build Setup
 

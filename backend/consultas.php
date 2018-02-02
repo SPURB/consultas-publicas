@@ -26,32 +26,36 @@ if($crud == 'read'){
 	$out['members'] = $members;
 }
 
-if($crud == 'comment'){
-
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$postid = $_POST['postid'];
-	$content = $_POST['content'];
-
-	$sql = "INSERT INTO members (name, email, postid, content) VALUES ('$name', '$email', '$postid', '$content')";
-	$query = $conn->query($sql);
-
-	if($query){
-		$out['message'] = "Member Added Successfully";
-	}
-	else{
-		$out['error'] = true;
-		$out['message'] = "Could not add Member";
-	}
-}
 
 
 /* 
-ADMIN FUNCTIONS (requires a token from vue component)
+POST FUNCTIONS (requires a token from vue component)
 */
 if (isset($_POST['token'])){
 
+
 	$token = $_POST['token'];
+
+	$comment = 'comment/' . $token;
+
+	if($crud == $comment){
+
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$postid = $_POST['postid'];
+		$content = $_POST['content'];
+
+		$sql = "INSERT INTO members (name, email, postid, content) VALUES ('$name', '$email', '$postid', '$content')";
+		$query = $conn->query($sql);
+
+		if($query){
+			$out['message'] = "Coment Added Successfully";
+		}
+		else{
+			$out['error'] = true;
+			$out['message'] = "Could not add Comment";
+		}
+	}
 
 	//Login 
 	$login = 'login/' . $token;
@@ -59,8 +63,29 @@ if (isset($_POST['token'])){
 	if ($crud == $login) {
 		if (isset($_POST['email']) and isset($_POST['pass'])){
 
-			include_once('admin.php');
-			// isAdmin('joao@ninguem.com','123456')// return "João" or false
+			function isAdmin($email, $pass){
+
+				include_once 'admin.php';
+				// $admin = array(
+				// 	'José' => array(
+				// 		'email' => 'ze@ninguem.com',
+				// 		'pass'  => '123456'
+				// 	),
+				//	'Maria' => array(
+				// 		'email' => 'maria@ninguem.com',
+				// 		'pass'  => '123456'
+				// 	)
+				// );
+
+				foreach ($admin as $name => $check) {
+					if ($email == $check['email'] and $pass == $check['pass']) {
+						return $name;
+					}
+					else{
+						return false;
+					}
+				}
+			}
 
 			$email = $_POST['email'];
 			$pass = $_POST['pass'];
@@ -69,7 +94,7 @@ if (isset($_POST['token'])){
 		}
 	}
 
-
+	// read all for admin
 	if($crud == $token){
 
 		$sql = "SELECT * FROM members";

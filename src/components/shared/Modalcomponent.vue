@@ -16,8 +16,8 @@
 								<form>
 									<div class="input-field col s12">
 										<input v-validate="'required|email'" id="email" type="email" class="validate" v-model="email">
-										<label for="email">Email*</label>
-										<span class="helper-text" data-error="Email incorreto" data-success="Email ok!">*Seu email não será divulgado</span>
+										<label for="email">Email</label>
+										<span class="helper-text" data-error="Email incorreto" data-success="Email ok!">Seu email não será divulgado</span>
 									</div>
 
 									<div class="input-field col s12">
