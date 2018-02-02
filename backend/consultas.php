@@ -27,7 +27,6 @@ if($crud == 'read'){
 }
 
 
-
 /* 
 POST FUNCTIONS (requires a token from vue component)
 */
@@ -71,7 +70,7 @@ if (isset($_POST['token'])){
 				// 		'email' => 'ze@ninguem.com',
 				// 		'pass'  => '123456'
 				// 	),
-				//	'Maria' => array(
+				// 	'Maria' => array(
 				// 		'email' => 'maria@ninguem.com',
 				// 		'pass'  => '123456'
 				// 	)

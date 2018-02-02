@@ -1,8 +1,8 @@
 <template>
 	<div class="admin">
-	<!-- <p v-if="successMessage">{{ successMessage }}</p>
-	<p v-if="errorMessage">{{ successMessage }}</p> -->
-	<AdminLogin></AdminLogin>
+	<p v-if="successMessage">{{ successMessage }}</p>
+	<p v-if="errorMessage">{{ successMessage }}</p>
+	<AdminLogin v-if="!isadmin"></AdminLogin>
 	<div id="isadmin" v-if="isadmin">
 		<div class="row">
 			<div class="col s12 section">
@@ -92,12 +92,10 @@ export default {
 			members: [],
 			errorMessage: '',
 			successMessage: '',
-			isadmin: false
 		}
 	},
-	// mounted: function(){
-	// 	this.getAll()
-	// },
+	computed:	{ isadmin(){ return this.$store.state.isadmin } },
+	watch: 		{ isadmin(){ this.getAll() } },
 	methods: {
 		getAll() {
 			const tkn = this.createToken()
@@ -120,13 +118,14 @@ export default {
 			const tkn = this.createToken()
 			const app = this
 
-			let invertApproval = app.invertApproval(approval)
+			if (approval == 0 ) { approval = 1 }
+			else if (approval == 1) { approval = 0 }
+
 			let memForm = app.toFormData({token: tkn, memid : id, public: approval})
 
 			axios.post('consultas.php?crud=approve/'+tkn, memForm)
 				.then(function(response){
 					// console.log(response);
-					// app.clickMember = {};
 					if(response.data.error){
 						app.errorMessage = response.data.message;
 					}
@@ -141,7 +140,9 @@ export default {
 			const tkn = this.createToken()
 			const app = this
 
-			let invertApproval = app.invertApproval(approval)
+			if (approval == 0 ) { approval = 1 }
+			else if (approval == 1) { approval = 0 }
+
 			let memForm = app.toFormData({token: tkn, memid : id, trash: approval})
 
 			axios.post('consultas.php?crud=trash/'+tkn, memForm)
@@ -156,14 +157,6 @@ export default {
 					}
 				}
 			);
-		},
-		invertApproval(approval){
-			if (approval == 0 ) {
-				approval = 1
-			}
-			else if(approval == 1){
-				approval = 0
-			}
 		},
 		toFormData(obj) {
 			var form_data = new FormData()

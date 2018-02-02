@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"appe",
+				"appendTo\t.appendTo()"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"addC",
+				"addCommentRef"
+			],
+			[
+				"bind",
+				"binding"
+			],
+			[
 				"vali",
 				"valid"
 			],
@@ -304,10 +320,6 @@
 				"getElementById\t( elementId: DOMString ): Element Document"
 			],
 			[
-				"add",
-				"addEventListener\t( type: DOMString, callback: EventListener, capture?: boolean ): void EventTarget"
-			],
-			[
 				"va",
 				"value"
 			],
@@ -502,23 +514,20 @@
 			[
 				"prim",
 				"primeiro_nivel"
-			],
-			[
-				"prm",
-				"primeiro_nivel"
-			],
-			[
-				"child",
-				"children\t.children()"
-			],
-			[
-				"cl",
-				"click\t.click()"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "src/components/pages/Capitulo_1.vue",
+			"settings":
+			{
+				"buffer_size": 1603,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -678,19 +687,22 @@
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/teste.php",
-		"/C/xampp/htdocs/piu-terminais/src/store/store.js",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/commentLocal.vue",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_2.vue",
+		"/C/xampp/htdocs/piu-terminais/src/main.js",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/admin/AdminLogin.vue",
-		"/C/xampp/htdocs/piu-terminais/backend/consultas.php",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/admin/Admin.vue",
+		"/C/xampp/htdocs/piu-terminais/src/store/store.js",
 		"/C/xampp/htdocs/admin.php",
 		"/C/xampp/htdocs/consultas.php",
+		"/C/xampp/htdocs/piu-terminais/README.md",
+		"/C/xampp/htdocs/teste.php",
+		"/C/xampp/htdocs/piu-terminais/backend/consultas.php",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Modalcomponent.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Comments.vue",
 		"/C/xampp/htdocs/piu-terminais/.gitignore",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/admin/Admin.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_3.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_1.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_2.vue",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.734/ACESSOS.txt",
 		"/C/xampp/htdocs/piu-terminais/backend/admin.php",
 		"/C/xampp/htdocs/piu-terminais/backend/teste.php",
@@ -700,7 +712,6 @@
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/CommentsLoader.vue",
 		"/C/xampp/htdocs/piu-terminais/src/router/index.js",
 		"/C/xampp/htdocs/gestaourbana/.htaccess",
-		"/C/xampp/htdocs/piu-terminais/src/main.js",
 		"/C/Users/e059145/Desktop/.htaccess",
 		"/C/xampp/htdocs/piu-terminais/.htaccess",
 		"/C/xampp/htdocs/piu-anhembi/wp-config.php",
@@ -763,7 +774,6 @@
 		"/C/xampp/apache/conf/httpd.conf",
 		"/C/xampp/apache/README.txt",
 		"/C/Users/e059145/Desktop/index.js",
-		"/C/xampp/htdocs/piu-terminais/README.md",
 		"/C/Users/e059145/Desktop/axios/examples/get/server.js",
 		"/C/Users/e059145/Desktop/axios/examples/get/index.html",
 		"/C/Users/e059145/Desktop/axios/examples/post/index.html",
@@ -804,8 +814,7 @@
 		"/C/xampp/htdocs/piu-terminais/gulpfile.js",
 		"/C/xampp/htdocs/piu-terminais/app/scss/variables.scss",
 		"/C/xampp/htdocs/piu-terminais/app/css/styles.scss",
-		"/C/xampp/htdocs/piu-terminais/app/css/styles.css",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.398/ACESSOS.txt"
+		"/C/xampp/htdocs/piu-terminais/app/css/styles.css"
 	],
 	"find":
 	{
@@ -879,6 +888,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"commentsLocal",
+			"appendNext",
+			"asdasd",
+			"error",
 			"getAll",
 			"5em",
 			"clickMember",
@@ -1002,11 +1015,7 @@
 			"start_el",
 			"wp_get_attachment_image",
 			"560",
-			"footer",
-			"border-top",
-			"footer",
-			"3%",
-			"560"
+			"footer"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1024,8 +1033,38 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/components/pages/Capitulo_1.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1603,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1132,
+								1132
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1106,7 +1145,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 285.0,
+	"side_bar_width": 265.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

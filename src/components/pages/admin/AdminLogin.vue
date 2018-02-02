@@ -14,12 +14,13 @@
 						<label for="password">Senha</label>
 					</div>
 
-					<p class="col s10 offset-s1" v-if="error==true">{{ errorMessage }}</p>
+					<!-- <p class="col s10 offset-s1" v-if="error==true">{{ errorMessage }}</p> -->
 
 					<div class="login col s10 offset-s1">
 						<router-link to='/1' tag="a" class="btn-large col s4">Cancelar</router-link>
-						<a href="#" class="btn-large col s4 offset-s4" @click="login()">Login</a>
+						<a href="#" class="btn-large col s4 offset-s4" @click="login">Login</a>
 					</div>
+					<a href="#" @click="teste">teste</a>
 				</form>
 			</div>
 		</div>
@@ -36,10 +37,14 @@ export default {
 			email:null,
 			pass: null, 
 			error: null,
-			errorMessage: null
+			// errorMessage: null
 		}
 	},
+	computed:{
+		isadmin(){ return this.$store.state.isadmin }
+	},
 	methods:{
+		teste(){ this.$store.state.isadmin = true},
 		login(){
 			const app = this
 			const tkn = app.createToken()
@@ -54,13 +59,13 @@ export default {
 			// axios.post('teste.php', memForm)
 			axios.post('consultas.php?crud=login/'+tkn, memForm)
 				.then(function (response){
-					console.log(response.data.user)
+					// console.log(response)
 					if(response.data.user == false){
-
 						alert('Erro. Tente novamente.')
 					}
 					else{
-						alert('parabéns ' + response.data.user)
+						// alert('parabéns ' + response.data.user)
+						app.$store.state.isadmin = true
 					}
 				})
 				.catch(function (error){

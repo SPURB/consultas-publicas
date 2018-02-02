@@ -11,6 +11,6 @@ export const store = new Vuex.Store({
         usercheck: false,
 		email: '',
 		name: '',
-        admin: false
+        isadmin: false
 	}
 });
