@@ -1,7 +1,6 @@
 <template>
 	<div class="footernav">
 		<div class="row">
-			<div class="divider bottom"></div>
 			<div class="col s12">
 				<div v-for="navitem in navpreviousnext" class="links">
 					<router-link :to="navitem.path" tag="a" class="btn-flat first" v-if="firstpost == true"></router-link>
@@ -73,7 +72,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/variables.scss";
+@import "../../assets/main.scss";
 
 div.divider.bottom{ margin: 1rem}
 

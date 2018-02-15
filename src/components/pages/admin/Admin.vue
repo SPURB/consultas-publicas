@@ -18,6 +18,7 @@
 						<p>Email: {{ comment.email }}</p>
 						<p>Comentário: {{ comment.content }}</p>
 						<p>Capítulo: {{ comment.postid }}</p>
+						<p>ID de comentário: {{ comment.commentid }}</p>
 						<div class="card-action">
 							<a 
 								class="btn-large approve" 
@@ -45,6 +46,7 @@
 						<p>Email: {{ comment.email }}</p>
 						<p>Comentário: {{ comment.content }}</p>
 						<p>Capítulo: {{ comment.postid }}</p>
+						<p>ID de comentário: {{ comment.commentid }}</p>
 						<div class="card-action">
 							<a 
 								class="btn-flat remove red-text text-lighten-1" 
@@ -68,6 +70,7 @@
 						<p>Email: {{ comment.email }}</p>
 						<p>Comentário: {{ comment.content }}</p>
 						<p>Capítulo: {{ comment.postid }}</p>
+						<p>ID de comentário: {{ comment.commentid }}</p>
 						<div class="card-action">
 							<a 
 								class="btn-flat remove red-text text-lighten-1" 
@@ -178,7 +181,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../../assets/variables.scss";
+@import "../../../assets/main.scss";
 
 h3{
 	font-size: 36px;

@@ -32,7 +32,6 @@ POST FUNCTIONS (requires a token from vue component)
 */
 if (isset($_POST['token'])){
 
-
 	$token = $_POST['token'];
 
 	$comment = 'comment/' . $token;
@@ -42,9 +41,10 @@ if (isset($_POST['token'])){
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$postid = $_POST['postid'];
+		$commentid = $_POST['commentid'];
 		$content = $_POST['content'];
 
-		$sql = "INSERT INTO members (name, email, postid, content) VALUES ('$name', '$email', '$postid', '$content')";
+		$sql = "INSERT INTO members (name, email, postid, commentid,content) VALUES ('$name', '$email', '$postid', $commentid,'$content')";
 		$query = $conn->query($sql);
 
 		if($query){

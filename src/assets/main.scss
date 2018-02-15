@@ -15,6 +15,10 @@ img {
 		margin: 0 auto;
 }
 
+//FORM 
+.active{ display: block; }
+.hidden{ display: none; }
+
 @media (min-width: 960px)  {
 		.flow-text {
 			font-size: 1rem

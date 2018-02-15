@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/variables.scss";
+@import "../../assets/main.scss";
 
 .comment {
 	.member-info{

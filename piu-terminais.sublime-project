@@ -2,18 +2,7 @@
 	"folders":
 	[
 		{
-			"file_exclude_patterns":
-			[
-				"package-lock.json"
-			],
-			"folder_exclude_patterns":
-			[
-				"node_modules"
-			],
-			"path": "."
-		},
-		{
-			"path": "C:\\xampp\\htdocs\\vue-crud"
+			"path": "C:\\Users\\e059145\\Desktop\\dev"
 		}
 	]
 }

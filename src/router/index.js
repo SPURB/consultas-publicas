@@ -31,7 +31,6 @@ const router = new Router({
 				progressbar: Progressbar,
 				default: Capitulo_1,
 				modalcomponent: Modalcomponent,
-				comments: Comments,
 				footernav: Footernav
 			},
 			meta: { 

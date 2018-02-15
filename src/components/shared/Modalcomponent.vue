@@ -89,7 +89,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-@import "../../assets/variables.scss";
+@import "../../assets/main.scss";
 
 h1{
 	font-size: 24px;

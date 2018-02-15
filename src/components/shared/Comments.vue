@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col s12">
 				<div class="divider"></div>
-				<h3 class="flow-text title">Comentários</h3>
+				<!-- <h3 class="flow-text title">Comentários</h3> -->
 				<CommentsLoader></CommentsLoader>
 				<div v-if="commentsenable" class="col s10 offset-s1" id="commentarea">
 					<form>
@@ -17,6 +17,7 @@
 					</form>
 				</div>
 				<a v-else href="#" class="btn-flat col s10 offset-s1" @click="showmodal()">Deixe seu comentário</a>
+				<div class="divider col s12"></div>
 			</div>
 		</div>
 	</div>
@@ -34,6 +35,12 @@ export default {
 		return {
 			comment: '', 
 			sitekey: '6LeYiT0UAAAAAKjLBWb5LuDa1Inv8_0C7IF2v0-K'
+		}
+	},
+	props:{
+		commentid:{
+			type: Number,
+			required: true
 		}
 	},
 	computed:{
@@ -64,6 +71,7 @@ export default {
 					name: app.name,
 					email: app.$store.state.email,
 					postid: app.postid,
+					commentid: app.commentid,
 					content: app.comment
 				})
 
@@ -108,11 +116,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-@import "../../assets/variables.scss";
+@import "../../assets/main.scss";
 
 a.btn-flat{
 	background-color:$primary-light-grey;
 	// margin: 0 10%;
+	margin-bottom: 1.5em;
 	font-weight: 500;
 	display: block;
 	text-align: center;

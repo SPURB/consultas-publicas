@@ -520,11 +520,45 @@
 	"buffers":
 	[
 		{
-			"file": "src/components/pages/Capitulo_1.vue",
+			"file": "/C/Users/e059145/Desktop/dev - Copia/app/styles/main.scss",
 			"settings":
 			{
-				"buffer_size": 1603,
-				"encoding": "UTF-8",
+				"buffer_size": 495,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/e059145/Desktop/dev/app/styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 600,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/e059145/Desktop/dev/gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 4707,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/e059145/Desktop/dev/bower.json",
+			"settings":
+			{
+				"buffer_size": 496,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "require.config({\n    paths: {\n        jquery: '../bower_components/jquery/jquery',\n        minimalect: '../bower_components/minimalect/jquery.minimalect',\n        expander: '../bower_components/jquery-expander/jquery.expander',\n        easyModal: '../bower_components/easyModal.js/jquery.easyModal',\n        form: '../bower_components/jquery-form/jquery.form',\n        spinjs: '../bower_components/spin.js/spin',\n        moment: '../bower_components/moment/min/moment.min',\n        moment_br: '../bower_components/moment/min/lang/pt-br',//verificar\n        introjs : '../bower_components/intro.js/intro',\n        cookie : '../bower_components/jquery.cookie/jquery.cookie',\n        countable : '../bower_components/Countable/Countable'\n    },\n\n    shim : {\n        expander: {\n            deps : ['jquery'],\n            exports : 'jQuery'\n        },\n        minimalect: {\n            deps : ['jquery'],\n            exports : 'jQuery'\n        },\n        easyModal: {\n            deps : ['jquery'],\n            exports : 'jQuery'\n        },\n        form: {\n            deps : ['jquery'],\n            exports : 'jQuery'\n        },\n        spinjs: {\n            deps : ['jquery'],\n            exports : 'jQuery'\n        },\n        cookie : {\n            deps : ['jquery'],\n            exports : 'jQuery'\n        }\n    }\n});\n\nrequire(['App', 'minimalect', 'expander', 'form'], function (App) {\n    'use strict';\n    //jQuery(document).on('load', function () {\n        App.init();\n    //});\n});\n",
+			"file": "/C/Users/e059145/Desktop/dev/app/scripts/main.js",
+			"file_size": 1526,
+			"file_write_time": 131623098673785385,
+			"settings":
+			{
+				"buffer_size": 1488,
 				"line_ending": "Windows"
 			}
 		}
@@ -673,20 +707,71 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/piu-terminais",
-		"/C/xampp/htdocs/piu-terminais/backend",
-		"/C/xampp/htdocs/piu-terminais/src",
-		"/C/xampp/htdocs/piu-terminais/src/assets",
-		"/C/xampp/htdocs/piu-terminais/src/components",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/admin",
-		"/C/xampp/htdocs/piu-terminais/src/components/shared",
-		"/C/xampp/htdocs/piu-terminais/src/router",
-		"/C/xampp/htdocs/piu-terminais/src/store",
-		"/C/xampp/htdocs/vue-crud"
+		"/C/Users/e059145/Desktop/dev",
+		"/C/Users/e059145/Desktop/dev/bower_components"
 	],
 	"file_history":
 	[
+		"/C/Users/e059145/Desktop/MINUTA-PARTICIPATIVA.txt",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/bower.json",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/scripts/main.js",
+		"/C/Users/e059145/Desktop/dev/app/scripts/main.js",
+		"/C/Users/e059145/Desktop/dev/app/index.html",
+		"/C/Users/e059145/Desktop/dev/app/styles/_fonts.scss",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/index.html",
+		"/C/Users/e059145/Desktop/dev/gulpfile.js",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/styles/main.scss",
+		"/C/Users/e059145/Desktop/dev/app/styles/main.scss",
+		"/C/Users/e059145/Desktop/dev/app/index_2.html",
+		"/C/Users/e059145/Desktop/dev/app/robots.txt",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/package.json",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/Gruntfile.js",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/scripts/main.js",
+		"/C/xampp/htdocs/revisaolpuos/wp-content/themes/minuta-gestaourbana/scripts/main.js",
+		"/C/Users/e059145/Desktop/package.json",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/bkp_2018-02-05/Gruntfile.js",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/bkp_2018-02-05/package.json",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/gulpfile.js",
+		"/C/Users/e059145/Desktop/logo-gestao-roboto.xml",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/consulta-minuta-antiga.html",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/consulta.php",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/style.css",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.554/ACESSOS.txt",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.505/ACESSOS.txt",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/consulta-content.html",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/styles/_content.scss",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/styles/_comments.scss",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/scripts/Minuta.js",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/styles/_header.scss",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.717/ACESSOS.txt",
+		"/C/Users/e059145/Desktop/piu-vila-olimpia_periodo.txt",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/page-conteudo-relacionado.php",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/styles/_fonts.scss",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/styles/_related-content.scss",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/styles/_sidebar.scss",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/header.php",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/consulta-content.html",
+		"/C/Users/e059145/Desktop/PIU_Vila Olímpia_R1.htm",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.140/ACESSOS.txt",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/dist/main.css",
+		"/C/Users/e059145/Desktop/style.css",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-participativa/functions.php",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.572/ACESSOS.txt",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.220/MINUTA-PARTICIPATIVA.txt",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-content/themes/minuta-gestaourbana/README.md",
+		"/C/xampp/htdocs/piu-vila-olimpia/.env",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.513/ACESSOS.txt",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.912/MINUTA-PARTICIPATIVA.txt",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.963/ACESSOS.txt",
+		"/C/xampp/htdocs/piu-vila-olimpia/wp-config.php",
+		"/C/Users/e059145/Desktop/limpa/minuta-gestaourbana/.gitignore",
+		"/C/xampp/htdocs/piu-vila-olimpia/README.md",
+		"/C/xampp/htdocs/piu-vila-olimpia/.env.example",
+		"/C/xampp/htdocs/piu-vila-olimpia/web/index.php",
+		"/C/xampp/htdocs/piu-vila-olimpia/web/wp-config.php",
+		"/C/xampp/htdocs/piu-vila-olimpia/composer.json",
+		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.296/ACESSOS.txt",
+		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_1.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/commentLocal.vue",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_2.vue",
 		"/C/xampp/htdocs/piu-terminais/src/main.js",
@@ -702,7 +787,6 @@
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Comments.vue",
 		"/C/xampp/htdocs/piu-terminais/.gitignore",
 		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_3.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/pages/Capitulo_1.vue",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.734/ACESSOS.txt",
 		"/C/xampp/htdocs/piu-terminais/backend/admin.php",
 		"/C/xampp/htdocs/piu-terminais/backend/teste.php",
@@ -755,66 +839,7 @@
 		"/C/xampp/htdocs/piu-terminais/src/components/shared/Footer.vue",
 		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.718/ACESSOS.txt",
 		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/css/style-home.css",
-		"/C/xampp/htdocs/piu-terminais/package.json",
-		"/C/xampp/htdocs/piu-terminais/src/mainstyles.scss",
-		"/C/Users/e059145/Downloads/materialize-src/README.md",
-		"/C/xampp/htdocs/piu-terminais/src/assets/vendor/materialize.scss",
-		"/C/xampp/htdocs/piu-terminais/src/assets/styles/main.scss",
-		"/C/xampp/htdocs/piu-terminais/src/components/Quote.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/Admin.vue",
-		"/C/xampp/htdocs/my-project/src/router/index.js",
-		"/C/xampp/htdocs/my-project/src/components/HelloWorld.vue",
-		"/C/xampp/htdocs/my-project/src/App.vue",
-		"/C/Users/e059145/Desktop/piu-terminais_failed-webpack/src/App.vue",
-		"/C/xampp/htdocs/piu-terminais/config/index.js",
-		"/C/xampp/htdocs/piu-terminais/static/api.php",
-		"/C/xampp/htdocs/piu-terminais/static/teste.php",
-		"/C/xampp/htdocs/piu-terminais/src/components/Teste.vue",
-		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
-		"/C/xampp/apache/conf/httpd.conf",
-		"/C/xampp/apache/README.txt",
-		"/C/Users/e059145/Desktop/index.js",
-		"/C/Users/e059145/Desktop/axios/examples/get/server.js",
-		"/C/Users/e059145/Desktop/axios/examples/get/index.html",
-		"/C/Users/e059145/Desktop/axios/examples/post/index.html",
-		"/C/Users/e059145/Desktop/axios/examples/post/server.js",
-		"//emurbcp11425/DDE/estoque-de-vetores/assets/php/inside.php",
-		"/C/xampp/htdocs/piu-terminais/api/index.php",
-		"/C/xampp/htdocs/vue-crud/index.php",
-		"/C/xampp/htdocs/vue-crud/estrutura.txt",
-		"/C/Users/e059145/Desktop/comments.php",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.338/ACESSOS.txt",
-		"/C/xampp/htdocs/gestaourbana/wp-content/themes/gestaourbana-1.4/comments.php",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.578/ACESSOS.txt",
-		"/C/xampp/htdocs/piu-terminais/src/components/Footer.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/Header.vue",
-		"/C/Users/e059145/Desktop/piu-terminais_failed-gulp/app/scss/styles.scss",
-		"/C/xampp/htdocs/piu-terminais/static/vendor/materialize-src/README.md",
-		"/C/Users/e059145/Desktop/piu-terminais_failed-gulp/app/index.html",
-		"/C/xampp/htdocs/piu-terminais/src/assets/_variables.scss",
-		"/C/Users/e059145/Desktop/piu-terminais_failed-gulp/app/scss/_variables.scss",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.554/ACESSOS.txt",
-		"/C/Users/e059145/Desktop/ACESSOS.txt",
-		"/C/Users/e059145/AppData/Local/Temp/Rar$DIb0.935/MINUTA-PARTICIPATIVA.txt",
-		"/C/xampp/htdocs/piu-terminais/piu-terminais.sublime-project",
-		"/C/Users/e059145/Desktop/piu-terminais/config/index.js",
-		"/C/Users/e059145/Desktop/piu-terminais/config/prod.env.js",
-		"/C/Users/e059145/Desktop/piu-terminais/.gitignore",
-		"/C/xampp/htdocs/piu-terminais/src/components/Hola.vue",
-		"/C/xampp/htdocs/piu-terminais/src/components/HelloWorld.vue",
-		"/C/xampp/htdocs/teste/dist/index.html",
-		"/C/xampp/htdocs/piu-terminais/dist/index.html",
-		"/C/xampp/htdocs/teste/index.html",
-		"/C/xampp/htdocs/piu-terminais/package-lock.json",
-		"/C/xampp/htdocs/piu-terminais/app/js/main.js",
-		"/C/xampp/htdocs/piu-terminais/app/index.html",
-		"/C/xampp/htdocs/piu-terminais/app/js/App.vue",
-		"/C/xampp/htdocs/piu-terminais/app/scss/_variables.scss",
-		"/C/xampp/htdocs/piu-terminais/app/scss/styles.scss",
-		"/C/xampp/htdocs/piu-terminais/gulpfile.js",
-		"/C/xampp/htdocs/piu-terminais/app/scss/variables.scss",
-		"/C/xampp/htdocs/piu-terminais/app/css/styles.scss",
-		"/C/xampp/htdocs/piu-terminais/app/css/styles.css"
+		"/C/xampp/htdocs/piu-terminais/package.json"
 	],
 	"find":
 	{
@@ -825,6 +850,15 @@
 		"height": 104.0,
 		"where_history":
 		[
+			"C:\\Users\\e059145\\Desktop\\dev\\app\\styles",
+			"C:\\xampp\\htdocs\\piu-vila-olimpia\\wp-content\\themes\\minuta-participativa\\assets",
+			"C:\\xampp\\htdocs\\piu-vila-olimpia\\wp-content\\themes\\minuta-participativa",
+			"C:\\xampp\\htdocs\\piu-vila-olimpia\\wp-content\\themes\\minuta-participativa\\assets\\styles",
+			"C:\\xampp\\htdocs\\piu-vila-olimpia\\wp-content\\themes\\minuta-participativa\\assets\\styles\\fonts",
+			"C:\\xampp\\htdocs\\piu-vila-olimpia\\wp-content\\themes\\minuta-participativa\\assets\\styles",
+			"C:\\xampp\\htdocs\\piu-vila-olimpia\\wp-content\\themes\\minuta-participativa\\assets\\styles\\fonts",
+			"C:\\xampp\\htdocs\\piu-vila-olimpia\\wp-content\\themes\\minuta-participativa\\assets\\styles",
+			"C:\\xampp\\htdocs\\piu-vila-olimpia\\wp-content\\themes\\minuta-participativa",
 			"C:\\xampp\\htdocs\\piu-terminais",
 			"C:\\xampp\\apache",
 			"C:\\xampp\\htdocs\\gestaourbana\\wp-content\\themes\\gestaourbana-1.3\\css",
@@ -885,9 +919,41 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"icomoon.woff",
+			"http://spurbcp13343/piu-vila-olimpia/wp-content/themes/minuta-participativa/assets/fonts/icomoon.woff",
+			"index",
+			"index.html",
+			"jshintrc",
+			"autoprefixer",
+			"minuta",
+			"lei",
+			".js",
+			"main.min.js",
+			"id=\"",
+			"alt=",
+			"#",
+			"Estes são os trechos da Minuta de Anteprojeto de Lei. O texto foi desenvolvido pela Prefeitura de São Paulo considerando as propostas feitas pela população da cidade. Ao clicar sobre um trecho, você verá uma atualização do lado direito do site. Clique em próximo e entenda.",
+			"Estes são os trechos da Minuta de Anteprojeto de Lei. O texto foi desenvolvido pela Prefeitura de São Paulo considerando as propostas feitas pela po",
+			"museo",
+			"droid",
+			"museoSans",
+			"pink",
+			"font-size",
+			"active",
+			"#ffc",
+			"h4>",
+			"</p>",
+			"<p>",
+			"</p>[/commentable]",
+			"</p>",
+			"<p>",
+			"font-family",
+			"css",
+			"scss",
+			"main.css",
 			"commentsLocal",
 			"appendNext",
 			"asdasd",
@@ -983,39 +1049,7 @@
 			"biblioteca",
 			"noticias",
 			"slug",
-			"news-text",
-			"960",
-			"nth",
-			"video",
-			"popmake_popup_is_loadable",
-			".js",
-			"enqueue",
-			"noticias",
-			"minhoc",
-			"custom-fields",
-			"supports",
-			"\n\n\n",
-			"[commentable id=\"paragraph-",
-			"[/commentable]",
-			"debug",
-			"titulo]",
-			"titulo",
-			"#titulo",
-			"titulo_no",
-			"fourth-home",
-			"fourth",
-			"item",
-			"add_theme_support",
-			"thumbnail",
-			"thumb",
-			"theme",
-			" &$output, $item, $depth = 0, $args = array(), $id = 0 ",
-			"Walker_Nav_Menu",
-			"start_lvl",
-			"start_el",
-			"wp_get_attachment_image",
-			"560",
-			"footer"
+			"news-text"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1023,6 +1057,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"2"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1033,30 +1068,89 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/components/pages/Capitulo_1.vue",
+					"file": "/C/Users/e059145/Desktop/dev - Copia/app/styles/main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1603,
+						"buffer_size": 495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1132,
-								1132
+								83,
+								83
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Vue Syntax Highlight/vue.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/e059145/Desktop/dev/app/styles/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 600,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								600,
+								600
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/e059145/Desktop/dev/gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4707,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1272,
+								1272
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1064,13 +1158,79 @@
 					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/e059145/Desktop/dev/bower.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								349,
+								349
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "/C/Users/e059145/Desktop/dev/app/scripts/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1037,
+								1037
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -1085,6 +1245,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -1095,6 +1261,7 @@
 		"rows":
 		[
 			0.0,
+			0.743713149596,
 			1.0
 		]
 	},
@@ -1145,7 +1312,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 265.0,
+	"side_bar_width": 270.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
