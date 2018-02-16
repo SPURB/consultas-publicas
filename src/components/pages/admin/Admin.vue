@@ -19,6 +19,7 @@
 						<p>Comentário: {{ comment.content }}</p>
 						<p>Capítulo: {{ comment.postid }}</p>
 						<p>ID de comentário: {{ comment.commentid }}</p>
+						<p>Contexto: {{ comment.commentcontext }}</p>
 						<div class="card-action">
 							<a 
 								class="btn-large approve" 
@@ -47,6 +48,7 @@
 						<p>Comentário: {{ comment.content }}</p>
 						<p>Capítulo: {{ comment.postid }}</p>
 						<p>ID de comentário: {{ comment.commentid }}</p>
+						<p>Contexto: {{ comment.commentcontext }}</p>
 						<div class="card-action">
 							<a 
 								class="btn-flat remove red-text text-lighten-1" 
@@ -71,6 +73,7 @@
 						<p>Comentário: {{ comment.content }}</p>
 						<p>Capítulo: {{ comment.postid }}</p>
 						<p>ID de comentário: {{ comment.commentid }}</p>
+						<p>Contexto: {{ comment.commentcontext }}</p>
 						<div class="card-action">
 							<a 
 								class="btn-flat remove red-text text-lighten-1" 

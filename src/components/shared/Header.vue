@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col s12">
 				<h1 class="logo-header">
-					<a href="#">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a>
+					<a href="#/1">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a>
 					<span class="title"> | {{ title }}</span>
 				</h1>
 			</div>

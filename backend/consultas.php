@@ -16,7 +16,7 @@ if(isset($_GET['crud'])){
 }
 
 if($crud == 'read'){
-	$sql = "SELECT memid, name, content, date, postid FROM members WHERE public = '1'";
+	$sql = "SELECT memid, name, content, date, postid, commentid FROM members WHERE public = '1'";
 	$query = $conn->query($sql);
 	$members = array();
 
@@ -42,9 +42,10 @@ if (isset($_POST['token'])){
 		$email = $_POST['email'];
 		$postid = $_POST['postid'];
 		$commentid = $_POST['commentid'];
+		$context = $_POST['commentcontext'];
 		$content = $_POST['content'];
 
-		$sql = "INSERT INTO members (name, email, postid, commentid,content) VALUES ('$name', '$email', '$postid', $commentid,'$content')";
+		$sql = "INSERT INTO members (name, email, postid, commentid, commentcontext, content) VALUES ('$name', '$email', '$postid', '$commentid', '$context', '$content')";
 		$query = $conn->query($sql);
 
 		if($query){
@@ -124,11 +125,11 @@ if (isset($_POST['token'])){
 		$query = $conn->query($sql);
 
 		if($query){
-			$out['message'] = "Comment Updated Successfully";
+			$out['message'] = "Comentário adicionado com sucesso";
 		}
 		else{
 			$out['error'] = true;
-			$out['message'] = "Could not update Coment";
+			$out['message'] = "Não foi possível adicionar comentário";
 		}
 	}
 
@@ -142,11 +143,11 @@ if (isset($_POST['token'])){
 		$query = $conn->query($sql);
 
 		if($query){
-			$out['message'] = "Comment Updated Successfully";
+			$out['message'] = "Comentário adicionado com sucesso";
 		}
 		else{
 			$out['error'] = true;
-			$out['message'] = "Could not update Comment";
+			$out['message'] = "Não foi possível adicionar comentário";
 		}
 	}
 }

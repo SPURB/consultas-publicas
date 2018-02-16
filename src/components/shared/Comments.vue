@@ -4,7 +4,7 @@
 			<div class="col s12">
 				<div class="divider"></div>
 				<!-- <h3 class="flow-text title">Comentários</h3> -->
-				<CommentsLoader></CommentsLoader>
+				<CommentsLoader :commentid="commentid"></CommentsLoader>
 				<div v-if="commentsenable" class="col s10 offset-s1" id="commentarea">
 					<form>
 						<label for="comment">Comente o Capítulo {{ postid }} como {{ name }} (<a href="#" @click="showmodal">alterar</a>)</label>
@@ -28,21 +28,15 @@ import VueRecaptcha from 'vue-recaptcha';
 import CommentsLoader from '@/components/shared/CommentsLoader'
 import axios from 'axios'
 
-
 export default {
 	name: 'Comments',
 	data: function(){
 		return {
 			comment: '', 
-			sitekey: '6LeYiT0UAAAAAKjLBWb5LuDa1Inv8_0C7IF2v0-K'
+			sitekey: '6LeYiT0UAAAAAKjLBWb5LuDa1Inv8_0C7IF2v0-K',
 		}
 	},
-	props:{
-		commentid:{
-			type: Number,
-			required: true
-		}
-	},
+	props:['commentid'],
 	computed:{
 		commentsenable() { return this.$store.state.comments },
 		name() { return this.$store.state.name }, 
@@ -71,7 +65,8 @@ export default {
 					name: app.name,
 					email: app.$store.state.email,
 					postid: app.postid,
-					commentid: app.commentid,
+					commentid: app.commentid.id,
+					commentcontext: app.commentid.context,
 					content: app.comment
 				})
 
@@ -109,7 +104,7 @@ export default {
 	}, 
 	components:{ 
 		VueRecaptcha, 
-		CommentsLoader 
+		CommentsLoader
 	}
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
 	<div class="CommentsLoader row" v-if="members">
 		<div v-for="comment in members">
-			<div class="comment col s10 offset-s1" v-if="comment.postid == postid">
+			<div class="comment col s10 offset-s1" v-if="checkPostCommentIds(comment.postid, comment.commentid)">
 				<h5 class="member-info">{{  comment.name }} em <span>{{ comment.date }}</span> disse:</h5>
 				<p> {{comment.content}} </p>
 			</div>
@@ -19,6 +19,7 @@ export default {
 			members: []
 		}
 	},
+	props:['commentid'],
 	computed: {
 		postid() { return this.$route.meta.postid }
 	}, 
@@ -30,7 +31,7 @@ export default {
 			let app = this
 			axios.get('consultas.php?crud=read')
 				.then(function(response){
-					// console.log(response);
+					console.log(response);
 					if(response.data.error){
 						app.errorMessage = response.data.message;
 					}
@@ -38,6 +39,10 @@ export default {
 						app.members = response.data.members;
 					}
 			});
+		},
+		checkPostCommentIds(postId, commentId){
+			if (postId == this.postid && commentId == this.commentid.id) { return true }
+			else { return false }
 		}
 	}
 

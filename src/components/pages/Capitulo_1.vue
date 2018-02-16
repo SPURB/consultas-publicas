@@ -5,14 +5,15 @@
 				<h2 class="chapter-title">Projeto de Lei</h2>
 					<p> <strong>Capítulo 1</strong>. Dolor sit amet, mei id dicat periculis concludaturque, et antiopam inimicus mea, an justo dolorum sed. Mazim expetenda instructior ex qui. An munere copiosae eum, duis blandit no has. Magna reque duo an, an sint volutpat sea, ne luptatum laboramus ius. Mel nullam et. Ad fugit quodsi perfecto sit, nam Ad per veniam commodo, ex ius elit eruditi. Dolor nostro explicari no nam. Ne pri quis erant quidam. Eos veri minim te. Hinc commodo aliquip ut pro, pro at verterem consetetur, et est sumo errem.</p>
 
-					<p class="comentable" @click="sendCommentId(1)">um</p>
-					<Comments :commentid="commentid" v-if="commentid == 1"></Comments>
+					<!-- <p class="comentable" @click="defId(1)">um</p> -->
+					<p class="comentable" @click="defineCommentId" id="00001">um</p>
+					<Comments :commentid="commentid" v-if="commentid.id == 1"></Comments>
 
-					<p class="comentable" @click="sendCommentId(2)">dois</p>
-					<Comments :commentid="commentid" v-if="commentid == 2"></Comments>
+					<p class="comentable" @click="defineCommentId" id="00002">dois</p>
+					<Comments :commentid="commentid" v-if="commentid.id == 2"></Comments>
 
-					<p class="comentable" @click="sendCommentId(3)">três</p>
-					<Comments :commentid="commentid" v-if="commentid == 3"></Comments>
+					<p class="comentable" @click="defineCommentId" id="00003">três</p>
+					<Comments :commentid="commentid" v-if="commentid.id == 3"></Comments>
 			</div>
 		</div>
 </div>
@@ -25,17 +26,20 @@ export default {
 	name: 'Capitulo_1',
 	data () {
 		return {
-			commentid: null
+			commentid: {
+				id: null,
+				context: null
+			},
 		}
 	},
 	methods:{
-		sendCommentId(comentid){
-			this.commentid = comentid;
-		}
+		defineCommentId(event){ 
+			this.commentid.id = Number.parseInt(event.target.id); 
+			this.commentid.context = event.target.innerText;
+		},
+		closeComment(){ this.comentid = null}
 	},
-	components:{ 
-		Comments
-	}
+	components:{ Comments }
 }
 </script>
 
