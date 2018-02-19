@@ -1,11 +1,13 @@
 <template>
 	<div class="CommentsLoader row" v-if="members">
-		<div v-for="comment in members">
-			<div class="comment col s10 offset-s1" v-if="checkPostCommentIds(comment.postid, comment.commentid)">
-				<h5 class="member-info">{{  comment.name }} em <span>{{ comment.date }}</span> disse:</h5>
-				<p> {{comment.content}} </p>
+		<!-- <div class="container"> -->
+			<div v-for="comment in members">
+				<div class="comment col s10 offset-s1" v-if="checkPostCommentIds(comment.postid, comment.commentid)">
+					<h5 class="member-info">{{  comment.name }} em <span>{{ comment.date }}</span> disse:</h5>
+					<p> {{comment.content}} </p>
+				</div>
 			</div>
-		</div>
+		<!-- </div> -->
 	</div>
 </template>
 

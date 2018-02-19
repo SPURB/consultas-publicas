@@ -1,11 +1,13 @@
 <template>
 	<div class="footernav">
-		<div class="row">
-			<div class="col s12">
-				<div v-for="navitem in navpreviousnext" class="links">
-					<router-link :to="navitem.path" tag="a" class="btn-flat first" v-if="firstpost == true"></router-link>
-					<router-link :to="navitem.path" tag="a" class="btn-flat both"  v-if="firstpost == false && lastpost == false" ></router-link>
-					<router-link :to="navitem.path" tag="a" class="btn-flat last"  v-if="lastpost == true" ></router-link>
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<div v-for="navitem in navpreviousnext" class="links">
+						<router-link :to="navitem.path" tag="a" class="btn-flat first" v-if="firstpost == true"></router-link>
+						<router-link :to="navitem.path" tag="a" class="btn-flat both"  v-if="firstpost == false && lastpost == false" ></router-link>
+						<router-link :to="navitem.path" tag="a" class="btn-flat last"  v-if="lastpost == true" ></router-link>
+					</div>
 				</div>
 			</div>
 		</div>

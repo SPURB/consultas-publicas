@@ -1,19 +1,20 @@
 <template>
 	<div class="progressbar">
-	<ul>
-		<li>Cap {{postid}}/{{numchapters}}</li>
-		<li v-for="navitem in navpreviousnext" class="links">
-			<router-link v-if="firstpost == true" :to="navitem.path" class="first"></router-link>
-			<router-link v-if="firstpost == false && lastpost == false" :to="navitem.path" ></router-link>
-			<router-link v-if="lastpost == true" :to="navitem.path"></router-link>
-		</li>
-	</ul>
+		<div class="container">	
+			<ul>
+				<li>Cap {{postid}}/{{numchapters}}</li>
+				<li v-for="navitem in navpreviousnext" class="links">
+					<router-link v-if="firstpost == true" :to="navitem.path" class="first"></router-link>
+					<router-link v-if="firstpost == false && lastpost == false" :to="navitem.path" ></router-link>
+					<router-link v-if="lastpost == true" :to="navitem.path"></router-link>
+				</li>
+			</ul>
 
-	<svg width="100%" height="5">
-		<rect width="100%" height="6" style="fill:rgb(224,224,224)" />
-		<rect v-bind:width="svgwidth" height="6" style="fill:rgb(79,79,79)" />
-	</svg>
-
+			<svg width="100%" height="5">
+				<rect width="100%" height="6" style="fill:rgb(224,224,224)" />
+				<rect v-bind:width="svgwidth" height="6" style="fill:rgb(79,79,79)" />
+			</svg>
+		</div>
 	</div>
 </template>
 

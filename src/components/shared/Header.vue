@@ -1,14 +1,16 @@
 <template>
 	<header class="header">
-		<div class="row">
-			<div class="col s12">
-				<h1 class="logo-header">
-					<a href="#/1">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a>
-					<span class="title"> | {{ title }}</span>
-				</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<h1 class="logo-header">
+						<a href="#/1">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a>
+						<span class="title"> | {{ title }}</span>
+					</h1>
+				</div>
 			</div>
+			<div class="divider"></div>
 		</div>
-		<div class="divider"></div>
 	</header>
 </template>
 
@@ -17,7 +19,7 @@ export default {
 	name: 'Header',
 	data () {
 	return {
-		title: 'Consulta Pública PIU Terminais'
+		title: 'Título de consulta'
 	}
 	}
 }

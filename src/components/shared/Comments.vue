@@ -3,20 +3,22 @@
 		<div class="row">
 			<div class="col s12">
 				<div class="divider"></div>
-				<!-- <h3 class="flow-text title">Comentários</h3> -->
 				<CommentsLoader :commentid="commentid"></CommentsLoader>
-				<div v-if="commentsenable" class="col s10 offset-s1" id="commentarea">
-					<form>
-						<label for="comment">Comente o Capítulo {{ postid }} como {{ name }} (<a href="#" @click="showmodal">alterar</a>)</label>
-						<textarea id="comment" v-model="comment"></textarea>
-						<a href="#" class="btn-flat" @click="sendata" type="submit">Enviar comentário</a>
-						<vue-recaptcha 
-							:sitekey="sitekey"
-							@verify="onVerify"
-							@expired="onExpired"></vue-recaptcha>
-					</form>
-				</div>
-				<a v-else href="#" class="btn-flat col s10 offset-s1" @click="showmodal()">Deixe seu comentário</a>
+				<transition>
+					<div v-if="commentsenable" class="col s10 offset-s1" id="commentarea">
+						<form>
+							<label for="comment">Comente o Capítulo {{ postid }} como {{ name }} (<a href="#" @click="showmodal">alterar</a>)</label>
+							<textarea id="comment" v-model="comment"></textarea>
+							<a href="#" class="btn-flat" @click="sendata" type="submit">Enviar comentário</a>
+							<vue-recaptcha 
+								:sitekey="sitekey"
+								@verify="onVerify"
+								@expired="onExpired"></vue-recaptcha>
+						</form>
+					</div>
+					<a v-else href="#" class="btn-flat col s10 offset-s1" @click="showmodal">Deixe seu comentário</a>
+				</transition>
+
 				<div class="divider col s12"></div>
 			</div>
 		</div>
@@ -109,51 +111,54 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-@import "../../assets/main.scss";
+	@import "../../assets/main.scss";
 
-a.btn-flat{
-	background-color:$primary-light-grey;
-	// margin: 0 10%;
-	margin-bottom: 1.5em;
-	font-weight: 500;
-	display: block;
-	text-align: center;
-}
-
-.comments{
-	h3{
-		font-size: 20px;
+	a.btn-flat{
+		background-color:$primary-light-grey;
+		// margin: 0 10%;
+		margin-bottom: 1.5em;
 		font-weight: 500;
+		display: block;
+		text-align: center;
+		transition: color .1s, background-color .2s;
 	}
-	#commentarea{
-		padding: 0;
-		textarea{
-			min-height: 198px;
-			font-family:$font-stack; 
-			color: $primary-grey;
-			padding: 1em;
-			border: solid 1px $primary-grey;
-			border-radius: 3px;
-			resize: none;
-			line-height: 1.52;
-			margin: 0 0 1rem;		
+
+	a.btn-flat:hover{
+		background-color: $primary-dark-grey;
+		color: white;
+	}
+
+	.comments{
+		h3{
+			font-size: 20px;
+			font-weight: 500;
 		}
-		a.btn-flat{
-			float: right;
-			margin: 1rem 0 2rem;
+		#commentarea{
+			padding: 0 0 1em;
+			textarea {
+				min-height: 198px;
+				font-family:$font-stack; 
+				color: $primary-grey;
+				padding: 1em;
+				border: solid 1px $primary-grey;
+				border-radius: 3px;
+				resize: none;
+				line-height: 1.52;
+				margin: 0 0 1rem;		
+			}
+			a.btn-flat{
+				float: right;
+				margin: 1rem 0 2rem;
+			}
 		}
 	}
-}
 
-/* media queries */
-@media screen and (max-width: 600px) {
-	#commentarea {
-		width: 80%;
-		margin: 0 10%;
+	/* media queries */
+	@media screen and (max-width: 600px) {
+		#commentarea {
+			width: 80%;
+			margin: 0 10%;
+		}
 	}
-}
-
-
 </style>

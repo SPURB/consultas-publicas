@@ -1,5 +1,6 @@
 <template>
 <div class="capitulo_3">
+	<div class="container">
 		<div class="row">
 			<div class="col s12 chapter-content">
 				<h2 class="chapter-title">Projeto de Lei</h2>
@@ -11,6 +12,7 @@
 					<p v-comm="addForm" id="0003">três</p>
 			</div>
 		</div>
+	</div>
 </div>
 </template>
 

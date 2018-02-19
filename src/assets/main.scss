@@ -9,17 +9,35 @@ $primary-dark-grey: #828282;
 
 // REGRAS GLOBAIS
 html{
-font-family: $font-stack;
+	font-family: $font-stack;
 }
 
 .chapter-title{
 	font-size:36px; 
-	color: $main-color
-
+	color: $main-color;
+	margin-bottom: 0;
 }
-img {
-		display: block;
-		margin: 0 auto;
+.commentable{
+	background-color: white;
+	padding: 0;
+	transition: background-color, padding 0.3s ease;
+}
+
+.commentable:hover, .commentable.active{
+	background-color: #ffc;
+	padding: 0.35em 0;
+	cursor: pointer;
+}
+.commentable.active {
+	padding: 0.35em;
+}
+
+blockquote{
+	border-color: $primary-grey;
+}
+
+img.materialboxed:hover{
+	cursor:pointer;
 }
 
 //FORM 
@@ -27,7 +45,7 @@ img {
 .hidden{ display: none; }
 
 @media (min-width: 960px)  {
-		.flow-text {
-			font-size: 1rem
-		}
+	.flow-text {
+		font-size: 1rem
+	}
 }
