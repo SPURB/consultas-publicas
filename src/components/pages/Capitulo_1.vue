@@ -18,7 +18,7 @@
 				<p class="commentable" @click="defineCommentId" id="00002"> <strong>Artigo 2</strong>. Dolor sit amet, mei id dicat periculis concludaturque, et antiopam inimicus mea, an justo dolorum sed. Mazim expetenda instructior ex qui. An munere copiosae eum, duis blandit no has. Magna reque duo an, an sint volutpat sea, ne luptatum laboramus ius. Mel nullam et. Ad fugit quodsi perfecto sit, nam Ad per veniam commodo, ex ius elit eruditi. Dolor nostro explicari no nam. Ne pri quis erant quidam. Eos veri minim te. Hinc commodo aliquip ut pro, pro at verterem consetetur, et est sumo errem.</p>
 				<Comments :commentid="commentid" v-if="commentid.id == 2"></Comments>
 
-				<img :src="require('../../assets/img/1920x1080.png')" class="responsive-img materialboxed" />
+				<img :src="require('../../assets/img/1920x1080.png')" class="responsive-img" />
 
 				<p class="commentable" @click="defineCommentId" id="00003"> <strong>Artigo 3</strong>. Dolor sit amet, mei id dicat periculis concludaturque, et antiopam inimicus mea, an justo dolorum sed. Mazim expetenda instructior ex qui. An munere copiosae eum, duis blandit no has. Magna reque duo an, an sint volutpat sea, ne luptatum laboramus ius. Mel nullam et. Ad fugit quodsi perfecto sit, nam Ad per veniam commodo, ex ius elit eruditi. Dolor nostro explicari no nam. Ne pri quis erant quidam. Eos veri minim te. Hinc commodo aliquip ut pro, pro at verterem consetetur, et est sumo errem.</p>
 				<Comments :commentid="commentid" v-if="commentid.id == 3"></Comments>
@@ -41,9 +41,6 @@ export default {
 			},
 		}
 	},
-	mounted(){
-		this.materialboxed();
-	},
 	methods:{
 		defineCommentId(event){ 
 			this.toggleActiveComments(event);
@@ -59,10 +56,6 @@ export default {
 			// adiciona a classe 'active' neste elemento clicado
 			event.target.classList.add('active');
 		},
-		materialboxed(){
-			var elem = document.querySelector('.materialboxed');
-			var instance = M.Materialbox.init(elem, {inDuration:275,outDuration:200});
-		}
 	},
 	components:{ Comments }
 }

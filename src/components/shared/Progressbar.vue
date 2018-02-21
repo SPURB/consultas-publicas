@@ -2,7 +2,7 @@
 	<div class="progressbar">
 		<div class="container">	
 			<ul>
-				<li>Cap {{postid}}/{{numchapters}}</li>
+				<li>{{ postid }}/{{ numchapters }}</li>
 				<li v-for="navitem in navpreviousnext" class="links">
 					<router-link v-if="firstpost == true" :to="navitem.path" class="first"></router-link>
 					<router-link v-if="firstpost == false && lastpost == false" :to="navitem.path" ></router-link>
@@ -73,7 +73,7 @@ export default {
 					app.navpreviousnext.push(index)
 				}
 			})
-		}
+		},
 	}
 }
 </script>
