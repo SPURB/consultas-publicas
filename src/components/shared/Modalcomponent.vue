@@ -6,7 +6,7 @@
 					<div class="modal-container container" @click.stop>
 						<div class="modal-header">
 							<slot name="header">
-								<h1>gestão<span>urbana</span><span>SP</span><span> | Consulta pública</span> </h1>
+								<h1>gestão<span>urbana</span><span>SP</span><span> | {{ projectTitle }}</span> </h1>
 								<div class="divider"></div>
 								<h2>Habilitar comentários</h2>
 							</slot>
@@ -15,19 +15,19 @@
 							<slot name="body">
 								<form>
 									<div class="input-field col s12">
+										<label for="email" class="active">Email</label>
 										<input v-validate="'required|email'" id="email" type="email" class="validate" v-model="email">
-										<label for="email">Email</label>
 										<span class="helper-text" data-error="Email incorreto" data-success="Email ok!">Seu email não será divulgado</span>
 									</div>
 
 									<div class="input-field col s12">
+										<label for="name" class="active">Nome Sobrenome (organização) </label>
 										<input id="name" type="text" class="validate" v-model="name">
-										<label for="name">Nome Sobrenome (organização) </label>
 										<span class="helper-text" data-success="Nome ok!"></span>
 									</div>
 
 									<div class="commentaction">
-										<button  @click="close" class="btn-flat" id="cancel">Cancelar</button>
+										<button @click="close" class="btn-flat" id="cancel">Cancelar</button>
 										<button @click="enable" class="btn-flat" id="send">Habilitar</button>
 									</div>
 								</form>
@@ -52,6 +52,9 @@ export default {
 	computed: {
 		showmodal: function (){
 			return this.$store.state.showmodal
+		},
+		projectTitle(){
+			return this.$store.state.projecttitle ;
 		}
 	},
 	methods: {

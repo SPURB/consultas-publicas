@@ -16,7 +16,7 @@
 								@expired="onExpired"></vue-recaptcha>
 						</form>
 					</div>
-					<a v-else href="#" class="btn-flat col s10 offset-s1" @click="showmodal">Deixe seu comentário</a>
+					<a v-else href="#" class="btn-flat col s10 offset-s1" @click="showmodal">Comente este trecho</a>
 				</transition>
 
 				<div class="divider col s12"></div>

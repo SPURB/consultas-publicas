@@ -1,6 +1,6 @@
 <template>
 <div class="admin">
-	<!-- <div class="container"> -->
+	<div class="container">
 		<p v-if="successMessage">{{ successMessage }}</p>
 		<p v-if="errorMessage">{{ successMessage }}</p>
 		<AdminLogin v-if="!isadmin"></AdminLogin>
@@ -85,7 +85,7 @@
 				</div>
 			</div>
 		</div>
-	<!-- </div> -->
+	</div>
 </div>
 </template>
 

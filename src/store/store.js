@@ -5,6 +5,7 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
 	state: {
+        projecttitle:'Consulta pública PIU Sumidouro',
         numchapters: 0, 
 		showmodal: false,
 		comments: false,

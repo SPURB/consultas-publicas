@@ -7,12 +7,12 @@
 					<form>
 						<div class="input-field col s10 offset-s1">
 							<input v-validate="'required|email'" id="signinemail" type="email" class="validate" v-model="email">
-							<label for="signinemail">Email*</label>
+							<label for="signinemail" class="active">Email*</label>
 							<span class="helper-text" data-error="Email incorreto" data-success="Email ok!">*Coloque seu email da intranet (...gov.sp)</span>
 						</div>
 						<div class="input-field col s10 offset-s1">
 							<input id="password" type="password" class="validate" v-model="pass">
-							<label for="password">Senha</label>
+							<label for="password" class="active">Senha</label>
 						</div>
 
 						<!-- <p class="col s10 offset-s1" v-if="error==true">{{ errorMessage }}</p> -->
@@ -21,7 +21,6 @@
 							<router-link to='/1' tag="a" class="btn-large col s4">Cancelar</router-link>
 							<a href="#" class="btn-large col s4 offset-s4" @click="login">Login</a>
 						</div>
-						<a href="#" @click="teste">teste</a>
 					</form>
 				</div>
 			</div>
@@ -98,6 +97,10 @@ export default {
 	padding-bottom: 4rem;
 	margin-top:2rem;
 }
+.card-title.col.s10.offset-s1{
+	margin-bottom: 1em
+}
+
 .login{
 	margin-top:2rem;
 }

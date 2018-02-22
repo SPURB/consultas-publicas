@@ -10,26 +10,26 @@ import Footernav from '@/components/shared/Footernav'
 
 // pages
 import Admin from '@/components/pages/admin/Admin'
-import Capitulo_1 from '@/components/pages/Capitulo_1'
-import Capitulo_2 from '@/components/pages/Capitulo_2'
-import Capitulo_3 from '@/components/pages/Capitulo_3'
+import Consulta from '@/components/pages/Consulta'
+import Anexo1 from '@/components/pages/Anexo1'
+import Anexo2 from '@/components/pages/Anexo2'
 
 
-Vue.use(Router)
+Vue.use(Router);
 
 const router = new Router({
 	routes: [
 		{
 			path: '/',
-			redirect:'/1'      
+			redirect:'/consulta'
 		},
 		{
-			path: '/1',
-			name: 'Capitulo 1',
+			path: '/consulta',
+			name: 'Consulta',
 			components: {
 				header: Header,
 				progressbar: Progressbar,
-				default: Capitulo_1,
+				default: Consulta,
 				modalcomponent: Modalcomponent,
 				footernav: Footernav
 			},
@@ -38,12 +38,12 @@ const router = new Router({
 			}
 		},
 		{
-			path: '/2',
-			name: 'Capitulo 2',
+			path: '/anexo1',
+			name: 'Anexo 1',
 			components: {
 				header: Header,
 				progressbar: Progressbar,
-				default: Capitulo_2,
+				default: Anexo1,
 				modalcomponent: Modalcomponent,
 				comments: Comments,
 				footernav: Footernav
@@ -53,12 +53,12 @@ const router = new Router({
 			}
 		},
 		{
-			path: '/3',
-			name: 'Capitulo 3',
+			path: '/anexo2',
+			name: 'Anexo 2',
 			components: {
 				header: Header,
 				progressbar: Progressbar,
-				default: Capitulo_3,
+				default: Anexo2,
 				modalcomponent: Modalcomponent,
 				comments: Comments,
 				footernav: Footernav

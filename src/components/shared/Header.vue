@@ -4,14 +4,15 @@
 			<div class="row">
 					<nav>
 						<div class="nav-wrapper">
-						<a class="title" href="http://gestaourbana.prefeitura.sp.gov.br/">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a>
+						<a class="title" href="http://gestaourbana.prefeitura.sp.gov.br/">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a><a href="/"><router-link to="/consulta" tag="span"> | {{projectTitle}}</router-link></a>
 							<ul id="nav-mobile" class="right hide-on-med-and-down">
-								<li class="active"><a href="#/1">Capítulo 1</a></li>
-								<li><a href="#/2">Capítulo 2</a></li>
-								<li><a href="#/3">Capítulo 3</a></li>
+								<li v-for="navitem in navitems">
+									<router-link :to='navitem.path' >{{navitem.name}}</router-link>
+								</li>
 							</ul>
 						</div>
 					</nav>
+
 			</div>
 			<div class="divider"></div>
 		</div>
@@ -22,9 +23,25 @@
 export default {
 	name: 'Header',
 	data () {
-	return {
-		title: 'Título de consulta'
-	}
+		return {
+			navitems: [],
+			firstview: false
+		}
+	},
+	created(){
+		let app = this
+		const routes = app.$router.options.routes
+		routes.filter(function(index) {
+			if('name' in index){
+				app.navitems.push(index)
+			}
+		})
+		app.firstview = true
+	},
+	computed:{
+		projectTitle(){
+			return this.$store.state.projecttitle ;
+		}
 	}
 }
 </script>
@@ -42,7 +59,7 @@ header{
 			color: $primary-dark-grey;
 			background-color: white;
 			a{
-				font-size: 2rem;
+				font-size: 1.5rem;
 				color:#BDBDBD;
 			}
 			li {
@@ -50,11 +67,9 @@ header{
 					font-size: 1em;
 					color:$primary-dark-grey;
 				};
-				a:hover{ 
-					background-color: rgba(0,0,0,0.05); 
-				};
+				a.router-link-active{background-color: rgba(0,0,0,0.05);}
+				a.router-link-active:hover{background-color: rgba(0,0,0,0.05); };
 			}
-			li.active{ background-color: rgba(0,0,0,0.05); }
 		}
 	}
 }

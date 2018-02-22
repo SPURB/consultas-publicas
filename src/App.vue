@@ -10,12 +10,12 @@
 </template>
 
 <script>
-
 export default {
   name: 'App',
 }
 </script>
 
 <style lang="scss">
+@import "assets/vendor/materialize-src/sass/materialize.scss";
 @import "assets/main.scss";
 </style>
