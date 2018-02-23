@@ -7,6 +7,7 @@ import Progressbar from '@/components/shared/Progressbar'
 import Modalcomponent from '@/components/shared/Modalcomponent'
 import Comments from '@/components/shared/Comments'
 import Footernav from '@/components/shared/Footernav'
+// import Vtour from '@/components/shared/Vtour'
 
 // pages
 import Admin from '@/components/pages/admin/Admin'
@@ -27,6 +28,7 @@ const router = new Router({
 			path: '/consulta',
 			name: 'Consulta',
 			components: {
+				// vtour: Vtour,
 				header: Header,
 				progressbar: Progressbar,
 				default: Consulta,
@@ -45,7 +47,6 @@ const router = new Router({
 				progressbar: Progressbar,
 				default: Anexo1,
 				modalcomponent: Modalcomponent,
-				comments: Comments,
 				footernav: Footernav
 			},
 			meta: { 
@@ -60,7 +61,6 @@ const router = new Router({
 				progressbar: Progressbar,
 				default: Anexo2,
 				modalcomponent: Modalcomponent,
-				comments: Comments,
 				footernav: Footernav
 			}, 
 			meta: { 
@@ -68,7 +68,7 @@ const router = new Router({
 			}
 		},
 		{
-			path: '/admin',
+			path: '/ikzawlhlyqpxhmznksotsc', 
 			components: {
 				header: Header,
 				default: Admin,

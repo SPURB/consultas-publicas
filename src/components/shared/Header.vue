@@ -4,7 +4,8 @@
 			<div class="row">
 					<nav>
 						<div class="nav-wrapper">
-						<a class="title" href="http://gestaourbana.prefeitura.sp.gov.br/">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a><a href="/"><router-link to="/consulta" tag="span"> | {{projectTitle}}</router-link></a>
+
+						<a class="title" href="http://gestaourbana.prefeitura.sp.gov.br/">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a><router-link to='/consulta'> | {{ projectTitle }}</router-link>
 							<ul id="nav-mobile" class="right hide-on-med-and-down">
 								<li v-for="navitem in navitems">
 									<router-link :to='navitem.path' >{{navitem.name}}</router-link>

@@ -12,6 +12,7 @@ export const store = new Vuex.Store({
         usercheck: false,
 		email: '',
 		name: '',
-        isadmin: false
+        isadmin: false,
+        scrollheight: 0,
 	}
 });

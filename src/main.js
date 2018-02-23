@@ -8,8 +8,19 @@ import { store } from './store/store';
 import VeeValidate from 'vee-validate';
 import Materialize from "./assets/vendor/materialize-src/js/materialize.min.js";
 
+// onboard
+// import VueTour from 'vue-tour';
+
+// onboard
+// require('vue-tour/dist/vue-tour.css');
+
+
 Vue.use(VeeValidate);
 Vue.config.productionTip = false;
+
+//onboard
+// Vue.use(VueTour); 
+
 
 /* eslint-disable no-new */
 new Vue({

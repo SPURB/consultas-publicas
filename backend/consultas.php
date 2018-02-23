@@ -1,5 +1,5 @@
 <?php
-include_once "dbinfo.php";
+include_once "Jm3uGyhDWjJrNfVqxX69xR4qdmpSUb8udG9dUs9gYWTryB9wejACwJMBSffaYfnXaMTGz.php";
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 
 
@@ -16,7 +16,7 @@ if(isset($_GET['crud'])){
 }
 
 if($crud == 'read'){
-	$sql = "SELECT memid, name, content, date, postid, commentid FROM members WHERE public = '1'";
+	$sql = "SELECT memid, name, content, commentdate, postid, commentid FROM members WHERE public = '1'";
 	$query = $conn->query($sql);
 	$members = array();
 
@@ -41,11 +41,31 @@ if (isset($_POST['token'])){
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$postid = $_POST['postid'];
+
+		$date = $_POST['commentdate']; //'02/07/2009 00:07:00';
+		$date = preg_replace('#(\d{2})/(\d{2})/(\d{4})\s(.*)#', '$3-$2-$1 $4', $date);
+
 		$commentid = $_POST['commentid'];
 		$context = $_POST['commentcontext'];
 		$content = $_POST['content'];
 
-		$sql = "INSERT INTO members (name, email, postid, commentid, commentcontext, content) VALUES ('$name', '$email', '$postid', '$commentid', '$context', '$content')";
+		$sql = "INSERT INTO members (
+								name, 
+								email, 
+								postid, 
+								commentdate,
+								commentid, 
+								commentcontext, 
+								content)
+							VALUES 	(
+								'$name', 
+								'$email', 
+								'$postid', 
+								'$date',
+								'$commentid', 
+								'$context', 
+								'$content')";
+
 		$query = $conn->query($sql);
 
 		if($query){
@@ -65,7 +85,7 @@ if (isset($_POST['token'])){
 
 			function isAdmin($email, $pass){
 
-				include_once 'admin.php';
+				include_once 'ZCbC6xhaUCzeAYHDdLDJfTMzDStB6GqJKMfUASs5KagAYR4Z3YFK5W76RhkGnc56kanAt.php';
 				// $admin = array(
 				// 	'José' => array(
 				// 		'email' => 'ze@ninguem.com',

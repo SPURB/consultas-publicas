@@ -7,7 +7,7 @@
 				<transition>
 					<div v-if="commentsenable" class="col s10 offset-s1" id="commentarea">
 						<form>
-							<label for="comment">Comente o Capítulo {{ postid }} como {{ name }} (<a href="#" @click="showmodal">alterar</a>)</label>
+							<label for="comment">Comente como {{ name }} (<a href="#" @click="showmodal">alterar</a>)</label>
 							<textarea id="comment" v-model="comment"></textarea>
 							<a href="#" class="btn-flat" @click="sendata" type="submit">Enviar comentário</a>
 							<vue-recaptcha 
@@ -16,7 +16,7 @@
 								@expired="onExpired"></vue-recaptcha>
 						</form>
 					</div>
-					<a v-else href="#" class="btn-flat col s10 offset-s1" @click="showmodal">Comente este trecho</a>
+					<a v-else href="#" class="btn-flat col s10 offset-s1" @click="showmodal">Habilite comentários</a>
 				</transition>
 
 				<div class="divider col s12"></div>
@@ -36,18 +36,27 @@ export default {
 		return {
 			comment: '', 
 			sitekey: '6LeYiT0UAAAAAKjLBWb5LuDa1Inv8_0C7IF2v0-K',
+			scrollHeight: 0,
 		}
+	},
+	mounted() {
+		this.$nextTick(function() {
+			window.addEventListener('scroll', this.getScrollHeight);
+			this.getScrollHeight();
+		})
 	},
 	props:['commentid'],
 	computed:{
 		commentsenable() { return this.$store.state.comments },
-		name() { return this.$store.state.name }, 
+		name() { return this.$store.state.name },
 		usercheck() { return this.$store.state.usercheck },
 		postid() { return this.$route.meta.postid }
 	},
 	methods: {
-		showmodal() {
-			this.$store.state.showmodal = true
+		getScrollHeight(event) { this.scrollHeight = window.scrollY; },
+		showmodal() { 
+			this.$store.state.scrollheight = this.scrollHeight;
+			this.$store.state.showmodal = true; 
 		},
 		onVerify(response) {
 			// console.log('Verify: ' + response)
@@ -58,8 +67,10 @@ export default {
 			this.$store.state.usercheck = false
 		},
 		sendata() {
-			const app = this
-			const tkn = app.createToken()
+			const app = this;
+			const tkn = app.createToken();
+			const appcommentdate = new Date().toISOString().slice(0, 19).replace('T', ' ');
+			console.log(appcommentdate);
 
 			if (app.usercheck) {
 				let memForm = app.toFormData({
@@ -67,9 +78,10 @@ export default {
 					name: app.name,
 					email: app.$store.state.email,
 					postid: app.postid,
+					commentdate: appcommentdate,
 					commentid: app.commentid.id,
 					commentcontext: app.commentid.context,
-					content: app.comment
+					content: app.comment,
 				})
 
 				axios.post('consultas.php?crud=comment/'+ tkn, memForm)
@@ -90,7 +102,6 @@ export default {
 				alert("Faça a sua validação no recapctha")
 			}
 		},
-
 		toFormData(obj) {
 			var form_data = new FormData()
 			for(var key in obj){
@@ -103,7 +114,10 @@ export default {
 			let rand2 = Math.random().toString(36).substr(2)
 			return rand1 + rand2
 		}
-	}, 
+	},
+	beforeDestroy() {
+		window.removeEventListener('scroll', this.getWindowHeight);
+	},
 	components:{ 
 		VueRecaptcha, 
 		CommentsLoader

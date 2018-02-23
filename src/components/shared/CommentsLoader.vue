@@ -3,7 +3,7 @@
 		<!-- <div class="container"> -->
 			<div v-for="comment in members">
 				<div class="comment col s10 offset-s1" v-if="checkPostCommentIds(comment.postid, comment.commentid)">
-					<h5 class="member-info">{{  comment.name }} em <span>{{ comment.date }}</span> disse:</h5>
+					<h5 class="member-info">{{  comment.name }} em <span>{{ comment.commentdate }}</span> disse:</h5>
 					<p> {{comment.content}} </p>
 				</div>
 			</div>
@@ -33,7 +33,7 @@ export default {
 			let app = this
 			axios.get('consultas.php?crud=read')
 				.then(function(response){
-					console.log(response);
+					// console.log(response);
 					if(response.data.error){
 						app.errorMessage = response.data.message;
 					}

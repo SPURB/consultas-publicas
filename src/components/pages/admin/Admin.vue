@@ -14,9 +14,11 @@
 						v-for="comment in members" 
 						v-if="comment.public == false && comment.trash == false">
 						<div class="card-content">
-							<p class="date-time">{{ comment.date }}</p>
+							<p class="date-time">{{ comment.commentdate }}</p>
 							<p>Autor: {{ comment.name }}</p>
-							<p>Email: {{ comment.email }}</p>
+							<!-- <p>Email: {{ comment.email }}</p> -->
+							<p><a v-bind:href=" 'mailto:' + comment.email">{{ comment.email }}</a></p>
+
 							<p>Comentário: {{ comment.content }}</p>
 							<p>Capítulo: {{ comment.postid }}</p>
 							<p>ID de comentário: {{ comment.commentid }}</p>
@@ -43,9 +45,10 @@
 						v-for="comment in members" 
 						v-if="comment.public == true" >
 						<div class="card-content">
-							<p class="date-time">{{ comment.date }}</p>
+							<p class="date-time">{{ comment.commentdate }}</p>
 							<p>Autor: {{ comment.name }}</p>
-							<p>Email: {{ comment.email }}</p>
+							<!-- <p>Email: {{ comment.email }}</p> -->
+							<p><a v-bind:href="comment.email">{{ comment.email }}</a></p>
 							<p>Comentário: {{ comment.content }}</p>
 							<p>Capítulo: {{ comment.postid }}</p>
 							<p>ID de comentário: {{ comment.commentid }}</p>
@@ -68,9 +71,10 @@
 						v-for="comment in members" 
 						v-if="comment.trash == true" >
 						<div class="card-content">
-							<p class="date-time">{{ comment.date }}</p>
+							<p class="date-time">{{ comment.commentdate }}</p>
 							<p>Autor: {{ comment.name }}</p>
-							<p>Email: {{ comment.email }}</p>
+							<!-- <p>Email: {{ comment.email }}</p> -->
+							<p><a v-bind:href="comment.email">{{ comment.email }}</a></p>
 							<p>Comentário: {{ comment.content }}</p>
 							<p>Capítulo: {{ comment.postid }}</p>
 							<p>ID de comentário: {{ comment.commentid }}</p>

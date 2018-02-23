@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- <router-view name="vtour"></router-view> -->
     <router-view name="header"></router-view>
     <router-view name="progressbar"></router-view>
     <router-view name="default"></router-view>

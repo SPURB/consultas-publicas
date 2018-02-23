@@ -43,25 +43,23 @@
 <script>
 export default {
 	name: 'Modalcomponent',
-	data () {
+	data() {
 		return {
 			name:'',
 			email:''
 		}
 	},
 	computed: {
-		showmodal: function (){
-			return this.$store.state.showmodal
-		},
-		projectTitle(){
-			return this.$store.state.projecttitle ;
-		}
+		showmodal(){ return this.$store.state.showmodal; },
+		projectTitle(){ return this.$store.state.projecttitle; },
+		newScrollTop(){ return this.$store.state.scrollheight; }
 	},
 	methods: {
-		close: function(){
-			this.$store.state.showmodal = false
+		close(){
+			this.$store.state.showmodal = false;
+			window.scroll(0, this.newScrollTop);
 		},
-		enable: function(){
+		enable(){
 			var app = this
 			var hasErrors = function(){
 				if (app.email == '' || app.errors.any() == true || app.name == '') {
@@ -71,9 +69,9 @@ export default {
 			}()
 
 			if(!hasErrors){
-				this.$store.state.email = this.email
-				this.$store.state.name = this.name
-				this.$store.state.comments = true
+				this.$store.state.email = this.email;
+				this.$store.state.name = this.name;
+				this.$store.state.comments = true;
 
 				// add recaptcha to head
 				let recaptchaScript = document.createElement('script')
@@ -90,7 +88,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 @import "../../assets/main.scss";
 
