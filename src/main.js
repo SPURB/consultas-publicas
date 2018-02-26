@@ -14,12 +14,11 @@ import Materialize from "./assets/vendor/materialize-src/js/materialize.min.js";
 // onboard
 // require('vue-tour/dist/vue-tour.css');
 
+// onboard
+// Vue.use(VueTour); 
 
 Vue.use(VeeValidate);
 Vue.config.productionTip = false;
-
-//onboard
-// Vue.use(VueTour); 
 
 
 /* eslint-disable no-new */

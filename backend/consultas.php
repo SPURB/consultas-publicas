@@ -1,5 +1,5 @@
 <?php
-include_once "Jm3uGyhDWjJrNfVqxX69xR4qdmpSUb8udG9dUs9gYWTryB9wejACwJMBSffaYfnXaMTGz.php";
+include_once "./admin/Jm3uGyhDWjJrNfVqxX69xR4qdmpSUb8udG9dUs9gYWTryB9wejACwJMBSffaYfnXaMTGz.php";
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 
 
@@ -85,7 +85,7 @@ if (isset($_POST['token'])){
 
 			function isAdmin($email, $pass){
 
-				include_once 'ZCbC6xhaUCzeAYHDdLDJfTMzDStB6GqJKMfUASs5KagAYR4Z3YFK5W76RhkGnc56kanAt.php';
+				include_once './admin/ZCbC6xhaUCzeAYHDdLDJfTMzDStB6GqJKMfUASs5KagAYR4Z3YFK5W76RhkGnc56kanAt.php';
 				// $admin = array(
 				// 	'José' => array(
 				// 		'email' => 'ze@ninguem.com',
