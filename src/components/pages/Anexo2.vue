@@ -93,23 +93,140 @@
 					<p>A LPUOS define, em seu art. 15, que as ZOE devem ser objeto de projetos de intervenção urbana para a definição de seus parâmetros urbanísticos adequados a suas especificidades. A título de referências, considerando as características da quadra do PIU Sumidouro e do entorno, podemos destacar os parâmetros ordinários incidentes de parcelamento, das zonas de uso vizinhas e de cota Ambiental.</p>
 					<p>O quadro 2 traz os parâmetros aplicáveis a lotes maiores que 20.000 m²:</p>
 					<p><strong>Trecho do Quadro 2 – Percentuais de destinação de área pública</strong></p>					
-					<div class="figure">
+					<!--<div class="figure">
 						<img :src="require('../../assets/img/anexo2/table01.gif')" class="responsive-img" data-caption="Trecho do quadro 2 - Percentuais de destinação de área pública"/>
 						<p><strong> Trecho do quadro 2 - Percentuais de destinação de área pública</strong></p>
-					</div>
+					</div>-->
+					<table>
+			<tbody>
+				<caption>Trecho do Quadro 2 – Percentuais de destinação e área pública</caption>
+				<tr class="table-header">
+					<td>Área do Lote ou Gleba (m²)</td>
+					<td>Percentual mínimo de Área Verde (%)</td>
+					<td>Percentual mínimo de área institucional</td>
+					<td>Percentual mínimo de Sistema Viário</td>
+					<td>Percentual mínimo de área sem afetação previamente definida</td>
+					<td>Total do percentual mínimo de destinação de área pública (%)</td>
+				</tr>
+				<tr class="table-content">
+					<td>Maior que 20.000m² e menor ou igual a 40.000m²</td>
+					<td>5</td>
+					<td>5</td>
+					<td>NA</td>
+					<td>20</td>
+					<td>30</td>
+				</tr>
+				<tr class="table-content">
+					<td>Maior que 40.000m²</td>
+					<td>10</td>
+					<td>5</td>
+					<td>15</td>
+					<td>10</td>
+					<td>40</td>
+				</tr>
+			</tbody>
+		</table>
 					
 					<p>Conforme ilustrado na figura 19 do Produto 01, o PIU Sumidouro tem como zonas de uso confrontantes a ZM (Zona Mista) e a ZCOR-1 (Zona Corredor 1), cujos parâmetros de ocupação expressos no quadro 3 estão sintetizados a seguir:</p>
 
-					<div class="figure">
+					<!--<div class="figure">
 						<img :src="require('../../assets/img/anexo2/table02.gif')" class="responsive-img" data-caption="Trecho do Quadro 3 - Parâmetros de ocupação, exceto de Quota Ambiental"/>
 						<p><strong> Trecho do Quadro 3 - Parâmetros de ocupação, exceto de Quota Ambiental</strong></p>
-					</div>
+					</div>-->
+					<table>
+						<caption>Trecho do Quadro 3 – Parâmetros de ocupação, exceto de Quota Ambien</caption>
+			<tbody>
+				
+				<tr class="table-header">
+					<td rowspan="3">ZONA (a)</td>
+					<td colspan="3">Coeficiente de Aproveitamento</td>
+					<td colspan="2">Taxa de Ocupação Máxima</td>
+					<td rowspan="3">Gabarito de altura máxima (m)</td>
+					<td colspan="3">Recuos Mínimos (m)</td>
+					<td rowspan="3">Cota parte máxima de terreno por unidade m²</td>
+				</tr>
+				<tr class="table-header">
+					<td rowspan="2">C.A. mínimo</td>
+					<td rowspan="2">C.A. básico</td>
+					<td rowspan="2">C.A. máximo</td>
+					<td rowspan="2">T.O. para lotes até 500m²</td>
+					<td rowspan="2">T.O. para lotes igual ou superior a 500m²</td>
+					<td rowspan="2">Frente (i)</td>
+					<td colspan="2">Fundos e laterais</td>
+				</tr>
+				<tr class="table-header">
+					<td>Altura da edificação menor ou igual a 10 m</td>
+					<td>altura da edificação superior a 10 m</td>
+				</tr>
+				<tr class="table-content">
+					<td>ZC</td>
+					<td>0,3</td>
+					<td>1</td>
+					<td>2</td>
+					<td>0,85</td>
+					<td>0,70</td>
+					<td>48</td>
+					<td>5</td>
+					<td>NA</td>
+					<td>3 (j)</td>
+					<td>NA</td>
+				</tr>
+				<tr>
+					<td>ZCOR-1</td>	
+					<td>0,05</td>
+					<td>1</td>
+					<td>1</td>
+					<td>0,50</td>
+					<td>0,50</td>
+					<td>10</td>
+					<td>5</td>
+					<td>NA</td>
+					<td>3 (j)</td>
+					<td>NA</td>
+				</tr>
+			</tbody>
+		</table>
 					<p>Em relação à Quota ambiental, conforme o Mapa 3, o PIU Sumidouro está localizada no perímetro de qualificação ambiental  PA- 4, cujos parâmetros estão expressos no Quadro 3A a seguir:</p>
 
-					<div class="figure">
+					<!--<div class="figure">
 						<img :src="require('../../assets/img/anexo2/table03.gif')" class="responsive-img" data-caption="Trecho do Quadro 3A - Quota Ambiental: Pontuação mínima, Taxa de Permeabilidade Mínima e fatores por perímetros de qualificação ambiental"/>
 						<p><strong> Trecho do Quadro 3A - Quota Ambiental: Pontuação mínima, Taxa de Permeabilidade Mínima e fatores por perímetros de qualificação ambiental</strong></p>
-					</div>					
+					</div>	-->
+					<table>
+						<caption>Trecho do Quadro 3A - Quota Ambiental: Pontuação mínima, Taxa de Permeabilidade 		Mínima e fatores por perímetros de qualificação ambiental</caption>
+			<tbody>
+		
+				<tr class="table-header">
+					<td rowspan="2">Perímetro de Qualificação Ambiental</td>
+					<td colspan="2">Taxa de Permeabilidade (a) (b)</td>
+					<td colspan="5">Pontuação QA mínimo </td>
+					<td colspan="2">Fatores </td>
+				</tr>
+				<tr class="table-header">
+					<td>Lote ≤ 500m²</td>
+					<td>Lote > 500m²</td>
+					<td>Lote > 500 e ≤ 1.000m²</td>
+					<td>Lote > 1000 e ≤ 2.500m²</td>
+					<td>Lote > 2500 e ≤ 5.000m² </td>
+					<td>Lote > 5000 e ≤ 10.000m² </td>
+					<td>Lote > 10.000m²</td>
+					<td>Cobertura Vegetal (alfa)</td>
+					<td>Drenagem (beta)</td>
+				</tr>
+				<tr class="table-content">
+					<td><strong>PA 4</strong> </td>
+					<td>0,15</td>
+					<td>0,25</td>
+					<td>0,37</td>
+					<td>0,48</td>
+					<td>0,60</td>
+					<td>0,65</td>
+					<td>0,78</td>
+					<td>0,5</td>
+					<td>0,5</td>
+				</tr>
+			</tbody>
+		</table>				
 
 					<h6 id="an2-cap-1-2-3">1.2.3 Planos Regionais das Subprefeituras – PRS (Decreto nº 57.537/ 2016)</h6>
 					<p>Os Planos Regionais das Subprefeituras são elementos de planejamento complementares ao PDE e à lei do Zoneamento, enfatizando os espaços e áreas públicas e a articulação de políticas setoriais no território e com as peças orçamentárias, contendo propostas para a Rede de Estruturação Local. A Rede de Estruturação Local, por sua vez, é composta por Perímetros de Ação, que são porções do território com demandas e ações setoriais que necessitam de projetos coordenados de intervenção destinados ao desenvolvimento urbano local, mediante integração de políticas e investimentos públicos.</p>
@@ -317,6 +434,19 @@ export default {
 	li{
 		list-style: inside;
 	}
+}
+
+table {
+	max-width: 960px;
+}
+.table-header td {
+	border: 1px solid #cccccc;
+	padding: 1em;
+}
+
+caption {
+	font-weight: bold;
+	text-align: left;
 }
 
 </style>
