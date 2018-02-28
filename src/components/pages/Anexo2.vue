@@ -92,14 +92,15 @@
 					<h6 id="an2-cap-1-2-2">1.2.2 Lei de Parcelamento, Uso e Ocupação do Solo – LPUOS (Lei nº 16.402/2016)</h6>
 					<p>A LPUOS define, em seu art. 15, que as ZOE devem ser objeto de projetos de intervenção urbana para a definição de seus parâmetros urbanísticos adequados a suas especificidades. A título de referências, considerando as características da quadra do PIU Sumidouro e do entorno, podemos destacar os parâmetros ordinários incidentes de parcelamento, das zonas de uso vizinhas e de cota Ambiental.</p>
 					<p>O quadro 2 traz os parâmetros aplicáveis a lotes maiores que 20.000 m²:</p>
-					<p><strong>Trecho do Quadro 2 – Percentuais de destinação de área pública</strong></p>					
-					<!--<div class="figure">
+					<!--<p><strong>Trecho do Quadro 2 – Percentuais de destinação de área pública</strong></p>					
+					<div class="figure">
 						<img :src="require('../../assets/img/anexo2/table01.gif')" class="responsive-img" data-caption="Trecho do quadro 2 - Percentuais de destinação de área pública"/>
 						<p><strong> Trecho do quadro 2 - Percentuais de destinação de área pública</strong></p>
 					</div>-->
-					<table>
-			<tbody>
+					<table class="striped">
 				<caption>Trecho do Quadro 2 – Percentuais de destinação e área pública</caption>
+
+			<tbody>
 				<tr class="table-header">
 					<td>Área do Lote ou Gleba (m²)</td>
 					<td>Percentual mínimo de Área Verde (%)</td>
@@ -133,7 +134,7 @@
 						<img :src="require('../../assets/img/anexo2/table02.gif')" class="responsive-img" data-caption="Trecho do Quadro 3 - Parâmetros de ocupação, exceto de Quota Ambiental"/>
 						<p><strong> Trecho do Quadro 3 - Parâmetros de ocupação, exceto de Quota Ambiental</strong></p>
 					</div>-->
-					<table>
+					<table class="striped">
 						<caption>Trecho do Quadro 3 – Parâmetros de ocupação, exceto de Quota Ambien</caption>
 			<tbody>
 				
@@ -308,10 +309,77 @@
 						<li>Considerando a área líquida dos lotes e a área computável das edificações atuais, o coeficiente de aproveitamento do PIU Sumidouro seria atualmente de aproximadamente 0,77.</li>
 					</ul>
 					<p>A partir dos grandes números, processamos uma simulação de potencial construtivo associado à ZOE Sumidouro, variando o C.A. máximo entre 1,0 e 4,0 e a destinação de áreas públicas entre 32 e 50%.</p>
-					<div class="figure">
+					<!--<div class="figure">
 						<img :src="require('../../assets/img/anexo2/image37.gif')" class="responsive-img" data-caption="PIU Sumidouro: Ensaio potencial construtivo"/>
 						<p><strong>PIU Sumidouro: Ensaio potencial construtivo</strong></p>
-					</div>
+					</div>-->
+					<table class="striped">
+				<caption>PIU Sumidouro: Ensaio Potencial Construtivo</caption>
+			<tbody>
+				<tr class="table-header">
+					<td>Área Total PIU</td>
+					<td>Áreas públicas</td>
+					<td>Área Líquida</td>
+					<td>Potencial Construtivo</td>
+					<td>Área Construída</td>
+				</tr>
+				<tr class="table-content">
+					<td rowspan="12">146.789,00 m²</td>
+					<td rowspan="4">46.994,51 m²</td>
+					<td rowspan="4">99.794,49 m²</td>
+					<td>CA=1</td>
+					<td>99.794,49 m²</td>
+				</tr>
+				<tr class="table-content">
+					<td>CA=2</td>
+					<td>199.588,98 m²</td>
+				</tr>
+				<tr class="table-content">
+					<td>CA=3</td>
+					<td>299</td>
+				</tr>
+				<tr class="table-content">
+					<td>CA=4</td>
+					<td>399.177,96 m²</td>
+				</tr>
+				<tr class="table-content">
+					<td rowspan="4">58.715,60 m²</td>
+					<td rowspan="4">88.073,40 m²</td>
+					<td>CA=1</td>
+					<td>88.073,40 m²</td>
+				</tr>
+				<tr class="table-content">
+					<td>CA=2</td>
+					<td>176.146,80 m²</td>
+				</tr>
+				<tr class="table-content">
+					<td>CA=3</td>
+					<td>264.220,20 m²</td>
+				</tr>
+				<tr class="table-content">
+					<td>CA=4</td>
+					<td>352.293,60</td>
+				</tr>
+				<tr class="table-content">
+					<td rowspan="4">73.394,50 m²</td>
+					<td rowspan="4">73.394,50 m²</td>
+					<td>CA=1</td>
+					<td>73.394,50 m²</td>
+				</tr>
+				<tr class="table-content">
+					<td>CA=2</td>
+					<td>146.789,00 m²</td>
+				</tr>
+				<tr class="table-content">
+					<td>CA=3</td>
+					<td>220.183,50 m²</td>
+				</tr>
+				<tr class="table-content">
+					<td>CA=4</td>
+					<td>293.578,00 m²</td>
+				</tr>
+			</tbody>
+		</table>
 					<p>Assim, considerando a permanência total das edificações existentes como um cenário conservador (<strong>Cenário A</strong>), temos um C.A. existente que pode variar, conforme o percentual de destinação para áreas públicas, entre 0,77 e 1,05. </p>
 					<p>A definição dos parâmetros urbanísticos aplicáveis à ZOE Sumidouro está vinculada aos cenários de uso do solo, às diretrizes do PDE e ao contexto urbano da OUC Faria Lima, que circunscreve o PIU.</p>
 					<p>À luz destes elementos, o PIU deverá estabelecer os cenários de atribuição de potencial construtivo coerentes com o programa e com as diretrizes do quadro normativo vigente, definindo os parâmetros urbanísticos incidentes e as correspondentes contrapartidas financeiras.</p>
@@ -437,16 +505,25 @@ export default {
 }
 
 table {
-	max-width: 960px;
-}
-.table-header td {
-	border: 1px solid #cccccc;
-	padding: 1em;
+	margin: 2em 0px 2em;
 }
 
+.table-header td {
+	border: 1px solid #ffffff;
+	background-color: #f2f2f2;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 10px 1em 10px;
+	text-align: left;
+}
+.table-content td {
+	border: 1px solid #f2f2f2;
+}
 caption {
 	font-weight: bold;
 	text-align: left;
+	padding: 1em 0px 1em;
+	border-top: 1px solid #868686;
 }
 
 </style>

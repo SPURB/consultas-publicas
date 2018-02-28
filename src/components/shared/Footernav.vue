@@ -75,7 +75,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/main.scss";
+@import "../../assets/variables.scss";
 
 div.divider.bottom{ margin: 1rem}
 

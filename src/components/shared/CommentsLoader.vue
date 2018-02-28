@@ -1,5 +1,6 @@
 <template>
 	<div class="CommentsLoader row" v-if="members">
+		<transition	name="fade">
 		<!-- <div class="container"> -->
 			<div v-for="comment in members">
 				<div class="comment col s10 offset-s1" v-if="checkPostCommentIds(comment.postid, comment.commentid)">
@@ -8,6 +9,7 @@
 				</div>
 			</div>
 		<!-- </div> -->
+		</transition>
 	</div>
 </template>
 
@@ -25,21 +27,15 @@ export default {
 	computed: {
 		postid() { return this.$route.meta.postid }
 	}, 
-	mounted(){
-		this.getAllcomments()
-	},
+	mounted(){ this.getAllcomments() },
 	methods: {
 		getAllcomments() {
 			let app = this
 			axios.get('consultas.php?crud=read')
 				.then(function(response){
 					// console.log(response);
-					if(response.data.error){
-						app.errorMessage = response.data.message;
-					}
-					else{
-						app.members = response.data.members;
-					}
+					if (response.data.error){ app.errorMessage = response.data.message; }
+					else{ app.members = response.data.members; }
 			});
 		},
 		checkPostCommentIds(postId, commentId){
@@ -52,7 +48,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/main.scss";
+@import "../../assets/variables.scss";
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .1s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 
 .comment {
 	.member-info{

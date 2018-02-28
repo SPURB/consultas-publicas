@@ -1,17 +1,19 @@
 <template>
 	<header class="header">
 		<div class="navbar-fixed">
-			<nav>
-				<div class="nav-wrapper">
-					<a class="title" href="http://gestaourbana.prefeitura.sp.gov.br/">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a><router-link to='/consulta'> | {{ projectTitle }}</router-link>
-					<a id="menu" class="right waves-effect" href="#">Menu</a>
-					<ul id="routes-list" class="right">
-						<li v-for="navitem in navitems">
-							<router-link :to='navitem.path' >{{navitem.name}}</router-link>
-						</li>
-					</ul>
-				</div>
-			</nav>
+			<transition name="fade">
+				<nav v-show="toggleNav">
+					<div class="nav-wrapper">
+						<a class="title" href="http://gestaourbana.prefeitura.sp.gov.br/">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a><router-link id="tohome" to='/consulta'> | {{ projectTitle }}</router-link>
+						<a id="menu-icon" class="sidenav-trigger right" @click="showNavItems = !showNavItems"><i class="material-icons">menu</i></a>
+						<ul id="routes-list"  class ="right" v-bind:class="{ menuDisplay: showNavItems }">
+							<li v-for="navitem in navitems">
+								<router-link :to='navitem.path'>{{navitem.name}}</router-link>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</transition>
 		</div>
 	</header>
 </template>
@@ -22,7 +24,10 @@ export default {
 	data () {
 		return {
 			navitems: [],
-			firstview: false
+			firstview: false,
+			toggleNav: true,
+			lastYposition: 0,
+			showNavItems: false
 		}
 	},
 	created(){
@@ -35,77 +40,117 @@ export default {
 		})
 		app.firstview = true;
 
-		// change class at scroll
-		window.addEventListener('scroll', this.foo);
+		// watch for scroll
+		window.addEventListener('scroll', this.scrolling);
 	},
-	destroyed(){
-		window.removeEventListener('scroll', this.foo);
-	},
+	destroyed(){ window.removeEventListener('scroll', this.scrolling); },
 	methods:{
-		foo(){
-
-		}
+		scrolling(){
+			this.lastYposition > window.scrollY ? this.toggleNav = true : this.toggleNav = false;
+			this.lastYposition = window.scrollY;
+		},
 	},
 	computed:{
-		projectTitle(){
-			return this.$store.state.projecttitle ;
+		projectTitle(){ return this.$store.state.projecttitle; }
+	},
+	watch:{
+		showNavItems(){
+			// console.log('clicked')
+			this.showNavItems ? document.getElementById("menu-icon").firstChild.textContent = "close" : document.getElementById("menu-icon").firstChild.textContent = "menu"
 		}
 	}
 }
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/main.scss";
-
-$small-screen-up: 601px !default;
-$medium-screen-up: 993px !default;
-$large-screen-up: 1201px !default;
-$small-screen: 600px !default;
-$medium-screen: 992px !default;
-$large-screen: 1200px !default;
-
-$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
-$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
-$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
-$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
-$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+@import "../../assets/variables.scss";
 
 
 span.sp {color: #EB5757}
 span.urbana{color: black}
-nav{
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+nav {
 	min-width: 100%;
-	padding: 0 1em;
+	padding: 0;
 	color: $primary-dark-grey;
 	background-color: white;
-	a{
-		font-size: 1.5rem;
-		color:#BDBDBD;
-	}
-	li {
+	.nav-wrapper{
+		border-bottom-width: 1px;
+		.title {margin: 0 1rem }
 		a {
-			font-size: 1em;
-			color:$primary-dark-grey;
-		};
-		a.router-link-active{background-color: rgba(0,0,0,0.05);}
-		a.router-link-active:hover{background-color: rgba(0,0,0,0.05); };
-	}
-	#menu{
-		display: none;
-	}
+			font-size: 1.5rem;
+			color:#BDBDBD;
+		}
+		li {
+			padding: 0;
+			background-color:white;
+			border-bottom: solid 1px $primary-dark-grey;
+			a {
+				font-size: 1em;
+				color:$primary-dark-grey;
+			};
+			a.router-link-active{
+				background-color: rgba(0,0,0,0.05);
+			}
+			a.router-link-active:hover{
+				background-color: rgba(0,0,0,0.05); 
+			};
+		}
 
-	@media #{$medium-and-down} {
-		a, #routes-list li a {font-size: 1rem;}
-	}
+		#menu-icon{
+			display: none;
+		}
 
-	@media #{$small-and-down} {
-		#routes-list {display: none }
-		#menu{ display: block };
-	}
-	@media only screen and (max-width: 385px){
-	 a.router-link-active{ display: none}
-	}
+		@media #{$medium-and-down} {
+			#routes-list{ box-shadow: 1px 2px 4px 4px rgba(150,150,150, .25) }
+			a, #routes-list li a {font-size: 1rem;};
+		}
 
+		@media #{$small-and-down} {
+			#routes-list { 
+				width:100%;
+				cursor: none;
+				display: none;
+				li{
+					width: inherit;
+					a.router-link-active{
+						color: $main-color;
+						border-left: solid .5em $primary-dark-grey;
+						transition: boder-color 0.1s ease;
+					}
+					a { 
+						border-left: solid 0 ;
+						transition: border-width 0.1s ease-out;
+					};
+					a:hover{
+						color: $main-color;
+						border-left: solid .5em $primary-grey;
+						transition: border-width 0.1s ease-in;
+					};
+				};
+				li:first-child{ border-top: 1px solid $primary-grey}
+
+			};
+			#routes-list.menuDisplay{ 
+				visibility: visible;
+				opacity: 1; 
+				display: block;
+			};
+			#menu-icon{ display: block };
+			#menu-icon:hover { cursor: pointer;};
+		}
+
+		@media #{$extrasmall-and-down} {
+		 a#tohome{ display: none}
+		}
+	}
 }
 
 </style>

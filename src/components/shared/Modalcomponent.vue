@@ -89,10 +89,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/main.scss";
+@import "../../assets/variables.scss";
 
 h1{
-	font-size: 24px;
+	font-size: 1.5rem;
 	color:#BDBDBD;
 	margin-top:4%;
 	span:nth-of-type(1) {color:#000000};
@@ -101,7 +101,7 @@ h1{
 }
 
 h2{
-	font-size: 24px;
+	font-size: 1.5rem;
 	margin: 2.3733333333rem 0
 }
 
@@ -187,13 +187,28 @@ h2{
 	}
 }
 
-/* media queries */
-@media screen and (max-width: 600px) {
+@media #{$medium-and-down} {
 	.modal-container {
 		width: 80%;
 		padding: 2% 5%;
 	}
 }
 
+@media #{$small-and-down} {
+	.modal-container {
+		width: 90%;
+		padding: 2% 5%;
+		h1, h2, { 
+			font-size: 1rem
+		}
+	}
+}
+
+@media #{$extrasmall-and-down} {
+	.modal-container {
+		width: 92%;
+		padding: auto 3%;
+	}
+}
 
 </style>

@@ -1,19 +1,14 @@
-// @import "./variables.scss";
-$font-stack: Roboto, "Helvetica Neue", sans-serif;
-$font-white-dark-bkg: #F2F2F2;
-
-$main-color: #212121;
-$primary-grey: #4F4F4F;
-$primary-light-grey: #F2F2F2;
-$primary-dark-grey: #828282;
+@import "./variables.scss";
 
 // REGRAS GLOBAIS
 html{
 	font-family: $font-stack;
 }
-
+.container{
+	max-width: 56rem;
+}
 .chapter-title{
-	font-size:36px; 
+	font-size:2.5rem; 
 	color: $main-color;
 	margin-bottom: 0;
 }
@@ -36,26 +31,27 @@ html{
 		p{
 			margin-top: 0;
 		}
+		img{
+			border: solid $primary-dark-grey 1px 
+		}
 	}
 
-h5, h6 {
-	font-weight: 700;
-}
-
-blockquote{
-	border-left: solid 1px $primary-grey;
-	li{
-		font-size: 0.85em;
-		padding: 0.5em 0;
+	h5, h6 {
+		font-weight: 700;
 	}
-}
-#bottom-comments{
-	border-top: solid 1px $primary-grey;
-	margin-top: 6em;
-	padding: 0.65em 0;
-}
 
-
+	blockquote{
+		border-left: solid 1px $primary-grey;
+		li{
+			font-size: 0.85em;
+			padding: 0.5em 0;
+		}
+	}
+	#bottom-comments{
+		border-top: solid 1px $primary-grey;
+		margin-top: 6em;
+		padding: 0.65em 0;
+	}
 }
 
 section{
@@ -90,8 +86,13 @@ img.materialboxed:hover{
 .active{ display: block; }
 .hidden{ display: none; }
 
-@media (min-width: 960px)  {
-	.flow-text {
-		font-size: 1rem
+
+@media #{$extrasmall-and-down} {
+	.chapter-title{
+		font-size:2rem;
+		line-height: 1.35;
+	}
+	.row{
+		margin-bottom: 0;
 	}
 }

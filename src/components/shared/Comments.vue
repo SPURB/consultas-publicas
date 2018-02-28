@@ -126,7 +126,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-	@import "../../assets/main.scss";
+	@import "../../assets/variables.scss";
 
 	a.btn-flat{
 		background-color:$primary-light-grey;
