@@ -27,8 +27,8 @@
 									</div>
 
 									<div class="commentaction">
-										<button @click="close" class="btn-flat" id="cancel">Cancelar</button>
-										<button @click="enable" class="btn-flat" id="send">Habilitar</button>
+										<button @click="close" class="btn-large col s5" id="cancel">Cancelar</button>
+										<button @click="enable" class="btn-large col s5 offset-s2" id="send">Habilitar</button>
 									</div>
 								</form>
 							</slot>
@@ -106,15 +106,15 @@ h2{
 }
 
 .commentaction{
-	margin: 12% 0 8%;
 	button#cancel{ 
-		background-color: $primary-light-grey; 
-		font-weight: 700;
+		background-color:#DBDBDB;
+		color: $primary-dark-grey;
+		transition: background-color .2s;
+	}
+	button#cancel:hover{
+		background-color: $primary-light-grey;
 	}
 	button#send{
-		background-color: $primary-grey;
-		color: $font-white-dark-bkg;
-		font-weight: 700;
 		float: right
 	}
 }

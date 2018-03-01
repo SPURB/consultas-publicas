@@ -68,7 +68,7 @@ const router = new Router({
 			}
 		},
 		{
-			path: '/ikzawlhlyqpxhmznksotsc', 
+			path: '/admin', 
 			components: {
 				header: Header,
 				default: Admin,

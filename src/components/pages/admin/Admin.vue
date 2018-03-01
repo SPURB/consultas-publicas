@@ -1,6 +1,6 @@
 <template>
 <div class="admin">
-	<div class="container">
+	<!-- <div class="container"> -->
 		<p v-if="successMessage">{{ successMessage }}</p>
 		<p v-if="errorMessage">{{ successMessage }}</p>
 		<AdminLogin v-if="!isadmin"></AdminLogin>
@@ -89,7 +89,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	<!-- </div> -->
 </div>
 </template>
 
@@ -190,7 +190,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../../assets/main.scss";
+@import "../../../assets/variables.scss";
 
 h3{
 	font-size: 36px;
@@ -234,8 +234,6 @@ div.card {
 			position:absolute;
 			left:0
 		}
-	}	
+	}
 }
-
-
 </style>

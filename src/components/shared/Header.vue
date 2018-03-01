@@ -4,6 +4,7 @@
 			<transition name="fade">
 				<nav v-show="toggleNav">
 					<div class="nav-wrapper">
+						<div class="container">
 						<a class="title" href="http://gestaourbana.prefeitura.sp.gov.br/">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a><router-link id="tohome" to='/consulta'> | {{ projectTitle }}</router-link>
 						<a id="menu-icon" class="sidenav-trigger right" @click="showNavItems = !showNavItems"><i class="material-icons">menu</i></a>
 						<ul id="routes-list"  class ="right" v-bind:class="{ menuDisplay: showNavItems }">
@@ -11,6 +12,7 @@
 								<router-link :to='navitem.path'>{{navitem.name}}</router-link>
 							</li>
 						</ul>
+						</div>
 					</div>
 				</nav>
 			</transition>
@@ -83,9 +85,9 @@ nav {
 	background-color: white;
 	.nav-wrapper{
 		border-bottom-width: 1px;
-		.title {margin: 0 1rem }
+		.title {margin: 0}
 		a {
-			font-size: 1.5rem;
+			font-size: 1.25rem;
 			color:#BDBDBD;
 		}
 		li {
@@ -104,23 +106,21 @@ nav {
 			};
 		}
 
-		#menu-icon{
-			display: none;
-		}
+		#menu-icon{ display: none; }
 
 		@media #{$medium-and-down} {
-			#routes-list{ box-shadow: 1px 2px 4px 4px rgba(150,150,150, .25) }
-			a, #routes-list li a {font-size: 1rem;};
+			a, #routes-list li a { font-size: 1rem };
 		}
-
+		@media only screen and (max-width : 715px){ #routes-list li a { padding: 0 .38rem } }
 		@media #{$small-and-down} {
 			#routes-list { 
-				width:100%;
+				width: 100%;
 				cursor: none;
 				display: none;
+				box-shadow: 1px 2px 4px 4px rgba(150,150,150, .25);
 				li{
 					width: inherit;
-					a.router-link-active{
+					a.router-link-active {
 						color: $main-color;
 						border-left: solid .5em $primary-dark-grey;
 						transition: boder-color 0.1s ease;
@@ -129,26 +129,22 @@ nav {
 						border-left: solid 0 ;
 						transition: border-width 0.1s ease-out;
 					};
-					a:hover{
+					a:hover {
 						color: $main-color;
 						border-left: solid .5em $primary-grey;
 						transition: border-width 0.1s ease-in;
 					};
 				};
-				li:first-child{ border-top: 1px solid $primary-grey}
+				li:first-child { border-top: 1px solid $primary-grey}
 
 			};
-			#routes-list.menuDisplay{ 
-				visibility: visible;
-				opacity: 1; 
-				display: block;
-			};
-			#menu-icon{ display: block };
-			#menu-icon:hover { cursor: pointer;};
+			#routes-list.menuDisplay{  display: block };
+			#menu-icon { display: block };
+			#menu-icon:hover { cursor: pointer };
 		}
 
 		@media #{$extrasmall-and-down} {
-		 a#tohome{ display: none}
+			a#tohome{ display: none}
 		}
 	}
 }

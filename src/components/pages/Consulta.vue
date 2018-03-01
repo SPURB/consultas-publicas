@@ -5,14 +5,15 @@
 			<h2 class="chapter-title">Consulta Pública PIU Sumidouro</h2>
 		</div>
 	</div>
-	<!-- <img :src="require('../../assets/img/1920x800.png')" class="responsive-img" alt="Imagem principal"/> -->
 	<div class="container">
 		<div class="row">
 			<div class="col s12 chapter-content">
 				<section id="1_objeto">
 					<h5>1. OBJETO</h5>
-					<p class="commentable" @click="defineCommentId" id="0001"> A presente Consulta Pública, promovida pela Prefeitura do Município de São Paulo por intermédio da Secretaria Municipal de Urbanismo e Licenciamento (SMUL) e da São Paulo Urbanismo (SP-URBANISMO), tem como objeto desencadear o processo administrativo tendente a instaurar o Projeto de Intervenção Urbana (PIU) Sumidouro, a ser realizada entre os dias 23 de fevereiro e 23 de março de 2018, apresentando os elementos preliminares ao desenvolvimento do PIU, com vistas a colher contribuições da sociedade civil ao desenvolvimento posterior do projeto. A consulta tem por base a legislação em vigor e os instrumentos urbanísticos que permitem ações específicas no território da cidade.<i class="small material-icons"> insert_comment</i></p>
+					<p class="commentable" @click="defineCommentId" id="0001"> A presente Consulta Pública, promovida pela Prefeitura do Município de São Paulo por intermédio da Secretaria Municipal de Urbanismo e Licenciamento (SMUL) e da São Paulo Urbanismo (SP-URBANISMO), tem como objeto desencadear o processo administrativo tendente a instaurar o Projeto de Intervenção Urbana (PIU) Sumidouro, a ser realizada entre os dias 23 de fevereiro e 23 de março de 2018, apresentando os elementos preliminares ao desenvolvimento do PIU, com vistas a colher contribuições da sociedade civil ao desenvolvimento posterior do projeto. A consulta tem por base a legislação em vigor e os instrumentos urbanísticos que permitem ações específicas no território da cidade. <i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 1"></Comments>
+
+					<a class="btn-flat" @click="consoleAllcomments">teste</a>
 
 					<p class="commentable" @click="defineCommentId" id="0002">
 					De acordo com o Art. 2º do <a href="http://gestaourbana.prefeitura.sp.gov.br/estruturacao-territorial/piu/decreto/">Decreto nº 56.901/2016</a>, o processo de instrução do PIU se inicia pela publicação dos elementos preliminares a seu desenvolvimento, constituídos <strong>de um diagnóstico socioterritorial</strong> da área estudada e de um <strong>programa de interesse público</strong>, trazendo as questões a serem enfrentadas no contexto urbano em que está inserido. Esses documentos são então submetidos à consulta pública para receber subsídios ao seu posterior desenvolvimento, após prévia autorização da Secretaria Municipal de Urbanismo e Licenciamento – SMUL. Num segundo momento, são apresentados os elementos constituintes do PIU (definidos no Art. 4º do mesmo decreto) para nova consulta pública, de forma que possa ser avaliado e ajustado até a publicação de sua versão final, que servirá como base para a definição de parâmetros de parcelamento, uso e ocupação do solo a serem instituídos por Decreto do Executivo ou por intermédio de lei regularmente aprovada pela Câmara Municipal de São Paulo.
@@ -105,8 +106,6 @@
 					<Comments :commentid="commentid" v-if="commentid.id == 15"></Comments>
 				</section>
 
-<!-- <router-link :to='/anexo1'>Anexo I</router-link> -->
-
 				<section id="5_programa-de-interesse-publico">
 					<h5>5. PROGRAMA DE INTERESSE PÚBLICO</h5>
 					<p class="commentable" @click="defineCommentId" id="0016">
@@ -137,9 +136,21 @@ export default {
 				id: null,
 				context: null
 			},
+			allCommentableIds: null
 		}
 	},
-	methods:{
+	computed:{ allcomments() { return this.$store.state.allcomments	}
+	},
+	mounted(){
+
+		// console.log(this.allcomments);
+
+		// comemmentable list
+		let commentables = document.getElementsByClassName('commentable');
+		let commentablesArr = Object.keys(commentables).map(function (key) { return commentables[key]; }); 
+		this.allCommentableIds = commentablesArr.map(function(elem) { return parseInt(elem.attributes.id.value) })
+	},
+	methods: {
 		defineCommentId(event){ 
 			this.toggleActiveComments(event);
 			this.commentid.id = Number.parseInt(event.target.id); 
@@ -154,13 +165,17 @@ export default {
 			// adiciona a classe 'active' neste elemento clicado
 			event.target.classList.add('active');
 		},
+		consoleAllcomments(){ 
+			let allcomm = this.allcomments;
+			console.log(allcomm.map(function(elem) { return parseInt(elem.commentid) }))
+		}
 	},
 	components:{ Comments }
 }
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/main.scss";
+@import "../../assets/variables.scss";
 .material-icons {
 	font-size: 1rem; 
 	color:#039be5;

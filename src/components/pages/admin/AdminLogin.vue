@@ -18,8 +18,8 @@
 						<!-- <p class="col s10 offset-s1" v-if="error==true">{{ errorMessage }}</p> -->
 
 						<div class="login col s10 offset-s1">
-							<router-link to='/1' tag="a" class="btn-large col s4">Cancelar</router-link>
-							<a href="#" class="btn-large col s4 offset-s4" @click="login">Login</a>
+							<router-link to='/' tag="a" class="btn-large red darken-3 col s5">Cancelar</router-link>
+							<a class="btn-large col s5 offset-s2" @click="login">Login</a>
 						</div>
 					</form>
 				</div>
@@ -57,7 +57,6 @@ export default {
 			}
 			let memForm = app.toFormData(toSend)
 
-			// axios.post('teste.php', memForm)
 			axios.post('consultas.php?crud=login/'+tkn, memForm)
 				.then(function (response){
 					// console.log(response)
@@ -91,6 +90,7 @@ export default {
 </script>
 
 <style type="text/scss" scoped>
+/*@import "../../../assets/variables.scss";*/
 
 .card{
 	padding-top:3rem;
@@ -104,4 +104,5 @@ export default {
 .login{
 	margin-top:2rem;
 }
+
 </style>

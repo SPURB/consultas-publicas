@@ -5,7 +5,7 @@
 				<div class="divider"></div>
 				<CommentsLoader :commentid="commentid"></CommentsLoader>
 				<transition>
-					<div v-if="commentsenable" class="col s10 offset-s1" id="commentarea">
+					<div v-if="commentsenable" class="col s12" id="commentarea">
 						<form>
 							<label for="comment">Comente como {{ name }} (<a href="#" @click="showmodal">alterar</a>)</label>
 							<textarea id="comment" v-model="comment"></textarea>
@@ -13,12 +13,13 @@
 							<vue-recaptcha 
 								:sitekey="sitekey"
 								@verify="onVerify"
-								@expired="onExpired"></vue-recaptcha>
+								@expired="onExpired"
+								>
+							</vue-recaptcha>
 						</form>
 					</div>
 					<a v-else href="#" class="btn-flat col s10 offset-s1" @click="showmodal">Habilite comentários</a>
 				</transition>
-
 				<div class="divider col s12"></div>
 			</div>
 		</div>
@@ -27,8 +28,8 @@
 
 <script>
 import VueRecaptcha from 'vue-recaptcha';
-import CommentsLoader from '@/components/shared/CommentsLoader'
-import axios from 'axios'
+import CommentsLoader from '@/components/shared/CommentsLoader';
+import axios from 'axios';
 
 export default {
 	name: 'Comments',
@@ -126,53 +127,56 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-	@import "../../assets/variables.scss";
+@import "../../assets/variables.scss";
 
-	a.btn-flat{
-		background-color:$primary-light-grey;
-		// margin: 0 10%;
-		margin-bottom: 1.5em;
+a.btn-flat{
+	background-color:$primary-light-grey;
+	// margin: 0 10%;
+	margin-bottom: 1.5em;
+	font-weight: 500;
+	display: block;
+	text-align: center;
+	transition: color .1s, background-color .2s;
+}
+
+a.btn-flat:hover{
+	background-color: $primary-dark-grey;
+	color: white;
+}
+
+.comments{
+	h3{
+		font-size: 20px;
 		font-weight: 500;
-		display: block;
-		text-align: center;
-		transition: color .1s, background-color .2s;
 	}
-
-	a.btn-flat:hover{
-		background-color: $primary-dark-grey;
-		color: white;
-	}
-
-	.comments{
-		h3{
-			font-size: 20px;
-			font-weight: 500;
+	#commentarea{
+		padding: 0 0 1em;
+		textarea {
+			min-height: 198px;
+			font-family:$font-stack; 
+			color: $primary-grey;
+			padding: 1em;
+			border: solid 1px $primary-grey;
+			border-radius: 3px;
+			resize: none;
+			line-height: 1.52;
+			margin: 0 0 1rem;		
 		}
-		#commentarea{
-			padding: 0 0 1em;
-			textarea {
-				min-height: 198px;
-				font-family:$font-stack; 
-				color: $primary-grey;
-				padding: 1em;
-				border: solid 1px $primary-grey;
-				border-radius: 3px;
-				resize: none;
-				line-height: 1.52;
-				margin: 0 0 1rem;		
-			}
-			a.btn-flat{
-				float: right;
-				margin: 1rem 0 2rem;
-			}
+		a.btn-flat{
+			float: right;
+			margin: 1rem 0 2rem;
 		}
 	}
+}
 
-	/* media queries */
-	@media screen and (max-width: 600px) {
-		#commentarea {
-			width: 80%;
-			margin: 0 10%;
+@media #{$small-and-down} {
+.comments{
+	#commentarea{
+		a.btn-flat{
+			float: none
 		}
-	}
+	}	
+}
+}
+@media #{$extrasmall-and-down} { }
 </style>
