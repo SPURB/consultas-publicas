@@ -15,7 +15,7 @@ export const store = new Vuex.Store({
 		name: '',
 		isadmin: false,
 		scrollheight: 0,
-		allcomments: false // comment list all
+		allcomments: false // all comments
 	}, 
 	actions:{
 		LOAD_COMMENTS_LIST: function({ commit }) {
@@ -30,11 +30,11 @@ export const store = new Vuex.Store({
 	mutations:{	
 		SET_COMMENTS_LIST: (state, { list }) => {
 			state.allcomments = list;
-		}
+		},
 	},
-	getters:{
-		openProjects: state => {
-			return state.allcomments;
-		}
-	}
+	// getters:{
+	// 	openProjects: state => {
+	// 		return state.allcomments;
+	// 	}
+	// }
 });

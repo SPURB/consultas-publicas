@@ -59,14 +59,8 @@ export default {
 			this.$store.state.scrollheight = this.scrollHeight;
 			this.$store.state.showmodal = true; 
 		},
-		onVerify(response) {
-			// console.log('Verify: ' + response)
-			this.$store.state.usercheck = true
-		},
-		onExpired() {
-			// console.log('Expired')
-			this.$store.state.usercheck = false
-		},
+		onVerify(response) { this.$store.state.usercheck = true },
+		onExpired() { this.$store.state.usercheck = false },
 		sendata() {
 			const app = this;
 			const tkn = app.createToken();
@@ -149,6 +143,8 @@ a.btn-flat:hover{
 		font-size: 20px;
 		font-weight: 500;
 	}
+	.divider{	margin-bottom: 1rem}; 
+
 	#commentarea{
 		padding: 0 0 1em;
 		textarea {

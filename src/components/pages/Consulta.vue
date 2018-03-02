@@ -13,13 +13,10 @@
 					<p class="commentable" @click="defineCommentId" id="0001"> A presente Consulta Pública, promovida pela Prefeitura do Município de São Paulo por intermédio da Secretaria Municipal de Urbanismo e Licenciamento (SMUL) e da São Paulo Urbanismo (SP-URBANISMO), tem como objeto desencadear o processo administrativo tendente a instaurar o Projeto de Intervenção Urbana (PIU) Sumidouro, a ser realizada entre os dias 23 de fevereiro e 23 de março de 2018, apresentando os elementos preliminares ao desenvolvimento do PIU, com vistas a colher contribuições da sociedade civil ao desenvolvimento posterior do projeto. A consulta tem por base a legislação em vigor e os instrumentos urbanísticos que permitem ações específicas no território da cidade. <i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 1"></Comments>
 
-					<a class="btn-flat" @click="consoleAllcomments">teste</a>
-
 					<p class="commentable" @click="defineCommentId" id="0002">
 					De acordo com o Art. 2º do <a href="http://gestaourbana.prefeitura.sp.gov.br/estruturacao-territorial/piu/decreto/">Decreto nº 56.901/2016</a>, o processo de instrução do PIU se inicia pela publicação dos elementos preliminares a seu desenvolvimento, constituídos <strong>de um diagnóstico socioterritorial</strong> da área estudada e de um <strong>programa de interesse público</strong>, trazendo as questões a serem enfrentadas no contexto urbano em que está inserido. Esses documentos são então submetidos à consulta pública para receber subsídios ao seu posterior desenvolvimento, após prévia autorização da Secretaria Municipal de Urbanismo e Licenciamento – SMUL. Num segundo momento, são apresentados os elementos constituintes do PIU (definidos no Art. 4º do mesmo decreto) para nova consulta pública, de forma que possa ser avaliado e ajustado até a publicação de sua versão final, que servirá como base para a definição de parâmetros de parcelamento, uso e ocupação do solo a serem instituídos por Decreto do Executivo ou por intermédio de lei regularmente aprovada pela Câmara Municipal de São Paulo.
 					<i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 2"></Comments>
-
 				</section>
 
 				<section id="2_motivacao">
@@ -142,13 +139,9 @@ export default {
 	computed:{ allcomments() { return this.$store.state.allcomments	}
 	},
 	mounted(){
-
-		// console.log(this.allcomments);
-
-		// comemmentable list
 		let commentables = document.getElementsByClassName('commentable');
-		let commentablesArr = Object.keys(commentables).map(function (key) { return commentables[key]; }); 
-		this.allCommentableIds = commentablesArr.map(function(elem) { return parseInt(elem.attributes.id.value) })
+		let commentablesArr = Object.keys(commentables).map(function (key) { return commentables[key]; });
+		this.allCommentableIds = commentablesArr.map(function(elem) { return parseInt(elem.attributes.id.value) });
 	},
 	methods: {
 		defineCommentId(event){ 

@@ -18,7 +18,7 @@
 						<!-- <p class="col s10 offset-s1" v-if="error==true">{{ errorMessage }}</p> -->
 
 						<div class="login col s10 offset-s1">
-							<router-link to='/' tag="a" class="btn-large red darken-3 col s5">Cancelar</router-link>
+							<router-link to='/' tag="a" class="btn-large cancel col s5">Cancelar</router-link>
 							<a class="btn-large col s5 offset-s2" @click="login">Login</a>
 						</div>
 					</form>
@@ -105,4 +105,13 @@ export default {
 	margin-top:2rem;
 }
 
+.btn-large.cancel{
+	background-color:#DBDBDB;
+	color:  #828282;
+	transition: background-color .2s;
+}
+
+.btn-large.cancel:hover{
+	background-color: #F2F2F2;
+}
 </style>

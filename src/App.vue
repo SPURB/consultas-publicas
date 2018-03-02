@@ -13,7 +13,7 @@
 <script>
 export default {
   name: 'App',
-  mounted(){ this.$store.dispatch('LOAD_COMMENTS_LIST'); },//load all comments
+  beforeMount(){ this.$store.dispatch('LOAD_COMMENTS_LIST'); },//load all comments
 }
 </script>
 
