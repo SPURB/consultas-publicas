@@ -11,6 +11,7 @@
 							<li v-for="navitem in navitems">
 								<router-link :to='navitem.path'>{{navitem.name}}</router-link>
 							</li>
+							<li><a href="./static/pdf/NOTA_TECNICA_PLANO_URBANISTICO.pdf" class="router-link-exact router-link" download><i class="material-icons right">picture_as_pdf</i>Nota Técnica</a></li>
 						</ul>
 						</div>
 					</div>
@@ -105,13 +106,28 @@ nav {
 				background-color: rgba(0,0,0,0.05); 
 			};
 		}
+		li:last-child {
+			a.router-link-exact.router-link{
+				padding-right: 0;
+				i{
+					margin-left: .5rem
+				}
+			}
+		}
 
 		#menu-icon{ display: none; }
-
 		@media #{$medium-and-down} {
 			a, #routes-list li a { font-size: 1rem };
+			li:last-child {
+				a.router-link-exact.router-link{
+					i.material-icons.right{
+						margin-right: 1rem
+					}
+				}
+			}
 		}
 		@media only screen and (max-width : 715px){ #routes-list li a { padding: 0 .38rem } }
+
 		@media #{$small-and-down} {
 			#routes-list { 
 				width: 100%;

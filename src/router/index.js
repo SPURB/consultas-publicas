@@ -7,13 +7,12 @@ import Progressbar from '@/components/shared/Progressbar'
 import Modalcomponent from '@/components/shared/Modalcomponent'
 import Comments from '@/components/shared/Comments'
 import Footernav from '@/components/shared/Footernav'
-// import Vtour from '@/components/shared/Vtour'
 
 // pages
 import Admin from '@/components/pages/admin/Admin'
 import Consulta from '@/components/pages/Consulta'
-import Anexo1 from '@/components/pages/Anexo1'
-import Anexo2 from '@/components/pages/Anexo2'
+import Mapas from '@/components/pages/Mapas'
+import Quadros from '@/components/pages/Quadros'
 
 
 Vue.use(Router);
@@ -28,7 +27,6 @@ const router = new Router({
 			path: '/consulta',
 			name: 'Consulta',
 			components: {
-				// vtour: Vtour,
 				header: Header,
 				progressbar: Progressbar,
 				default: Consulta,
@@ -40,12 +38,12 @@ const router = new Router({
 			}
 		},
 		{
-			path: '/anexo1',
-			name: 'Anexo 1',
+			path: '/mapas',
+			name: 'Mapas',
 			components: {
 				header: Header,
 				progressbar: Progressbar,
-				default: Anexo1,
+				default: Mapas,
 				modalcomponent: Modalcomponent,
 				footernav: Footernav
 			},
@@ -54,12 +52,12 @@ const router = new Router({
 			}
 		},
 		{
-			path: '/anexo2',
-			name: 'Anexo 2',
+			path: '/quadros',
+			name: 'Quadros',
 			components: {
 				header: Header,
 				progressbar: Progressbar,
-				default: Anexo2,
+				default: Quadros,
 				modalcomponent: Modalcomponent,
 				footernav: Footernav
 			}, 
