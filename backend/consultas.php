@@ -90,10 +90,6 @@ if (isset($_POST['token'])){
 				// 	'José' => array(
 				// 		'email' => 'ze@ninguem.com',
 				// 		'pass'  => '123456'
-				// 	),
-				// 	'Maria' => array(
-				// 		'email' => 'maria@ninguem.com',
-				// 		'pass'  => '123456'
 				// 	)
 				// );
 
