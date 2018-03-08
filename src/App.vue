@@ -13,11 +13,11 @@
 <script>
 export default {
   name: 'App',
-  beforeMount(){ this.$store.dispatch('LOAD_COMMENTS_LIST'); },//load all comments
+  mounted(){ this.$store.dispatch('LOAD_COMMENTS_LIST'); },//load all comments
 }
 </script>
 
 <style lang="scss">
-@import "assets/vendor/materialize-src/sass/materialize.scss";
+// @import "assets/vendor/materialize-src/sass/materialize.scss";
 @import "assets/main.scss";
 </style>

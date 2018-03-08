@@ -2,7 +2,7 @@
 <div class="consulta">
 	<div class="container">
 		<div class="row">
-			<h2 class="chapter-title">Consulta Pública PL Acro Jurubatuba</h2>
+			<h2 class="chapter-title">Consulta Pública PL Arco Jurubatuba</h2>
 		</div>
 	</div>
 	<div class="container">
@@ -12,8 +12,12 @@
 				<p class="commentable" @click="defineCommentId" id="0001">Estabelece objetivos, diretrizes, estratégias e mecanismos para a implantação do Projeto de Intervenção Urbana para o perímetro do Arco Jurubatuba e cria as Áreas de Intervenção Urbana Vila Andrade, Jurubatuba e Interlagos <i class="small material-icons"> insert_comment</i></p>
 				<Comments :commentid="commentid" v-if="commentid.id == 1"></Comments>
 
-				<section id="capitulo_1">
-					<h4>CAPÍTULO I - DISPOSIÇÕES GERAIS</h4>
+				<a @click="toggleSection1" href="#capitulo_1">
+					<h5 class="chapter-content-title">CAPÍTULO I - DISPOSIÇÕES GERAIS
+					<i class="material-icons expander right" v-if="displaySection1==false">expand_more</i>
+					<i class="material-icons expander right" v-if="displaySection1==true">expand_less</i></h5>
+				</a>
+				<section id="capitulo_1"  v-if="displaySection1">
 					<h5>Seção I - Do Conceito</h5>
 					<p class="commentable" @click="defineCommentId" id="0002">Art. 1º Fica aprovado o Projeto de Intervenção Urbana do Arco Jurubatuba – PIU-ACJ, compreendendo um conjunto integrado de intervenções e medidas promovidas ou coordenadas pela Prefeitura Municipal de São Paulo, por intermédio da empresa SP-Urbanismo, para articular o ordenamento e a reestruturação urbana em áreas subutilizadas e com potencial de transformação do território do Arco Jurubatuba. <i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 2"></Comments>
@@ -231,8 +235,12 @@
 					<Comments :commentid="commentid" v-if="commentid.id == 72"></Comments>
 				</section>
 
-				<section id="capitulo_2">
-					<h4>CAPÍTULO II - REGRAS DE USO E OCUPAÇÃO DO SOLO</h4>
+				<a @click="toggleSection2" href="#capitulo_2">
+					<h5 class="chapter-content-title">CAPÍTULO II - REGRAS DE USO E OCUPAÇÃO DO SOLO
+					<i class="material-icons expander right" v-if="displaySection2==false">expand_more</i>
+					<i class="material-icons expander right" v-if="displaySection2==true">expand_less</i></h5>
+				</a>
+				<section id="capitulo_2" v-if="displaySection2">
 					<h5>Seção I - Regras Gerais</h5>
 					<p class="commentable" @click="defineCommentId" id="0073">Art. 8º Estão sujeitos ao atendimento das disposições estabelecidas nesta lei os pedidos de licenciamento protocolados para imóveis contidos no Perímetro de Adesão que utilizarem potencial construtivo adicional, e os que tenham por objeto: <i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 73"></Comments>
@@ -531,8 +539,12 @@
 					<Comments :commentid="commentid" v-if="commentid.id == 169"></Comments>
 				</section>
 
-				<section id="capitulo_3">
-					<h4>CAPÍTULO III - DO PROGRAMA DE INTERVENÇÕES</h4>
+				<a @click="toggleSection3" href="#capitulo_3">
+					<h5 class="chapter-content-title">CAPÍTULO III - DO PROGRAMA DE INTERVENÇÕES
+					<i class="material-icons expander right" v-if="displaySection3==false">expand_more</i>
+					<i class="material-icons expander right" v-if="displaySection3==true">expand_less</i></h5>
+				</a>
+				<section id="capitulo_3" v-if="displaySection3">
 					<p class="commentable" @click="defineCommentId" id="0170">Art. 35. O Programa de Intervenções do PIU-ACJ compreende:  <i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 170"></Comments>
 
@@ -708,8 +720,12 @@
 					<Comments :commentid="commentid" v-if="commentid.id == 235"></Comments>
 				</section>
 
-				<section id="capitulo_4">
-					<h4>CAPÍTULO IV - DA OUTORGA ONEROSA DE POTENCIAL ADICIONAL DE CONSTRUÇÃO, DAS CONTAS SEGREGADAS DO FUNDURB, SUA VINCULAÇÃO E DA DESTINAÇÃO DOS RECURSOS ARRECADADOS</h4>
+				<a @click="toggleSection4" href="#capitulo_4">
+					<h5 class="chapter-content-title">CAPÍTULO IV - DA OUTORGA ONEROSA DE POTENCIAL ADICIONAL DE CONSTRUÇÃO, DAS CONTAS SEGREGADAS DO FUNDURB, SUA VINCULAÇÃO E DA DESTINAÇÃO DOS RECURSOS ARRECADADOS
+					<i class="material-icons expander right" v-if="displaySection4==false">expand_more</i>
+					<i class="material-icons expander right" v-if="displaySection4==true">expand_less</i></h5>
+				</a>
+				<section id="capitulo_4" v-if="displaySection4">
 					<p class="commentable" @click="defineCommentId" id="0236">Art. 41. Fica o Executivo autorizado a efetuar a outorga onerosa de potencial adicional de construção para os lotes contidos nas AIU do ACJ, na conformidade dos valores, critérios e condições estabelecidos nesta lei. <i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 236"></Comments>
 
@@ -771,8 +787,12 @@
 					<Comments :commentid="commentid" v-if="commentid.id == 255"></Comments>
 				</section>
 
-				<section id="capitulo_5">
-					<h4>CAPÍTULO V - DA GESTÃO</h4>
+				<a @click="toggleSection5" href="#capitulo_5">
+					<h5 class="chapter-content-title">CAPÍTULO V – DA GESTÃO
+					<i class="material-icons expander right" v-if="displaySection5==false">expand_more</i>
+					<i class="material-icons expander right" v-if="displaySection5==true">expand_less</i></h5>
+				</a>
+				<section id="capitulo_5" v-if="displaySection5">
 					<h5>Seção I - Da Atuação Concertada dos Órgãos e Entidades Municipais</h5>
 					<p class="commentable" @click="defineCommentId" id="0256">Art. 44. A implantação do PIU-ACJ se dará mediante ação concertada entre os órgãos e entidades municipais, que, para que seja viabilizada a implantação do seu Programa de Intervenções, atenderão, no mínimo, às disposições desta lei. <i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 256"></Comments>
@@ -792,324 +812,327 @@
 					<p class="commentable" @click="defineCommentId" id="0261">III - instruir os critérios de detalhamento dos projetos de espaços públicos e áreas verdes voltadas a qualificação ambiental previstos no Programa de Intervenção de cada AIU; <i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 261"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">IV - cooperar com a empresa SP-Urbanismo no desenvolvimento dos Planos de Ação Integrada, no que tange a definição de soluções voltadas a mitigação dos problemas ambientais e da promoção de áreas verdes públicas; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0262">IV - cooperar com a empresa SP-Urbanismo no desenvolvimento dos Planos de Ação Integrada, no que tange a definição de soluções voltadas a mitigação dos problemas ambientais e da promoção de áreas verdes públicas; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 262"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">V - indicar, em consonância com os projetos desenvolvidos da empresa SP-Urbanismo, o enquadramento das áreas verdes propostas pelo PIU-ACJ no Sistema de Áreas Protegidas, Áreas Verdes e Espaços Livres (SAPAVEL). <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0263">V - indicar, em consonância com os projetos desenvolvidos da empresa SP-Urbanismo, o enquadramento das áreas verdes propostas pelo PIU-ACJ no Sistema de Áreas Protegidas, Áreas Verdes e Espaços Livres (SAPAVEL). <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 263"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 46. Caberá à Secretaria Municipal de Cultura determinar diretrizes para implantação do programa de intervenções em áreas envoltórias e para projetos de recuperação de bens de interesse cultural. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0264">Art. 46. Caberá à Secretaria Municipal de Cultura determinar diretrizes para implantação do programa de intervenções em áreas envoltórias e para projetos de recuperação de bens de interesse cultural. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 264"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 47. Caberá à Secretaria Municipal de Urbanismo e Licenciamento, além das outras atribuições previstas nesta lei: <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0265">Art. 47. Caberá à Secretaria Municipal de Urbanismo e Licenciamento, além das outras atribuições previstas nesta lei: <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 265"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">I - Coordenar o desenvolvimento de novos Projetos de Intervenção Urbana e de Projetos Estratégicos no perímetro do Arco Jurubatuba mediante interação entre órgãos da administração direta e indireta, com outras esferas de governo e com a sociedade civil;  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0266">I - Coordenar o desenvolvimento de novos Projetos de Intervenção Urbana e de Projetos Estratégicos no perímetro do Arco Jurubatuba mediante interação entre órgãos da administração direta e indireta, com outras esferas de governo e com a sociedade civil;  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 266"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">II - Coordenar o Conselho Gestor das AIU do Arco Jurubatuba; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0267">II - Coordenar o Conselho Gestor das AIU do Arco Jurubatuba; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 267"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">III - Realizar o controle finalístico da transformação urbana através do acompanhamento das políticas públicas e do monitoramento dos indexadores da transformação territorial; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0268">III - Realizar o controle finalístico da transformação urbana através do acompanhamento das políticas públicas e do monitoramento dos indexadores da transformação territorial; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 268"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">IV - avaliar a adequação dos mecanismos e modelos mais adequados para a viabilização e implantação do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0269">IV - avaliar a adequação dos mecanismos e modelos mais adequados para a viabilização e implantação do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 269"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">V - fiscalizar os trabalhos realizados pela empresa SP-Urbanismo; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0270">V - fiscalizar os trabalhos realizados pela empresa SP-Urbanismo; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 270"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">VI - identificar as áreas de propriedade do município no território das AIU e sua atualização proveniente das ações autorizadas por esta lei.  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0271">VI - identificar as áreas de propriedade do município no território das AIU e sua atualização proveniente das ações autorizadas por esta lei.  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 271"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Parágrafo único. A Secretaria Municipal de Urbanismo e Licenciamento contratará a empresa SP-Urbanismo para o desenvolvimento e detalhamento dos Planos de Ação Integrada e dos Projetos Estratégicos necessários à implantação do PIU-ACJ.  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0272">Parágrafo único. A Secretaria Municipal de Urbanismo e Licenciamento contratará a empresa SP-Urbanismo para o desenvolvimento e detalhamento dos Planos de Ação Integrada e dos Projetos Estratégicos necessários à implantação do PIU-ACJ.  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 272"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 48. Caberá a Secretaria Municipal de Habitação: <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0273">Art. 48. Caberá a Secretaria Municipal de Habitação: <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 273"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">I - operacionalizar o programa de atendimento da população impactada pelo Programa de Intervenções no momento inicial do Projeto, inclusive podendo aportar recursos de fontes diretas do Município; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0274">I - operacionalizar o programa de atendimento da população impactada pelo Programa de Intervenções no momento inicial do Projeto, inclusive podendo aportar recursos de fontes diretas do Município; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 274"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">II - realizar, por intermédio da empresa COHAB-SP, a promoção de programas e soluções habitacionais, inclusive produção de unidades de Habitação de Interesse Social, de acordo com as determinações dos respectivos Planos de Ação Integrada; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0275">II - realizar, por intermédio da empresa COHAB-SP, a promoção de programas e soluções habitacionais, inclusive produção de unidades de Habitação de Interesse Social, de acordo com as determinações dos respectivos Planos de Ação Integrada; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 275"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">III - realizar, por intermédio da empresa COHAB-SP, a gestão e o monitoramento da pós-ocupação do parque público de Habitação de Interesse Social voltado para a locação social e o atendimento do programa de bolsa-aluguel; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0276">III - realizar, por intermédio da empresa COHAB-SP, a gestão e o monitoramento da pós-ocupação do parque público de Habitação de Interesse Social voltado para a locação social e o atendimento do programa de bolsa-aluguel; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 276"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">IV - atender o cadastro de demanda habitacional, garantindo-se atendimento preferencial à população que atualmente residente na área de abrangência do ACJ, observando o disposto no Quadro 1D desta lei; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0277">IV - atender o cadastro de demanda habitacional, garantindo-se atendimento preferencial à população que atualmente residente na área de abrangência do ACJ, observando o disposto no Quadro 1D desta lei; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 277"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">V - realizar o cadastro socioeconômico da população de baixa renda moradora do perímetro do Arco Jurubatuba; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0278">V - realizar o cadastro socioeconômico da população de baixa renda moradora do perímetro do Arco Jurubatuba; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 278"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">VI - estipular critérios para a realização de parcerias vinculadas a programas habitacionais, atendendo-se as diretrizes do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0279">VI - estipular critérios para a realização de parcerias vinculadas a programas habitacionais, atendendo-se as diretrizes do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 279"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">VII - cooperar com a empresa SP-Urbanismo no desenvolvimento dos Planos de Ação Integrada, no que tange a definição das soluções de Habitação de Interesse Social. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0280">VII - cooperar com a empresa SP-Urbanismo no desenvolvimento dos Planos de Ação Integrada, no que tange a definição das soluções de Habitação de Interesse Social. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 280"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 49. Caberá à Secretaria Municipal de Transportes: <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0281">Art. 49. Caberá à Secretaria Municipal de Transportes: <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 281"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">I - adequar e compatibilizar a implantação dos melhoramentos viários propostos no Programa de Intervenções do PIU-ACJ com o sistema de mobilidade existente e planejado da Cidade; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0282">I - adequar e compatibilizar a implantação dos melhoramentos viários propostos no Programa de Intervenções do PIU-ACJ com o sistema de mobilidade existente e planejado da Cidade; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 282"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">II - determinar os critérios e procedimentos necessários à realização de parcerias com outras esferas de governo ou privadas para viabilizar a implantação dos corredores viários e de transporte; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0283">II - determinar os critérios e procedimentos necessários à realização de parcerias com outras esferas de governo ou privadas para viabilizar a implantação dos corredores viários e de transporte; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 283"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">III - cooperar com a empresa SP-Urbanismo no desenvolvimento dos Planos de Ação Integrada, no que tange a definição das soluções de mobilidade e sistema viário. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0284">III - cooperar com a empresa SP-Urbanismo no desenvolvimento dos Planos de Ação Integrada, no que tange a definição das soluções de mobilidade e sistema viário. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 284"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 50. Caberá à Secretaria Municipal de Serviços e Obras: <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0285">Art. 50. Caberá à Secretaria Municipal de Serviços e Obras: <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 285"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">I - executar e fiscalizar, por intermédio da empresa SP-Obras e do Departamento de Edificações – EDIF, a implantação do Programa de Intervenções previsto no PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0286">I - executar e fiscalizar, por intermédio da empresa SP-Obras e do Departamento de Edificações – EDIF, a implantação do Programa de Intervenções previsto no PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 286"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">II - cooperar com a empresa SP-Urbanismo no desenvolvimento dos Planos de Ação Integrada, no que tange a definição de soluções voltadas ao sistema viário, drenagem e obras de arte. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0287">II - cooperar com a empresa SP-Urbanismo no desenvolvimento dos Planos de Ação Integrada, no que tange a definição de soluções voltadas ao sistema viário, drenagem e obras de arte. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 287"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 51. Caberá à Secretaria Municipal da Saúde monitorar a ocupação de áreas oriundas de processos de descontaminação do solo. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0288">Art. 51. Caberá à Secretaria Municipal da Saúde monitorar a ocupação de áreas oriundas de processos de descontaminação do solo. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 288"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 52. Caberá à Secretaria Municipal de Trabalho e Empreendedorismo coordenar a elaboração de políticas de desenvolvimento econômico do perímetro do ACJ, propondo programas de incentivo ao emprego e renda vinculados a proposta de desenvolvimento urbano e novas infraestruturas propostas pelo PIU. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0289">Art. 52. Caberá à Secretaria Municipal de Trabalho e Empreendedorismo coordenar a elaboração de políticas de desenvolvimento econômico do perímetro do ACJ, propondo programas de incentivo ao emprego e renda vinculados a proposta de desenvolvimento urbano e novas infraestruturas propostas pelo PIU. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 289"></Comments>
 					<h5>Seção II - Da Atuação da Empresa São Paulo Urbanismo</h5>
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 53. Caberá à empresa SP-Urbanismo promover a implantação do PIU-ACJ de forma global, avaliando sistematicamente a evolução dos processos de desenvolvimento urbano em cada AIU e em seu perímetro expandido, especialmente sendo-lhe atribuídas, dentre outras constantes nesta lei e em seus estatutos, as seguintes funções: <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0290">Art. 53. Caberá à empresa SP-Urbanismo promover a implantação do PIU-ACJ de forma global, avaliando sistematicamente a evolução dos processos de desenvolvimento urbano em cada AIU e em seu perímetro expandido, especialmente sendo-lhe atribuídas, dentre outras constantes nesta lei e em seus estatutos, as seguintes funções: <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 290"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">I - promover as medidas necessárias à implantação de infraestruturas urbanas que ultrapassem os limites de cada AIU individualmente considerada, inclusive celebrando ajustes com o setor público e privado com o objetivo de viabilizar a transformação urbanística, social, ambiental e econômica definida no PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0291">I - promover as medidas necessárias à implantação de infraestruturas urbanas que ultrapassem os limites de cada AIU individualmente considerada, inclusive celebrando ajustes com o setor público e privado com o objetivo de viabilizar a transformação urbanística, social, ambiental e econômica definida no PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 291"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">II - desenvolver e detalhar os Planos de Ação Integrada e os Projetos Estratégicos; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0292">II - desenvolver e detalhar os Planos de Ação Integrada e os Projetos Estratégicos; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 292"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">III - coordenar as formas de financiamento da implantação do Programa de Intervenções do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0293">III - coordenar as formas de financiamento da implantação do Programa de Intervenções do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 293"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">IV - apoiar os processos de aquisição e alienação de terras para implantação do PIU-ACJ;  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0294">IV - apoiar os processos de aquisição e alienação de terras para implantação do PIU-ACJ;  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 294"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">V - coordenar a execução das obras relativas ao Programa de Intervenções com as empresas SP-Obras, COHAB-SP, São Paulo Transportes – SP-Trans e Companhia de Engenharia de Tráfego - CET; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0295">V - coordenar a execução das obras relativas ao Programa de Intervenções com as empresas SP-Obras, COHAB-SP, São Paulo Transportes – SP-Trans e Companhia de Engenharia de Tráfego - CET; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 295"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">VI - esclarecer dúvidas sobre a sobreposição de atendimentos de áreas de vulnerabilidade em relação ao perímetro expandido do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0296">VI - esclarecer dúvidas sobre a sobreposição de atendimentos de áreas de vulnerabilidade em relação ao perímetro expandido do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 296"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">VII - implantar sistemática de indicadores para utilização no Sistema Municipal de Informações, inclusive com informações georreferenciadas em meio digital; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0297">VII - implantar sistemática de indicadores para utilização no Sistema Municipal de Informações, inclusive com informações georreferenciadas em meio digital; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 297"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">VIII - propiciar o adequado acompanhamento da execução do Programa de Intervenções do PIU-ACJ pelo Conselho Gestor e pelos demais órgãos da Administração Direta e Indireta; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0298">VIII - propiciar o adequado acompanhamento da execução do Programa de Intervenções do PIU-ACJ pelo Conselho Gestor e pelos demais órgãos da Administração Direta e Indireta; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 298"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">IX - secretariar os conselhos criados por esta lei e solicitar informações e esclarecimentos aos demais órgãos municipais envolvidos na implantação do Programa de Intervenções do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0299">IX - secretariar os conselhos criados por esta lei e solicitar informações e esclarecimentos aos demais órgãos municipais envolvidos na implantação do Programa de Intervenções do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 299"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">X - promover a interação entre os Conselhos Gestores das AIU do ACJ e destes com a população diretamente afetada pelas intervenções urbanísticas necessárias à implantação do PIU; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0300">X - promover a interação entre os Conselhos Gestores das AIU do ACJ e destes com a população diretamente afetada pelas intervenções urbanísticas necessárias à implantação do PIU; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 300"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">XI - intermediar a relação entre os órgãos do setor público e entre estes e o setor privado, com a finalidade de facilitar os processos de implantação do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0301">XI - intermediar a relação entre os órgãos do setor público e entre estes e o setor privado, com a finalidade de facilitar os processos de implantação do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 301"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">XII - estruturar as formas de financiamento e modelos jurídicos para a implantação do PIU-ACJ. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0302">XII - estruturar as formas de financiamento e modelos jurídicos para a implantação do PIU-ACJ. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 302"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Parágrafo único. A SP-Urbanismo:  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0303">Parágrafo único. A SP-Urbanismo:  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 303"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">I - apresentará trimestralmente aos Conselhos Gestores das AIU relatórios que demonstrem o andamento das ações previstas no Programa de Intervenções de seus respectivos territórios; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0304">I - apresentará trimestralmente aos Conselhos Gestores das AIU relatórios que demonstrem o andamento das ações previstas no Programa de Intervenções de seus respectivos territórios; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 304"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">II - publicará semestralmente informações sobre o andamento da implantação de cada AIU, em linguagem acessível à população. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0305">II - publicará semestralmente informações sobre o andamento da implantação de cada AIU, em linguagem acessível à população. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 305"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 54. Para a implantação do Programa de Intervenções, a empresa SP-Urbanismo utilizará as seguintes formas de financiamento e controle de recursos, dentre outras previstas na legislação empresarial: <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0306">Art. 54. Para a implantação do Programa de Intervenções, a empresa SP-Urbanismo utilizará as seguintes formas de financiamento e controle de recursos, dentre outras previstas na legislação empresarial: <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 306"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">I - monitoramento permanente dos valores de mercado do potencial construtivo adicional na área de abrangência do PIU-ACJ, de modo a possibilitar a captura de parte da mais valia oriunda do desenvolvimento imobiliário por parte do Poder Público; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0307">I - monitoramento permanente dos valores de mercado do potencial construtivo adicional na área de abrangência do PIU-ACJ, de modo a possibilitar a captura de parte da mais valia oriunda do desenvolvimento imobiliário por parte do Poder Público; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 307"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">II - aquisição e alienação de terras destinadas à produção de Habitação de Interesse Social como forma de preservação do custo da transformação relacionado à valorização territorial, nos termos e condições definidos nesta lei; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0308">II - aquisição e alienação de terras destinadas à produção de Habitação de Interesse Social como forma de preservação do custo da transformação relacionado à valorização territorial, nos termos e condições definidos nesta lei; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 308"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">III - alienação de terrenos remanescentes de processos de desapropriação que não estejam afetos à função pública ou que sejam considerados inadequados ao Programa de Intervenções; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0309">III - alienação de terrenos remanescentes de processos de desapropriação que não estejam afetos à função pública ou que sejam considerados inadequados ao Programa de Intervenções; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 309"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">IV - alienação de terrenos remanescentes de processos de implantação de seu Programa de Intervenções. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0310">IV - alienação de terrenos remanescentes de processos de implantação de seu Programa de Intervenções. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 310"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 55. A empresa SP-Urbanismo dará anuência às diretrizes urbanísticas para o parcelamento das glebas ou lotes contidos no perímetro do PIU-ACJ, sem prejuízo do atendimento às exigências previstas nos artigos 51 e 52 da LPUOS. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0311">Art. 55. A empresa SP-Urbanismo dará anuência às diretrizes urbanísticas para o parcelamento das glebas ou lotes contidos no perímetro do PIU-ACJ, sem prejuízo do atendimento às exigências previstas nos artigos 51 e 52 da LPUOS. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 311"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Parágrafo único. A anuência prevista no “caput” deste artigo será prévia e indispensável à expedição de diretrizes dos projetos de parcelamento de glebas ou lotes contidos no perímetro do ACJ, podendo a SP-Urbanismo solicitar ajustes e adaptações de caráter urbanístico nos projetos, para atendimento a disposições do PIU-ACJ. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0312">Parágrafo único. A anuência prevista no “caput” deste artigo será prévia e indispensável à expedição de diretrizes dos projetos de parcelamento de glebas ou lotes contidos no perímetro do ACJ, podendo a SP-Urbanismo solicitar ajustes e adaptações de caráter urbanístico nos projetos, para atendimento a disposições do PIU-ACJ. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 312"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 56. Para promover a implantação do PIU-ACJ, a SP-Urbanismo poderá:  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0313">Art. 56. Para promover a implantação do PIU-ACJ, a SP-Urbanismo poderá:  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 313"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">I - celebrar, participar ou intervir nos contratos que tenham por objeto a instituição de parcerias público-privadas para a implantação do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0314">I - celebrar, participar ou intervir nos contratos que tenham por objeto a instituição de parcerias público-privadas para a implantação do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 314"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">II - assumir, total ou parcialmente, direitos e obrigações decorrentes dos contratos de que trata o inciso I do “caput” deste artigo; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0315">II - assumir, total ou parcialmente, direitos e obrigações decorrentes dos contratos de que trata o inciso I do “caput” deste artigo; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 315"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">III - prestar garantias reais, fidejussórias e contratar seguros; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0316">III - prestar garantias reais, fidejussórias e contratar seguros; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 316"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">IV - explorar, gravar e alienar onerosamente os bens integrantes de seu patrimônio; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0317">IV - explorar, gravar e alienar onerosamente os bens integrantes de seu patrimônio; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 317"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">V - participar do capital de outras empresas controladas por ente público ou privado; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0318">V - participar do capital de outras empresas controladas por ente público ou privado; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 318"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">VI - constituir sociedades de propósito específico, fundos de investimento imobiliário e fundos de participação em imóveis; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0319">VI - constituir sociedades de propósito específico, fundos de investimento imobiliário e fundos de participação em imóveis; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 319"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">VII - receber delegação do Poder Executivo para promover processos desapropriatórios, exclusivamente para a implantação do Programa de Intervenções do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0320">VII - receber delegação do Poder Executivo para promover processos desapropriatórios, exclusivamente para a implantação do Programa de Intervenções do PIU-ACJ; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 320"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">VIII - firmar compromissos de investimento, convênios, termos de parceria e outros ajustes; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0321">VIII - firmar compromissos de investimento, convênios, termos de parceria e outros ajustes; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 321"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">IX - firmar contratos de gestão com a Administração Direta, nos termos do artigo 37, § 8º da Constituição Federal; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0322">IX - firmar contratos de gestão com a Administração Direta, nos termos do artigo 37, § 8º da Constituição Federal; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 322"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">X - promover as negociações e firmar ajustes institucionais com a administração direta e indireta de todas as esferas de governo, a fim de implantar o PIU-ACJ. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0323">X - promover as negociações e firmar ajustes institucionais com a administração direta e indireta de todas as esferas de governo, a fim de implantar o PIU-ACJ. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 323"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Parágrafo único. Os contratos de gestão previstos no inciso IX do “caput” deste artigo poderão prever o aporte de recursos da Administração Direta para obras e intervenções capazes de desencadear e fomentar processos de desenvolvimento urbano pertinentes ao Programa de Intervenções desta lei. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0324">Parágrafo único. Os contratos de gestão previstos no inciso IX do “caput” deste artigo poderão prever o aporte de recursos da Administração Direta para obras e intervenções capazes de desencadear e fomentar processos de desenvolvimento urbano pertinentes ao Programa de Intervenções desta lei. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 324"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 57. A empresa SP-Urbanismo será remunerada, pela gestão da implantação do Programa de Intervenções previsto nesta lei, com 5% (cinco por cento) dos recursos arrecadados com a outorga de potencial construtivo adicional da área de abrangência de seu perímetro, além da mesma porcentagem de outras receitas eventuais advindas da implantação do PIU-ACJ.  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0325">Art. 57. A empresa SP-Urbanismo será remunerada, pela gestão da implantação do Programa de Intervenções previsto nesta lei, com 5% (cinco por cento) dos recursos arrecadados com a outorga de potencial construtivo adicional da área de abrangência de seu perímetro, além da mesma porcentagem de outras receitas eventuais advindas da implantação do PIU-ACJ.  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 325"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Parágrafo único. Sem prejuízo do previsto no “caput” deste artigo, serão devidos à SP-Urbanismo honorários em razão de sua contratação pela Administração Direta ou Indireta do Município para o desenvolvimento de Planos de Ação Integrada, Projetos Estratégicos e quaisquer outros estudos referentes ao detalhamento do PIU-ACJ, remunerados nos termos dispostos em cada avença. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0326">Parágrafo único. Sem prejuízo do previsto no “caput” deste artigo, serão devidos à SP-Urbanismo honorários em razão de sua contratação pela Administração Direta ou Indireta do Município para o desenvolvimento de Planos de Ação Integrada, Projetos Estratégicos e quaisquer outros estudos referentes ao detalhamento do PIU-ACJ, remunerados nos termos dispostos em cada avença. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 326"></Comments>
 					<h5>Seção III - Dos Conselhos Gestores das Áreas de Intervenção Urbana do Arco Jurubatuba</h5>
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 58. Cada AIU do ACJ contará com um Conselho Gestor, coordenado pela Secretaria Municipal de Urbanismo e Licenciamento, com participação de órgãos municipais e de entidades representativas da sociedade civil, visando instruir e auxiliar a implantação do respectivo Programa de Intervenções e o monitoramento de seu desenvolvimento. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0327">Art. 58. Cada AIU do ACJ contará com um Conselho Gestor, coordenado pela Secretaria Municipal de Urbanismo e Licenciamento, com participação de órgãos municipais e de entidades representativas da sociedade civil, visando instruir e auxiliar a implantação do respectivo Programa de Intervenções e o monitoramento de seu desenvolvimento. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 327"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">§ 1º Os Conselhos Gestores são instrumentos de gestão e participação instituídos para acompanhar a implantação e propor o aperfeiçoamento do Programa de Intervenções das AIU do ACJ. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0328">§ 1º Os Conselhos Gestores são instrumentos de gestão e participação instituídos para acompanhar a implantação e propor o aperfeiçoamento do Programa de Intervenções das AIU do ACJ. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 328"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">§ 2º Os Conselhos Gestores, nos termos do artigo 141, inciso XIV, do PDE, serão designados pelo Executivo e terão a seguinte composição: <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0329">§ 2º Os Conselhos Gestores, nos termos do artigo 141, inciso XIV, do PDE, serão designados pelo Executivo e terão a seguinte composição: <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 329"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">I - 9 (nove) representantes do Poder Público, designados pelo Prefeito para um período de 2 (dois) anos, com a seguinte distribuição: <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0330">I - 9 (nove) representantes do Poder Público, designados pelo Prefeito para um período de 2 (dois) anos, com a seguinte distribuição: <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 330"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">a) 1 (um) representante de cada um dos seguintes órgãos e entidades municipais:  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0331">a) 1 (um) representante de cada um dos seguintes órgãos e entidades municipais:  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 331"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">i. Secretaria Municipal Urbanismo e Licenciamento;  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0332">i. Secretaria Municipal Urbanismo e Licenciamento;  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 332"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">ii. Secretaria Municipal de Habitação; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0333">ii. Secretaria Municipal de Habitação; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 333"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">iii. Secretaria Municipal do Verde e do Meio Ambiente;  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0334">iii. Secretaria Municipal do Verde e do Meio Ambiente;  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 334"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">iv. Secretaria do Governo Municipal; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0335">iv. Secretaria do Governo Municipal; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 335"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">v. Secretaria Municipal Serviços e Obras;  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0336">v. Secretaria Municipal Serviços e Obras;  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 336"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">vi. Departamento do Patrimônio Histórico, da Secretaria Municipal de Cultura; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0337">vi. Departamento do Patrimônio Histórico, da Secretaria Municipal de Cultura; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 337"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">b) 1 (um) representante da SP-Urbanismo; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0338">b) 1 (um) representante da SP-Urbanismo; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 338"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">c) 2 (dois) representantes indicados entre as Prefeituras Regionais do território da respectiva AIU; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0339">c) 2 (dois) representantes indicados entre as Prefeituras Regionais do território da respectiva AIU; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 339"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">II - 9 (nove) representantes de entidades da sociedade civil, designados para um período de 2 (dois) anos, com a seguinte distribuição: <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0340">II - 9 (nove) representantes de entidades da sociedade civil, designados para um período de 2 (dois) anos, com a seguinte distribuição: <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 340"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">a) 1 (um) representante de entidades profissionais com atuação relevante na respectiva AIU;  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0341">a) 1 (um) representante de entidades profissionais com atuação relevante na respectiva AIU;  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 341"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">b) 1 (um) representante de entidades acadêmicas ou de pesquisa com atuação na respectiva AIU; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0342">b) 1 (um) representante de entidades acadêmicas ou de pesquisa com atuação na respectiva AIU; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 342"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">c) 1 (um) representante de entidades empresariais com reconhecida atuação no Perímetro de Adesão ou nas questões pertinentes à respectiva AIU;  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0343">c) 1 (um) representante de entidades empresariais com reconhecida atuação no Perímetro de Adesão ou nas questões pertinentes à respectiva AIU;  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 343"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">d) 1 (um) representante de organizações não governamentais com reconhecida atuação no Perímetro de Adesão da respectiva AIU; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0344">d) 1 (um) representante de organizações não governamentais com reconhecida atuação no Perímetro de Adesão da respectiva AIU; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 344"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">e) 2 (dois) representantes do Conselho Participativo Municipal do território de abrangência da respectiva AIU; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0345">e) 2 (dois) representantes do Conselho Participativo Municipal do território de abrangência da respectiva AIU; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 345"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">f) 1 (um) representante do Conselho Municipal de Habitação com atuação na respectiva AIU; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0346">f) 1 (um) representante do Conselho Municipal de Habitação com atuação na respectiva AIU; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 346"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">g) 2 (dois) representantes dos moradores ou trabalhadores da área do Perímetro de Adesão da respectiva AIU. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0347">g) 2 (dois) representantes dos moradores ou trabalhadores da área do Perímetro de Adesão da respectiva AIU. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 347"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">§ 3º Os representantes mencionados nas alíneas “a” a "d" do inciso II do § 2º deste artigo serão eleitos por seus pares em eleições diretas, organizadas a partir da inscrição prévia de candidaturas. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0348">§ 3º Os representantes mencionados nas alíneas “a” a "d" do inciso II do § 2º deste artigo serão eleitos por seus pares em eleições diretas, organizadas a partir da inscrição prévia de candidaturas. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 348"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">§ 4º Os representantes mencionados nas alíneas "e" e “f” do inciso II do § 2º deste artigo serão indicados por seus respectivos conselhos, na forma de seus regimentos específicos. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0349">§ 4º Os representantes mencionados nas alíneas "e" e “f” do inciso II do § 2º deste artigo serão indicados por seus respectivos conselhos, na forma de seus regimentos específicos. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 349"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">§ 5º Os representantes mencionados na alínea “g” do inciso II do § 2º deste artigo serão definidos por eleição direta com regras definidas em decreto especifico. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0350">§ 5º Os representantes mencionados na alínea “g” do inciso II do § 2º deste artigo serão definidos por eleição direta com regras definidas em decreto especifico. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 350"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">§ 6º Caberá ao representante de cada órgão ou entidade municipal informar ao Conselho Gestor, nas reuniões do respectivo grupo, do andamento das ações e atividades, relacionadas ao órgão ou entidade que representa desenvolvidas no perímetro de cada AIU. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0351">§ 6º Caberá ao representante de cada órgão ou entidade municipal informar ao Conselho Gestor, nas reuniões do respectivo grupo, do andamento das ações e atividades, relacionadas ao órgão ou entidade que representa desenvolvidas no perímetro de cada AIU. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 351"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">§ 7º Cada representante contará com um suplente, indicado ou eleito conjuntamente ao representante titular. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0352">§ 7º Cada representante contará com um suplente, indicado ou eleito conjuntamente ao representante titular. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 352"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">§ 8º Caberá ao representante da SMUL o voto de desempate nas deliberações do colegiado. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0353">§ 8º Caberá ao representante da SMUL o voto de desempate nas deliberações do colegiado. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 353"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">§ 9º Caberá a SP-Urbanismo instituir a Secretaria Executiva Única dos Conselhos Gestores do ACJ, responsável pelos serviços administrativos e burocráticos atribuídos aos colegiados. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0354">§ 9º Caberá a SP-Urbanismo instituir a Secretaria Executiva Única dos Conselhos Gestores do ACJ, responsável pelos serviços administrativos e burocráticos atribuídos aos colegiados. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 354"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 59. Os Conselhos Gestores das AIU do ACJ realizam o controle social da implantação do seu PIU, cabendo-lhes: <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0355">Art. 59. Os Conselhos Gestores das AIU do ACJ realizam o controle social da implantação do seu PIU, cabendo-lhes: <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 355"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">I - aprovar os Planos de Ação Integrada produzidos pela SP-Urbanismo, providenciando seu encaminhamento ao Conselho Gestor do FUNDURB; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0356">I - aprovar os Planos de Ação Integrada produzidos pela SP-Urbanismo, providenciando seu encaminhamento ao Conselho Gestor do FUNDURB; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 356"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">II - propor programas e estratégias que possam aprimorar os projetos previstos no Programa de Intervenções, nos Planos de Ação Integrada e nos Projetos Estratégicos; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0357">II - propor programas e estratégias que possam aprimorar os projetos previstos no Programa de Intervenções, nos Planos de Ação Integrada e nos Projetos Estratégicos; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 357"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">III - acompanhar o andamento dos projetos e obras relativas ao Programa de Intervenções, por meio da validação dos relatórios apresentados pela SP-Urbanismo; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0358">III - acompanhar o andamento dos projetos e obras relativas ao Programa de Intervenções, por meio da validação dos relatórios apresentados pela SP-Urbanismo; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 358"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">IV - acompanhar a aplicação da cota da solidariedade; <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0359">IV - acompanhar a aplicação da cota da solidariedade; <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 359"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">V - manifestar-se previamente sobre as propostas de implantação e a aplicação dos recursos vinculados à habitação de interesse social, a implantação de equipamentos públicos e a destinação a preservação do patrimônio histórico. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0360">V - manifestar-se previamente sobre as propostas de implantação e a aplicação dos recursos vinculados à habitação de interesse social, a implantação de equipamentos públicos e a destinação a preservação do patrimônio histórico. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 360"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Parágrafo único. A SP-Urbanismo fornecerá o apoio técnico aos Conselhos Gestores das AIU do PIU-ACJ, para auxiliar na execução de suas tarefas administrativas e burocráticas, bem como realizará a intermediação entre tais colegiados e o FUNDURB.  <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0361">Parágrafo único. A SP-Urbanismo fornecerá o apoio técnico aos Conselhos Gestores das AIU do PIU-ACJ, para auxiliar na execução de suas tarefas administrativas e burocráticas, bem como realizará a intermediação entre tais colegiados e o FUNDURB.  <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 361"></Comments>
 				</section>
 
-				<section id="capitulo_6">
-					<h4>CAPÍTULO VI - DISPOSIÇÕES FINAIS E TRANSITORIAS</h4>
+				<a @click="toggleSection6" href="#capitulo_6">
+					<h5 class="chapter-content-title">CAPÍTULO VI - DISPOSIÇÕES FINAIS E TRANSITORIAS
+					<i class="material-icons expander right" v-if="displaySection6==false">expand_more</i>
+					<i class="material-icons expander right" v-if="displaySection6==true">expand_less</i></h5>
+				</a>
+				<section id="capitulo_6" v-if="displaySection6">
+					<p class="commentable" @click="defineCommentId" id="0362">Art. 60. Os casos de dúvida e de omissão acerca dos dispositivos desta lei serão dirimidos pela CTLU, ouvida a SP-Urbanismo. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 362"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 60. Os casos de dúvida e de omissão acerca dos dispositivos desta lei serão dirimidos pela CTLU, ouvida a SP-Urbanismo. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0363">Art. 61. Se houver divergência entre o perímetro delimitado graficamente nos mapas cartográficos integrantes desta lei e seus respectivos textos descritivos, relativos a delimitação dos Projetos Estratégicos, prevalecerá a descrição cartográfica. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 363"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 61. Se houver divergência entre o perímetro delimitado graficamente nos mapas cartográficos integrantes desta lei e seus respectivos textos descritivos, relativos a delimitação dos Projetos Estratégicos, prevalecerá a descrição cartográfica. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0364">Art. 62. Aplicam-se aos imóveis localizados no perímetro do PIU-AJC os instrumentos indutores da função social da propriedade previstos no Capítulo III, Seção I, da Lei nº 16.050, de 2014 – PDE, e os incentivos e parâmetros de ocupação do solo do Título IV da lei nº 16.402, de 2016 – LPUOS. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 364"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 62. Aplicam-se aos imóveis localizados no perímetro do PIU-AJC os instrumentos indutores da função social da propriedade previstos no Capítulo III, Seção I, da Lei nº 16.050, de 2014 – PDE, e os incentivos e parâmetros de ocupação do solo do Título IV da lei nº 16.402, de 2016 – LPUOS. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0365">Parágrafo único. Nas Áreas de Intervenção Urbana - AIUs definidas nesta lei, os instrumentos, incentivos e parâmetros previstos no “caput” aplicam-se quando não conflitantes com esta lei. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 365"></Comments>
 
-					<p class="commentable" @click="defineCommentId" id="0000">Parágrafo único. Nas Áreas de Intervenção Urbana - AIUs definidas nesta lei, os instrumentos, incentivos e parâmetros previstos no “caput” aplicam-se quando não conflitantes com esta lei. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
-
-					<p class="commentable" @click="defineCommentId" id="0000">Art. 63. Esta lei entrará em vigor na data de sua publicação. <i class="small material-icons"> insert_comment</i></p>
-					<Comments :commentid="commentid" v-if="commentid.id == 0"></Comments>
+					<p class="commentable" @click="defineCommentId" id="0366">Art. 63. Esta lei entrará em vigor na data de sua publicação. <i class="small material-icons"> insert_comment</i></p>
+					<Comments :commentid="commentid" v-if="commentid.id == 366"></Comments>
 				</section>
 
 			</div>
@@ -1129,7 +1152,13 @@ export default {
 				id: null,
 				context: null
 			},
-			allCommentableIds: null
+			allCommentableIds: null,
+			displaySection1: false,
+			displaySection2: false,
+			displaySection3: false,
+			displaySection4: false,
+			displaySection5: false,
+			displaySection6: false
 		}
 	},
 	computed:{ allcomments() { return this.$store.state.allcomments	}
@@ -1157,6 +1186,58 @@ export default {
 		consoleAllcomments(){ 
 			let allcomm = this.allcomments;
 			console.log(allcomm.map(function(elem) { return parseInt(elem.commentid) }))
+		},
+		toggleSection1(){ this.displaySection1 = !this.displaySection1; this.removeDisplaytoOtherSections(1)},
+		toggleSection2(){ this.displaySection2 = !this.displaySection2; this.removeDisplaytoOtherSections(2)},
+		toggleSection3(){ this.displaySection3 = !this.displaySection3; this.removeDisplaytoOtherSections(3)},
+		toggleSection4(){ this.displaySection4 = !this.displaySection4; this.removeDisplaytoOtherSections(4)},
+		toggleSection5(){ this.displaySection5 = !this.displaySection5; this.removeDisplaytoOtherSections(5)},
+		toggleSection6(){ this.displaySection6 = !this.displaySection6; this.removeDisplaytoOtherSections(6)},
+		removeDisplaytoOtherSections(n){
+			switch (n){
+				case 1: 
+					this.displaySection2 = false;
+					this.displaySection3 = false;
+					this.displaySection4 = false;
+					this.displaySection5 = false;
+					this.displaySection6 = false;
+					break;
+				case 2:
+					this.displaySection1 = false;
+					this.displaySection3 = false;
+					this.displaySection4 = false;
+					this.displaySection5 = false;
+					this.displaySection6 = false;
+					break;
+				case 3:
+					this.displaySection1 = false;
+					this.displaySection2 = false;
+					this.displaySection4 = false;
+					this.displaySection5 = false;
+					this.displaySection6 = false;
+					break;
+				case 4:
+					this.displaySection1 = false;
+					this.displaySection2 = false;
+					this.displaySection3 = false;
+					this.displaySection5 = false;
+					this.displaySection6 = false;
+					break;
+				case 5:
+					this.displaySection1 = false;
+					this.displaySection2 = false;
+					this.displaySection3 = false;
+					this.displaySection4 = false;
+					this.displaySection6 = false;
+					break;
+				case 6:
+					this.displaySection1 = false;
+					this.displaySection2 = false;
+					this.displaySection3 = false;
+					this.displaySection4 = false;
+					this.displaySection5 = false;
+					break;
+			}
 		}
 	},
 	components:{ Comments }
@@ -1165,9 +1246,28 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
-.material-icons {
-	font-size: 1rem; 
-	color:#039be5;
-	padding-right: 0.25em;
+
+.chapter-content{
+	.material-icons.small {
+		font-size: 1rem; 
+		color:#039be5;
+		padding-right: 0.25em;
+	}
+
+	h5.chapter-content-title{
+		color: $primary-medium-grey;
+		font-weight: 300;
+		padding: 1.2em 0 .6em;
+		border-top: solid 1px $primary-medium-grey;
+	}
+	.chapter-content-title:hover{
+		color: $main-color;
+		cursor: pointer
+	}
+	section{
+		h5{
+			margin-top: 2em
+		}
+	}
 }
 </style>

@@ -3,10 +3,10 @@ import Router from 'vue-router'
 
 // shared
 import Header from '@/components/shared/Header'
-import Progressbar from '@/components/shared/Progressbar'
+// import Progressbar from '@/components/shared/Progressbar'
 import Modalcomponent from '@/components/shared/Modalcomponent'
 import Comments from '@/components/shared/Comments'
-import Footernav from '@/components/shared/Footernav'
+// import Footernav from '@/components/shared/Footernav'
 
 // pages
 import Admin from '@/components/pages/admin/Admin'
@@ -28,10 +28,10 @@ const router = new Router({
 			name: 'Consulta',
 			components: {
 				header: Header,
-				progressbar: Progressbar,
+				// progressbar: Progressbar,
 				default: Consulta,
 				modalcomponent: Modalcomponent,
-				footernav: Footernav
+				// footernav: Footernav
 			},
 			meta: { 
 				postid: 1,
@@ -42,10 +42,10 @@ const router = new Router({
 			name: 'Mapas',
 			components: {
 				header: Header,
-				progressbar: Progressbar,
+				// progressbar: Progressbar,
 				default: Mapas,
 				modalcomponent: Modalcomponent,
-				footernav: Footernav
+				// footernav: Footernav
 			},
 			meta: { 
 				postid: 2,
@@ -56,10 +56,10 @@ const router = new Router({
 			name: 'Quadros',
 			components: {
 				header: Header,
-				progressbar: Progressbar,
+				// progressbar: Progressbar,
 				default: Quadros,
 				modalcomponent: Modalcomponent,
-				footernav: Footernav
+				// footernav: Footernav
 			}, 
 			meta: { 
 				postid: 3,

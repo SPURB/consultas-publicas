@@ -74,11 +74,10 @@ export default {
 				this.$store.state.comments = true;
 
 				// add recaptcha to head
-				let recaptchaScript = document.createElement('script')
-				recaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit')
-				document.head.appendChild(recaptchaScript)
-
-				this.close()
+				let recaptchaScript = document.createElement('script');
+				recaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit');
+				document.head.appendChild(recaptchaScript);
+				this.close();
 			}
 			else if(hasErrors){
 				console.log('email incorreto: ' + this.email)
