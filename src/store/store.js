@@ -6,7 +6,8 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
 	state: {
-		projecttitle:'Consulta pública PIU Sumidouro',
+		projecttitle:'Consulta pública PIU Nações Unidas',
+		// comments_active: true,
 		numchapters: 0, 
 		showmodal: false,
 		comments: false,

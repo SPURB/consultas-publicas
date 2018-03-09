@@ -25,28 +25,28 @@
 					<li><a href="#Cap13">2.2 Áreas contaminadas</a></li>
 				</ul>
 
-				<a class="waves-effect waves-light btn" href="./static/pdf/anexo1.pdf" download="PIU-Sumidouro_anexo1.pdf"><i class="material-icons left">picture_as_pdf</i>Baixe o PDF deste anexo</a>
+				<a class="waves-effect waves-light btn" href="./static/pdf/anexo1.pdf" download="PIU-NacoesUnidas_anexo1.pdf"><i class="material-icons left">picture_as_pdf</i>Baixe o PDF deste anexo</a>
 
 				<section id="Cap01">
 					<h5>1. Análise Socioterritorial</h5>
-					<p>O PIU Sumidouro é definido pela área que engloba a ZOE Sumidouro e a ZEPAM da Praça Victor Civita. Nesta análise socioterritorial e ambiental, a área do PIU será caracterizada como <strong>Área Diretamente Afetada (ADA)</strong> do PIU Sumidouro.  A área que engloba as Zonas Origem e Destino (ZOD) da Pesquisa Origem e Destino do Metrô de São Paulo situadas no entorno da ADA será caracterizada como <strong>Área de Influência Direta (AID)</strong> do PIU Sumidouro e a área que engloba os distritos municipais onde se situam as ZODs da AID serão caracterizados como Área de Influência Indireta (AII) do PIU Sumidouro.</p>
+					<p>O PIU Nações Unidas é definido pela área que engloba a ZOE Nações Unidas e a ZEPAM da Praça Victor Civita. Nesta análise socioterritorial e ambiental, a área do PIU será caracterizada como <strong>Área Diretamente Afetada (ADA)</strong> do PIU Nações Unidas.  A área que engloba as Zonas Origem e Destino (ZOD) da Pesquisa Origem e Destino do Metrô de São Paulo situadas no entorno da ADA será caracterizada como <strong>Área de Influência Direta (AID)</strong> do PIU Nações Unidas e a área que engloba os distritos municipais onde se situam as ZODs da AID serão caracterizados como Área de Influência Indireta (AII) do PIU Nações Unidas.</p>
 
 					<div class="figure">
-						<img :src="require('../../assets/img/anexo1/image3.jpeg')" class="responsive-img" data-caption="Figura 1: ADA – Área Diretamente Afetada do PIU Sumidouro"/>
-						<p><strong> Figura 1: ADA – Área Diretamente Afetada do PIU Sumidouro.</strong> Fonte: Google Earth, 2015.</p>
+						<img :src="require('../../assets/img/anexo1/image3.jpeg')" class="responsive-img" data-caption="Figura 1: ADA – Área Diretamente Afetada do PIU Nações Unidas"/>
+						<p><strong> Figura 1: ADA – Área Diretamente Afetada do PIU Nações Unidas.</strong> Fonte: Google Earth, 2015.</p>
 					</div>
 
 					<div class="figure">
-						<img :src="require('../../assets/img/anexo1/image4.jpeg')" class="responsive-img" data-caption="Figura 2: ADA, AID e AII do PIU Sumidouro"/>
-						<p><strong>Figura 2: ADA, AID e AII do PIU Sumidouro. </strong>Fonte: Google Earth, 2015. </p>
+						<img :src="require('../../assets/img/anexo1/image4.jpeg')" class="responsive-img" data-caption="Figura 2: ADA, AID e AII do PIU Nações Unidas"/>
+						<p><strong>Figura 2: ADA, AID e AII do PIU Nações Unidas. </strong>Fonte: Google Earth, 2015. </p>
 					</div>
 
 				</section>
 
 				<section id="Cap02">
 					<h6>1.1 Limites Administrativos</h6>
-					<p>O PIU Sumidouro está localizado na Prefeitura Regional de Pinheiros, no distrito de Pinheiros, entre as ruas do Sumidouro, Nicolau Gagliardi, Anna Campos Mellão e Costa Carvalho e as avenidas das Nações Unidas e Professor Frederico Hermann Junior. A área é contígua ao distrito de Alto de Pinheiros, situado na mesma Prefeitura Regional, e do Butantã, situado na Prefeitura Regional do Butantã. </p>
-					<p>A ZOE Sumidouro também se situa na Zona OD Pinheiros, contígua às Zonas OD Alto de Pinheiros e Butantã. </p>
+					<p>O PIU Nações Unidas está localizado na Prefeitura Regional de Pinheiros, no distrito de Pinheiros, entre as Ruas do Sumidouro, Nicolau Gagliardi, Anna Campos Mellão e Costa Carvalho e as Avenidas Dra. Ruth Cardoso e Professor Frederico Hermann Junior. A área é contígua ao distrito de Alto de Pinheiros, situado na mesma Prefeitura Regional, e do Butantã, situado na Prefeitura Regional do Butantã. </p>
+					<p>A ZOE Nações Unidas também se situa na Zona OD Pinheiros, contígua às Zonas OD Alto de Pinheiros e Butantã. </p>
 
 					<div class="figure">
 						<img :src="require('../../assets/img/anexo1/image5.jpeg')" class="responsive-img" data-caption="Figura 3: Limites Administrativos."/>
@@ -115,7 +115,7 @@
 
 				<section id="Cap04">
 					<h6>1.3 Ordenação Territorial e Parâmetros de ocupação</h6>
-					<p>De acordo com o PDE<sup><a href="#footnote04">4</a></sup>, o PIU Sumidouro está localizado na Macrozona de Estruturação e Qualificação Urbana, na Macroárea de Estruturação Metropolitana – MEM, no Setor Orla Ferroviária e Fluvial, no Subsetor Faria Lima – Água Espraiada – Chucri Zaidan.</p>
+					<p>De acordo com o PDE<sup><a href="#footnote04">4</a></sup>, o PIU Nações Unidas está localizado na Macrozona de Estruturação e Qualificação Urbana, na Macroárea de Estruturação Metropolitana – MEM, no Setor Orla Ferroviária e Fluvial, no Subsetor Faria Lima – Água Espraiada – Chucri Zaidan.</p>
 
 					<p>O art. 10, §2º do PDE dispõe sobre os objetivos da Macrozona de Estruturação e Qualificação Urbana, descritos a seguir:</p>
 
@@ -155,45 +155,45 @@
 							<li>XI - manutenção e estímulo ao emprego industrial e atividades econômicas de abrangência metropolitana.</li>
 						</ul>
 					</blockquote>
-					<p>O PIU Sumidouro está geograficamente inserido na OUC Faria Lima (Lei nº 13.769/2004), especificamente no Setor Pinheiros, cujos parâmetros de parcelamento, uso e ocupação do solo prevalecem sobre os parâmetros ordinários da cidade.</p>
+					<p>O PIU Nações Unidas está geograficamente inserido na OUC Faria Lima (Lei nº 13.769/2004), especificamente no Setor Pinheiros, cujos parâmetros de parcelamento, uso e ocupação do solo prevalecem sobre os parâmetros ordinários da cidade.</p>
 					<p>A LPUOS (Lei nº 16.402/2016), por sua vez, definiu em seu art. 15 que as ZOEs “terão parâmetros específicos de parcelamento, uso e ocupação do solo adequados às suas especificidades e definidos por Projeto de Intervenção Urbana aprovado por decreto, observados os coeficientes de aproveitamento estabelecidos por macroárea conforme o Quadro 2A da lei nº16.050/2014 – PDE.”</p>
-					<p>Assim o PIU Sumidouro deverá considerar a combinação entre as diretrizes e parâmetros estabelecidos pelo PDE e LPUOS e pela OUC Faria Lima.</p>
+					<p>Assim o PIU Nações Unidas deverá considerar a combinação entre as diretrizes e parâmetros estabelecidos pelo PDE e LPUOS e pela OUC Faria Lima.</p>
 				</section>
 				
 				<section id="Cap05">
 					<h6>1.4 Rede de Equipamentos</h6>
 
-					<p>A rede de equipamentos públicos da AID tem maior concentração na ZOD Pinheiros, com predomínio de equipamentos de saúde e educação. Nas demais ZODs da AID, existem poucos equipamentos, com maior participação da rede de educação. Já na AII do PIU Sumidouro estão implantados diversos equipamentos públicos e de interesse público (com gestão privada), com maior destaque para os de cultura, educação e esportes. </p>
+					<p>A rede de equipamentos públicos da AID tem maior concentração na ZOD Pinheiros, com predomínio de equipamentos de saúde e educação. Nas demais ZODs da AID, existem poucos equipamentos, com maior participação da rede de educação. Já na AII do PIU Nações Unidas estão implantados diversos equipamentos públicos e de interesse público (com gestão privada), com maior destaque para os de cultura, educação e esportes. </p>
 
-					<p>Inserida na ADA e contígua à ZOE Sumidouro, a Praça Victor Civita é um espaço público nascido de uma parceria entre a Prefeitura e uma empresa privada que recuperou uma área contaminada pelo uso pregresso como incinerador municipal de lixo e medicamentos. A Praça abriga o Museu da Sustentabilidade e o Centro de Integração, Informação e Preparação para o Envelhecimento (CIIPE), além de uma arena coberta para shows, espaços para prática esportiva e áreas para convivência. </p>
+					<p>Inserida na ADA e contígua à ZOE Nações Unidas, a Praça Victor Civita é um espaço público nascido de uma parceria entre a Prefeitura e uma empresa privada que recuperou uma área contaminada pelo uso pregresso como incinerador municipal de lixo e medicamentos. A Praça abriga o Museu da Sustentabilidade e o Centro de Integração, Informação e Preparação para o Envelhecimento (CIIPE), além de uma arena coberta para shows, espaços para prática esportiva e áreas para convivência. </p>
 
-					<p>Os equipamentos culturais de maior relevância no contexto do PIU Sumidouro são o SESC Pinheiros e o Instituto Cultural Tomie Ohtake, situados na AID. Os equipamentos de cultura têm presença marcante na AII, com grande concentração na Cidade Universitária e, principalmente, na região da Vila Madalena. Enquanto na Cidade Universitária o predomínio é de museus e bibliotecas, como o MAC – Museu de Arte Contemporânea, a Biblioteca Brasiliana e o Instituto Butantã, na Vila Madalena predominam ateliês, galerias e casas de shows. </p>
+					<p>Os equipamentos culturais de maior relevância no contexto do PIU Nações Unidas são o SESC Pinheiros e o Instituto Cultural Tomie Ohtake, situados na AID. Os equipamentos de cultura têm presença marcante na AII, com grande concentração na Cidade Universitária e, principalmente, na região da Vila Madalena. Enquanto na Cidade Universitária o predomínio é de museus e bibliotecas, como o MAC – Museu de Arte Contemporânea, a Biblioteca Brasiliana e o Instituto Butantã, na Vila Madalena predominam ateliês, galerias e casas de shows. </p>
 
 					<div class="figure">
 						<img :src="require('../../assets/img/anexo1/image13.jpeg')" class="responsive-img" data-caption="Figura 11: Rede de Equipamentos"/>	
 						<p><strong>Figura 11: Rede de Equipamentos. </strong>Fonte: MDC 2004.</p>
 					</div>
 
-					<p>Os equipamentos de educação possuem uma distribuição capilarizada e abrangente no território, estando presente mesmo em áreas com menor demanda, como as ZODs Alto de Pinheiros e Butantã. A Cidade Universitária Armando de Sales Oliveira, inaugurada em 1956 pela Universidade de São Paulo, é o equipamento de educação de maior relevância no contexto da AII. Situada no distrito do Butantã, a cerca de 1 km do PIU Sumidouro, constitui-se como o maior e mais importante campus universitário do país, com área de 3.648.944 m², tendo um movimento diário de aproximadamente 100.000 pessoas (entre alunos, pesquisadores, docentes, funcionários e visitantes) e 40.000 veículos.</p>
+					<p>Os equipamentos de educação possuem uma distribuição capilarizada e abrangente no território, estando presente mesmo em áreas com menor demanda, como as ZODs Alto de Pinheiros e Butantã. A Cidade Universitária Armando de Sales Oliveira, inaugurada em 1956 pela Universidade de São Paulo, é o equipamento de educação de maior relevância no contexto da AII. Situada no distrito do Butantã, a cerca de 1 km do PIU Nações Unidas, constitui-se como o maior e mais importante campus universitário do país, com área de 3.648.944 m², tendo um movimento diário de aproximadamente 100.000 pessoas (entre alunos, pesquisadores, docentes, funcionários e visitantes) e 40.000 veículos.</p>
 					<p>Em relação aos equipamentos de esportes, há uma presença marcante de clubes e sociedades esportivas privados na AII, como o Clube Pinheiros, o Clube A Hebraica, o Jockey Clube de São Paulo, o Clube Alto de Pinheiros e o Anhembi Tênis Clube. Em relação aos equipamentos públicos, há o CPUSP – Centro Esportivo da USP, de uso privativo da comunidade USP, e os parques Villa Lobos e Cândido Portinari, que contém uma ampla oferta de espaços para a prática esportiva, como caminhada, corrida, ciclismo, skate, futebol, vôlei, basquete, tênis, etc.</p>
 				</section>
 
 				<section id="Cap06">
 					<h6>1.5	Rede de Mobilidade</h6>
-					<p>A região onde se situa o PIU Sumidouro possui uma robusta rede de mobilidade, composta por sistema viário estratificado diversos modais.</p>
-					<p>A ADA tem acesso direto pela Av. das Nações Unidas, popularmente conhecida como Marginal do Rio Pinheiros, que se constitui como a principal via estrutural da região oeste da metrópole, conectando a Marginal Tietê e a Rodovia Pres. Castello Branco, na região noroeste, à região sul da cidade, na região de Santo Amaro, passando por importantes eixos que conectam a cidade a rodovias como Régis Bittencourt e Raposo Tavares. O sistema viário estrutural conta ainda com outras importantes avenidas, como Faria Lima, Rebouças, Fonseca Rodrigues, Lineu de Paula Machado e Francisco Morato, e ruas como Alvarenga, Teodoro Sampaio, Cardeal Arcoverde e Butantã. </p>
+					<p>A região onde se situa o PIU Nações Unidas possui uma robusta rede de mobilidade, composta por sistema viário estratificado diversos modais.</p>
+					<p>A ADA tem acesso direto pela Av. Dra. Ruth Cardoso, popularmente conhecida como Marginal do Rio Pinheiros, que se constitui como a principal via estrutural da região oeste da metrópole, conectando a Marginal Tietê e a Rodovia Pres. Castello Branco, na região noroeste, à região sul da cidade, na região de Santo Amaro, passando por importantes eixos que conectam a cidade a rodovias como Régis Bittencourt e Raposo Tavares. O sistema viário estrutural conta ainda com outras importantes avenidas, como Faria Lima, Rebouças, Fonseca Rodrigues, Lineu de Paula Machado e Francisco Morato, e ruas como Alvarenga, Teodoro Sampaio, Cardeal Arcoverde e Butantã. </p>
 					<div class="figure">
 					<img :src="require('../../assets/img/anexo1/image14.jpeg')" class="responsive-img" data-caption="Figura 12: Sistema Viário Estrutural"/>	
 					<p><strong> Figura 12: Sistema Viário Estrutural. </strong>Fonte: : MDC 2004, PDE 2014.</p>
 					</div>
 					
-					<p>A rede de transporte público de alta capacidade conta com a linha 4 Amarela do Metrô, operada pela concessionária Viaquatro, e a linha 9 Esmeralda da CPTM. O PIU Sumidouro se situa a cerca de 250 metros da estação Pinheiros, que interliga as duas linhas citadas. O PIU Sumidouro ainda está próximo (cerca de 1 km) das estações Faria Lima do Metrô e Hebraica - Rebouças da CPTM. Também está planejada no PITU 2025 a linha 20 Rosa do Metrô, que seguira pelos eixos das avenidas Faria Lima e Fonseca Rodrigues, interligando a região sudoeste ao Alto da Lapa.</p>
+					<p>A rede de transporte público de alta capacidade conta com a linha 4 Amarela do Metrô, operada pela concessionária Viaquatro, e a linha 9 Esmeralda da CPTM. O PIU Nações Unidas se situa a cerca de 250 metros da estação Pinheiros, que interliga as duas linhas citadas. O PIU Nações Unidas ainda está próximo (cerca de 1 km) das estações Faria Lima do Metrô e Hebraica - Rebouças da CPTM. Também está planejada no PITU 2025 a linha 20 Rosa do Metrô, que seguira pelos eixos das avenidas Faria Lima e Fonseca Rodrigues, interligando a região sudoeste ao Alto da Lapa.</p>
 					<div class="figure">
 						<img :src="require('../../assets/img/anexo1/image15.jpeg')" class="responsive-img" data-caption="Figura 13: Sistema de Transporte Público"/>	
 						<p><strong> Figura 13: Sistema de Transporte Público. </strong>Fonte: : MDC 2004, PDE 2014.</p>
 					</div>
 
-					<p>Em relação ao sistema de ônibus, a região conta com o Corredor Campo Limpo – Rebouças – Centro, que conecta a região central à Oeste, passando pelas avenidas Rebouças e Eusébio Matoso a cerca de 1 km do PIU Sumidouro e dentro da AID. Outro importante equipamento é o Terminal Capri, situado a cerca de 250m da ADA e integrado à estação Pinheiros do metrô e CPTM. Tanto no corredor quanto no terminal operam linhas municipais e intermunicipais. Entre os diversos corredores de ônibus planejados para a região, destaca-se o Faria Lima, que seguirá da região da Vila Olímpia até a Vila Leopoldina.</p>
+					<p>Em relação ao sistema de ônibus, a região conta com o Corredor Campo Limpo – Rebouças – Centro, que conecta a região central à Oeste, passando pelas avenidas Rebouças e Eusébio Matoso a cerca de 1 km do PIU Nações Unidas e dentro da AID. Outro importante equipamento é o Terminal Capri, situado a cerca de 250m da ADA e integrado à estação Pinheiros do metrô e CPTM. Tanto no corredor quanto no terminal operam linhas municipais e intermunicipais. Entre os diversos corredores de ônibus planejados para a região, destaca-se o Faria Lima, que seguirá da região da Vila Olímpia até a Vila Leopoldina.</p>
 					<div class="figure">
 						<img :src="require('../../assets/img/anexo1/image16.jpeg')" class="responsive-img" data-caption="Figura 14: Sistema Cicloviário"/>	
 						<p><strong> Figura 14: Sistema Cicloviário. </strong>Fonte: MDC 2004.</p>
@@ -213,7 +213,7 @@
 
 				<section id="Cap07">
 					<h6>1.6 Uso do Solo e Patrimônio Histórico </h6>
-					<p>O uso do solo na AID é marcado pelos contrastes. A Av. Prof. Frederico Hermann Jr. é o limite que divide as ZODs e Distritos de Pinheiros e Alto de Pinheiros e suas características urbanas extremamente distintas. O Alto de Pinheiros se caracteriza pela ocupação maciça estritamente residencial e horizontal, à exceção da Praça Panamericana e dos corredores de serviços das avenidas Fonseca Rodrigues, São Gualter, Diógenes Ribeiro de Lima, Frederico Hermann Jr e Nações Unidas. Em contraste, Pinheiros se caracteriza como uma região de uso misto e alto grau de verticalização, com grande dinamismo e diversidade econômica. No lado oposto do Rio Pinheiros, a ZOD Butantã se assemelha ao Alto de Pinheiros, com um tecido estritamente residencial e horizontal cortado por corredores de uso misto, ora horizontais, ora verticais, das avenidas Eusébio Matoso, Vital Brazil, Francisco Morato, Corifeu de Azevedo Marques e Rua Alvarenga.</p>
+					<p>O uso do solo na AID é marcado pelos contrastes. A Av. Prof. Frederico Hermann Jr. é o limite que divide as ZODs e Distritos de Pinheiros e Alto de Pinheiros e suas características urbanas extremamente distintas. O Alto de Pinheiros se caracteriza pela ocupação maciça estritamente residencial e horizontal, à exceção da Praça Panamericana e dos corredores de serviços das Avenidas Fonseca Rodrigues, São Gualter, Diógenes Ribeiro de Lima, Frederico Hermann Jr e Dra. Rutch Cardoso. Em contraste, Pinheiros se caracteriza como uma região de uso misto e alto grau de verticalização, com grande dinamismo e diversidade econômica. No lado oposto do Rio Pinheiros, a ZOD Butantã se assemelha ao Alto de Pinheiros, com um tecido estritamente residencial e horizontal cortado por corredores de uso misto, ora horizontais, ora verticais, das avenidas Eusébio Matoso, Vital Brazil, Francisco Morato, Corifeu de Azevedo Marques e Rua Alvarenga.</p>
 
 					<div class="figure">	
 					<img :src="require('../../assets/img/anexo1/image19.jpeg')" class="responsive-img" data-caption="Figura 17: Uso do solo predominante por quadra"/>	
@@ -228,14 +228,14 @@
 					</div>
 
 					<p>Na ZOD Pinheiros predomina a ZM – zona mista, que se caracteriza pela diversidade de usos permitidos e pelo potencial construtivo de grau médio. Contudo, faz-se a ressalva de que a esta ZM se sobrepõe a OUC Faria Lima, cujos parâmetros de ocupação prevalecem sobre a LPUOS e que permitem um maior potencial construtivo e um novo desenho da paisagem urbana. </p>
-					<p>Na quadra 223 do setor 083, onde se situa o PIU Sumidouro, expressa na figura 18 a seguir, foram definidas a ZOE Sumidouro, para as áreas públicas municipais e estaduais, uma ZEPAM – zona de preservação ambiental, para a Praça Victor Civita, e uma ZM – Zona Mista, para as áreas privadas com ocupação residencial vertical.</p>
+					<p>Na quadra 223 do setor 083, onde se situa o PIU Nações Unidas, expressa na figura 18 a seguir, foram definidas a ZOE Nações Unidas, para as áreas públicas municipais e estaduais, uma ZEPAM – zona de preservação ambiental, para a Praça Victor Civita, e uma ZM – Zona Mista, para as áreas privadas com ocupação residencial vertical.</p>
 
 					<div class="figure">
 					<img :src="require('../../assets/img/anexo1/image21.jpeg')" class="responsive-img" data-caption="Figura 19: Zonas de uso LPUOS"/>	
 					<p><strong>Figura 19: Zonas de uso LPUOS. </strong>Fonte: MDC 2004, LPUOS – Lei nº16.402/2016.</p>
 					</div>
 
-					<p>Em relação ao mercado imobiliário, mesmo sendo a AID uma região com alto grau de consolidação, houve um número significativo de lançamentos residenciais na última década, sobretudo nos bairros de Pinheiros e Vila Madalena. Nota-se ainda que as obras de reurbanização do Largo da Batata, iniciadas após a abertura da Avenida Brigadeiro Faria Lima e recentemente concluídas após a abertura da estação Faria Lima da linha 4 amarela do Metrô impulsionaram um ciclo mais recente de lançamentos nas proximidades do PIU Sumidouro, entre as avenidas Brig. Faria Lima, Frederico Hermann Jr. e Nações Unidas e a Rua Butantã.</p>
+					<p>Em relação ao mercado imobiliário, mesmo sendo a AID uma região com alto grau de consolidação, houve um número significativo de lançamentos residenciais na última década, sobretudo nos bairros de Pinheiros e Vila Madalena. Nota-se ainda que as obras de reurbanização do Largo da Batata, iniciadas após a abertura da Avenida Brigadeiro Faria Lima e recentemente concluídas após a abertura da estação Faria Lima da linha 4 amarela do Metrô impulsionaram um ciclo mais recente de lançamentos nas proximidades do PIU Nações Unidas, entre as Avenidas Brig. Faria Lima, Frederico Hermann Jr. e Dra. Ruth Cardoso e a Rua Butantã.</p>
 
 					<div class="figure">
 					<img :src="require('../../assets/img/anexo1/image22.jpeg')" class="responsive-img" data-caption="Figura 20: Lançamentos Residenciais"/>	
@@ -259,7 +259,7 @@
 					<p><strong>Figura 22: Favelas e Núcleos urbanizados. </strong>Fonte: Habisp 2009.</p>
 					</div>
 
-					<p>As diretrizes para atendimento à demanda habitacional, expressas na demarcação de ZEIS – zonas especiais de interesse social - são pouco expressivas na região, com pequena quantidade de terrenos de pequeno porte definidos como ZEIS 3  nas proximidades do PIU Sumidouro, próximas ao Largo da Batata e à Rua Paes Leme e na Vila Madalena. Há ainda uma ZEIS 2 no Butantã, nas proximidades da Rodovia Raposo Tavares.</p>
+					<p>As diretrizes para atendimento à demanda habitacional, expressas na demarcação de ZEIS – zonas especiais de interesse social - são pouco expressivas na região, com pequena quantidade de terrenos de pequeno porte definidos como ZEIS 3  nas proximidades do PIU Nações Unidas, próximas ao Largo da Batata e à Rua Paes Leme e na Vila Madalena. Há ainda uma ZEIS 2 no Butantã, nas proximidades da Rodovia Raposo Tavares.</p>
 
 					<div class="figure">
 					<img :src="require('../../assets/img/anexo1/image25.jpeg')" class="responsive-img" data-caption="Figura 23: Zonas Especiais de Interesse Social"/>	
@@ -269,9 +269,9 @@
 
 					<section id="Cap09">
 					<h6> 1.8 Estrutura Fundiária e Ocupação atual</h6>
-					<p>O PIU Sumidouro engloba quase a totalidade da Quadra 223 do Setor Fiscal 083. Todos os lotes inseridos na ADA são públicos, pertencentes à Prefeitura de São Paulo (lotes 0001, 0002 e 0018), SABESP (lote 0016) e CETESB (lote 0017), somando 146.789 m² (Cadastro TPCL).</p>
+					<p>O PIU Nações Unidas engloba quase a totalidade da Quadra 223 do Setor Fiscal 083. Todos os lotes inseridos na ADA são públicos, pertencentes à Prefeitura de São Paulo (lotes 0001, 0002 e 0018), SABESP (lote 0016) e CETESB (lote 0017), somando 146.789 m² (Cadastro TPCL).</p>
 
-					<p>O lote 0001, com 10.850 m² e acessos pela Av. Nações Unidas e Prof. Frederico Hermann Jr r pela R. Sumidouro, abriga espaços livres e edificações utilizados pela Prefeitura Regional de Pinheiros, incluindo sua sede administrativa, as GETs OE e MB – Gerências de Engenharia de Tráfego Oeste e Marginais - Bandeirantes da CET, um posto da GCM – Guarda Civil Metropolitana e o Conselho Tutelar de Pinheiros.</p>
+					<p>O lote 0001, com 10.850 m² e acessos pelas Avs. Dra. Ruth Cardoso e Prof. Frederico Hermann Jr r pela R. Sumidouro, abriga espaços livres e edificações utilizados pela Prefeitura Regional de Pinheiros, incluindo sua sede administrativa, as GETs OE e MB – Gerências de Engenharia de Tráfego Oeste e Marginais - Bandeirantes da CET, um posto da GCM – Guarda Civil Metropolitana e o Conselho Tutelar de Pinheiros.</p>
 
 					<div class="figure">
 					<img :src="require('../../assets/img/anexo1/image26.jpeg')" class="responsive-img" data-caption="Figura 24: Estrutura Fundiária – lotes e áreas. "/>	
@@ -285,14 +285,14 @@
 					<p><strong>Figura 25: Estrutura Fundiária – lotes e proprietários. </strong>Fonte: MDC 2004 e croquis SF.</p>
 					</div>
 
-					<p>O lote 0016, com 82.611 m² e acessos pelas ruas Nicolau Gagliardi e Sumidouro, abriga o Complexo Costa Carvalho da SABESP, com edifícios administrativos, auditórios e instalações técnicas de infraestrutura de esgotos sanitários, cercados por jardins e estacionamentos fartamente arborizados. Parte deste lote abriga instalações técnicas da CETESB, com acesso pela Av. Frederico Hermann Jr. O lote abriga ainda um clube de funcionários da SABESP, com acesso pela R. Costa Carvalho, e o Posto Pinheiros do Corpo de Bombeiros, com acesso pela R. do Sumidouro.</p>
+					<p>O lote 0016, com 82.611 m² e acessos pelas Ruas Nicolau Gagliardi, Anna Compos Mellão e do Sumidouro, abriga o Complexo Costa Carvalho da SABESP, com edifícios administrativos, auditórios e instalações técnicas de infraestrutura de esgotos sanitários, cercados por jardins e estacionamentos fartamente arborizados. Parte deste lote abriga instalações técnicas da CETESB, com acesso pela Av. Frederico Hermann Jr. O lote abriga ainda um clube de funcionários da SABESP, com acesso pela R. Costa Carvalho, e o Posto Pinheiros do Corpo de Bombeiros, com acesso pela R. do Nações Unidas.</p>
 
 					<p>O lote 0017, com 18.067 m² e acesso pela Av. Prof. Frederico Hermann Jr, abriga edifícios administrativos, laboratórios e auditório, pertencentes à CETESB e à Secretaria de Estado do Meio Ambiente. É um lote densamente ocupado por edifícios de porte e com poucas áreas livres.</p>
 
-					<p>Por sua vez, o lote 0018, com 5.261 m² e acesso pela R. Nicolau Gagliardi e pela Av. Prof. Frederico Hermann Jr, pertence à Prefeitura de São Paulo e abriga diversos edifícios e instalações utilizados pela CETESB e o CAPS – AD Pinheiros (Centro de Atenção Psicossocial Álcool e Drogas), equipamento da SMADS – Secretaria Municipal de Assistência e Desenvolvimento Social, , com acesso pela R. Nicolau Gagliardi. </p>
+					<p>Por sua vez, o lote 0018, com 5.261 m² e acesso pela R. Nicolau Gagliardi e pela Av. Prof. Frederico Hermann Jr, pertence à Prefeitura de São Paulo e abriga diversos edifícios e instalações utilizados pela CETESB, bem como o CAPS – AD Pinheiros (Centro de Atenção Psicossocial Álcool e Drogas), equipamento da SMADS – Secretaria Municipal de Assistência e Desenvolvimento Social, , com acesso pela R. Nicolau Gagliardi. </p>
 
 					<div class="figure">
-						<img :src="require('../../assets/img/anexo1/image28.jpeg')" class="responsive-img" data-caption="Figura 26: Ocupação atual por usos institucionais da PIU Sumidouro"/>					<p><strong>Figura 26: Ocupação atual por usos institucionais do PIU Sumidouro </strong>Fonte: Google, 2016.</p>
+						<img :src="require('../../assets/img/anexo1/image28.jpeg')" class="responsive-img" data-caption="Figura 26: Ocupação atual por usos institucionais da PIU Nações Unidas"/>					<p><strong>Figura 26: Ocupação atual por usos institucionais do PIU Nações Unidas </strong>Fonte: Google, 2016.</p>
 					</div>
 
 					<p>Os lotes 0001, 0002 e 0016 também abrigam emissários subterrâneos de esgotos sanitários, que partem das instalações da Estação Elevatória de Esgotos de Pinheiros, localizada no lote 0016.</p>
@@ -302,13 +302,13 @@
 					
 				<h6> 1.9 Projetos Colocalizados </h6>
 
-				<p>O único projeto colocalizado mapeado na AII é o Expresso Oeste-Sul, um projeto da CPTM – Companhia Paulista de Trens Metropolitanos e da STM – Secretaria de Estado dos Transportes Metropolitanos que consiste em uma linha ferroviária expressa, paralela às linhas 8 Diamante e 9 Esmeralda existentes da CPTM, que ligará a região de Alphaville/Barueri à estação Pinheiros, situada a 250m do PIU Sumidouro.</p>
+				<p>O único projeto colocalizado mapeado na AII é o Expresso Oeste-Sul, um projeto da CPTM – Companhia Paulista de Trens Metropolitanos e da STM – Secretaria de Estado dos Transportes Metropolitanos que consiste em uma linha ferroviária expressa, paralela às linhas 8 Diamante e 9 Esmeralda existentes da CPTM, que ligará a região de Alphaville/Barueri à estação Pinheiros, situada a 250m do PIU Nações Unidas.</p>
 				</section>
 			
 				<section id="Cap11">
 					<h5> 2. Análise ambiental </h5>
 					<h6 id="Cap12"> 2.1 Meio Físico </h6>
-					<p>O PIU Sumidouro está localizado na planície aluvial do Rio Pinheiros, apresentando uma topografia regular e plana. Parte da área, correspondente aos lotes 0001 e 0002, continha trecho do curso original do Rio Pinheiros, retificado posteriormente. Na face noroeste, o Córrego das Corujas, que nasce na Vila Beatriz, passa sob o leito da Av. Prof. Frederico Hermann Jr.</p>
+					<p>O PIU Nações Unidas está localizado na planície aluvial do Rio Pinheiros, apresentando uma topografia regular e plana. Parte da área, correspondente aos lotes 0001 e 0002, continha trecho do curso original do Rio Pinheiros, retificado posteriormente. Na face noroeste, o Córrego das Corujas, que nasce na Vila Beatriz, passa sob o leito da Av. Prof. Frederico Hermann Jr.</p>
 
 					<div class="figure">
 					<img :src="require('../../assets/img/anexo1/image29.jpeg')" class="responsive-img" data-caption="Figura 28: Bacias Hidrográficas"/>	
@@ -316,14 +316,14 @@
 					</div>
 					
 
-					<p>As bacias hidrográficas atuais pouco diferem da estrutura de 1930. A maior parte da AID é drenada pelos córregos das Corujas e Verde I, situados nas porções nordeste e leste, enquanto as porções sul e oeste da área (Rua Sumidouro, Av. das Nações Unidas e Butantã) são tributárias diretas do Rio Pinheiros.</p>
+					<p>As bacias hidrográficas atuais pouco diferem da estrutura de 1930. A maior parte da AID é drenada pelos córregos das Corujas e Verde I, situados nas porções nordeste e leste, enquanto as porções sul e oeste da área (Rua Sumidouro, Av. Dra. Ruth Cardoso e Butantã) são tributárias diretas do Rio Pinheiros.</p>
 
 					<div class="figure">
 					<img :src="require('../../assets/img/anexo1/image30.jpeg')" class="responsive-img" data-caption="Figura 28: Bacias Hidrográficas"/>	
 					<p><strong>Figura 28: Bacias Hidrográficas. </strong>Fonte: MDC 2004, PDE 2014 e FCTH 2016.</p>
 					</div>
 
-					<p>A partir da Carta Geotécnica, vê-se que a porção do PIU Sumidouro mais próxima ao Rio Pinheiros, correspondente à maior parte dos lotes 0001 e 0002 encontra-se em Terra mole e Solo compressível, enquanto que o restante da área encontra-se na planície aluvial.</p>
+					<p>A partir da Carta Geotécnica, vê-se que a porção do PIU Nações Unidas mais próxima ao Rio Pinheiros, correspondente à maior parte dos lotes 0001 e 0002 encontra-se em Terra mole e Solo compressível, enquanto que o restante da área encontra-se na planície aluvial.</p>
 
 					<div class="figure"><img :src="require('../../assets/img/anexo1/image31.jpeg')" class="responsive-img" data-caption="Figura 29: Carta Geotécnica"/>	
 					<p><strong>Figura 29: Carta Geotécnica. </strong>Fonte: MDC 2004, Emplasa 2003.</p>

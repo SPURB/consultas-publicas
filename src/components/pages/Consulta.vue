@@ -2,7 +2,7 @@
 <div class="consulta">
 	<div class="container">
 		<div class="row">
-			<h2 class="chapter-title">Consulta Pública PIU Sumidouro</h2>
+			<h2 class="chapter-title">Consulta Pública PIU Nações Unidas</h2>
 		</div>
 	</div>
 	<div class="container">
@@ -10,7 +10,7 @@
 			<div class="col s12 chapter-content">
 				<section id="1_objeto">
 					<h5>1. OBJETO</h5>
-					<p class="commentable" @click="defineCommentId" id="0001"> A presente Consulta Pública, promovida pela Prefeitura do Município de São Paulo por intermédio da Secretaria Municipal de Urbanismo e Licenciamento (SMUL) e da São Paulo Urbanismo (SP-URBANISMO), tem como objeto desencadear o processo administrativo tendente a instaurar o Projeto de Intervenção Urbana (PIU) Sumidouro, a ser realizada entre os dias 23 de fevereiro e 23 de março de 2018, apresentando os elementos preliminares ao desenvolvimento do PIU, com vistas a colher contribuições da sociedade civil ao desenvolvimento posterior do projeto. A consulta tem por base a legislação em vigor e os instrumentos urbanísticos que permitem ações específicas no território da cidade. <i class="small material-icons"> insert_comment</i></p>
+					<p class="commentable" @click="defineCommentId" id="0001"> A presente Consulta Pública, promovida pela Prefeitura do Município de São Paulo por intermédio da Secretaria Municipal de Urbanismo e Licenciamento (SMUL) e da São Paulo Urbanismo (SP-URBANISMO), tem como objeto desencadear o processo administrativo tendente a instaurar o Projeto de Intervenção Urbana (PIU) Nações Unidas, a ser realizada entre os dias 09 e 30 de março de 2018, apresentando os elementos preliminares ao desenvolvimento do PIU, com vistas a colher contribuições da sociedade civil ao desenvolvimento posterior do projeto. A consulta tem por base a legislação em vigor e os instrumentos urbanísticos que permitem ações específicas no território da cidade. <i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 1"></Comments>
 
 					<p class="commentable" @click="defineCommentId" id="0002">
@@ -22,22 +22,22 @@
 				<section id="2_motivacao">
 					<h5>2. MOTIVAÇÃO</h5>
 					<p class="commentable" @click="defineCommentId" id="0003">
-						O PIU Sumidouro tem como motivação básica a definição dos parâmetros de parcelamento, uso e ocupação do solo da Zona de Ocupação Especial – ZOE SUMIDOURO, localizada no território da Prefeitura Regional de Pinheiros. A definição dos referidos parâmetros urbanísticos deverá considerar as características específicas desta ZOE, a ZEPAM correspondente à Praça Victor Civita, o marco regulatório da política urbana municipal (PDE, LPUOS, PRS<sup><a href="#consulta01">1</a></sup>) e a Operação Urbana Consorciada Faria Lima.
+						O PIU Nações Unidas tem como motivação básica a definição dos parâmetros de parcelamento, uso e ocupação do solo da Zona de Ocupação Especial – ZOE Nações Unidas, localizada no território da Prefeitura Regional de Pinheiros. A definição dos referidos parâmetros urbanísticos deverá considerar as características específicas desta ZOE, a ZEPAM correspondente à Praça Victor Civita, o marco regulatório da política urbana municipal (PDE, LPUOS, PRS<sup><a href="#consulta01">1</a></sup>) e a Operação Urbana Consorciada Faria Lima.
 					<i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 3"></Comments>
 
 					<p class="commentable" @click="defineCommentId" id="0004">
-						A Praça Victor Civita é um equipamento público referencial para a região e um caso inovador no país de parceria entre os setores público e privado, que possibilitou a reabilitação de uma área contaminada com novos atributos urbanos, programáticos e pedagógicos e novo modelo de gestão. A parceria vigorou entre 2007 e 2016, possibilitando, além da implantação do projeto e da zeladoria do espaço, o funcionamento do Espaço Aberto da Sustentabilidade, de um centro de atividades para a terceira idade e de uma intensa agenda de eventos, cursos e apresentações. Com o fim da parceria, a praça vem sofrendo um processo de deterioração e de perda de frequentadores, prejudicando sua utilização como área de lazer e polo cultural e educativo. O PIU Sumidouro pretende resgatar a Praça Victor Civita como equipamento público, recuperando suas instalações e melhorando sua integração física e programática com o entorno, potencializando sua apropriação pelos moradores e trabalhadores locais.
+						A Praça Victor Civita é um equipamento público referencial para a região e um caso inovador no país de parceria entre os setores público e privado, que possibilitou a reabilitação de uma área contaminada com novos atributos urbanos, programáticos e pedagógicos e novo modelo de gestão. A parceria vigorou entre 2007 e 2016, possibilitando, além da implantação do projeto e da zeladoria do espaço, o funcionamento do Espaço Aberto da Sustentabilidade, de um centro de atividades para a terceira idade e de uma intensa agenda de eventos, cursos e apresentações. Com o fim da parceria, a praça vem sofrendo um processo de deterioração e de perda de frequentadores, prejudicando sua utilização como área de lazer e polo cultural e educativo. O PIU Nações Unidas pretende resgatar a Praça Victor Civita como equipamento público, recuperando suas instalações e melhorando sua integração física e programática com o entorno, potencializando sua apropriação pelos moradores e trabalhadores locais.
 						<i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 4"></Comments>
 
 					<p class="commentable" @click="defineCommentId" id="0005">
-						O PIU Sumidouro está vinculado à implantação do Parque Augusta, em função de uma proposta de permuta<sup><a href="#footnote02">2</a></sup> de terrenos com entre os proprietários da área onde se deseja implantar o futuro parque e o Município de São Paulo, que cederá em contrapartida uma porção da área municipal correspondente aos lotes 0001 e 0002 da Quadra 223 do Setor Fiscal 083, inseridos na ZOE Sumidouro. 
+						O PIU Nações Unidas está vinculado à implantação do Parque Augusta, em função de uma proposta de permuta<sup><a href="#footnote02">2</a></sup> de terrenos com entre os proprietários da área onde se deseja implantar o futuro parque e o Município de São Paulo, que cederá em contrapartida uma porção da área municipal correspondente aos lotes 0001 e 0002 da Quadra 223 do Setor Fiscal 083, inseridos na ZOE Nações Unidas. 
 						<i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 5"></Comments>
 
 					<p class="commentable" @click="defineCommentId" id="0006">
-						Conforme Protocolo de Intenções firmado entre a Prefeitura e os proprietários do referido imóvel da Rua Augusta, a efetivação da permuta de terrenos poderá viabilizar, entre outras ações, a transferência de propriedade da área privada para a Prefeitura e a implantação e gestão (por dois anos) do Parque Augusta, às custas dos atuais proprietários. Por outro lado, a transferência de propriedade de porção da área municipal inserida na ZOE Sumidouro para os atuais proprietários do imóvel da Rua Augusta possibilitará seu desenvolvimento imobiliário de forma compatível com as diretrizes do Plano Diretor Estratégico – PDE, mantendo nas áreas públicas remanescentes as atuais atividades e serviços e podendo agregar novos equipamentos públicos à região.
+						Conforme Protocolo de Intenções firmado entre a Prefeitura e os proprietários do referido imóvel da Rua Augusta, a efetivação da permuta de terrenos poderá viabilizar, entre outras ações, a transferência de propriedade da área privada para a Prefeitura e a implantação e gestão (por dois anos) do Parque Augusta, às custas dos atuais proprietários. Por outro lado, a transferência de propriedade de porção da área municipal inserida na ZOE Nações Unidas para os atuais proprietários do imóvel da Rua Augusta possibilitará seu desenvolvimento imobiliário de forma compatível com as diretrizes do Plano Diretor Estratégico – PDE, mantendo nas áreas públicas remanescentes as atuais atividades e serviços e podendo agregar novos equipamentos públicos à região.
 						<i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 6"></Comments>
 
@@ -47,7 +47,7 @@
 					<Comments :commentid="commentid" v-if="commentid.id == 7"></Comments>
 
 					<p class="commentable" @click="defineCommentId" id="0008">
-						Neste contexto, o programa de interesse público do PIU Sumidouro contém um elemento externo ao perímetro do projeto, mas de reconhecido interesse público, constituído pelo histórico de mobilização de moradores, associações e coletivos atuantes na cena da região central da cidade nos últimos anos, mobilizados pela viabilização do Parque Augusta junto à Prefeitura de São Paulo.
+						Neste contexto, o programa de interesse público do PIU Nações Unidas contém um elemento externo ao perímetro do projeto, mas de reconhecido interesse público, constituído pelo histórico de mobilização de moradores, associações e coletivos atuantes na cena da região central da cidade nos últimos anos, mobilizados pela viabilização do Parque Augusta junto à Prefeitura de São Paulo.
 						<i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 8"></Comments>
 
@@ -98,7 +98,7 @@
 				<section id="4_quadro-normativo">
 					<h5>4. DIAGNÓSTICO SOCIOTERRITORIAL E AMBIENTAL</h5>
 					<p class="commentable" @click="defineCommentId" id="0015">
-						O Diagnóstico Socioterritorial e Ambiental - <router-link to='/anexo1'>Anexo I</router-link> - foi realizado a partir de dados disponíveis nos sítios GeoSampa  e Gestão Urbana SP, administrados pela Secretaria Municipal de Urbanismo e Licenciamento da Prefeitura de São Paulo, contendo dados e análises suficientes para, numa primeira aproximação, dar a conhecer o contexto urbano onde se encontra o PIU Sumidouro.
+						O Diagnóstico Socioterritorial e Ambiental - <router-link to='/anexo1'>Anexo I</router-link> - foi realizado a partir de dados disponíveis nos sítios GeoSampa  e Gestão Urbana SP, administrados pela Secretaria Municipal de Urbanismo e Licenciamento da Prefeitura de São Paulo, contendo dados e análises suficientes para, numa primeira aproximação, dar a conhecer o contexto urbano onde se encontra o PIU Nações Unidas.
 					<i class="small material-icons"> insert_comment</i></p>
 					<Comments :commentid="commentid" v-if="commentid.id == 15"></Comments>
 				</section>
@@ -133,7 +133,7 @@ export default {
 				id: null,
 				context: null
 			},
-			allCommentableIds: null
+			allCommentableIds: null,
 		}
 	},
 	computed:{ allcomments() { return this.$store.state.allcomments	}
@@ -161,7 +161,8 @@ export default {
 		consoleAllcomments(){ 
 			let allcomm = this.allcomments;
 			console.log(allcomm.map(function(elem) { return parseInt(elem.commentid) }))
-		}
+		},
+
 	},
 	components:{ Comments }
 }

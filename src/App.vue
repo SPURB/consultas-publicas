@@ -6,18 +6,17 @@
     <router-view name="default"></router-view>
     <router-view name="modalcomponent"></router-view>
     <router-view name="comments"></router-view>
-    <router-view name="footernav"></router-view>
+    <router-view name="mainfooter"></router-view>
   </div>
 </template>
 
 <script>
 export default {
   name: 'App',
-  beforeMount(){ this.$store.dispatch('LOAD_COMMENTS_LIST'); },//load all comments
+  mounted(){ this.$store.dispatch('LOAD_COMMENTS_LIST'); },//load all comments
 }
 </script>
 
 <style lang="scss">
-@import "assets/vendor/materialize-src/sass/materialize.scss";
 @import "assets/main.scss";
 </style>

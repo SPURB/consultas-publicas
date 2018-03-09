@@ -1,27 +1,40 @@
-# Consultas Públicas
+# Consultas Públicas / PIU Arco Jurubatuba
 
-> Consulta públicas de Projetos de Intervenções Urbanas municipais de São Paulo 
+> Código de http://minuta.gestaourbana.prefeitura.sp.gov.br/piu-nacoes-unidas/
+> Consulta pública do projeto de intervenção urbana das Nações Unidas
 
-## Build Setup
+## Setup de frontend
+### Requisitos
+* Nodejs 
+* NPM
 
 ``` bash
-# install dependencies
+# Instalar dependências
 npm install
 
-# serve with hot reload at localhost:8080
+# Serve com 'hot reload' em localhost:8080
 npm run dev
 
-# build for production with minification
+# constrói para produção com minificação dos recursos
 npm run build
 
-# build for production and view the bundle analyzer report
+# constrói para produção e visualização dos recursos construídos
 npm run build --report
 
-# run unit tests
+# inicia teste unitários
 npm run unit
 
-# run all tests
+# inicia todos os testes
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Para ver explicações detalhadas de como as coisas funcionam ver [guia](http://vuejs-templates.github.io/webpack/) e [documentação do vue-loader](http://vuejs.github.io/vue-loader).
+
+## Setup de backend
+### Requisitos
+* MySQL
+* Apache
+* PHP 5.6
+> A estrutura do banco está em `backend/acj.sql`. É necessário montar o banco antes localmente para montar todas as funcionalidade deste projeto.
+> Alterar `backend/consultas.php` nas linhas 1, 2 e 88 a 94 incluindo as informações do seu banco de dados.
+> Após o setup do banco rodar o comando `npm run build` na raiz do projeto e juntar os arquivo de `/dist` com o arquivo `consultas.php` no diretório do projeto. 

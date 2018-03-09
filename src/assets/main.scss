@@ -35,11 +35,8 @@ html{
 			border: solid $primary-dark-grey 1px 
 		}
 	}
-
-	h5, h6 {
-		font-weight: 700;
-	}
-
+	h5, h6 { font-weight: 700; }
+	strong { font-weight: 700 }
 	blockquote{
 		border-left: solid 1px $primary-grey;
 		li{

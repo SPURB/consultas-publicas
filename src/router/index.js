@@ -3,11 +3,12 @@ import Router from 'vue-router'
 
 // shared
 import Header from '@/components/shared/Header'
-import Progressbar from '@/components/shared/Progressbar'
+// import Progressbar from '@/components/shared/Progressbar'
 import Modalcomponent from '@/components/shared/Modalcomponent'
 import Comments from '@/components/shared/Comments'
-import Footernav from '@/components/shared/Footernav'
-// import Vtour from '@/components/shared/Vtour'
+// import Footernav from '@/components/shared/Footernav'
+import Mainfooter from '@/components/shared/Mainfooter'
+
 
 // pages
 import Admin from '@/components/pages/admin/Admin'
@@ -28,12 +29,12 @@ const router = new Router({
 			path: '/consulta',
 			name: 'Consulta',
 			components: {
-				// vtour: Vtour,
 				header: Header,
-				progressbar: Progressbar,
+				// progressbar: Progressbar,
 				default: Consulta,
 				modalcomponent: Modalcomponent,
-				footernav: Footernav
+				// footernav: Footernav,
+				mainfooter: Mainfooter
 			},
 			meta: { 
 				postid: 1,
@@ -44,10 +45,11 @@ const router = new Router({
 			name: 'Anexo 1',
 			components: {
 				header: Header,
-				progressbar: Progressbar,
+				// progressbar: Progressbar,
 				default: Anexo1,
 				modalcomponent: Modalcomponent,
-				footernav: Footernav
+				// footernav: Footernav,
+				mainfooter: Mainfooter
 			},
 			meta: { 
 				postid: 2,
@@ -58,10 +60,11 @@ const router = new Router({
 			name: 'Anexo 2',
 			components: {
 				header: Header,
-				progressbar: Progressbar,
+				// progressbar: Progressbar,
 				default: Anexo2,
 				modalcomponent: Modalcomponent,
-				footernav: Footernav
+				// footernav: Footernav,
+				mainfooter: Mainfooter
 			}, 
 			meta: { 
 				postid: 3,
@@ -72,6 +75,7 @@ const router = new Router({
 			components: {
 				header: Header,
 				default: Admin,
+				mainfooter: Mainfooter
 			} 
 		}
 	]

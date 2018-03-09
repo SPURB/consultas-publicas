@@ -12,7 +12,7 @@
 				<h5>Sumário</h5>
 				<ul>
 					<li><a href="#an2-cap-1">1. Levantamento das Diretrizes Urbanísticas</a></li>
-					<li><a href="#an2-cap-1-1">1.1 Características do PIU Sumidouro</a></li>
+					<li><a href="#an2-cap-1-1">1.1 Características do PIU Nações Unidas</a></li>
 					<li><a href="#an2-cap-1-1-1">1.1.1 Cenários de Parcelamento, uso e ocupação do solo</a></li>
 					<li><a href="#an2-cap-1-2">1.2 Marco Regulatório da Política Urbana Municipal</a></li>
 					<li><a href="##n2-cap-1-2">1.2.1 PDE (Lei nº 16.050/2014)</a></li>
@@ -27,43 +27,43 @@
 					<li><a href="#an2-cap-5-1">5.1 Instrumentos de gestão democrática</a></li>
 				</ul>
 
-				<a class="waves-effect waves-light btn" href="./static/pdf/anexo2.pdf" download="PIU-Sumidouro_anexo2.pdf"><i class="material-icons left">picture_as_pdf</i>Baixe o PDF deste anexo</a>
+				<a class="waves-effect waves-light btn" href="./static/pdf/anexo2.pdf" download="PIU-Nacoes-Unidas_anexo2.pdf"><i class="material-icons left">picture_as_pdf</i>Baixe o PDF deste anexo</a>
 
 				<section id="an2-cap-1">
 					<h5>1. Levantamento das Diretrizes Urbanísticas</h5>
-					<p>O levantamento das diretrizes urbanísticas que servirão como base para a formulação das diretrizes do PIU Sumidouro compreende as próprias características do PIU Sumidouro e os parâmetros gerais presentes no marco regulatório da política urbana municipal (PDE, LPUOS e PRS e leis específicas das OUCs).</p>
+					<p>O levantamento das diretrizes urbanísticas que servirão como base para a formulação das diretrizes do PIU Nações Unidas compreende as próprias características do PIU Nações Unidas e os parâmetros gerais presentes no marco regulatório da política urbana municipal (PDE, LPUOS e PRS e leis específicas das OUCs).</p>
 
-					<h6 id="an2-cap-1-1">1.1 Características do PIU Sumidouro</h6>
+					<h6 id="an2-cap-1-1">1.1 Características do PIU Nações Unidas</h6>
 					<p></p>
-					<p>O PIU Sumidouro é integralmente constituído por lotes institucionais da Prefeitura de São Paulo e do Estado de São Paulo, ocupados por diferentes órgãos e atividades, majoritariamente de natureza técnico-administrativas.</p>
-					<p>O PIU Sumidouro engloba a quase totalidade da Quadra 223 do Setor Fiscal 083, com uma área aproximada de 152.000 m² e grandes dimensões, com testadas variando entre 250 e 400 m de extensão. Os lotes 017 e 018 (CETESB) têm ocupação mais intensiva, enquanto o lote 016 (SABESP) tem a ocupação mais rarefeita, com presença de farta arborização (cerca de 800 árvores). Os parâmetros de ocupação atuais estão sintetizados a seguir:</p>
+					<p>O PIU Nações Unidas é integralmente constituído por lotes institucionais da Prefeitura de São Paulo e do Estado de São Paulo, ocupados por diferentes órgãos e atividades, majoritariamente de natureza técnico-administrativas.</p>
+					<p>O PIU Nações Unidas engloba a quase totalidade da Quadra 223 do Setor Fiscal 083, com uma área aproximada de 152.000 m² e grandes dimensões, com testadas variando entre 250 e 400 m de extensão. Os lotes 017 e 018 (CETESB) têm ocupação mais intensiva, enquanto o lote 016 (SABESP) tem a ocupação mais rarefeita, com presença de farta arborização (cerca de 800 árvores). Os parâmetros de ocupação atuais estão sintetizados a seguir:</p>
 
 					<ul class="list">
 						<li>Taxa de Ocupação variando entre 0,24 e 0,56;</li>
 						<li>Coeficiente de Aproveitamento variando entre 0,42 e 2,6;</li>
 						<li>Gabarito variando entre 3,5 e 42 m;</li>
 					</ul>
-					<p>O PIU Sumidouro está localizado a cerca de 250m da Estação Pinheiros das linhas 4-Amarela do Metrô e 9-Esmeralda da CPTM e do Terminal Capri da SPTrans, estando quase integralmente inserido no raio de influência de 600m destes equipamentos. </p>
+					<p>O PIU Nações Unidas está localizado a cerca de 250m da Estação Pinheiros das linhas 4-Amarela do Metrô e 9-Esmeralda da CPTM e do Terminal Capri da SPTrans, estando quase integralmente inserido no raio de influência de 600m destes equipamentos. </p>
 					<p>Já a Praça Victor Civita é uma referência tanto como área verde, de lazer, cultura e educação, como de reabilitação ambiental e interesse histórico. </p>
 					<p>Ainda sobre a questão ambiental, parte do lote 0001, de propriedade da Prefeitura de São Paulo, tem incidência da área de preservação permanente do Rio Pinheiros e toda a área da ZOE, em função dos usos pregressos e atuais (leito aterrado do Rio Pinheiros, EEE Pinheiros, emissários e demais infraestrutura de esgotos sanitários), é uma área potencialmente contaminada.</p>
 
 					<div class="figure">
-						<img :src="require('../../assets/img/anexo2/image35.jpeg')" class="responsive-img" data-caption=" Figura 1: PIU Sumidouro - Gabaritos."/>
-						<p><strong> Figura 1: PIU Sumidouro - Gabaritos. </strong> Fonte: MDC 2004.</p>
+						<img :src="require('../../assets/img/anexo2/image35.jpeg')" class="responsive-img" data-caption=" Figura 1: PIU Nações Unidas - Gabaritos."/>
+						<p><strong> Figura 1: PIU Nações Unidas - Gabaritos. </strong> Fonte: MDC 2004.</p>
 					</div>
 
 					<h6 id="an2-cap-1-1-1">	1.1.1 Cenários de parcelamento, uso e ocupação do solo</h6>
 					<br>
-					<p>Considerando as atuais características do PIU Sumidouro, a definição de diretrizes urbanísticas pode assumir caminhos distintos em função da permanência dos usos institucionais no local e de suas necessidades específicas conforme seu planejamento institucional, como por exemplo futuras ampliações, novas atividades, etc. </p>
-					<p>Atualmente, as atividades desenvolvidas nas áreas institucionais da ZOE Sumidouro contém tanto atividades de natureza técnico-administrativas, como escritórios, auditórios e laboratórios, quanto instalações técnicas enquadradas como uso INFRA, como estações medidoras da qualidade do ar da CETESB, estação elevatória e emissários de esgoto da SABESP, etc. </p>
+					<p>Considerando as atuais características do PIU Nações Unidas, a definição de diretrizes urbanísticas pode assumir caminhos distintos em função da permanência dos usos institucionais no local e de suas necessidades específicas conforme seu planejamento institucional, como por exemplo futuras ampliações, novas atividades, etc. </p>
+					<p>Atualmente, as atividades desenvolvidas nas áreas institucionais da ZOE Nações Unidas contém tanto atividades de natureza técnico-administrativas, como escritórios, auditórios e laboratórios, quanto instalações técnicas enquadradas como uso INFRA, como estações medidoras da qualidade do ar da CETESB, estação elevatória e emissários de esgoto da SABESP, etc. </p>
 					<p>Um primeiro cenário a ser considerado, aqui denominado <strong>Cenário A</strong>, tem como base a permanência integral dos usos institucionais, bem como a identificação de demandas junto às instituições públicas que ocupam a área, que determinem condições excepcionais de parcelamento, uso e ocupação do solo em relação ao entorno e ao planejamento urbano macro.</p>
 					<p>O segundo cenário possível, aqui denominado <strong>Cenário B</strong>, considera que as instituições públicas que ocupam a área decidam, de acordo com suas prioridades, deixá-la integralmente, abrindo a possibilidade de que esta se desenvolva conforme as diretrizes do PDE e com o contexto urbanístico, econômico e social em que se insere.</p>
 					<p>Por fim, podemos vislumbrar um terceiro cenário, aqui denominado <strong>Cenário C</strong>, que combine a permanência de parte dos usos institucionais com a substituição de parte da área por novas atividades privadas. Tanto neste cenário como no Cenário B, a modelagem relativa aos novos usos e à nova ocupação deverá considerar os objetivos e diretrizes expressos no marco regulatório da política urbana municipal.</p>
-					<p>O PIU Sumidouro deverá considerar estes três cenários como referências para ensaios de parcelamento, uso e ocupação do solo, buscando a proposição de parâmetros que possam, idealmente, ser compatíveis com quaisquer hipóteses.</p>
+					<p>O PIU Nações Unidas deverá considerar estes três cenários como referências para ensaios de parcelamento, uso e ocupação do solo, buscando a proposição de parâmetros que possam, idealmente, ser compatíveis com quaisquer hipóteses.</p>
 
 					<h6 id="an2-cap-1-2"> 1.2 Marco Regulatório da Política Urbana Municipal</h6>
 					<h6 id="an2-cap-1-2-1">1.2.1 PDE (Lei nº 16.050/2014)</h6>
-					<p>No Diagnóstico Socioterritorial foram compilados os objetivos de desenvolvimento urbano expressos nos artigos 10º e 12 do Plano Diretor Estratégico – PDE para, respectivamente, a Macroária de Estruturação Metropolitana – MEM e para o Setor Orla Ferroviária e Fluvial da MEM, onde se insere a ZOE Sumidouro. A seguir destacamos apenas os objetivos aplicáveis ao objeto deste PIU:</p>
+					<p>No Diagnóstico Socioterritorial foram compilados os objetivos de desenvolvimento urbano expressos nos artigos 10º e 12 do Plano Diretor Estratégico – PDE para, respectivamente, a Macroária de Estruturação Metropolitana – MEM e para o Setor Orla Ferroviária e Fluvial da MEM, onde se insere a ZOE Nações Unidas. A seguir destacamos apenas os objetivos aplicáveis ao objeto deste PIU:</p>
 					
 					<p>Do art. 10, §2º do PDE (objetivos da MEM):</p>
 					
@@ -90,7 +90,7 @@
 					</blockquote>
 
 					<h6 id="an2-cap-1-2-2">1.2.2 Lei de Parcelamento, Uso e Ocupação do Solo – LPUOS (Lei nº 16.402/2016)</h6>
-					<p>A LPUOS define, em seu art. 15, que as ZOE devem ser objeto de projetos de intervenção urbana para a definição de seus parâmetros urbanísticos adequados a suas especificidades. A título de referências, considerando as características da quadra do PIU Sumidouro e do entorno, podemos destacar os parâmetros ordinários incidentes de parcelamento, das zonas de uso vizinhas e de cota Ambiental.</p>
+					<p>A LPUOS define, em seu art. 15, que as ZOE devem ser objeto de projetos de intervenção urbana para a definição de seus parâmetros urbanísticos adequados a suas especificidades. A título de referências, considerando as características da quadra do PIU Nações Unidas e do entorno, podemos destacar os parâmetros ordinários incidentes de parcelamento, das zonas de uso vizinhas e de cota Ambiental.</p>
 					<p>O quadro 2 traz os parâmetros aplicáveis a lotes maiores que 20.000 m²:</p>
 					<!--<p><strong>Trecho do Quadro 2 – Percentuais de destinação de área pública</strong></p>					
 					<div class="figure">
@@ -128,7 +128,7 @@
 			</tbody>
 		</table>
 					
-					<p>Conforme ilustrado na figura 19 do Produto 01, o PIU Sumidouro tem como zonas de uso confrontantes a ZM (Zona Mista) e a ZCOR-1 (Zona Corredor 1), cujos parâmetros de ocupação expressos no quadro 3 estão sintetizados a seguir:</p>
+					<p>Conforme ilustrado na figura 19 do Produto 01, o PIU Nações Unidas tem como zonas de uso confrontantes a ZM (Zona Mista) e a ZCOR-1 (Zona Corredor 1), cujos parâmetros de ocupação expressos no quadro 3 estão sintetizados a seguir:</p>
 
 					<!--<div class="figure">
 						<img :src="require('../../assets/img/anexo2/table02.gif')" class="responsive-img" data-caption="Trecho do Quadro 3 - Parâmetros de ocupação, exceto de Quota Ambiental"/>
@@ -187,7 +187,7 @@
 				</tr>
 			</tbody>
 		</table>
-					<p>Em relação à Quota ambiental, conforme o Mapa 3, o PIU Sumidouro está localizada no perímetro de qualificação ambiental  PA- 4, cujos parâmetros estão expressos no Quadro 3A a seguir:</p>
+					<p>Em relação à Quota ambiental, conforme o Mapa 3, o PIU Nações Unidas está localizada no perímetro de qualificação ambiental  PA- 4, cujos parâmetros estão expressos no Quadro 3A a seguir:</p>
 
 					<!--<div class="figure">
 						<img :src="require('../../assets/img/anexo2/table03.gif')" class="responsive-img" data-caption="Trecho do Quadro 3A - Quota Ambiental: Pontuação mínima, Taxa de Permeabilidade Mínima e fatores por perímetros de qualificação ambiental"/>
@@ -231,7 +231,7 @@
 
 					<h6 id="an2-cap-1-2-3">1.2.3 Planos Regionais das Subprefeituras – PRS (Decreto nº 57.537/ 2016)</h6>
 					<p>Os Planos Regionais das Subprefeituras são elementos de planejamento complementares ao PDE e à lei do Zoneamento, enfatizando os espaços e áreas públicas e a articulação de políticas setoriais no território e com as peças orçamentárias, contendo propostas para a Rede de Estruturação Local. A Rede de Estruturação Local, por sua vez, é composta por Perímetros de Ação, que são porções do território com demandas e ações setoriais que necessitam de projetos coordenados de intervenção destinados ao desenvolvimento urbano local, mediante integração de políticas e investimentos públicos.</p>
-					<p>O PIU Sumidouro não está contido em nenhum Perímetro de Ação do PRS Pinheiros, mas está inserida no contexto urbano e, assim, articulada, a dois deles: 430 – Eixos de Mobilidade e Acessibilidade e 150 - Centralidade Arcoverde e Teodoro Sampaio. A seguir destacamos apenas as diretrizes aplicáveis ao objeto deste PIU:</p>
+					<p>O PIU Nações Unidas não está contido em nenhum Perímetro de Ação do PRS Pinheiros, mas está inserida no contexto urbano e, assim, articulada, a dois deles: 430 – Eixos de Mobilidade e Acessibilidade e 150 - Centralidade Arcoverde e Teodoro Sampaio. A seguir destacamos apenas as diretrizes aplicáveis ao objeto deste PIU:</p>
 					<h6>430 – Eixos de Mobilidade e Acessibilidade</h6>
 					<ul class="list">
 						<li>Aumentar a arborização, qualificar o paisagismo e aumentar as áreas permeáveis quando possível; </li>
@@ -253,7 +253,7 @@
 						<li>Qualificar e ampliar a estrutura cicloviária, conectando-a a rede de transporte público e aos principais equipamentos e áreas verdes; </li>
 					</ul>
 					<h6 id="an2-cap-1-2-4">1.2.4 Operação Urbana Consorciada Faria Lima (Lei nº 13.769/ 2004) </h6>
-					<p>O PIU Sumidouro está inserido na Operação Urbana Consorciada Faria Lima – OUCFL, no Setor Pinheiros, que contém objetivos e diretrizes mais específicas para este contexto urbano. A seguir destacamos apenas os objetivos aplicáveis ao objeto deste PIU:</p>
+					<p>O PIU Nações Unidas está inserido na Operação Urbana Consorciada Faria Lima – OUCFL, no Setor Pinheiros, que contém objetivos e diretrizes mais específicas para este contexto urbano. A seguir destacamos apenas os objetivos aplicáveis ao objeto deste PIU:</p>
 
 					<blockquote>
 						<strong>Art. 4º </strong>- A Operação Urbana Consorciada Faria Lima tem por objetivos específicos:
@@ -277,7 +277,7 @@
 
 					<h6 id="an2-cap-1-3">1.3 Diretrizes Urbanísticas</h6>
 
-					<p>Diante da exposição das características do PIU Sumidouro e dos objetivos e diretrizes da legislação vigente, podemos elencar as seguintes diretrizes para o Projeto de Intervenção urbana a ser desenvolvido:</p>
+					<p>Diante da exposição das características do PIU Nações Unidas e dos objetivos e diretrizes da legislação vigente, podemos elencar as seguintes diretrizes para o Projeto de Intervenção urbana a ser desenvolvido:</p>
 					<ul class="list">
 						<li>Induzir o melhor aproveitamento dos imóveis existentes, promovendo a multiplicidade de usos e incentivando s, as fachadas ativas e a fruição pública;</li>
 						<li>Definir parcelamento compatível com a ocupação existente e planejada, de modo que possa ser gradativamente implantado de forma integrada ao tecido urbano e ao sistema viário local, ampliando sua permeabilidade e capilaridade em relação à mobilidade não motorizada;</li>
@@ -292,8 +292,8 @@
 					</ul>
 					<p>As diretrizes urbanísticas estão sintetizadas na figura 2 a seguir.</p>
 					<div class="figure">
-						<img :src="require('../../assets/img/anexo2/image36.jpeg')" class="responsive-img" data-caption="Figura 2: PIU Sumidouro: Síntese das diretrizes urbanísticas"/>
-						<p><strong> Figura 2: PIU Sumidouro: Síntese das diretrizes urbanísticas. Fonte: SEP/ SP Urbanismo, 2017.</strong></p>
+						<img :src="require('../../assets/img/anexo2/image36.jpeg')" class="responsive-img" data-caption="Figura 2: PIU Nações Unidas: Síntese das diretrizes urbanísticas"/>
+						<p><strong> Figura 2: PIU Nações Unidas: Síntese das diretrizes urbanísticas. Fonte: SEP/ SP Urbanismo, 2017.</strong></p>
 					</div>	
 				</section>
 				<section id="an2-cap-2">
@@ -301,20 +301,20 @@
 					<p>Em primeiro lugar, pelas diretrizes expostas no item anterior, a transformação da área é viável, independentemente do cenário a ser considerado, sob a ótica da compatibilidade com o contexto local e com as diretrizes de desenvolvimento urbano planejadas no PDE e na OUC FL.</p>
 					<p>Já sob a ótica do parcelamento, como se trata de uma quadra de grandes dimensões, as diretrizes definidas preveem a destinação de áreas públicas e abertura de sistema viário. Avaliando a configuração das edificações existentes, as áreas potencialmente transformáveis, as áreas verdes e espaços vazios representados na Figura 2, há viabilidade para efetivar este parcelamento. Os números, em linhas gerais, como uma exploração preliminar, são os seguintes:</p>
 					<ul class="list">
-						<li>A área total dos lotes que compõem o PIU Sumidouro é de cerca de 147.000 m². Destes, conforme os parâmetros vigentes na LPUOS, apenas os lotes 0002 e 0016, de propriedade, respectivamente, da PMSP e da SABESP, estariam sujeitos ao parcelamento com destinação de área pública, pois excedem à área de 20.000 m². </li>
+						<li>A área total dos lotes que compõem o PIU Nações Unidas é de cerca de 147.000 m². Destes, conforme os parâmetros vigentes na LPUOS, apenas os lotes 0002 e 0016, de propriedade, respectivamente, da PMSP e da SABESP, estariam sujeitos ao parcelamento com destinação de área pública, pois excedem à área de 20.000 m². </li>
 						<li>Partindo da aplicação do Quadro 2 da LPUOS no lote 0016 (SABESP), a destinação mínima de áreas públicas seria da ordem de 33.000 m² (40% deste lote);</li>
 						<li>Soma-se a esta destinação a área da Praça Victor Civita, uma área verde pública de aproximadamente 14.000 m², não desmembrada do lote municipal 0002, totalizando o PIU aproximadamente 47.000 m² de áreas públicas, equivalentes a 32% de sua área total;</li>
 						<li>A área líquida dos lotes resultaria em cerca de 100.000 m²;</li>
-						<li>Segundo dados do TPCL, a área construída total dos lotes inseridos no PIU Sumidouro é de aproximadamente 77.000 m²;</li>
-						<li>Considerando a área líquida dos lotes e a área computável das edificações atuais, o coeficiente de aproveitamento do PIU Sumidouro seria atualmente de aproximadamente 0,77.</li>
+						<li>Segundo dados do TPCL, a área construída total dos lotes inseridos no PIU Nações Unidas é de aproximadamente 77.000 m²;</li>
+						<li>Considerando a área líquida dos lotes e a área computável das edificações atuais, o coeficiente de aproveitamento do PIU Nações Unidas seria atualmente de aproximadamente 0,77.</li>
 					</ul>
-					<p>A partir dos grandes números, processamos uma simulação de potencial construtivo associado à ZOE Sumidouro, variando o C.A. máximo entre 1,0 e 4,0 e a destinação de áreas públicas entre 32 e 50%.</p>
+					<p>A partir dos grandes números, processamos uma simulação de potencial construtivo associado à ZOE Nações Unidas, variando o C.A. máximo entre 1,0 e 4,0 e a destinação de áreas públicas entre 32 e 50%.</p>
 					<!--<div class="figure">
-						<img :src="require('../../assets/img/anexo2/image37.gif')" class="responsive-img" data-caption="PIU Sumidouro: Ensaio potencial construtivo"/>
-						<p><strong>PIU Sumidouro: Ensaio potencial construtivo</strong></p>
+						<img :src="require('../../assets/img/anexo2/image37.gif')" class="responsive-img" data-caption="PIU Nações Unidas: Ensaio potencial construtivo"/>
+						<p><strong>PIU Nações Unidas: Ensaio potencial construtivo</strong></p>
 					</div>-->
 					<table class="striped">
-				<caption>PIU Sumidouro: Ensaio Potencial Construtivo</caption>
+				<caption>PIU Nações Unidas: Ensaio Potencial Construtivo</caption>
 			<tbody>
 				<tr class="table-header">
 					<td>Área Total PIU</td>
@@ -381,19 +381,19 @@
 			</tbody>
 		</table>
 					<p>Assim, considerando a permanência total das edificações existentes como um cenário conservador (<strong>Cenário A</strong>), temos um C.A. existente que pode variar, conforme o percentual de destinação para áreas públicas, entre 0,77 e 1,05. </p>
-					<p>A definição dos parâmetros urbanísticos aplicáveis à ZOE Sumidouro está vinculada aos cenários de uso do solo, às diretrizes do PDE e ao contexto urbano da OUC Faria Lima, que circunscreve o PIU.</p>
+					<p>A definição dos parâmetros urbanísticos aplicáveis à ZOE Nações Unidas está vinculada aos cenários de uso do solo, às diretrizes do PDE e ao contexto urbano da OUC Faria Lima, que circunscreve o PIU.</p>
 					<p>À luz destes elementos, o PIU deverá estabelecer os cenários de atribuição de potencial construtivo coerentes com o programa e com as diretrizes do quadro normativo vigente, definindo os parâmetros urbanísticos incidentes e as correspondentes contrapartidas financeiras.</p>
 				</section>
 				<section id="an2-cap-3">
 					<h5>3. Impacto da Transformação ou Vizinhança</h5>
 					
-					<p>A transformação nos lotes do PIU Sumidouro pode se dar quanto a possíveis alterações em seu uso, ocupação e parcelamento do solo, impactando as dinâmicas locais de diferentes formas.</p>
+					<p>A transformação nos lotes do PIU Nações Unidas pode se dar quanto a possíveis alterações em seu uso, ocupação e parcelamento do solo, impactando as dinâmicas locais de diferentes formas.</p>
 					
-					<p>Apesar da proximidade com os equipamentos de transporte público, com a centralidade do Largo da Batata e com o fluxo intenso de veículos da Av. das Nações Unidas, a dinâmica urbana no entorno do PIU Sumidouro pode ser considerada amena, com predomínio do uso residencial unifamiliar a noroeste (ZER) e multifamiliar a nordeste (ZM), mesclado a pontos de comércio e serviços com maior concentração nas ruas Vupabussú, Padre Carvalho e Ferreira de Araújo. A sul, a Rua do Sumidouro marca a transição desta dinâmica com outra bem diversa, dominada pelo uso não residencial do comércio especializado em artigos para marcenaria na Rua Paes Leme e do comércio popular nas imediações do Largo da Batata. O Terminal Capri e a estação Pinheiros do Metrô e da CPTM contribuíram para intensificar o fluxo de veículos, em especial ônibus, e de pedestres, dando mais vitalidade a este tecido urbano. </p>
+					<p>Apesar da proximidade com os equipamentos de transporte público, com a centralidade do Largo da Batata e com o fluxo intenso de veículos da Av. Dra. Ruth Cardoso, a dinâmica urbana no entorno do PIU Nações Unidas pode ser considerada amena, com predomínio do uso residencial unifamiliar a noroeste (ZER) e multifamiliar a nordeste (ZM), mesclado a pontos de comércio e serviços com maior concentração nas ruas Vupabussú, Padre Carvalho e Ferreira de Araújo. A sul, a Rua do Sumidouro marca a transição desta dinâmica com outra bem diversa, dominada pelo uso não residencial do comércio especializado em artigos para marcenaria na Rua Paes Leme e do comércio popular nas imediações do Largo da Batata. O Terminal Capri e a estação Pinheiros do Metrô e da CPTM contribuíram para intensificar o fluxo de veículos, em especial ônibus, e de pedestres, dando mais vitalidade a este tecido urbano. </p>
 					
-					<p>Apesar das transformações da dinâmica urbana, do uso e ocupação do solo e das obras de reurbanização financiadas pela OUCFL, as ruas do entorno do PIU Sumidouro caracterizam-se por calçadas estreitas, incompatíveis em muitos locais com o volume de pedestres que as utilizam, e por uma paisagem árida, com arborização irregular. O maciço arbóreo do lote 0016 (SABESP), a Praça Victor Civita e o canteiro central arborizado da Av. Frederico Hermann Junior, em contraposição, são áreas verdes importantes para o contexto local, qualificando a paisagem e o ambiente, sombreando ruas e passeios, atraindo e abrigando a avifauna e contribuindo para a melhoria da qualidade do ar e a redução das temperaturas locais.  </p>
+					<p>Apesar das transformações da dinâmica urbana, do uso e ocupação do solo e das obras de reurbanização financiadas pela OUCFL, as ruas do entorno do PIU Nações Unidas caracterizam-se por calçadas estreitas, incompatíveis em muitos locais com o volume de pedestres que as utilizam, e por uma paisagem árida, com arborização irregular. O maciço arbóreo do lote 0016 (SABESP), a Praça Victor Civita e o canteiro central arborizado da Av. Frederico Hermann Junior, em contraposição, são áreas verdes importantes para o contexto local, qualificando a paisagem e o ambiente, sombreando ruas e passeios, atraindo e abrigando a avifauna e contribuindo para a melhoria da qualidade do ar e a redução das temperaturas locais.  </p>
 					
-					<p>O PIU Sumidouro constitui-se em um polo institucional regional formado por mais de 2.500 servidores municipais e estaduais, contingente este que influencia as dinâmicas urbana locais, consumindo produtos e serviços, utilizando os serviços de transporte público e o sistema viário local, frequentando o SESC Pinheiros e os bares e restaurantes da região.</p>
+					<p>O PIU Nações Unidas constitui-se em um polo institucional regional formado por mais de 2.500 servidores municipais e estaduais, contingente este que influencia as dinâmicas urbana locais, consumindo produtos e serviços, utilizando os serviços de transporte público e o sistema viário local, frequentando o SESC Pinheiros e os bares e restaurantes da região.</p>
 					
 					<p>No <strong>cenário A</strong>, onde este polo institucional permanece e pode ser ampliado, o uso mais intensivo da área pode trazer novos servidores públicos, ampliando a contribuição e o impacto desta população no entorno. Utilizando os dados do ensaio de potencial construtivo e adotando o mesmo índice de ocupação atual de 80 m²/ servidor, chegamos a um incremento de 920 a 4.990 servidores, representando uma população total de servidores entre 3.420 a 7.490 pessoas. Como prováveis efeitos, haveria um aumento do número de viagens com destino à Zona OD Pinheiros, ampliando a demanda atual nos horários de pico.</p>
 
@@ -415,14 +415,14 @@
 
 					<p>Recapitulando as informações presentes no diagnóstico socioterritorial, as densidades populacionais das ZOD que compõem a AII são homogêneas e consideradas baixas, da ordem de até 25 habitantes/ha. Considerando os distritos, as densidades de Pinheiros e Alto de Pinheiros são de, respectivamente, 81 e 56 habitantes/ha, consideradas de grau médio. Já as densidades domiciliares nos distritos de Pinheiros e Alto de Pinheiros são de 2,41 e 2,80 pessoas/domicílio. </p>
 
-					<p>Considerando que as diretrizes de desenvolvimento urbano do entorno do PIU Sumidouro são mais aderentes aos parâmetros do distrito de Pinheiros, podemos estimar o adensamento populacional multiplicando a densidade domiciliar de 2,41 pessoas/domicílio com a estimativa de unidades, chegando a um incremento máximo da ordem de 6.013 a 12.026 habitantes, correspondente a uma densidade líquida, no PIU, da ordem de 409 a 818 habitantes por hectare.</p>
+					<p>Considerando que as diretrizes de desenvolvimento urbano do entorno do PIU Nações Unidas são mais aderentes aos parâmetros do distrito de Pinheiros, podemos estimar o adensamento populacional multiplicando a densidade domiciliar de 2,41 pessoas/domicílio com a estimativa de unidades, chegando a um incremento máximo da ordem de 6.013 a 12.026 habitantes, correspondente a uma densidade líquida, no PIU, da ordem de 409 a 818 habitantes por hectare.</p>
 
 					<p>Este incremento populacional representaria um aumento de densidade na ZOD e no distrito de Pinheiros para, respectivamente, 51 a 90 habitantes/ ha e 87 a 95 habitantes/ ha. Considerando que o índice populacional da ZOD Pinheiros atualmente é baixo, o adensamento máximo projetado o aproximaria do índice do distrito de Pinheiros, considerado de grau médio e ainda distante dos distritos mais densos da cidade.</p>
 				</section>
 				<section id="an2-cap-5">
 					<h5>5. Modo de Gestão</h5>
 
-					<p>O PIU Sumidouro terá assegurada a gestão participativa em todas as etapas, desde seu desenvolvimento até sua implementação, conforme preconiza a Constituição Federal e o Estatuto da Cidade.</p>
+					<p>O PIU Nações Unidas terá assegurada a gestão participativa em todas as etapas, desde seu desenvolvimento até sua implementação, conforme preconiza a Constituição Federal e o Estatuto da Cidade.</p>
 
 					<p>Conforme a regulamentação do Decreto nº 56.901/2016, está prevista a realização de duas consultas públicas, sendo a primeira constituída pelos elementos prévios ao desenvolvimento do PIU – o diagnóstico socioterritorial e o programa de interesse público, e a segunda constituída pelo conteúdo do PIU.</p>
 
