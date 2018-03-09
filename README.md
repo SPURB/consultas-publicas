@@ -4,6 +4,9 @@
 > Consulta pública do projeto de intervenção urbana do Arco Jurubatuba
 
 ## Setup de frontend
+### Requisitos
+* Nodejs 
+* NPM
 
 ``` bash
 # Instalar dependências

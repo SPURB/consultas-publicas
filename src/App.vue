@@ -6,7 +6,7 @@
     <router-view name="default"></router-view>
     <router-view name="modalcomponent"></router-view>
     <router-view name="comments"></router-view>
-    <router-view name="footernav"></router-view>
+    <router-view name="mainfooter"></router-view>
   </div>
 </template>
 
@@ -18,6 +18,5 @@ export default {
 </script>
 
 <style lang="scss">
-// @import "assets/vendor/materialize-src/sass/materialize.scss";
 @import "assets/main.scss";
 </style>

@@ -7,6 +7,7 @@ import Header from '@/components/shared/Header'
 import Modalcomponent from '@/components/shared/Modalcomponent'
 import Comments from '@/components/shared/Comments'
 // import Footernav from '@/components/shared/Footernav'
+import Mainfooter from '@/components/shared/Mainfooter'
 
 // pages
 import Admin from '@/components/pages/admin/Admin'
@@ -31,7 +32,8 @@ const router = new Router({
 				// progressbar: Progressbar,
 				default: Consulta,
 				modalcomponent: Modalcomponent,
-				// footernav: Footernav
+				// footernav: Footernav, 
+				mainfooter: Mainfooter
 			},
 			meta: { 
 				postid: 1,
@@ -45,7 +47,8 @@ const router = new Router({
 				// progressbar: Progressbar,
 				default: Mapas,
 				modalcomponent: Modalcomponent,
-				// footernav: Footernav
+				// footernav: Footernav,
+				mainfooter: Mainfooter
 			},
 			meta: { 
 				postid: 2,
@@ -60,6 +63,7 @@ const router = new Router({
 				default: Quadros,
 				modalcomponent: Modalcomponent,
 				// footernav: Footernav
+				mainfooter: Mainfooter
 			}, 
 			meta: { 
 				postid: 3,
