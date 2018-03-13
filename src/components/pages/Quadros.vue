@@ -9,16 +9,16 @@
 		<div class="row">
 			<div class="col s12 chapter-content">
 				<ul>
-					<li><a href="./static/pdf/#" download>Quadro 1A ‐ Eixos estratégicos e ambientais</a></li>
-					<li><a href="./static/pdf/#" download>Quadro 1B ‐ Melhoramentos viários</a></li>
-					<li><a href="./static/pdf/#" download>Quadro 1C ‐ Áreas públicas destinadas para áreas verdes, parques e equipamentos públicos</a></li>
-					<li><a href="./static/pdf/#" download>Quadro 1D ‐ Favelas existentes no perímetro do PIU ACJ</a></li>
-					<li><a href="./static/pdf/#" download>Quadro 2 ‐ Parâmetros de ocupação exceto cota ambiental</a></li>
-					<li><a href="./static/pdf/#" download>Quadro 2A ‐ Fatores de planejamento</a></li>
-					<li><a href="./static/pdf/#" download>Quadro 3 ‐ Programa de intervenções</a></li>
+					<li><a href="./static/pdf/ACJ_Quadro_1A.pdf" download>Quadro 1A ‐ Eixos estratégicos e ambientais</a></li>
+					<li><a href="./static/pdf/ACJ_Quadro_1B.pdf" download>Quadro 1B ‐ Melhoramentos viários</a></li>
+					<li><a href="./static/pdf/ACJ_Quadro_1C.pdf" download>Quadro 1C ‐ Áreas públicas destinadas para áreas verdes, parques e equipamentos públicos</a></li>
+					<li><a href="./static/pdf/ACJ_Quadro_1D.pdf" download>Quadro 1D ‐ Favelas existentes no perímetro do PIU ACJ</a></li>
+					<li><a href="./static/pdf/ACJ_Quadro_2.pdf" download>Quadro 2 ‐ Parâmetros de ocupação exceto cota ambiental</a></li>
+					<li><a href="./static/pdf/ACJ_Quadro_2A.pdf" download>Quadro 2A ‐ Fatores de planejamento</a></li>
+					<li><a href="./static/pdf/ACJ_Quadro_3.pdf" download>Quadro 3 ‐ Programa de intervenções</a></li>
 				</ul>
 
-				<a class="waves-effect waves-light btn-large" href=".	/static/kml/PL-ARCO-JURUBATUBA_QUADROS.zip" download><i class="material-icons right">insert_chart</i>Baixe aqui todos os quadros</a>
+				<a class="waves-effect waves-light btn-large" href=".	/static/pdf/PL-ARCO-JURUBATUBA_QUADROS.zip" download><i class="material-icons right">insert_chart</i>Baixe aqui todos os quadros</a>
 
 				<div id="bottom-comments">
 					<h5>Comente quadros</h5>
