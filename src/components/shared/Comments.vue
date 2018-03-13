@@ -2,7 +2,7 @@
 	<div class="comments">
 		<div class="row">
 			<div class="col s12">
-				<div class="divider"></div>
+				<!-- <div class="divider"></div> -->
 				<CommentsLoader :commentid="commentid"></CommentsLoader>
 				<transition>
 					<div v-if="commentsenable" class="col s12" id="commentarea">
@@ -18,7 +18,8 @@
 							</vue-recaptcha>
 						</form>
 					</div>
-					<a v-else href="#" class="btn-flat col s10 offset-s1" @click="showmodal">Habilite comentários</a>
+					<a v-else-if="commentsopen" href="#" class="btn-flat col s10 offset-s1" @click="showmodal">Habilite comentários</a>
+					<p v-if="!commentsopen" class="commentsclosed">Desculpe, mas o período de participação já foi encerrado. Em breve publicaremos a sistematização das contribuições.</p>
 				</transition>
 				<div class="divider col s12"></div>
 			</div>
@@ -48,6 +49,7 @@ export default {
 	},
 	props:['commentid'],
 	computed:{
+		commentsopen() { return this.$store.state.commentsopen },
 		commentsenable() { return this.$store.state.comments },
 		name() { return this.$store.state.name },
 		usercheck() { return this.$store.state.usercheck },
@@ -137,6 +139,14 @@ a.btn-flat:hover{
 	background-color: $primary-dark-grey;
 	color: white;
 }
+
+.commentsclosed{
+	margin-bottom: 35px;
+	// padding-left: .5em;
+	padding: .5em;
+	border-left: .15em solid #EB5757;
+}
+
 
 .comments{
 	h3{

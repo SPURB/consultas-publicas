@@ -6,6 +6,7 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
 	state: {
+		commentsopen: false,
 		projecttitle:'Consulta PL Arco Jurubatuba',
 		numchapters: 0, 
 		showmodal: false,
