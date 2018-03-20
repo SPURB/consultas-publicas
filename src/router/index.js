@@ -14,6 +14,7 @@ import Admin from '@/components/pages/admin/Admin'
 import Consulta from '@/components/pages/Consulta'
 import Mapas from '@/components/pages/Mapas'
 import Quadros from '@/components/pages/Quadros'
+import Backendadmin from '@/components/pages/Backendadmin'
 
 
 Vue.use(Router);
@@ -74,6 +75,12 @@ const router = new Router({
 			components: {
 				header: Header,
 				default: Admin,
+			} 
+		},
+		{
+			path: '/backend_admin', 
+			components: {
+			default: Backendadmin,
 			} 
 		}
 	]
