@@ -11,10 +11,10 @@
   			</form>
           	<div id="success-msg" v-if="isSubmitted">
         		<p class="success">Arquivo criado com sucesso</p>
-        		<p>ID: {{ fileData.id }}</p>
-        		<p>Nome do arquivo: {{ fileData.nome}}</p>
-        		<p>Data de criação: {{ fileData.dataHora }}</p>
-				<button class="waves-effect waves-light btn-large"><i class="material-icons left">	arrow_back</i>voltar para admin</button>
+        		<p id="id">ID: {{ fileData.id }}</p>
+        		<p id="nome">Nome do arquivo: {{ fileData.nome}}</p>
+        		<p id="data">Data de criação: {{ fileData.dataHora }}</p>
+				<button class="waves-effect waves-light btn-large" v-on="fileData.id" @click="copy()">Copiar ID</button>
         	</div>
 		</div>
 	</div>	
@@ -26,9 +26,9 @@
 		data() {
 			return {
 				fileData: {
-					id: '',
+					id: '00',
 					nome: '',
-					dataHora: ''
+					dataHora: null
 				},
 				isSubmitted: false
 			}
@@ -36,6 +36,17 @@
 		methods: {
 			submitted() {
 				this.isSubmitted = true;
+				const date = new Date (); 
+				let dia = date.getDate();
+				let mes = date.getMonth();
+				let ano = date.getFullYear();
+				let hora = date.getHours();
+				let min = date.getMinutes();
+				this.fileData.dataHora = dia +'/'+ mes + '/' + ano + ' às ' + hora+':'+min; 
+
+			},
+			copy(){
+				this.fileData.id.execCommand ("Copy");
 			}
 		}
 	}
