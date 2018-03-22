@@ -1,20 +1,20 @@
 <template>
 	<div class="Backendadmin">
 		<div class="container">
-			<form>
+			<form novalidate="true">
 				<div class="input-field col s6" v-if="!isSubmitted">
-          			<input id="last_name" type="text" class="validate" v-model="fileData.nome">
+          			<input id="last_name" type="text" class="validate" v-model="nome">
           			<label for="last_name">Nome do Arquivo</label>
-          			<span class="helper-text" data-error="Não adicione maiúsculas, espaços ou caracteres especiais" data-success="Nome inserido válido">Não adicione maiúsculas, espaços ou caracteres especiais</span>
+          			<span id="arquivo" class="helper-text" data-error="Adicione um nome válido" data-success="Nome inserido válido">Não adicione maiúsculas, espaços ou caracteres especiais</span>
           			<button class="waves-effect waves-light btn-large" type="submit" name="action" @click.prevent="submitted()">Criar novo arquivo</button>
   		 		</div>
   			</form>
           	<div id="success-msg" v-if="isSubmitted">
         		<p class="success">Arquivo criado com sucesso</p>
-        		<p id="id">ID: {{ fileData.id }}</p>
-        		<p id="nome">Nome do arquivo: {{ fileData.nome}}</p>
-        		<p id="data">Data de criação: {{ fileData.dataHora }}</p>
-				<button class="waves-effect waves-light btn-large" v-on="fileData.id" @click="copy()">Copiar ID</button>
+        		<p id="id">ID: {{ id }}</p>
+        		<p id="nome">Nome do arquivo: {{ nome }}</p>
+        		<p id="data">Data de criação: {{ dataHora }}</p>
+				<button class="waves-effect waves-light btn-large" v-clipboard:copy="id" v-clipboard:success="onCopy" v-clipboard:error="onError">Copiar ID</button>
         	</div>
 		</div>
 	</div>	
@@ -25,11 +25,9 @@
 		name:'Backendadmin',
 		data() {
 			return {
-				fileData: {
-					id: '00',
-					nome: '',
-					dataHora: null
-				},
+				id: '00',
+				nome: '',
+				dataHora: null,
 				isSubmitted: false
 			}
 		},
@@ -42,13 +40,20 @@
 				let ano = date.getFullYear();
 				let hora = date.getHours();
 				let min = date.getMinutes();
-				this.fileData.dataHora = dia +'/'+ mes + '/' + ano + ' às ' + hora+':'+min; 
-
+				this.dataHora = dia +'/'+ mes + '/' + ano + ' às ' + hora+':'+min; 
 			},
-			copy(){
-				this.fileData.id.execCommand ("Copy");
+			onCopy: function (event) {
+				alert('Número do Id copiado com sucesso')
+			},
+			onError: function (event) {
+				alert('Não foi possível copiar o valor de ID')
 			}
-		}
+		} //,
+		// watch: {
+		// 	nome: function() {
+		// 		console.log(this.nome);
+		// 	}
+		// }
 	}
 
 </script>
@@ -65,14 +70,15 @@
 }
 
 #success-msg {
-	top: 50%;
+	margin: auto;
 	line-height: 0.5em;
+	text-align: center;
 }
 
 #success-msg button {
 	background-color: #828282;
 	margin-top: 2em;
-	margin-left: 0;
+
 
 }
 .success {
@@ -87,7 +93,6 @@
 	background-color: #333;
 
 }
-
 
 
 </style>
