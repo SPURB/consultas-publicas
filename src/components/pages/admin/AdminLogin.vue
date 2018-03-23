@@ -15,7 +15,6 @@
 							<label for="password" class="active">Senha</label>
 						</div>
 
-						<!-- <p class="col s10 offset-s1" v-if="error==true">{{ errorMessage }}</p> -->
 
 						<div class="login col s10 offset-s1">
 							<router-link to='/' tag="a" class="btn-large cancel col s5">Cancelar</router-link>
@@ -38,52 +37,38 @@ export default {
 			email:null,
 			pass: null, 
 			error: null,
-			// errorMessage: null
 		}
 	},
 	computed:{
 		isadmin(){ return this.$store.state.isadmin }
 	},
 	methods:{
-		teste(){ this.$store.state.isadmin = true},
 		login(){
-			const app = this
-			const tkn = app.createToken()
+			// const app = this
+			// const tkn = app.createToken()
 
-			let toSend = {
-				token: tkn,
-				email: app.email, 
-				pass: app.pass
-			}
-			let memForm = app.toFormData(toSend)
+			// let toSend = {
+			// 	token: tkn,
+			// 	email: app.email, 
+			// 	pass: app.pass
+			// }
+			// let memForm = app.toFormData(toSend)
 
-			axios.post('consultas.php?crud=login/'+tkn, memForm)
-				.then(function (response){
-					// console.log(response)
-					if(response.data.user == false){
-						alert('Erro. Tente novamente.')
-					}
-					else{
-						// alert('parabéns ' + response.data.user)
-						app.$store.state.isadmin = true
-					}
-				})
-				.catch(function (error){
-					alert(error)
-				})
+			// axios.post('consultas.php?crud=login/'+tkn, memForm)
+			// 	.then(function (response){
+			// 		// console.log(response)
+			// 		if(response.data.user == false){
+			// 			alert('Erro. Tente novamente.')
+			// 		}
+			// 		else{
+			// 			// alert('parabéns ' + response.data.user)
+			// 			app.$store.state.isadmin = true
+			// 		}
+			// 	})
+			// 	.catch(function (error){
+			// 		alert(error)
+			// 	})
 		},
-		toFormData(obj) {
-			var form_data = new FormData()
-			for(var key in obj){
-				form_data.append(key, obj[key])
-			}
-			return form_data
-		},
-		createToken(){
-			let rand1 = Math.random().toString(36).substr(2)
-			let rand2 = Math.random().toString(36).substr(2)
-			return rand1 + rand2
-		}
 	}
 }
 	

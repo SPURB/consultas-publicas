@@ -11,7 +11,6 @@
 							<li v-for="navitem in navitems">
 								<router-link :to='navitem.path'>{{navitem.name}}</router-link>
 							</li>
-							<li><a href="./static/pdf/NOTA_TECNICA_PLANO_URBANISTICO.pdf" class="router-link-exact router-link" download><i class="material-icons right">picture_as_pdf</i>Nota Técnica</a></li>
 						</ul>
 						</div>
 					</div>
@@ -53,12 +52,10 @@ export default {
 			this.lastYposition = window.scrollY;
 		},
 	},
-	computed:{
-		projectTitle(){ return this.$store.state.projecttitle; }
+	computed:{ projectTitle(){ return this.$store.state.projecttitle; }
 	},
 	watch:{
 		showNavItems(){
-			// console.log('clicked')
 			this.showNavItems ? document.getElementById("menu-icon").firstChild.textContent = "close" : document.getElementById("menu-icon").firstChild.textContent = "menu"
 		}
 	}

@@ -68,15 +68,6 @@ section{
 	transition: background-color, padding 0.3s ease;
 }
 
-.commentable:hover, .commentable.active{
-	background-color: #ffc;
-	padding: 0.35em 0;
-	cursor: pointer;
-}
-.commentable.active {
-	padding: 0.35em;
-}
-
 blockquote{
 	border-color: $primary-grey;
 }

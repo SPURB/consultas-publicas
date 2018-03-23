@@ -1,19 +1,15 @@
 <template>
   <div id="app">
-    <!-- <router-view name="vtour"></router-view> -->
     <router-view name="header"></router-view>
-    <router-view name="progressbar"></router-view>
-    <router-view name="default"></router-view>
-    <router-view name="modalcomponent"></router-view>
-    <router-view name="comments"></router-view>
-    <router-view name="mainfooter"></router-view>
+    <router-view name="main"></router-view>
+    <router-view name="footer"></router-view>
   </div>
 </template>
 
 <script>
 export default {
   name: 'App',
-  mounted(){ this.$store.dispatch('LOAD_COMMENTS_LIST'); },//load all comments
+  // mounted(){ this.$store.dispatch('LOAD_COMMENTS_LIST'); },//load all comments
 }
 </script>
 

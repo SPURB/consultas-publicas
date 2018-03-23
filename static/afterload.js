@@ -83,5 +83,4 @@ docReady(function() {
     var elem = document.querySelector('.materialboxed');
     var instance = M.Materialbox.init(elem);
     document.getElementById("preloader").style.display = "none";
-    console.log('opa')
 });
