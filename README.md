@@ -1,9 +1,8 @@
-# Consultas Públicas / PIU Arco Jurubatuba
+# Consultas Públicas / PIU Pacaembu
 
-> Código de http://minuta.gestaourbana.prefeitura.sp.gov.br/pl-arco-jurubatuba/
-> Consulta pública do projeto de intervenção urbana do Arco Jurubatuba
+> Consulta pública do projeto de intervenção urbana do PIU Pacaembu
 
-## Setup de frontend
+## Setup
 ### Requisitos
 * Nodejs 
 * NPM
@@ -30,11 +29,4 @@ npm test
 
 Para ver explicações detalhadas de como as coisas funcionam ver [guia](http://vuejs-templates.github.io/webpack/) e [documentação do vue-loader](http://vuejs.github.io/vue-loader).
 
-## Setup de backend
-### Requisitos
-* MySQL
-* Apache
-* PHP 5.6
-> A estrutura do banco está em `backend/acj.sql`. É necessário montar o banco antes localmente para montar todas as funcionalidade deste projeto.
-> Alterar `backend/consultas.php` nas linhas 1, 2 e 88 a 94 incluindo as informações do seu banco de dados.
-> Após o setup do banco rodar o comando `npm run build` na raiz do projeto e juntar os arquivo de `/dist` com o arquivo `consultas.php` no diretório do projeto. 
+> Esta branch utiliza o backend disponível em [consultas-públicas-backend](https://github.com/SPURB/consultas-publicas-backend)
