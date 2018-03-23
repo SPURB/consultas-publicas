@@ -3,7 +3,7 @@
 		<div class="container">
 			<form novalidate="true">
 				<div class="input-field col s6" v-if="!isSubmitted">
-          			<input id="last_name" type="text" class="validate" v-model="nome">
+          			<input id="last_name" type="text" v-bind:class="{validate : isActive, 'invalid' : hasError} " v-model="nome">
           			<label for="last_name">Nome do Arquivo</label>
           			<span id="arquivo" class="helper-text" data-error="Adicione um nome válido" data-success="Nome inserido válido">Não adicione maiúsculas, espaços ou caracteres especiais</span>
           			<button class="waves-effect waves-light btn-large" type="submit" name="action" @click.prevent="submitted()">Criar novo arquivo</button>
@@ -28,7 +28,9 @@
 				id: '00',
 				nome: '',
 				dataHora: null,
-				isSubmitted: false
+				isSubmitted: false,
+				isActive: true,
+				hasError: false
 			}
 		},
 		methods: {
@@ -48,12 +50,7 @@
 			onError: function (event) {
 				alert('Não foi possível copiar o valor de ID')
 			}
-		} //,
-		// watch: {
-		// 	nome: function() {
-		// 		console.log(this.nome);
-		// 	}
-		// }
+		} 
 	}
 
 </script>
