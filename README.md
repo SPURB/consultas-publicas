@@ -20,7 +20,7 @@ npm run build
 # constrói para produção e visualização dos recursos construídos
 npm run build --report
 
-# inicia teste unitários
+# inicia testes unitários
 npm run unit
 
 # inicia todos os testes
