@@ -5,13 +5,11 @@ import App from './App';
 import router from './router';
 import axios from 'axios';
 import { store } from './store/store';
-
 import VeeValidate from 'vee-validate';
 
+
 Vue.use(VeeValidate);
-
 Vue.config.productionTip = false;
-
 
 
 /* eslint-disable no-new */
@@ -22,3 +20,4 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+

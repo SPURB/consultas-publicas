@@ -9,6 +9,9 @@ import Footer from '@/components/shared/Footer'
 import Admin from '@/components/pages/admin/Admin'
 import Consulta from '@/components/pages/Consulta'
 
+//teste
+import Comments from '@/components/shared/Comments'
+
 Vue.use(Router);
 
 const router = new Router({
@@ -27,6 +30,18 @@ const router = new Router({
 			},
 			meta: { 
 				postid: 1,
+			}
+		},
+		{
+			path: '/teste',
+			name: 'teste',
+			components: {
+				header: Header,
+				main: Comments,
+				footer: Footer
+			},
+			meta: { 
+				postid: 2,
 			}
 		},
 		{
