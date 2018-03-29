@@ -8,9 +8,7 @@ import Footer from '@/components/shared/Footer'
 // pages
 import Admin from '@/components/pages/admin/Admin'
 import Consulta from '@/components/pages/Consulta'
-
-//teste
-import Comments from '@/components/shared/Comments'
+import Anexo from '@/components/pages/Anexo'
 
 Vue.use(Router);
 
@@ -27,30 +25,24 @@ const router = new Router({
 				header: Header,
 				main: Consulta,
 				footer: Footer
-			},
-			meta: { 
-				postid: 1,
 			}
 		},
 		{
-			path: '/teste',
-			name: 'teste',
+			path: '/anexo',
+			name: 'Anexo 1',
 			components: {
 				header: Header,
-				main: Comments,
+				main: Anexo,
 				footer: Footer
-			},
-			meta: { 
-				postid: 2,
 			}
 		},
-		{
-			path: '/admin', 
-			components: {
-				header: Header,
-				main: Admin,
-			} 
-		}
+		// {
+		// 	path: '/admin', 
+		// 	components: {
+		// 		header: Header,
+		// 		main: Admin,
+		// 	} 
+		// }
 	]
 })
 

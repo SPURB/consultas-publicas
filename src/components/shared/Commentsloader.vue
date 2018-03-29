@@ -12,9 +12,10 @@
 <script>
 import axios from 'axios';
 const requestConsultas = axios.create({
-  baseURL: `http://localhost/consultas-publicas-backend/testeapi.php/`,
+  baseURL: 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/',
 })
-const consultaName = 'teste';
+
+const consultaName = 'gestaourbanasp_consulta_piu_pacaembu';//gestaourbanasp_consulta_piu_pacaembu
 
 export default {
     props:['commentid'],

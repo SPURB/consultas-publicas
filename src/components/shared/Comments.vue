@@ -7,9 +7,9 @@
                         name="name" 
                         v-validate="'required|alpha'" 
                         :class="{'input': true, 'is-danger': errors.has('name') }" 
-                        type="text">
-                    <!-- <i v-show="errors.has('name')" class="fa fa-warning"></i>
-                    <span v-show="errors.has('name')" class="help is-danger">{{ errors.first('name') }}</span> -->
+                        type="text"
+                        v-model='form_name'
+                        >
                     <label for="nome">Nome / organização</label>
                 </div>
                 <div class="input-field col s12 l6">
@@ -18,9 +18,8 @@
                         v-validate="'required|email'" 
                         :class="{'input': true, 'is-danger': errors.has('email') }" 
                         type="email"
+                        v-model='form_email'
                         >
-                    <!-- <i v-show="errors.has('email')" class="fa fa-warning"></i>
-                    <span v-show="errors.has('email')" class="help is-danger">{{ errors.first('email') }}</span> -->
                     <label for="email">Email</label>
                 </div>
             </div>
@@ -28,7 +27,7 @@
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
-                            <textarea name="content" v-validate="'required:true'" id="comment" class="materialize-textarea" v-model='content' ></textarea>
+                            <textarea name="content" v-validate="'required:true'" id="comment" class="materialize-textarea" v-model='form_content' ></textarea>
                             <label for="comment">Comente aqui</label>
                         </div>
                     </div>
@@ -55,7 +54,9 @@ export default {
     props:['commentid'],
     data(){
         return{
-            content: '',
+            form_name:null,
+            form_email: null,
+            form_content: null
         }
     },
     methods:{
@@ -77,53 +78,33 @@ export default {
             }
         },
         send(){
-            // alert("sucesso");
-            // const url = 'http://localhost/consultas-publicas-backend/testeapi.php/members/teste';
-            // const app = this;
+            const url = 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/gestaourbanasp_consulta_piu_pacaembu';//gestaourbanasp_consulta_piu_pacaembu
+            const app = this;
 
-            // axios.post(url,{
-            //     'name': this,
-            //     'email':'email@email.com', 
-            //     'content':'content',
-            //     'commentdate':'2018-03-13 11:58:54',
-            //     'public': '1',
-            //     'postid':'10',
-            //     'trash': '0',
-            //     'commentid': '10',
-            //     'commentcontext': 'commentcontext',
-            //     'idConsulta': '2'
-            // })
+            axios.post(url,{
+                'name': this.form_name,
+                'email':this.form_email, 
+                'content':this.form_content,
+                'public': '0',
+                'trash': '0',
+                'postid':this.commentid.postid,
+                'commentid': this.commentid.id,
+                'commentcontext': this.commentid.context,
+            })
+            .then(function (response) {
+                // console.log(response);
+                let name = this.form_name;
+                let content = this.form_content;
+
+                alert("Obrigado " + name + " sua contribuição - " + content + " - Será enviada para moderação.")
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
         }
     },
     components:{Commentsloader}
 };
-
-
-        // postCreateMember(){
-        //     const url = this.apiUrlBasename +'/members';
-        //     const app = this;
-
-        //     axios.post(url, {
-        //         'name': 'nome',
-        //         'email':'email@email.com', 
-        //         'content':'content',
-        //         'commentdate':'2018-03-13 11:58:54',
-        //         'public': '1',
-        //         'postid':'10',
-        //         'trash': '0',
-        //         'commentid': '10',
-        //         'commentcontext': 'commentcontext',
-        //         'idConsulta': '2'
-        //     })
-        //     .then(function (response) {
-        //         app.respostaApi = response.data;
-        //         console.log(response);
-        //     })
-        //     .catch(function (error) {
-        //         app.respostaApi = error.data;
-        //         console.log(error);
-        //     });
-        // },
 
 </script>
 
