@@ -5,7 +5,7 @@
                 <div class="input-field col s12 l6">
                     <input 
                         name="name" 
-                        v-validate="'required|alpha'" 
+                        v-validate="'required:true'" 
                         :class="{'input': true, 'is-danger': errors.has('name') }" 
                         type="text"
                         v-model='form_name'
@@ -65,7 +65,7 @@ export default {
                 alert('Preencha corretamente os campos Nome e Email')
             }
             else if (!this.fields.name.valid) {
-                alert('Corrija nome')
+                alert('Inclua um nome')
             }
             else if(!this.fields.email.valid){
                 alert('Corrija email')
@@ -82,28 +82,43 @@ export default {
             const app = this;
 
             axios.post(url,{
-                'name': this.form_name,
-                'email':this.form_email, 
-                'content':this.form_content,
+                'idConsulta':'3',//teste
+
+                'name': app.form_name,
+                'email':app.form_email, 
+                'content':app.form_content,
                 'public': '0',
                 'trash': '0',
-                'postid':this.commentid.postid,
-                'commentid': this.commentid.id,
-                'commentcontext': this.commentid.context,
+                'postid':app.commentid.postid,
+                'commentid': app.commentid.id,
+                'commentcontext': app.commentid.context,
+                'commentdate':app.today
+                //{"name":"Thomas","email":"yubathom@gmail.com","content":"teste","public":"0","trash":"0","postid":1,"commentid":1,"commentcontext":"Consulta","idConsulta":"2","commentdate":"2018-04-02"}
             })
             .then(function (response) {
-                // console.log(response);
-                let name = this.form_name;
-                let content = this.form_content;
+                console.log(response);
+                let name = app.form_name;
+                let content = app.form_content;
 
-                alert("Obrigado " + name + " sua contribuição - " + content + " - Será enviada para moderação.")
+                alert("Agradecemos a sua contribuição! Seu comentário ("  + content + ") foi enviado e aguarda aprovação da moderação para ser publicado. Obrigado por sua contribuição.")
             })
             .catch(function (error) {
-                console.log(error);
+                console.log(error)
+                alert("Estamos com um erro de comunicação com o servidor. Tente novamente mais tarde.")
             });
         }
     },
-    components:{Commentsloader}
+    components:{Commentsloader},
+    computed:{
+        today(){
+            let now = new Date();
+            let year = now.getFullYear();
+            let month = now.getMonth();
+            let day = now.getDay();
+
+            return year+'-'+month+'-'+day;           
+        }
+    }
 };
 
 </script>

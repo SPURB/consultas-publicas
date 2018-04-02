@@ -426,7 +426,7 @@
 			</div>
 
 		</div>
-	<!-- <Comments :commentid="commentid"></Comments> -->
+	<Comments :commentid="commentid"></Comments>
 	</div>
 </template>
 

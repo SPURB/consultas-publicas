@@ -23,7 +23,7 @@
 			<td width="10%">Altura da edificação menor ou igual a 10 m</td>
 			<td width="10%">Altura da edificação superior a 10 m</td>
 		</tr>
-		<tr>
+		<tr class="centered">
 			<td>ZOE Pacaembu</td>
 			<td>0,3</td>
 			<td>1</td>
@@ -53,9 +53,9 @@
 			<td width="20%">Cobertura vegetal (ALFA)</td>
 			<td width="20%">Drenagem (BETA)</td>
 		</tr>
-		<tr>
+		<tr class="centered">
 			<td>ZOE Pacaembu</td>
-			<td>22% (*)</td>
+			<td>22%</td>
 			<td>0,57</td>
 			<td>0,4</td>
 			<td>0,6</td>		
@@ -79,7 +79,7 @@
 			<td width="12.5%">Emissão de ruído das 19h às 22h</td>
 			<td width="12.5%">Emissão de ruído das 22h às 7h</td>
 		</tr>
-		<tr>
+		<tr class="centered">
 			<td>ZOE Pacaembu</td>
 			<td>50</td>
 			<td>45</td>
@@ -113,12 +113,12 @@
 			<td rowspan="13" class="rotate">GRUPOS DE ATIVIDADES</td>
 		</tr>
 		<tr>
-			<td width="7%">nR1-1</td>
-			<td width="22%">comércio de abastecimento de âmbito local com dimensão de até 500m² (quinhentos metros quadrados) de área construída computável</td>
-			<td width="7%">nR2-1</td>
-			<td width="22%">comércio de alimentação de médio porte, com lotação de mais de 100 (cem) e até 500 (quinhentos) lugares, englobando comércio associado a diversão</td>
-			<td width="7%">nR3-3</td>
-			<td width="22%">serviço público social especial</td>
+			<td width="8%">nR1-1</td>
+			<td width="21%">comércio de abastecimento de âmbito local com dimensão de até 500m² (quinhentos metros quadrados) de área construída computável</td>
+			<td width="8%">nR2-1</td>
+			<td width="21%">comércio de alimentação de médio porte, com lotação de mais de 100 (cem) e até 500 (quinhentos) lugares, englobando comércio associado a diversão</td>
+			<td width="8%">nR3-3</td>
+			<td width="21%">serviço público social especial</td>
 		</tr>
 		<tr>
 			<td>nR1-2</td>
@@ -195,6 +195,12 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
 
+tr.centered{
+	td {
+		text-align: center;
+	}
+}
+
 hr {
 	margin: 2em 0;
 	border-color: $primary-light-grey;
@@ -215,11 +221,11 @@ table.borda {
 }
 
 td.rotate {
-	-ms-writing-mode: tb-rl;
-	-webkit-writing-mode: vertical-rl;
-	writing-mode: vertical-rl;
-	transform: rotate(180deg);
-    transform-origin: 34%;
+	// -ms-writing-mode: tb-rl;
+	// -webkit-writing-mode: vertical-rl;
+	// writing-mode: vertical-rl;
+	// transform: rotate(180deg);
+ 	// transform-origin: 34%;
     vertical-align: middle !important;
 }
 
@@ -228,7 +234,7 @@ table#usos tr {
 		vertical-align: top;
 	}
 	td#vazio {
-		background-color: #EEEEEE;
+		background-color:#f2f2f2;
 		border: 0px;
 	}
 }

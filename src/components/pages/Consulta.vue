@@ -20,7 +20,7 @@
 
 				<p>A página da Secretaria de Desestatização e Parcerias disponibiliza mais informações sobre o Procedimento de Manifestação de Interesse - PMI que reuniu os estudos técnicos que subsidiaram a elaboração do PIU e também coloca em consulta pública a Minuta do Edital de Concessão do Pacaembu. Confira no endereço: <a href="http://www.prefeitura.sp.gov.br/cidade/secretarias/desestatizacao/projetos/pacaembu/">http://www.prefeitura.sp.gov.br/cidade/secretarias/desestatizacao/projetos/pacaembu/</a></p>
 
-				<p><a href="./static/xls/piu-pacaembu_consulta_respostas_2018-02-08.zip" download>Clique aqui</a> para acessar o Relatório da Consulta Pública realizada em 8 de janeiro de 2018, com as contribuições recebidas e a respectiva análise da Prefeitura Municipal de São Paulo. </p>
+				<p>Clique aqui (<a href="./static/piu-pacaembu_consulta_respostas_2018-02-08.zip" download>xls</a> | <a href="./static/piu-pacaembu_consulta_respostas_2018-02-08.pdf" download>pdf</a>) para acessar o Relatório da Consulta Pública realizada em 8 de janeiro de 2018, com as contribuições recebidas e a respectiva análise da Prefeitura Municipal de São Paulo. </p>
 
 				<h5>1. Motivação </h5>
 				<p class="commentable">O Estádio e o Centro Poliesportivo do Pacaembu estão enquadrados numa ZOE – Zona de Ocupação Espacial que, segundo o Artigo 39 do Plano Diretor Estratégico, compreende porções do território destinadas a abrigar atividades tais como aeroportos, centros de convenção, grandes áreas de lazer, recreação e esportes, que, por suas características únicas, necessitem disciplina especial de uso e ocupação do solo.</p>
@@ -84,9 +84,9 @@
 				<p class="commentable">Nesse cenário, as instalações internas são qualificadas e modernizadas; os elementos destacados no tombamento restaurados e todo o Complexo torna-se mais um elemento de valorização do entorno.</p>
 				<p class="commentable">A proposta de intervenção na Praça Charles Miller considera a supressão das áreas de estacionamento de veículos que, numa das hipóteses dos estudos trazidos pelo PMI, passariam a ocupar uma garagem subterrânea incorporada ao Complexo.</p>
 				<p class="commentable"> A Praça poderá receber um novo projeto paisagístico, disciplinando os exemplares arbóreos dos taludes laterais para valorização da fachada monumental do Estádio e destacando os canteiros do projeto original, pelo plantio de uma forração mais vistosa e resistente do que os gramados.</p>
-				<p class="commentable">Propõe-se também a elevação do pavimento viário nas faixas laterais de circulação veicular, aumentando o espaço de estar. As guias dos canteiros são mantidas para preservação do traçado viário do projeto original.</p>
+				<p class="commentable">Propõe-se também a elevação do pavimento nas faixas laterais de circulação veicular, aumentando o espaço de estar. As guias dos canteiros são mantidas para preservação do traçado viário do projeto original.</p>
 				<p class="commentable">Pretende-se uma revisão do projeto luminotécnico e de sinalização da Praça, para retirada dos elementos que interferem na visualização do Estádio. Propõe-se também a implantação de iluminação de destaque da fachada do Complexo.</p>
-				<p class="commentable">A Praça Charles Miller passaria a receber <em>fanfest</em> promovidas pelos clubes, aglutinando num único espaço o comércio transitório que hoje se espalha pelas ruas do bairro nos dias de jogos. Torna-se o local de pedaladas cotidianas dos vizinhos de bairro, de atividades recreativas promovidas pela Secretaria de Esportes ou de festividades extravazadas do Complexo.</p>
+				<p class="commentable">A Praça Charles Miller passaria a receber <em>fanfests</em> promovidas pelos clubes, aglutinando num único espaço o comércio transitório que hoje se espalha pelas ruas do bairro nos dias de jogos. Torna-se o local de pedaladas cotidianas dos vizinhos, de atividades recreativas promovidas pela Secretaria de Esportes ou de festividades extravazadas do Complexo.</p>
 				<p class="commentable">Concretizadas essas possibilidades, Estádio, Centro Poliesportivo e Praça são reapresentados à população para um melhor desempenho, o que, consideradas as receitas geradas com a expansão das possibilidades de exploração econômica do Complexo, deverá garantir condições sustentáveis de manutenção do bem tombado.</p>
 			</div>
 			<div class="col s12 chapter-content">
@@ -178,7 +178,7 @@
 				<p class="commentable">Os NRP foram constituídos e seus integrantes designados pela Portaria SMPR Nº 31 de 7 de Julho de 2017, publicada pela Secretaria Municipal das Prefeituras Regionais.</p>
 				<p class="commentable">O <strong>Decreto nº 57.537, de 16 de dezembro de 2016</strong>, dispõe em seu Artigo 7º, inciso V, que os Núcleos Regionais de Planejamento – NRP, entre outras atribuições, devem “constituir subgrupos para acompanhamento de intervenções específicas”, arranjo compatível com o acompanhamento da implantação de um Projeto de Intervenção Urbana do porte do PIU Pacaembu.</p>
 				<p class="commentable">Do lado dos moradores, os <strong>artigos 34 e 35 da Lei nº 15.764 de 27 de maio de 2013</strong> dispõem sobre a constituição e atribuições dos Conselhos Participativos Municipais, dentre as quais “III – zelar para que os direitos da população e os interesses públicos sejam atendidos nos serviços, programas e projetos públicos da região e comunicar oficialmente aos órgãos competentes em caso de deficiências neste atendimento”.</p>
-				<p class="commentable">O <strong>Decreto nº 54.156, de 1º de agosto de 2013</strong>, que regulamenta os dois artigos citados, estabelece um número mínimo de 5 conselheiros por Distrito, o número máximo de 1 conselheiro para cada 10.000 habitantes e o máximo de 51 conselheiros por Prefeitura Regional, eleitos por votação secreta para um mandato de 2 anos.</p>
+				<p class="commentable">O <strong>Decreto nº 54.156, de 1º de agosto de 2013</strong>, que regulamenta os dois artigos citados, estabelece o número de conselheiros por Distrito e Prefeitura Regional, que serão eleitos por votação secreta para um mandato de 2 anos.</p>
 				<p class="commentable">Considerando que o Complexo do Pacaembu está inserido no Bairro de mesmo nome, tombado nos termos das Resoluções do Condephaat SC 8, de 14/03/91, SC 33 de 30/10/92 e SC 12/08, e das Resoluções nº 42/CONPRESP/1992 e nº 09 / CONPRESP /2015, e que o perímetro de tombamento abarca áreas das Prefeituras Regionais da Sé e da Lapa, propõe-se a constituição de um Grupo Gestor , para atuação no prazo de implantação da proposta, com a seguinte composição:</p>
 				<ol type="a">
 					<li>3 integrantes do Conselho Participativo da Prefeitura Regional da Sé;</li>
@@ -193,7 +193,7 @@
 
 		</div>
 	</div>
-	<!-- <Comments :commentid="commentid"></Comments> -->
+	<Comments :commentid="commentid"></Comments>
 </div>
 </template>
 

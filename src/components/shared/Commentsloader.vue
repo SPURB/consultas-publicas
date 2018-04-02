@@ -42,7 +42,7 @@ export default {
                 // this.comments = response.data;
                 let comms = response.data
                 comms.filter(function(index) {
-                    if (index.postid == app.commentid.id){
+                    if (index.postid == app.commentid.id && index.public == 1){
                         app.comments.push(index)
                     }
                 });
