@@ -6,9 +6,17 @@ import router from './router';
 import axios from 'axios';
 import { store } from './store/store';
 import VeeValidate from 'vee-validate';
-
+import VueLazyload from 'vue-lazyload';
 
 Vue.use(VeeValidate);
+Vue.use(VueLazyload);
+
+// Vue.use(VueLazyload, {
+//     preLoad: 1.3,
+//     error: 'http://placehold.it/50x50.png',
+//     loading: 'http://placehold.it/50x50.png',
+// })
+
 Vue.config.productionTip = false;
 
 

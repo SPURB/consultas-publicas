@@ -29,8 +29,12 @@ export default {
 			firstview: false,
 			toggleNav: true,
 			lastYposition: 0,
-			showNavItems: false
+			showNavItems: false,
+			window_width: '100%'
 		}
+	},
+	mounted(){
+		this.window_width = window.screen.width
 	},
 	created(){
 		let app = this
@@ -64,7 +68,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
-
 
 span.sp {color: #EB5757}
 span.urbana{color: black}
@@ -113,6 +116,7 @@ nav {
 		}
 
 		#menu-icon{ display: none; }
+
 		@media #{$medium-and-down} {
 			a, #routes-list li a { font-size: 1rem };
 			li:last-child {

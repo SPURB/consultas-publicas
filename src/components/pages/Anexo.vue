@@ -31,8 +31,8 @@
 					<h5>1. Estádio Paulo Machado de Carvalho e Centro Poliesportivo</h5>
 					<p class="commentable">O complexo formado pelo Estádio Paulo Machado de Carvalho e o Centro Poliesportivo foi inaugurado em 27 de abril de 1940, construído sob projeto do Escritório Técnico Ramos de Azevedo e dos engenheiros arquitetos Severo &amp; Villares. Ocupa uma área de 75.598 m², doada pela <em>The City of San Paulo Improvements and Freehold Company Limited</em>, empresa que em 1925 iniciou o loteamento do que seria o Bairro do Pacaembu.</p>
 
-					<img src="../../assets/img/image1.jpg" width="100%" alt="PIU Pacaembu – Pontos de referência">
-					<div class="col s4 offset-s8"><img src="../../assets/img/image2.jpg" width="100%" alt="PIU Pacaembu – Pontos de referência - legenda"></div>
+					<img src="/static/img/image1.jpg" width="100%" alt="PIU Pacaembu – Pontos de referência">
+					<div class="col s4 offset-s8"><img src="/static/img/image2.jpg" width="100%" alt="PIU Pacaembu – Pontos de referência - legenda"></div>
 
 					<p class="commentable">A maior parte da área é reservada ao Estádio. O gramado, com 104 metros de extensão e 68 metros de largura, é dotado de sistema de reaproveitamento de água e protegido por um alambrado de 2,50 metros de altura.</p>
 					<p class="commentable">Há 2 vestiários para jogadores e 1 vestiário para juízes. Os vestiários de jogadores têm layout idêntico e área de 667,93 m² cada um. Contam com setor de rouparia (área de 169,58 m²), área molhada com sanitários, chuveiros e bebedouros (área de 101,83 m²), setor de atividades físicas e aquecimento (área de 229,68 m²), setor técnico e médico (área de 26,45 m²). </p>
@@ -69,8 +69,8 @@
 					<p class="commentable">O Complexo possui 24 portões de acesso, sendo o portão principal do Estádio localizado na Praça Charles Miller e os demais os localizados na Rua Capivari, Rua Desembargador Paulo Passalaqua e Rua Itápolis. O acesso ao Centro Poliesportivo se dá pelo Portão 23, situado à Rua Capivari. </p>
 
 
-					<img src="../../assets/img/image3.jpg" width="100%" alt="PIU Pacaembu – Acessos">
-					<div class="col s4 offset-s8"><img src="../../assets/img/image4.jpg" width="100%" alt="PIU Pacaembu – Acessos - legenda"></div>
+					<img src="/static/img/image3.jpg" width="100%" alt="PIU Pacaembu – Acessos">
+					<div class="col s4 offset-s8"><img src="/static/img/image4.jpg" width="100%" alt="PIU Pacaembu – Acessos - legenda"></div>
 
 
 					<p class="commentable">Conta com 2 ambulatórios médicos, sendo o primeiro localizado ao lado do Centro Poliesportivo, com área de 73,84 m2, e o segundo, que atende em dias de jogos, situado na arquibancada sul do pavimento térreo do Estádio, com área de 42,32 m².</p>
