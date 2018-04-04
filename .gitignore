@@ -18,4 +18,5 @@ doccontent/
 *.sublime-project
 *.sublime-workspace
 *.docx
+*.db
 hints.txt

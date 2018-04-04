@@ -6,12 +6,13 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
 	state: {
+		commentsopen: false,
 		projecttitle:'Consulta pública PIU Nações Unidas',
 		// comments_active: true,
 		numchapters: 0, 
 		showmodal: false,
 		comments: false,
-		usercheck: false,
+		usercheck: true,
 		email: '',
 		name: '',
 		isadmin: false,

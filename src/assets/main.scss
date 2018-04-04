@@ -57,19 +57,19 @@ section{
 	border-top:	solid 1px $primary-dark-grey;
 }
 .commentable{
-	background-color: white;
+	// background-color: white;
 	padding: 0;
-	transition: background-color, padding 0.3s ease;
+	// transition: background-color, padding 0.3s ease;
 }
 
-.commentable:hover, .commentable.active{
-	background-color: #ffc;
-	padding: 0.35em 0;
-	cursor: pointer;
-}
-.commentable.active {
-	padding: 0.35em;
-}
+// .commentable:hover, .commentable.active{
+// 	background-color: #ffc;
+// 	padding: 0.35em 0;
+// 	cursor: pointer;
+// }
+// .commentable.active {
+// 	padding: 0.35em;
+// }
 
 blockquote{
 	border-color: $primary-grey;

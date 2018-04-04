@@ -10,15 +10,16 @@
 							<label for="comment">Comente como {{ name }} (<a href="#" @click="showmodal">alterar</a>)</label>
 							<textarea id="comment" v-model="comment"></textarea>
 							<a href="#" class="btn-flat" @click="sendata" type="submit">Enviar comentário</a>
-							<vue-recaptcha 
+							<!-- <vue-recaptcha 
 								:sitekey="sitekey"
 								@verify="onVerify"
 								@expired="onExpired"
 								>
-							</vue-recaptcha>
+							</vue-recaptcha> -->
 						</form>
 					</div>
-					<a v-else href="#" class="btn-flat col s10 offset-s1" @click="showmodal">Habilite comentários</a>
+					<a v-else-if="commentsopen" href="#" class="btn-flat col s10 offset-s1" @click="showmodal">Habilite comentários</a>
+					<p v-if="!commentsopen" class="commentsclosed">Desculpe, mas o período de participação já foi encerrado. Em breve publicaremos a sistematização das contribuições.</p>
 				</transition>
 				<div class="divider col s12"></div>
 			</div>
@@ -48,6 +49,7 @@ export default {
 	},
 	props:['commentid'],
 	computed:{
+		commentsopen() { return this.$store.state.commentsopen },
 		commentsenable() { return this.$store.state.comments },
 		name() { return this.$store.state.name },
 		usercheck() { return this.$store.state.usercheck },

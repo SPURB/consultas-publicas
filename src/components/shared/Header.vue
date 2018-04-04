@@ -7,9 +7,9 @@
 						<div class="container">
 						<a class="title" href="http://gestaourbana.prefeitura.sp.gov.br/">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a><router-link id="tohome" to='/consulta'> | {{ projectTitle }}</router-link>
 						<a id="menu-icon" class="sidenav-trigger right" @click="showNavItems = !showNavItems"><i class="material-icons">menu</i></a>
-						<ul id="routes-list"  class ="right" v-bind:class="{ menuDisplay: showNavItems }">
+						<ul id="routes-list" class ="right" v-bind:class="{ menuDisplay: showNavItems }">
 							<li v-for="navitem in navitems">
-								<router-link :to='navitem.path'>{{navitem.name}}</router-link>
+								<router-link :to='navitem.path'>{{ navitem.name }}</router-link>
 							</li>
 						</ul>
 						</div>
@@ -80,14 +80,16 @@ span.urbana{color: black}
 
 nav {
 	min-width: 100%;
+	width: inherit;
 	padding: 0;
 	color: $primary-dark-grey;
 	background-color: white;
 	.nav-wrapper{
+		width: 100%;
 		border-bottom-width: 1px;
 		.title {margin: 0}
 		a {
-			font-size: 1.25rem;
+			font-size: 1rem;
 			color:#BDBDBD;
 		}
 		li {
@@ -107,6 +109,10 @@ nav {
 		}
 
 		#menu-icon{ display: none; }
+
+				nav{
+					min-width: none;
+				}
 
 		@media #{$medium-and-down} {
 			a, #routes-list li a { font-size: 1rem };
