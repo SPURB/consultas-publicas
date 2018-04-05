@@ -30,7 +30,7 @@
 				<p>Assim, foram considerados aptos a subsidiar a elaboração de <em>diretrizes de intervenção</em> no Complexo aqui consubstanciadas e, posteriormente, refletidas no Edital de Licitação. </p>
 
 			</div>
-		    <img v-lazy="jpg1" width="100%" alt="PIU Pacaembu – Área Diretamente Afetada (ADA)">
+		    <img v-lazy="jpg1" width="100%" alt="PIU Pacaembu – Área Diretamente Afetada (ADA)" class="bigImage">
 			<p class="legenda">PIU Pacaembu – Área Diretamente Afetada (ADA)</p>
 
 			<div class="col s12 chapter-content">
@@ -197,6 +197,7 @@
 		</div>
 	</div>
 	<Comments :commentid="commentid"></Comments>
+	<ConsultaGaleria1></ConsultaGaleria1>
 </div>
 </template>
 
@@ -205,6 +206,7 @@ import VueLazyload from 'vue-lazyload';
 
 import Comments from '@/components/shared/Comments';
 import Quadros from '@/components/pages/Quadros';
+import ConsultaGaleria1 from '@/components/pages/ConsultaGaleria1';
 
 export default {
 	name: 'Consulta',
@@ -228,6 +230,7 @@ export default {
 	components:{ 
 		Comments, 
 		Quadros, 
+		ConsultaGaleria1
 	}
 }
 </script>
@@ -239,6 +242,10 @@ export default {
 	img{
 		width: 100%
 	}
+
+  img[lazy=loading] {
+	background-image: url(" './static/img/loading.gif'");
+  }
 
 	.material-icons.small {
 		font-size: 1rem; 

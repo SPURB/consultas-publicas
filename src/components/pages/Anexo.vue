@@ -69,8 +69,8 @@
 					<p class="commentable">O Complexo possui 24 portões de acesso, sendo o portão principal do Estádio localizado na Praça Charles Miller e os demais os localizados na Rua Capivari, Rua Desembargador Paulo Passalaqua e Rua Itápolis. O acesso ao Centro Poliesportivo se dá pelo Portão 23, situado à Rua Capivari. </p>
 
 
-					<img src="/static/img/image3.jpg" width="100%" alt="PIU Pacaembu – Acessos">
-					<div class="col s4 offset-s8"><img src="/static/img/image4.jpg" width="100%" alt="PIU Pacaembu – Acessos - legenda"></div>
+					<!-- <img src="/static/img/image3.jpg" width="100%" alt="PIU Pacaembu – Acessos"> -->
+					<!-- <div class="col s4 offset-s8"><img src="/static/img/image4.jpg" width="100%" alt="PIU Pacaembu – Acessos - legenda"></div> -->
 
 
 					<p class="commentable">Conta com 2 ambulatórios médicos, sendo o primeiro localizado ao lado do Centro Poliesportivo, com área de 73,84 m2, e o segundo, que atende em dias de jogos, situado na arquibancada sul do pavimento térreo do Estádio, com área de 42,32 m².</p>
