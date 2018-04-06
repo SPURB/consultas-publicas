@@ -12,12 +12,10 @@ import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/dist/css/swiper.css'
 
 Vue.use(VeeValidate);
-Vue.use(VueLazyload);
-// Vue.use(VueLazyload, {
-//     preLoad: 1.3,
-//     error: 'http://placehold.it/50x50.png',
-//     loading: 'http://placehold.it/50x50.png',
-// })
+// Vue.use(VueLazyload);
+Vue.use(VueLazyload, {
+	lazyComponent: true
+})
 Vue.use(VueAwesomeSwiper);
 Vue.config.productionTip = false;
 

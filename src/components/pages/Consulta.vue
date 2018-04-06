@@ -7,7 +7,6 @@
 	</div>
 	<div class="container" ref="container">
 		<div class="row">
-
 			<div class="col s12 chapter-content">
 				<h4>Projeto de Intervenção Urbana Pacaembu</h4>
 				<p>A Prefeitura Municipal de São Paulo, por meio da Secretaria Municipal de Urbanismo e Licenciamento e da São Paulo Urbanismo, comunica a abertura de consulta pública do Projeto de Intervenção Urbana – PIU Pacaembu, proposto para o Complexo formado pelo Estádio Municipal Paulo Machado de Carvalho e seu Centro Poliesportivo e para a Praça Charles Miller, entendida com o recinto de inserção do Complexo no seu entorno.</p>
@@ -19,7 +18,7 @@
 
 				<p>A página da Secretaria de Desestatização e Parcerias disponibiliza mais informações sobre o Procedimento de Manifestação de Interesse - PMI que reuniu os estudos técnicos que subsidiaram a elaboração do PIU e também coloca em consulta pública a Minuta do Edital de Concessão do Pacaembu. Confira no endereço: <a href="http://www.prefeitura.sp.gov.br/cidade/secretarias/desestatizacao/projetos/pacaembu/">http://www.prefeitura.sp.gov.br/cidade/secretarias/desestatizacao/projetos/pacaembu/</a></p>
 
-				<p>Clique aqui (<a href="/static/piu-pacaembu_consulta_respostas_2018-02-08.zip" download>xls</a> | <a href="/static/piu-pacaembu_consulta_respostas_2018-02-08.pdf" download>pdf</a>) para acessar o Relatório da Consulta Pública realizada em 8 de janeiro de 2018, com as contribuições recebidas e a respectiva análise da Prefeitura Municipal de São Paulo. </p>
+				<p>Clique aqui (<a href="./static/piu-pacaembu_consulta_respostas_2018-02-08.zip" download>xls</a> | <a href="./static/piu-pacaembu_consulta_respostas_2018-02-08.pdf" download>pdf</a>) para acessar o Relatório da Consulta Pública realizada em 8 de janeiro de 2018, com as contribuições recebidas e a respectiva análise da Prefeitura Municipal de São Paulo. </p>
 
 				<h5>1. Motivação </h5>
 				<p>O Estádio e o Centro Poliesportivo do Pacaembu estão enquadrados numa ZOE – Zona de Ocupação Espacial que, segundo o Artigo 39 do Plano Diretor Estratégico, compreende porções do território destinadas a abrigar atividades tais como aeroportos, centros de convenção, grandes áreas de lazer, recreação e esportes, que, por suas características únicas, necessitem disciplina especial de uso e ocupação do solo.</p>
@@ -31,6 +30,7 @@
 
 			</div>
 		    <img v-lazy="jpg1" width="100%" alt="PIU Pacaembu – Área Diretamente Afetada (ADA)" class="bigImage">
+			<div v-lazy:background-image="loadingGif"></div>
 			<p class="legenda">PIU Pacaembu – Área Diretamente Afetada (ADA)</p>
 
 			<div class="col s12 chapter-content">
@@ -122,12 +122,16 @@
 					<li> Valorizar a monumentalidade externa do conjunto; preservar as perspectivas e relações visuais do entorno;</li>
 					<li>Proposição de nova edificação na área atualmente ocupada pelo Tobogã admissível, desde que garantida a integração física e visual do Estádio com o Centro Esportivo e respeitada a altura máxima do Estádio.</li>
 				</ol>
-				<img v-lazy="gif1" width="100%" id="example1">
-
-				<img v-lazy="jpg2" class="materialboxed" id="jpg2">
-
 			</div>
+		</div>
+	</div>
+
+	<ConsultaGaleria1></ConsultaGaleria1>
+
+	<div class="container">
+		<div class="row">
 			<div class="col s12 chapter-content">
+				<img v-lazy="jpg2" class="materialboxed" id="jpg2">
 				<h5>6.2. Diretrizes de Intervenção na Praça Charles Miller</h5>
 
 				<p>A intervenção na Praça Charles Miller tem por objetivos a valorização da monumentalidade do Estádio e a ampliação de oportunidades de fruição pública de sua extensa área, hoje principalmente destinada ao estacionamento de veículos.</p>
@@ -145,10 +149,12 @@
 					<li>Complementarmente, quando concluídas as obras da Linha 6 Laranja do Metrô, promover o alargamento das calçadas adjacentes ao complexo e à Praça Charles Miller, nas ruas Desembargador Paulo Passalaqua, Capivari e Itápolis, para melhoria das condições de circulação de pedestres no entorno do Complexo.</li>
 				</ol>
 			</div>
-
-			<img v-lazy="gif2" width="100%">
-			<img v-lazy="gif3" width="100%">
-
+		</div>
+	</div>
+	<ConsultaGaleria2></ConsultaGaleria2>
+	<ConsultaGaleria3></ConsultaGaleria3>
+	<div class="container">
+		<div class="row">
 			<div class="col s12 chapter-content">
 				<h5>6.3. Parâmetros Urbanísticos para a ZOE Pacaembu</h5>
 				<p>Os parâmetros urbanísticos para a ZOE Pacaembu foram estabelecidos em relação às seguintes disposições da Lei 16.402/2016:</p>
@@ -162,7 +168,6 @@
 				<p>A definição dos demais usos admissíveis na ZOE Pacaembu, para enquadramento dos empreendimentos associados que poderão ser integrados ao Complexo como medida necessária à pretendida ampliação da oferta de serviços à população e à geração de receitas, foi referenciada no Decreto nº 57.378/2016, que regulamenta o enquadramento de atividades não residenciais conforme categorias de uso, subcategorias de uso e os grupos de atividades previstos nos artigos 96 a 106 da Lei nº 16.402, de 22 de março de 2016.</p>
 				<Quadros></Quadros>
 			</div>
-
 			<div class="col s12 chapter-content">
 				<h5>7. Mecanismos de Financiamento das Intervenções Propostas</h5>
 				<p>Considerando a relevância do Complexo do Pacaembu, como exponente do patrimônio histórico da cidade de São Paulo e palco relevante do futebol brasileiro, identifica-se potencial para que o equipamento seja explorado de forma inovadora e eficiente, de forma a dispensar a utilização de recursos públicos para a sua administração e execução da sua pertinente modernização.</p>
@@ -172,7 +177,6 @@
 				<p>Cabe ressaltar, que o financiamento necessário à consecução dos investimentos exigidos caberá exclusivamente ao parceiro privado, que para tal poderá, além de utilizar capital próprio, acessar o mercado de crédito.</p>
 				<p>A requalificação da Praça Charles, intervenção não incluída nas obrigações do concessionário, tem valor estimado de R$ 20,6 milhões. O PIU, então, vincula o Poder Público quando da sua atuação para a requalificação da praça. Devido à interação existente entre a área do Complexo e da Praça Charles Miller, é possível que o concessionário seja motivado a contribuir com o Poder Público na execução da requalificação, inclusive por meio de outras formas de parcerias.</p>
 			</div>
-
 			<div class="col s12 chapter-content">
 				<h5>8. Modo de Gestão</h5>
 				<p>O <strong>Decreto nº 56.901 de 29 de março de 2016</strong> que disciplina a elaboração dos Projetos de Intervenção Urbana assegura a realização de consultas públicas em etapas definidas de sua elaboração, para discussão e aperfeiçoamento das propostas. Da mesma maneira, a Minuta de Decreto de implantação do PIU é colocada em consulta pública prévia, procedimento que será também adotado para o Decreto de Implantação do PIU Pacaembu.</p>
@@ -193,11 +197,10 @@
 				</ol>
 				<p>As atribuições e o funcionamento desse Grupo serão estabelecidos por Regimento Interno proposto pela São Paulo Urbanismo e aprovado por maioria dos integrantes do Grupo.</p>
 			</div>
-
 		</div>
 	</div>
+
 	<Comments :commentid="commentid"></Comments>
-	<ConsultaGaleria1></ConsultaGaleria1>
 </div>
 </template>
 
@@ -207,6 +210,8 @@ import VueLazyload from 'vue-lazyload';
 import Comments from '@/components/shared/Comments';
 import Quadros from '@/components/pages/Quadros';
 import ConsultaGaleria1 from '@/components/pages/ConsultaGaleria1';
+import ConsultaGaleria2 from '@/components/pages/ConsultaGaleria2';
+import ConsultaGaleria3 from '@/components/pages/ConsultaGaleria3';
 
 export default {
 	name: 'Consulta',
@@ -219,18 +224,16 @@ export default {
 			},
 			jpg1: './static/img/PIU-Pacaembu_ADA.jpg',
 			jpg2: './static/img/Calcada_PLANTA_CONSULTA_PUBLICA_1280x755.png',
-			gif1: './static/img//P_Animacao_Estadio.gif',
-			gif2: './static/img/P_Animacao_Praca.gif',
-			gif3: './static/img/vista-aerea_animacao.gif'
+			loadingGif:'./static/img/loading.gif'
 		}
-	},
-	mounted(){
 	},
 	computed: {projectTitle(){ return this.$store.state.projecttitle; }},
 	components:{ 
 		Comments, 
 		Quadros, 
-		ConsultaGaleria1
+		ConsultaGaleria1,
+		ConsultaGaleria2,
+		ConsultaGaleria3
 	}
 }
 </script>
@@ -243,9 +246,12 @@ export default {
 		width: 100%
 	}
 
-  img[lazy=loading] {
-	background-image: url(" './static/img/loading.gif'");
-  }
+   // img[lazy=loading] {
+  	// }
+
+  	img.materialboxed{
+  		border:solid 1px $primary-light-grey;
+  	}
 
 	.material-icons.small {
 		font-size: 1rem; 

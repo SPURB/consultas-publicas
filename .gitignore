@@ -20,4 +20,6 @@ doccontent/
 *.docx
 *.pdf
 *.zip
+*.ai
+*.psd
 hints.txt
