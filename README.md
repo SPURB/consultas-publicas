@@ -1,6 +1,6 @@
-# Consultas Públicas / PIU Pacaembu
+# Consultas Públicas / PIU Terminais Municipais
 
-> Consulta pública do projeto de intervenção urbana do PIU Pacaembu
+> Consulta pública do projeto de intervenção urbana dos PIUs Terminais municipais Capelinha, Campo Limpo e Princesa Isabel
 
 ## Setup
 ### Requisitos

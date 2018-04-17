@@ -40,14 +40,14 @@
                 </div>
             </div>
 
-            <Commentsloader :commentid="commentid"></Commentsloader>
+            <!-- <Commentsloader :commentid="commentid"></Commentsloader> -->
         </div>
     </div>
 </template>
 
 <script>
 import axios from 'axios';
-import Commentsloader from '@/components/shared/Commentsloader';
+// import Commentsloader from '@/components/shared/Commentsloader';
 
 export default {
     name: 'comments',
@@ -84,7 +84,6 @@ export default {
 
             axios.post(url,{
                 'idConsulta':'3',//teste
-
                 'name': app.form_name,
                 'email':app.form_email, 
                 'content':app.form_content,
@@ -109,15 +108,14 @@ export default {
             });
         }
     },
-    components:{Commentsloader},
+    // components:{Commentsloader},
     computed:{
         today(){
             let now = new Date();
             let year = now.getFullYear();
             let month = now.getMonth();
             let day = now.getDay();
-
-            return year+'-'+month+'-'+day;           
+            return year+'-'+month+'-'+day;
         }
     }
 };
@@ -139,7 +137,6 @@ export default {
             margin-top: .35em
         }
         textarea:focus{ box-shadow: none }
-        // textarea:hover{ cursor:pointer; }
         label, label.active{ left: 1.5rem }
         label.active{ left: .75rem; }
     }

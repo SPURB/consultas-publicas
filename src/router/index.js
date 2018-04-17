@@ -6,9 +6,9 @@ import Header from '@/components/shared/Header'
 import Footer from '@/components/shared/Footer'
 
 // pages
-import Admin from '@/components/pages/admin/Admin'
-import Consulta from '@/components/pages/Consulta'
-import Anexo from '@/components/pages/Anexo'
+// import Admin from '@/components/pages/admin/Admin'
+import Introducao from '@/components/pages/Introducao'
+// import Anexo from '@/components/pages/Anexo'
 
 Vue.use(Router);
 
@@ -16,26 +16,22 @@ const router = new Router({
 	routes: [
 		{
 			path: '/',
-			redirect:'/consulta'
-		},
-		{
-			path: '/consulta',
-			name: 'Consulta',
+			name: 'Introdução',
 			components: {
 				header: Header,
-				main: Consulta,
-				footer: Footer
+				// main: Introducao,
+				// footer: Footer
 			}
 		},
-		{
-			path: '/anexo',
-			name: 'Anexo 1',
-			components: {
-				header: Header,
-				main: Anexo,
-				footer: Footer
-			}
-		},
+		// {
+		// 	path: '/anexo',
+		// 	name: 'Anexo 1',
+		// 	components: {
+		// 		header: Header,
+		// 		main: Anexo,
+		// 		footer: Footer
+		// 	}
+		// },
 		// {
 		// 	path: '/admin', 
 		// 	components: {

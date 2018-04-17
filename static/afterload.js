@@ -2,8 +2,6 @@
 
 // docReady =~> $(document).ready{}
 docReady(function() {
-    var el = document.querySelector('.materialboxed');
-    var instance = M.Materialbox.init(el);
     document.getElementById("preloader").style.display = "none";
 });
 

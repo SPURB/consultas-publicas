@@ -1,93 +1,10 @@
+@import "../../node_modules/bulma/bulma.sass";
 @import "./variables.scss";
 
 // REGRAS GLOBAIS
-html{
+html, body{
 	font-family: $font-stack;
 }
 .container{
 	max-width: 992px;
-	.row{
-		.chapter-content{
-			padding-left: 0;
-			p {
-				font-size: 1.1em;
-				line-height: 1.72
-			}
-			.footnote{
-				font-size: 0.85em;
-				border: solid $primary-light-grey 1px;
-				border-right: 0;
-				border-left: 0;
-				margin: 2.5em 0 5em;
-			}
-			.figure{
-				margin: 2em auto;
-				font-size: 0.85em;
-				p{
-					margin-top: 0;
-				}
-				img{
-					border: solid $primary-dark-grey 1px 
-				}
-			}
-
-			h5, h6 {
-				font-weight: 700;
-				padding-top: 1em
-			}
-
-			blockquote{
-				border-left: solid 1px $primary-grey;
-				li{
-					font-size: 0.85em;
-					padding: 0.5em 0;
-				}
-			}
-			#bottom-comments{
-				border-top: solid 1px $primary-grey;
-				margin-top: 6em;
-				padding: 0.65em 0;
-			}
-		}
-	}
-}
-.chapter-title{
-	font-size:2.5rem; 
-	color: $main-color;
-	margin-bottom: 0;
-}
-
-section{
-	// margin-top: 3em;
-	// padding-top: 0.5em;
-	// border-top:	solid 1px $primary-dark-grey;
-}
-
-.commentable{
-	background-color: white;
-	padding: 0;
-	transition: background-color, padding 0.3s ease;
-}
-
-blockquote{
-	border-color: $primary-grey;
-}
-
-img.materialboxed:hover{
-	cursor:pointer;
-}
-
-//FORM 
-.active{ display: block; }
-.hidden{ display: none; }
-
-
-@media #{$extrasmall-and-down} {
-	.chapter-title{
-		font-size:2rem;
-		line-height: 1.35;
-	}
-	.row{
-		margin-bottom: 0;
-	}
 }
