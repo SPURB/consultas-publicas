@@ -31,6 +31,34 @@ $link-focus-border: $primary;
 @import "~buefy/src/scss/buefy";
 @import "./variables.scss";
 
+html,body, button, input, select, textarea{
+font-family: $font-stack;
+font-weight: 300
+
+}
 .container{
-	// min-width: 100%
+	max-width: 992px;
+	.content{
+		margin: 2.5em auto;
+		figure.image {
+			margin-left: 0;
+			margin-right: 0;
+			background-color: $primary-light-grey;
+		}
+	}
+}
+
+@media #{$medium-and-down} {
+	.container{
+		max-width: 90%;
+		.title.is-3{
+			font-size: 1.5rem
+		}
+	}
+	.Footer{
+		.navbar.is-desktop{ display: none}
+		nav#goTop{
+			display: block!important;
+		}
+	}		
 }

@@ -1,51 +1,51 @@
 <template>
 	<div class="comments">
-	<div class="container">
-		<h5 class="title is-3">Participe desta consulta!</h5>
-
-		<div class="columns">
-			<div class="column is-one-third">
-				<div class="field">
-					<label class="label" for="nome">Nome / organização</label>
-					<input 
-						class="input"
-						type="text"
-						name="name" 
-						v-validate="'required:true'" 
-						:class="{'input': true, 'is-danger': errors.has('name') }" 
-						v-model='form_name'
-						>
-				</div>
-				<div class="field">
-					<label for="email">Email</label>
-					<input 
-						name="email" 
-						v-validate="'required|email'" 
-						:class="{'input': true, 'is-danger': errors.has('email') }" 
-						type="email"
-						v-model='form_email'
-						>
-				</div>
-			</div>
-
-			<div class="column">
+		<div class="container">
+			<h5 class="title is-3">Comente <span v-if="currentRoute!='Introdução'"> PIU Terminal {{ currentRoute }}</span></h5>
+			<div class="columns">
+				<div class="column is-one-third">
 					<div class="field">
-					<label for="comment">Comente aqui</label>
-					<div class="control">
-						<textarea 
-							class="textarea" 
-							name="content" 
+						<label class="label" for="nome">Nome / organização</label>
+						<input 
+							class="input"
+							type="text"
+							name="name" 
 							v-validate="'required:true'" 
-							id="comment" 
-							v-model='form_content' >
-						</textarea>
+							:class="{'input': true, 'is-danger': errors.has('name') }" 
+							v-model='form_name'
+							>
+					</div>
+					<div class="field">
+						<label for="email">Email</label>
+						<input 
+							name="email" 
+							v-validate="'required|email'" 
+							:class="{'input': true, 'is-danger': errors.has('email') }" 
+							type="email"
+							v-model='form_email'
+							>
 					</div>
 				</div>
-				<button class="button" @click="checkName">COMENTAR</button>
+
+				<div class="column">
+					<div class="field">
+						<label for="comment">Comente aqui</label>
+						<div class="control">
+							<textarea 
+								class="textarea" 
+								rows="10" 
+								name="content" 
+								v-validate="'required:true'" 
+								id="comment" 
+								v-model='form_content' >
+							</textarea>
+						</div>
+					</div>
+					<button class="button" @click="checkName">COMENTAR</button>
+				</div>
+			<!-- <Commentsloader :commentid="commentid"></Commentsloader> -->
 			</div>
-		<!-- <Commentsloader :commentid="commentid"></Commentsloader> -->
 		</div>
-	</div>
 	</div>
 </template>
 
@@ -55,7 +55,6 @@ import axios from 'axios';
 
 export default {
 	name: 'comments',
-
 	props:['commentid'],
 	data(){
 		return{
@@ -63,6 +62,9 @@ export default {
 			form_email: null,
 			form_content: null
 		}
+	},
+	computed:{
+		currentRoute(){ return this.$route.name },
 	},
 	methods:{
 		checkName(){
@@ -127,8 +129,28 @@ export default {
 
 </script>
 
+
 <style lang="scss" scoped>
+@import "../../assets/variables.scss";
+
 .comments{
-	padding-bottom: 4em
+	background-color:#ececec;
+	padding-top: 2em;
+	padding-bottom: 4em;
+	.columns{
+		.column{
+			.field{
+				label{
+					font-weight:600
+				}
+				.control{margin-top:7px}
+				input:focus,
+				textarea:focus{
+					border-color:$primary-medium-grey;
+					box-shadow: 0 0 0 0.125em rgba(101, 101, 101, 0.3)
+				}
+			}
+		}
+	}
 }
 </style>

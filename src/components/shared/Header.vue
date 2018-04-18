@@ -4,13 +4,23 @@
 			<nav class="navbar">
 				<div class="navbar-menu is-active">
 					<div class="navbar-start">
-						<a class="navbar-item" href="http://gestaourbana.prefeitura.sp.gov.br/">gestão<span>urbana</span><span class="sp">SP</span></a>
+						<a class="navbar-item" href="http://gestaourbana.prefeitura.sp.gov.br/"><span class="gestao">gestão</span><span class="urbana">urbana</span><span class="sp">SP</span></a>
+						<router-link class="navbar-item" id="tohome" to='/'>{{ projectTitle }}</router-link>
 					</div>
-					<router-link class="navbar-item" id="tohome" to='/'>{{ projectTitle }}</router-link>
 					<div class="navbar-end">
 						<template v-for="navitem in navitems">
 							<router-link class="navbar-item" :to='navitem.path' > {{navitem.name}} </router-link>				
 						</template>
+						<div class="navbar-item">
+				        <b-dropdown position="is-bottom-left">
+				            <button class="button is-primary" slot="trigger">
+				                <span>Arquivos</span>
+				            </button>
+				            <b-dropdown-item has-link><a href="./static/img/slider/50x50_1.png" download>opa</a></b-dropdown-item>
+				            <b-dropdown-item has-link><a href="./static/img/slider/50x50_1.png" download>opa1</a></b-dropdown-item>
+				            <b-dropdown-item has-link><a href="./static/img/slider/50x50_1.png" download>opa2</a></b-dropdown-item>
+				        </b-dropdown>
+						</div>
 					</div>
 				</div>
 			</nav>
@@ -67,13 +77,15 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
+.fade-enter-active, .fade-leave-active { transition: opacity .5s; }
+.fade-enter, .fade-leave-to { opacity: 0; }
 
+.navbar-end{
+	.router-link-exact-active{
+		background-color: $primary-light-grey
+	}
+}
+span.gestao{color:#BDBDBD}
 span.sp {color: #EB5757}
 span.urbana{color: black}
 
