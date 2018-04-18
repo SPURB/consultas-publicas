@@ -5,18 +5,21 @@ import App from './App';
 import router from './router';
 import axios from 'axios';
 import { store } from './store/store';
+
 import VeeValidate from 'vee-validate';
-import VueLazyload from 'vue-lazyload';
-import VueAwesomeSwiper from 'vue-awesome-swiper';
-
-import 'swiper/dist/css/swiper.css'
-
 Vue.use(VeeValidate);
-// Vue.use(VueLazyload);
+
+import VueLazyload from 'vue-lazyload';
+import Buefy from 'buefy';
+
+// import VueAwesomeSwiper from 'vue-awesome-swiper';
+// import 'swiper/dist/css/swiper.css'
+// Vue.use(VueAwesomeSwiper);
+
+Vue.use(Buefy);
 Vue.use(VueLazyload, {
 	lazyComponent: true
 })
-Vue.use(VueAwesomeSwiper);
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
@@ -27,4 +30,3 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
-

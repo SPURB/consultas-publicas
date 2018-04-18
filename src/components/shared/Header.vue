@@ -1,26 +1,20 @@
 <template>
 	<div class="Header">
-		<nav class="navbar is-white">
-			<div>
-			<a class="title" href="http://gestaourbana.prefeitura.sp.gov.br/">gestão<span class="urbana">urbana</span><span class="sp">SP</span></a><router-link id="tohome" to='/consulta'> | {{ projectTitle }}</router-link>
-			<a id="menu-icon" class="sidenav-trigger right" @click="showNavItems = !showNavItems"><i class="material-icons">menu</i></a>
-			<ul id="routes-list" v-bind:class="{ menuDisplay: showNavItems }">
-				<li v-for="navitem in navitems">
-					<router-link :to='navitem.path'>{{navitem.name}}</router-link>
-				</li>
-			</ul>
-			</div>
-		</nav>
-
-<div class="tabs">
-  <ul>
-    <li class="is-active"><a>Pictures</a></li>
-    <li><a>Music</a></li>
-    <li><a>Videos</a></li>
-    <li><a>Documents</a></li>
-  </ul>
-</div>
-
+		<!-- <div class="container"> -->
+			<nav class="navbar">
+				<div class="navbar-menu is-active">
+					<div class="navbar-start">
+						<a class="navbar-item" href="http://gestaourbana.prefeitura.sp.gov.br/">gestão<span>urbana</span><span class="sp">SP</span></a>
+					</div>
+					<router-link class="navbar-item" id="tohome" to='/'>{{ projectTitle }}</router-link>
+					<div class="navbar-end">
+						<template v-for="navitem in navitems">
+							<router-link class="navbar-item" :to='navitem.path' > {{navitem.name}} </router-link>				
+						</template>
+					</div>
+				</div>
+			</nav>
+		<!-- </div> -->
 	</div>
 </template>
 
@@ -73,12 +67,15 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
 
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
 span.sp {color: #EB5757}
 span.urbana{color: black}
-
-.column{
-	background-color: yellow
-}
 
 </style>
 
