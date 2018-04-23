@@ -9,7 +9,7 @@
 					</div>
 					<div class="navbar-end">
 						<template v-for="navitem in navitems">
-							<router-link class="navbar-item" :to='navitem.path' > {{navitem.name}} </router-link>				
+							<router-link class="navbar-item" :to='navitem.path' > {{navitem.name}} </router-link>
 						</template>
 						<div class="navbar-item">
 				        <b-dropdown position="is-bottom-left">

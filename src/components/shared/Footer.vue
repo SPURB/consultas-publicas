@@ -36,9 +36,7 @@
 				</div>
 			</div>
 			<div class="navbar-item">
-				<!-- <a @click="scrollToBootom" class="button is-primary is-active"> -->
-				<a 
-					v-scroll-to="'.comments'" 
+				<a  v-scroll-to="'.comments'" 
 					class="button is-primary is-active">
 					<span>Comente {{ currentRoute }}</span>
 				</a>
@@ -67,16 +65,20 @@ export default {
 	},
 	methods:{
 		scrollToBootom(){window.scrollTo(0,document.body.scrollHeight)},
-		activate(){ this.isActive = !this.isActive} },
+		activate(){ 
+			this.isActive = !this.isActive
+			// this.isActive ? setInterval(() => this.isActive = false, 5000) : this.isActive = true
+		} 
+	},
 	created(){
-			const app = this
-			const routes = app.$router.options.routes
-			routes.filter(function(index) {
-				if('name' in index){
-					app.navitems.push(index)
-				}
-			})
-		},
+		const app = this
+		const routes = app.$router.options.routes
+		routes.filter(function(index) {
+			if('name' in index){
+				app.navitems.push(index)
+			}
+		})
+	},
 }
 </script>
 
