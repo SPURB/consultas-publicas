@@ -1,97 +1,85 @@
 <template>
 	<div class="Ael">
-		<swiper :options="swiperOption" ref="mySwiper">
-				<swiper-slide>
-					<figure class="image is-960x450">
-						<img v-lazy="png1" id="jpg2">
-						<p class="legenda">Legenda1</p>
-					</figure>
-				</swiper-slide>
-				<swiper-slide>
-					<figure class="image is-960x450">
-						<img v-lazy="png2" id="jpg2">
-						<p>Legenda2</p>
-					</figure>
-				</swiper-slide>
-				<swiper-slide>
-					<figure class="image is-960x450">
-						<img v-lazy="png3" id="jpg2">
-						<p>Legenda3</p>
-					</figure>
-				</swiper-slide>
-				<div class="swiper-pagination"	slot="pagination"></div>
-				<div class="swiper-button-prev" slot="button-prev"></div>
-				<div class="swiper-button-next" slot="button-next"></div>
-		</swiper>
+	<div class="gallery items-3">
+		<div id="item-1" class="control-operator"></div>
+		<div id="item-2" class="control-operator"></div>
+		<div id="item-3" class="control-operator"></div>
+
+		<figure class="item">
+			<h3><img class="image is-64x64" src="http://placehold.it/64x64"><span>1</span></h3>
+			<img v-lazy="jpg0" width="992" height="557">
+			<p class="legenda">O PDE introduz como um de seus objetivos básicos acomodar o crescimento urbano nas áreas subutilizadas dotadas de infraestrutura e no entorno da rede de transporte coletivo de alta e média capacidade.</p>
+		</figure>
+
+		<figure class="item">
+			<h3><img class="image is-64x64" src="http://placehold.it/64x64">2</h3>
+			<img v-lazy="jpg1" width="992" height="557">
+			<p class="legenda">Legenda2</p>
+		</figure>
+
+		<figure class="item">
+			<h3><img class="image is-64x64" src="http://placehold.it/64x64">3</h3>
+			<img v-lazy="jpg2" width="992" height="557">
+			<p class="legenda">Legenda3</p>
+		</figure>
+
+		<div class="controls">
+			<a href="#item-1" class="control-button">•</a>
+			<a href="#item-2" class="control-button">•</a>
+			<a href="#item-3" class="control-button">•</a>
+		</div>
+	</div>
+
+
 	</div>
 </template>
 
 <script>
 import VueLazyload from 'vue-lazyload';
-import { swiper, swiperSlide } from 'vue-awesome-swiper'
  
 export default {
 	name: 'Ael',
 	data() {
 	return {
-		png1: '/static/img/slider/960x450_1.png',
-		png2: '/static/img/slider/960x450_2.png',
-		png3: '/static/img/slider/960x450_1.png',
-
-		swiperOption: {
-		autoplay: {
-			delay: 5000,
-		},
-		spaceBetween: 30,
-		effect: 'fade',
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true
-		},
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev'
+			jpg0: '/static/img/ael/Diagramas_Terminais_AEL_0003_Folha_5.jpg',
+			jpg1: '/static/img/ael/Diagramas_Terminais_AEL_0001_Folha_3.jpg',
+			jpg2: '/static/img/ael/Diagramas_Terminais_AEL_0004_Folha_6.jpg',
 		}
-		}
-	}
 	},
-	components: {
-		swiper,
-		swiperSlide
-	}
 }
 </script>
 
 <style lang="scss" scoped>
-.swiper-container {
-	img{
-		width: 100%
-	}
-	.swiper-slide{
-		figure{
-			p {
-				// margin-top: 1em
+@import "../../../assets/vendor/gallery.theme.css";
+@import "../../../assets/vendor/gallery.min.css";
+@import "../../../assets/variables.scss";
+
+.Ael{
+	.gallery{
+		figure.item{
+			background-color: $primary-dark-grey;
+			margin: auto 0;
+			h3, p{
+				text-align: left;
+				margin-bottom: .15em;
+				color:white
+			}
+			h3{
+				display: flex;
+				align-items:center;
+				img.is-64x64{ margin: .15em }
+				span {padding-left:.5em;} 
+			}
+			p.legenda{
+				padding: 1.5em .5em .5em
 			}
 		}
+		.controls{
+			bottom: 1.85em;
+		}
+		.control-operator:target ~ .controls .control-button{
+			// color:red
+		}
 	}
-	.swiper-slide h3{
-		opacity: 0
-	}
-	.swiper-slide-active h3{
-		opacity: 1
-	}
-	.swiper-button-prev, .swiper-button-next{
-		top:57%
-	}
-}
-
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
 }
 </style>
