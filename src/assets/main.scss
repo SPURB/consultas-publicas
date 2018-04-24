@@ -48,6 +48,18 @@ font-weight: 300
 	}
 }
 
+table.is-fullwidth.is-striped{
+	td, th{
+		font-size: .75em
+	}
+	tr {
+		td:nth-child(odd){
+			border-left:solid 1px $primary-medium-grey;
+		}
+	}
+}
+
+
 @media #{$medium-and-down} {
 	.container{
 		max-width: 90%;

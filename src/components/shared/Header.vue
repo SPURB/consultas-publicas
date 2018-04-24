@@ -16,9 +16,10 @@
 				            <button class="button is-primary" slot="trigger">
 				                <span>Arquivos</span>
 				            </button>
-				            <b-dropdown-item has-link><a href="./static/img/slider/50x50_1.png" download>opa</a></b-dropdown-item>
-				            <b-dropdown-item has-link><a href="./static/img/slider/50x50_1.png" download>opa1</a></b-dropdown-item>
-				            <b-dropdown-item has-link><a href="./static/img/slider/50x50_1.png" download>opa2</a></b-dropdown-item>
+							<p class="dropdown-subtitle">Masterplan</p>
+				            <b-dropdown-item has-link>	<a href="./static/img/mapas/Masterplan_Capelinha_full.jpg" download>Capelinha</a></b-dropdown-item>
+				            <b-dropdown-item has-link>	<a href="./static/img/mapas/Masterplan_Campo-Limpo_full.jpg" download>Capelinha</a></b-dropdown-item>
+				            <b-dropdown-item has-link>	<a href="./static/img/mapas/Masterplan_Princesa-isabel_full.jpg" download>Princesa Isabel</a></b-dropdown-item>
 				        </b-dropdown>
 						</div>
 					</div>
@@ -88,6 +89,10 @@ export default {
 span.gestao{color:#BDBDBD}
 span.sp {color: #EB5757}
 span.urbana{color: black}
+
+.dropdown-subtitle{
+	padding-left: 1em
+}
 
 </style>
 
