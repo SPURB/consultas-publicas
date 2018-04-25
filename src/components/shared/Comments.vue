@@ -1,7 +1,7 @@
 <template>
 	<div class="comments">
 		<div class="container">
-			<h5 class="title is-3">Comente <span v-if="currentRoute!='Introdução'"> PIU Terminal {{ currentRoute }}</span></h5>
+			<h5 class="title is-5">Comente</h5>
 			<div class="columns">
 				<div class="column is-one-third">
 					<div class="field">
@@ -24,6 +24,18 @@
 							type="email"
 							v-model='form_email'
 							>
+					</div>
+					<label class="label">Capítulo comentado</label>
+					<div class="select is-fullwidth">
+						<select name="context" v-model='form_context' v-validate="'required:true'">
+							<option value="diagnostico-socio-territorial">Diagnóstico Sócio-Territorial</option>
+							<option value="programa-de-interesse-publico">Programa de Interesse Público</option>
+							<option value="proposta-de-ordenamento-urbanistico">Proposta de Ordenamento Urbanístico</option>
+							<option value="modelagem-economica-da-intervencao">Modelagem Econômica da Intervenção</option>
+							<option value="modelo-de-gestao">Modelo de Gestão</option>
+							<option value="modelo-juridico">Modelo Jurídico</option>
+							<option value="geral">Comentário geral</option>
+						</select>
 					</div>
 				</div>
 
@@ -60,7 +72,8 @@ export default {
 		return{
 			form_name:null,
 			form_email: null,
-			form_content: null
+			form_content: null,
+			form_context: null
 		}
 	},
 	computed:{
@@ -68,14 +81,26 @@ export default {
 	},
 	methods:{
 		checkName(){
-			if(!this.fields.name.valid && !this.fields.email.valid){
+			if(!this.fields.name.valid && !this.fields.email.valid && this.form_context==null){
+				alert('Preencha corretamente os campos Nome e Email e selecione um Capítulo')
+			}
+			else if(!this.fields.name.valid && !this.fields.email.valid){
 				alert('Preencha corretamente os campos Nome e Email')
+			}
+			else if(!this.fields.name.valid && this.form_context==null){
+				alert('Preencha corretamente o campo Nome e selecione um Capítulo')
+			}
+			else if(!this.fields.email.valid && this.form_context==null){
+				alert('Preencha corretamente o campo Email e selecione um Capítulo')
 			}
 			else if (!this.fields.name.valid) {
 				alert('Inclua um nome')
 			}
 			else if(!this.fields.email.valid){
 				alert('Corrija email')
+			}
+			else if(this.form_context==null){
+				alert("Selecione um capítulo")
 			}
 			else if(!this.fields.content.valid){
 				alert("Inclua um comentário")
@@ -85,12 +110,12 @@ export default {
 			}
 		},
 		send(){
-			const url = 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/gestaourbanasp_consulta_piu_terminais';
+			const url = 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/gestaourbanasp_consulta_piu_leopoldina';
 			//criar db gestaourbanasp_consulta_piu_terminais
 			const app = this;
 
 			axios.post(url,{
-				'idConsulta':'3',//teste
+				'idConsulta':'4',//teste
 				'name': app.form_name,
 				'email':app.form_email, 
 				'content':app.form_content,
@@ -151,6 +176,8 @@ export default {
 				}
 			}
 		}
+	}
+	.select {
 	}
 }
 </style>

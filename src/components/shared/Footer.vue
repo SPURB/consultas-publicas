@@ -1,46 +1,22 @@
 <template>
 <div class="Footer">
 	<nav id="goTop" class="navbar is-fixed-bottom is-transparent">
-		<div class="nabar-item">
+		<div class="navbar-item is-pulled-right">
 			<button 
 				class="button is-fixed-bottom"
 				v-scroll-to="{
 					el: 'body',
  				}"
- 				>TOPO</button>
+ 				>
+ 				<i class="material-icons">arrow_upward</i>
+			</button>
 		</div>
 	</nav>
 
-	<nav class="navbar is-light is-fixed-bottom is-desktop">
+	<nav class="navbar is-light is-desktop">
 	  <div class="navbar-menu">
 	  	<div class="navbar-start">
 			<p class="navbar-item is-text">Caso surjam dúvidas ou problemas técnicos, envie um e-mail para<a v-bind:href=" `mailto:${ projectTitle }` "><span>:</span> imprensasmul@prefeitura.sp.gov.br</a></p>
-		</div>
-
-		<div class="navbar-end">
-			<div class="navbar-item has-dropdown has-dropdown-up" v-bind:class="{ 'is-active': isActive }">
-				<a class="navbar-link" @click="activate">
-					Seções
-				</a>
-
-				<div class="navbar-dropdown">
-					<div v-for="navitem in navitems">
-						<router-link 
-							:to='navitem.path' 
-							class="navbar-item" 
-							v-scroll-to="{
-								el: 'body',
-								duration: 1,
- 						}">{{navitem.name}}</router-link>
-					</div>
-				</div>
-			</div>
-			<div class="navbar-item">
-				<a  v-scroll-to="'.comments'" 
-					class="button is-primary is-active">
-					<span>Comente {{ currentRoute }}</span>
-				</a>
-			</div>
 		</div>
 	  </div>
 	</nav>
@@ -91,9 +67,9 @@ export default {
 		display:none
 	}
 
-	padding: .5em 0;
+	padding: 0 0;
 	p {
-		font-size: .85em
+		font-size: .85em;
 	}
 	.is-text{
 		span{

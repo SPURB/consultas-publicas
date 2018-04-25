@@ -1,30 +1,6 @@
 <template>
 	<div class="Header">
-		<!-- <div class="container"> -->
-			<nav class="navbar">
-				<div class="navbar-menu is-active">
-					<div class="navbar-start">
-						<a class="navbar-item" href="http://gestaourbana.prefeitura.sp.gov.br/"><span class="gestao">gestão</span><span class="urbana">urbana</span><span class="sp">SP</span></a>
-						<router-link class="navbar-item" id="tohome" to='/'>{{ projectTitle }}</router-link>
-					</div>
-					<div class="navbar-end">
-						<template v-for="navitem in navitems">
-							<router-link class="navbar-item" :to='navitem.path' > {{navitem.name}} </router-link>
-						</template>
-						<div class="navbar-item">
-				        <b-dropdown position="is-bottom-left">
-				            <button class="button is-primary" slot="trigger">
-				                <span>Arquivos</span>
-				            </button>
-				            <b-dropdown-item has-link><a href="./static/img/slider/50x50_1.png" download>opa</a></b-dropdown-item>
-				            <b-dropdown-item has-link><a href="./static/img/slider/50x50_1.png" download>opa1</a></b-dropdown-item>
-				            <b-dropdown-item has-link><a href="./static/img/slider/50x50_1.png" download>opa2</a></b-dropdown-item>
-				        </b-dropdown>
-						</div>
-					</div>
-				</div>
-			</nav>
-		<!-- </div> -->
+		<a class="navbar-item" href="http://gestaourbana.prefeitura.sp.gov.br/"><span class="gestao">gestão</span><span class="urbana">urbana</span><span class="sp">SP</span></a>
 	</div>
 </template>
 
@@ -75,6 +51,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 @import "../../assets/variables.scss";
 
 .fade-enter-active, .fade-leave-active { transition: opacity .5s; }

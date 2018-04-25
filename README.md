@@ -1,6 +1,6 @@
-# Consultas Públicas / PIU Terminais Municipais
+# Consultas Públicas / PIU Vila Leopoldina
 
-> Consulta pública do projeto de intervenção urbana dos PIUs Terminais municipais Capelinha, Campo Limpo e Princesa Isabel
+> Consulta pública do projeto de intervenção urbana do PIU Vila Leopoldina
 
 ## Setup
 ### Requisitos
