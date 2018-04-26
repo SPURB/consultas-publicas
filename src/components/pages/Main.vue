@@ -5,7 +5,7 @@
 			<h1 class="title"> {{projectTitle}} </h1>
 			<div class="columns">
 				<div class="column">
-					<p>A presente Consulta Pública, promovida pela Prefeitura do Município de São Paulo por intermédio da Secretaria Municipal de Urbanismo e Licenciamento (SMUL) e da São Paulo Urbanismo (SP-URBANISMO), tem como objeto dar publicidade ao Projeto de Intervenção Urbana (PIU) Vila Leopoldina-Villa Lobos, a ser realizada entre os dias 23 de abril e 14 de maio de 2018, apresentando o <strong>conteúdo preliminar do PIU</strong>, com vistas a colher contribuições da sociedade civil ao aperfeiçoamento e consolidação do projeto. A consulta tem por base a legislação em vigor e os instrumentos urbanísticos que permitem ações específicas no território da cidade.</p>
+					<p>A presente Consulta Pública, promovida pela Prefeitura do Município de São Paulo por intermédio da Secretaria Municipal de Urbanismo e Licenciamento (SMUL) e da São Paulo Urbanismo (SP-URBANISMO), tem como objeto dar publicidade ao Projeto de Intervenção Urbana (PIU) Vila Leopoldina-Villa Lobos, a ser realizada entre os dias 26 de abril e 16 de maio de 2018, apresentando o <strong>conteúdo preliminar do PIU</strong>, com vistas a colher contribuições da sociedade civil ao aperfeiçoamento e consolidação do projeto. A consulta tem por base a legislação em vigor e os instrumentos urbanísticos que permitem ações específicas no território da cidade.</p>
 					<p>De acordo com o Art. 4º do <a href="http://gestaourbana.prefeitura.sp.gov.br/estruturacao-territorial/piu/decreto/" target="_blank" alt="Decreto nº 56.901/2016">Decreto nº 56.901/2016</a>, o PIU é composto por <strong>Proposta de Ordenamento Urbanístico, Modelagem Econômica e Modelo de Gestão Democrática</strong>, trazendo as propostas urbanísticas de enfrentamento aos desafios identificados no Programa de Interesse Público do projeto, compatíveis com as possibilidades de financiamento e com a governança democrática de sua implantação. A presente consulta traz ainda uma <strong>Modelagem Jurídica</strong>, que enseja a estruturação legal do projeto no contexto do quadro normativo vigente, e que servirá como base para a formulação posterior do Projeto de Lei de regulamentação do PIU Vila Leopoldina-Villa Lobos.</p>
 					<p>Os produtos aqui expostos apresentam graus de profundidade e complexidade adequados à compreensão global da proposta, podendo conter aspectos a serem aperfeiçoados ou lacunas que deverão ser preenchidas até sua versão final. Além dos produtos específicos desta consulta, está disponível o Caderno do PIU Vila Leopoldina-Villa Lobos, que reúne o conteúdo desenvolvido deste o início do processo de tramitação do PIU VL-VL.</p>
 				</div>
@@ -53,9 +53,7 @@
 </template>
 
 <script>
-import VueLazyload from 'vue-lazyload';
 import Comments from '@/components/shared/Comments';
-import Ael from '@/components/pages/galeries/Ael';
 
 export default {
 	name: 'Consulta',
@@ -70,9 +68,7 @@ export default {
 		}
 	},
 	computed: {projectTitle(){ return this.$store.state.projecttitle; }},
-	components:{ 
-		Comments, Ael
-	}
+	components:{ Comments }
 }
 </script>
 

@@ -110,12 +110,10 @@ export default {
 			}
 		},
 		send(){
-			const url = 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/gestaourbanasp_consulta_piu_leopoldina';
-			//criar db gestaourbanasp_consulta_piu_terminais
+			const url = 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/gestaourbanasp_consulta_piu_vila_leopoldina';
 			const app = this;
-
 			axios.post(url,{
-				'idConsulta':'4',//teste
+				'idConsulta':'5',
 				'name': app.form_name,
 				'email':app.form_email, 
 				'content':app.form_content,
@@ -123,7 +121,7 @@ export default {
 				'trash': '0',
 				'postid':app.commentid.postid,
 				'commentid': app.commentid.id,
-				'commentcontext': app.commentid.context,
+				'commentcontext': app.form_context
 				// 'commentdate':app.today
 				//{"name":"Thomas","email":"yubathom@gmail.com","content":"teste","public":"0","trash":"0","postid":1,"commentid":1,"commentcontext":"Consulta","idConsulta":"2","commentdate":"2018-04-02"}
 			})

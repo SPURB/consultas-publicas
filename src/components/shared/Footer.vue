@@ -6,19 +6,19 @@
 				class="button is-fixed-bottom"
 				v-scroll-to="{
 					el: 'body',
- 				}"
- 				>
- 				<i class="material-icons">arrow_upward</i>
+				}"
+				>
+				<i class="material-icons">arrow_upward</i>
 			</button>
 		</div>
 	</nav>
 
 	<nav class="navbar is-light is-desktop">
-	  <div class="navbar-menu">
-	  	<div class="navbar-start">
-			<p class="navbar-item is-text">Caso surjam dúvidas ou problemas técnicos, envie um e-mail para<a v-bind:href=" `mailto:${ projectTitle }` "><span>:</span> imprensasmul@prefeitura.sp.gov.br</a></p>
+		<div class="navbar-menu">
+			<div class="navbar-start">
+				<p class="navbar-item is-text">Caso surjam dúvidas ou problemas técnicos, envie um e-mail para<a v-bind:href=" `mailto:${ projectTitle }` "><span>:</span> imprensasmul@prefeitura.sp.gov.br</a></p>
+			</div>
 		</div>
-	  </div>
 	</nav>
 </div>
 </template>
@@ -41,10 +41,7 @@ export default {
 	},
 	methods:{
 		scrollToBootom(){window.scrollTo(0,document.body.scrollHeight)},
-		activate(){ 
-			this.isActive = !this.isActive
-			// this.isActive ? setInterval(() => this.isActive = false, 5000) : this.isActive = true
-		} 
+		activate(){  this.isActive = !this.isActive }
 	},
 	created(){
 		const app = this
