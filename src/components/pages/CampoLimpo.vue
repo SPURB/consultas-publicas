@@ -5,94 +5,6 @@
 			<h1 class="title"> Terminal Campo Limpo </h1>
 			<h2 class="subtitle">1.1.	Dados do Terminal - Condições atuais de Operação </h2>
 
-
-			<table class="table is-fullwidth is-striped">
-				<tbody>
-					<tr>
-						<td>Inauguração</td>
-						<td>7/26/2003</td>
-						<td>Zoneamento</td>
-						<td>ZC</td>
-						<td>Melhoramentos viários</td>
-						<td>Lei 16.402/2014, PRM 345, DUP 47.672/2006, DUP 55.783/2014</td>
-					</tr>
-					<tr>
-						<td>Passageiros embarcados por dia</td>
-						<td>58.124</td>
-						<td>Macrozona</td>
-						<td>Macrozona de Estruturação da Qualificação Urbana</td>
-						<td>Tombamentos</td>
-						<td>N/C</td>
-					</tr>
-					<tr>
-						<td>Área do Terreno m²</td>
-						<td>21.000</td>
-						<td> Macroárea/ Setor Macroárea de Estruturação Metropolitana</td>
-						<td>Macroárea de Redução da Vulnerabilidade Urbana</td>
-						<td>Área de Proteção de Manancial</td>
-						<td>N/C</td>
-					</tr>
-					<tr>
-						<td>Área Edificação m²</td>
-						<td>10.500</td>
-						<td>Operação Urbana</td>
-						<td>N/C</td>
-						<td>Área de Proteção Ambiental</td>
-						<td>N/C</td>
-					</tr>
-					<tr>
-						<td>Área Cobertura m²</td>
-						<td>8.500</td>
-						<td>Área Especial de Tráfego AET</td>
-						<td>N/C</td>
-						<td>Área de Preservação Permanente</td>
-						<td>Decreto 32.329/1992 – Faixa não edificávelRio Pirajussara </td>
-					</tr>
-					<tr>
-						<td>Área Locada m²</td>
-						<td>65,4</td>
-						<td>Perímetro de Incentivo para Edif. Garagem ZoneamentoLei 16.402/2016 – Mapa 4</td>
-						<td>N/C</td>
-						<td>Patrimônio Ambiental – Vegetação Significativa Decreto 30.443/89</td>
-						<td>Sim</td>
-					</tr>
-					<tr>
-						<td>Custo Anual (média mensal jul/2014 a jun/2015)</td>
-						<td>R$504.178,96</td>
-						<td>Perímetro de Incentivo ao Desenvolvimento Econômico PDELei 16.050/2014 – Mapa 11</td>
-						<td>N/C</td>
-						<td>Plano de Proteção aos Aeródromos (menor altitude)</td>
-						<td>952 m</td>
-					</tr>
-					<tr>
-						<td>Receita Anual (mai/2017)</td>
-						<td>R$26.380,26</td>
-						<td></td>
-						<td></td>
-						<td>Contaminação</td>
-						<td>Contaminado</td>
-					</tr>
-					<tr>
-						<td>Corredor existente</td>
-						<td>–</td>
-						<td></td>
-						<td></td>
-						<td>Observações</td>
-						<td>–</td>
-					</tr>
-					<tr>
-						<td>Corredor existente</td>
-						<td>-</td>
-					</tr>
-
-					<tr>
-						<td>Corredor projetado</td>
-						<td>Fase 1: CapelinhaCampo Limpo-Vila Sonia</td>
-					</tr>
-
-				</tbody>
-			</table>
-
 			<p>O sistema de transporte coletivo por ônibus do Município passou por grandes transformações nos últimos anos por conta da demanda de passageiros que cresceu de modo superior ao incremento da oferta de infraestrutura de transporte coletivo.  Por ausência de conexões adequadas através de linhas perimetrais de transporte coletivo, aumentou o número de pessoas trafegando pelos corredores radiais que têm como destino o centro da cidade. Esse tipo de usuário, para chegar a seu destino, num polo de atração localizado fora da região central, muitas vezes precisa embarcar em uma linha que o leve até algum terminal no centro e ali fazer o transbordo para alguma linha de outro corredor, cujo trajeto o leve até seu destino. Quase metade dos passageiros de ônibus que hoje se dirigem ao centro da cidade faz essa transferência na área central para alcançar seu destino final.<sup><a href="#fn1">1</a></sup></p>
 
 			<p>Por esse motivo, diversos terminais se encontram com capacidade esgotada, resultado do modelo de organização e operação dos serviços de ônibus e do crescimento das viagens nas rotas em direção ao centro da cidade. É nesse contexto que se insere o Terminal Campo Limpo.</p>
@@ -362,9 +274,7 @@ export default {
 			mapa2analiseUrbanistica:'./static/img/mapas/2_analise-urb/Mapa3_Analise_Urbanistica_Term_Campo-Limpo.jpg',
 			mapa3planoCirculacao:'./static/img/mapas/3_analise-circ/Mapa4_Plano_Circulacao_Term_Campo-Limpo.jpg', 
 			mapa4planoEixos:'./static/img/mapas/4_eixos/Mapa5_Eixos_Term_Campo_Limpo.jpg',
-
-			mapa5rotaCicloviaria:'./static/img/mapas/5_rota-cicloviaria/Mapa6_Rota_Cicloviaria_Term_Capelinha.jpg', 
-
+			mapa5rotaCicloviaria:'./static/img/mapas/5_rota-cicloviaria/Mapa6_Rota_Cicloviaria_Term_Campo_Limpo.jpg', 
 			mapaMasterplan:'./static/img/mapas/1_masterplan/Masterplan_Campo_Limpo_tela.jpg', 
 			mapaMasterplanLegenda: './static/img/campo-limpo_acoes-orcamento.gif', 
 

@@ -20,7 +20,7 @@
 		<div class="navbar-end">
 			<div class="navbar-item has-dropdown has-dropdown-up" v-bind:class="{ 'is-active': isActive }">
 				<a class="navbar-link" @click="activate">
-					Seções
+					Terminais
 				</a>
 
 				<div class="navbar-dropdown">

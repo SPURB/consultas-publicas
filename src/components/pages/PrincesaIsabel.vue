@@ -17,7 +17,7 @@
 				</tr>
 				<tr>
 					<td>Passageiros embarcados por dia</td>
-					<td>8.170</td>
+					<td>6.903</td>
 					<td>Macrozona</td>
 					<td>Macrozona de Estruturação da Qualificação Urbana</td>
 					<td>Tombamentos</td>
@@ -25,7 +25,7 @@
 				</tr>
 				<tr>
 					<td>Área do Terreno m²</td>
-					<td>10.870,00</td>
+					<td>10.603,00 m²</td>
 					<td>Macroárea/ Setor Macroárea de Estruturação Metropolitana</td>
 					<td>Macroárea de Estruturação Metropolitana/Setor I – Arco Tietê</td>
 					<td>Área de Proteção de Manancial</td>
@@ -41,7 +41,7 @@
 				</tr>
 				<tr>
 					<td>Área Cobertura m²</td>
-					<td>2.096,00</td>
+					<td>5.000 m²</td>
 					<td>Área Especial de Tráfego AET</td>
 					<td>N/C</td>
 					<td>Área de Preservação Permanente</span></td>
@@ -56,16 +56,16 @@
 					<td>Sim</td>
 				</tr>
 				<tr>
-					<td>Custo Anual (média mensal jul/2014 a jun/2015)</td>
-					<td>R$413.464,60</td>
+					<td>Custo anual de administração, manutenção e conservação</td>
+					<td>R$ 6.6 milhões (Fonte: SPTrans mar/2018)</td>
 					<td>Perímetro de Incentivo ao Desenvolvimento Econômico PDE Lei 16.050/2014 – Mapa 11</td>
 					<td>N/C</td>
 					<td>Plano de Proteção aos Aeródromos (menor altitude)</td>
 					<td>Consulta obrigatória SRPV</td>
 				</tr>
 				<tr>
-					<td>Receita Anual (mai/2017)</td>
-					<td>R$16.239,39</td>
+					<td>Receita anual</td>
+					<td>R$ 199 mil (3% dos custos) (Fonte: SPTrans, set/2017, anualizado)</td>
 					<td></td>
 					<td></td>
 					<td>Contaminação</td>
