@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="content">
 			<h1 class="title">Terminal Princesa Isabel</h1>
-			<h2 class="subtitle">Dados do Terminal - Condições atuais de Operação</h2>
+			<h2 class="subtitle">1.1 Dados do Terminal - Condições atuais de Operação</h2>
 
 			<table class="table is-fullwidth is-striped">
 				<tbody>
@@ -94,7 +94,7 @@
 			<p>Ressalta-se que apesar de cerca de 7 (sete) mil passageiros embarcarem diariamente Terminal Princesa Isabel, a região adjacente a esse equipamento pouco se beneficia do potencial econômico que esse fluxo de pessoas pode trazer. Assim como outras áreas do centro da cidade, o entorno de Terminal Princesa Isabel é identificado como uma área inóspita, com tendência de esvaziamento noturno, grande número de pessoas em situação de rua e praças que servem de locais para deposição irregular de resíduos, dentre outras questões.</p> 
 			<p>Nesse sentido, espera-se que a requalificação desse Terminal, no contexto da Lei Municipal nº 16.211/2015, atenda às necessidades de interesse público de modernização do terminal e de seus serviços, e que e a progressiva efetivação de seu PIU contribua para o desenvolvimento econômico do perímetro de abrangência, tornando esse equipamento mais um ponto irradiador de desenvolvimento no centro de São Paulo.</p>
 
-			<h2 class="subtitle">Perímetro de Intervenção</h2>
+			<h2 class="subtitle">1.2 Perímetro de Intervenção</h2>
 			<p>Cada terminal estudado – Campo Limpo, Capelinha e Princesa Isabel – tem seu contexto específico. Assim, foram traçados polígonos para delimitação da área de intervenção, referenciados ao âmbito estabelecido em lei – círculo de raio de 600 m em torno do terminal -, porém definidos por logradouros públicos, de forma a abarcar quadras inteiras – parâmetro que perímetros circulares deixariam de atender.</p>
 			<p>Para a delimitação desses polígonos, foram observados limites das zonas estabelecidas na Lei Municipal n° 16.402/2016, possibilidade de inclusão de terrenos vagos ou áreas passíveis de transformação – tendo em vista a ampliação do potencial estruturante da intervenção - e, inversamente, exclusão de áreas consolidadas que já desfrutassem de bom padrão de urbanização.</p>
 			<p>O perímetro proposto para o terminal Princesa Isabel praticamente corresponde ao polígono resultante da aplicação do círculo de 600 m de raio previsto em lei, abrangendo uma área de 100 ha. Apenas um pequeno trecho situado além da ferrovia, e outro, além da Av. São João, foram excluídos do âmbito do PIU.</p>
@@ -107,7 +107,7 @@
 			<p>Considerando que a área receberá intervenções qualificadoras, ainda que concentradas no terminal, verifica-se que as oportunidades de transformação territorial no entorno, seja pela ação de agentes privados ou do poder público, apresentam-se pulverizadas, possibilitando inserções em quadras consolidadas mais do que renovação de grandes perímetros.</p>
 			<p>Uma intervenção de grande porte vem sendo realizada pelo Governo do Estado, em áreas anteriormente desapropriadas, lindeiras à Praça Julio Prestes, para implantação do Programa Casa Paulista, Lote 1 Complexo Júlio Prestes,  com 1.202 moradias, das quais 1.130  habitações de interesse social, e 72 habitações de mercado popular<sup><a href="#fn1">1</a></sup>, e para implantação da nova sede do Centro de Referência em Saúde da Mulher - Hospital Pérola Byington,  na quadra delimitada pela Avenida Rio Branco, Alamedas Glete e Barão de Piracicaba e a Rua Helvetia, com 218 leitos, dos quais 22 de UTI, e 10 salas cirúrgicas, compreendendo atendimento ambulatorial, serviços de urgência e emergência, centro de diagnóstico por imagem, centro de reprodução assistida, unidade de cuidados paliativos, centro de referência para vítimas de violência sexual e tratamento especializado de câncer.</p>
 
-			<h2 class="subtitle">Diretrizes Urbanísticas – Terminal Princesa Isabel</h2>
+			<h2 class="subtitle">1.3 Diretrizes Urbanísticas – Terminal Princesa Isabel</h2>
 			<p>O PIU do Terminal Princesa Isabel observa as seguintes diretrizes urbanísticas:</p>
 			<ol>
 				<li>Estabelecer a <em>Área de Estruturação Local Princesa Isabel</em>, polarizada pelo terminal de mesmo nome e correspondente ao perímetro de abrangência definido na Lei Municipal n°16.211/2015, através de Decreto do Executivo publicado para fins de implantação do PIU Terminal Princesa Isabel;</li>
@@ -133,8 +133,8 @@
 				<p class="legenda">Imóveis Notificados para Parcelamento, Edificação e Utilização Compulsórios - PEUC | <a href="/static/pdf/Mapa1_Vagos_NotificadosPEUC_Term_Princesa_Isabel.pdf" download>PDF</a></p>
 			</figure>
 
-			<h1 class="title">Programa de intervenção</h1>
-			<h2 class="subtitle">Parâmetros Urbanísticos adotados no projeto</h2>
+			<h1 class="title">1.4 Programa de intervenção</h1>
+			<h2 class="subtitle">1.4.1 Parâmetros Urbanísticos adotados no projeto</h2>
 			<p>O Decreto Municipal nº 56.901 /2016, que regulamenta o desenvolvimento dos Projetos de Intervenção Urbana, estabelece que os PIUs devam ser veiculados por Lei ou Decreto, adotando-se o primeiro instrumento nos casos em que o projeto previr a alteração dos parâmetros de parcelamento, uso e ocupação do solo estabelecidos pelo Zoneamento, e o segundo nos demais casos.</p>
 
 			<figure class="image">
@@ -187,17 +187,16 @@
 				<p>(*) O Terminal Princesa Isabel está implantado em terreno do SAPAVEL, sem zoneamento indicado no Mapa 1. Nos termos do disposto na Lei 16.402/2016, Artigo 90, § 4º, inciso I, foram adotados os parâmetros de ZEU para fins de regulação da edificação INFRA, que contém as áreas operacionais do Terminal, as atividades auxiliares e o empreendimento associado autorizado pela Lei 16.211/2015.</p>
 			</div>
 
-			<h2 class="subtitle">Ações propostas</h2>
-			<img src="static/img/pisabel_acoes-orcamento.jpg">
+			<h2 class="subtitle">1.4.2 Ações propostas</h2>
+			<img v-lazy="mapaMasterplanLegenda" width="992" height="1216">
+
 
 			<figure class="image">
 				<img v-lazy="mapaMasterplan" width="992px" hegiht="701px">
 				<p class="legenda">Masterplan | <a href="/static/pdf/1_masterplan/Masterplan_Princesa_Isabel_full.jpg" download>JPG em alta resolução</a></p>
 			</figure>
 
-			<!-- MASTERPLAN ANEXO -->
-
-			<h2 class="subtitle">Fases de implantação</h2>
+			<h2 class="subtitle">1.4.3 Fases de implantação</h2>
 			<p>O Projeto de Intervenção Urbana está associado à concessão dos terminais de ônibus urbanos que tem como um dos objetivos a administração, manutenção, conservação, exploração comercial e requalificação do terminal e de seus empreendimentos associados.</p>
 			<p>Considerado no âmbito da política pública de desenvolvimento urbano descentralizado do Município, que dá suporte ao plano de concessão de 27 terminais de ônibus, o ponto focal a partir de onde se define a Área de Estruturação Local é o próprio terminal.</p>
 			<p>Assim, a <strong>fase inicial</strong> de implantação do PIU atinge o conjunto de intervenções previstas para o terreno do terminal, abrangendo, obrigatoriamente, a requalificação do terminal e a reserva de área não inferior a 25 m² para serviço público dentre as atividades auxiliares previstas no § 2º do art. 107 da Lei 16.402/2016, e, facultativamente, áreas adicionais para empreendimentos associados para categorias de uso autorizadas no Quadro 2, anexo.</p>
@@ -205,21 +204,21 @@
 			<p>A magnitude do valor das intervenções previstas no PIU indica que parte significativa do plano proposto será realizada por recursos externos ao contrato de concessão.</p>
 			<p>A priorização das demais intervenções deverá ser proposta pela São Paulo Urbanismo, responsável pela implantação do PIU, em conjunto com o Núcleo Regional de Planejamento, vinculado à Prefeitura Regional específica, instituído nos termos do § 1º do art. 324 do PDE e regulamentado pelo Decreto nº 57.537/ 2016 e debatida em conjunto com os Conselhos Participativos das Prefeituras Regionais.</p>
 
-			<h2 class="subtitle">Impacto e Benefícios Esperados</h2>
+			<h2 class="subtitle">1.4.4 Impacto e Benefícios Esperados</h2>
 			<p>Conforme anteriormente mencionado, a concessão dos terminais, nos termos da Lei Municipal nº 16.211/2015, está inserida numa estratégia de maximizar os benefícios relativos ao desenvolvimento associado e próximo a grandes eixos de transporte público. Tais benefícios referem-se não só às melhorias infraestruturais e operacionais pertinentes aos terminais, mas também à requalificação dos seus respectivos perímetros de abrangência.</p>
 			<p>Melhorias infraestruturais e operacionais poderão beneficiar tanto funcionários como usuários dos terminais. Funcionários da futura concessionária ou das operadoras das linhas de ônibus, poderão usufruir de melhores vestiários, banheiros, salas administrativas; áreas mais adequadas para circulação interna de veículos, equipamentos de Tecnologia de Informação atualizados, dentre outras melhorias. Ao mesmo tempo, os usuários poderão desfrutar de maior segurança, conforto, acessibilidade, limpeza, comunicação, diversidade de serviços, dentre outros aspectos.</p>
 			<p>Paralelamente, a exploração econômica de edificações a serem construídas no terreno dos terminais também trará benefícios também para a população em geral. Empreendimentos associados, fundamentados na mistura de moradia, serviços (públicos e privados), comércio e outros usos, têm o potencial de atrair novos fluxos de pessoas e atividades para suas respectivas regiões. O estímulo a novas dinâmicas e atividades econômicas deve contribuir para o adensamento demográfico e construtivo, e em ultima instância para o desenvolvimento econômico do entorno mais imediato dos terminais. Complementando essa estratégia, as intervenções previstas nos PIUs promoveriam o ordenamento e a reestruturação urbana do perímetro mais abrangente de 600 metros.
 			Se por um lado os investimentos no terreno dos terminais devem beneficiar de forma similar a operação desses equipamentos, por outro, reconhece-se que são as particularidades do entorno de cada Terminal que ditam o impacto econômico, urbanístico e social dos investimentos previstos no PIU. No caso específico do Terminal Princesa Isabel, as intervenções previstas no PIU dialogam com uma diretriz central do PDE, a de recuperar e reabilitar as áreas centrais da cidade<sup><a href="#fn2">2</a></sup>.</p>
 			<p>A transformação do perímetro do Terminal Princesa Isabel deverá ocorrer através da recuperação dos espaços públicos de acesso preferencial ao Terminal e aos demais equipamentos existentes; da requalificação de logradouros, da implementação de cruzamentos de pedestres, alargamento de calçadas e guias rebaixadas; da arborização de vias; da implantação de ciclovia/ciclofaixa; dentre outras intervenções previstas no Mapa x. Espera-se que as intervenções previstas no PIU, atreladas à requalificação do Terminal e à construção de seus empreendimentos associados, sejam capazes de potencializar a atratividade dos eixos qualificados para novas atividades econômicas, ampliar o uso residencial e acrescentar novos espaços e equipamentos públicos de qualidade. Tais transformações, em linha com as diretrizes de fortalecimento de polos e eixos de centralidades (cf. art. 181°,I, PDE), deverão garantir a segurança, a preservação e a recuperação urbanística da região central, minimizando a tendência de esvaziamento noturno.</p>
 
-			<h2 class="subtitle">A Viabilidade do PIU e da Concessão</h2>
+			<h2 class="subtitle">1.4.5 A Viabilidade do PIU e da Concessão</h2>
 			<p>A conveniência da realização do PIU do Terminal Princesa Isabel reside não apenas na necessidade de requalificação do Terminal e de seu perímetro de abrangência, como também no equacionamento das condições de custeio do equipamento, que, anualmente, ultrapassa os R$ 6 milhões e aufere receitas de aproximadamente R$ 200mil.<sup><a href="#fn3">3</a></sup></p>
 			<p>Presentemente, o Terminal Princesa Isabel representa um ônus significativo para a Administração Pública Municipal, que não dispõe de capacidade econômico-financeira para realizar os investimentos necessários para sua ideal manutenção e operação, e, menos ainda, para novos investimentos<sup><a href="#fn4">4</a></sup>.</p>
 			<p>Tendo em vista tais questões, a Prefeitura Municipal de São Paulo definiu como estratégia chave a concessão do Terminal Princesa Isabel para a administração, manutenção, conservação, exploração comercial e requalificação pelo setor privado.  A concessão não só desonerará a Administração Pública, como garantirá novos usos ao terreno do Terminal e melhor aproveitamento de seu potencial construtivo. Em conformidade com a Lei Municipal nº 16.211/2015, a remuneração dos serviços e dos investimentos despendidos pelo parceiro privado na administração, manutenção e requalificação do terminal deverá ser obtida através de receitas decorrentes da exploração comercial, direta ou indireta, de toda a área do terminal, de edificações a serem construídas no terreno do terminal, de publicidade, bem como de outras fontes de receita que não onerem o Sistema de Transporte Coletivo Urbano de Passageiros. Em outras palavras, a exploração de receitas de empreendimentos acessórios é condição para a viabilidade econômico-financeira da concessão.</p>
 			<p>É importante notar que parte do excedente econômico da concessão, caso exista, terá como destino a execução do PIU, que poderá ser realizado diretamente pelo futuro concessionário (art. 6°, Lei Municipal nº 16.211/2015).</p>
 			<p>A viabilidade econômico-financeira da concessão determinará, portanto, da capacidade do parceiro privado de implementar as intervenções previstas no PIU. Por sua vez, as intervenções que não forem passíveis de inclusão no objeto da concessão tornam-se elemento de referência obrigatória nas ações da municipalidade naquele território, orientando transformações urbanísticas futuras na região.</p>
 
-			<h2 class="subtitle">Financiamento da Intervenção</h2>
+			<h2 class="subtitle">1.4.6 Financiamento da Intervenção</h2>
 			<p>Os investimentos previstos pelo PIU para a requalificação do perímetro de abrangência do Terminal Princesa Isabel são estimados em R$ 75 milhões. As intervenções poderão ser realizadas tanto com o emprego de recursos privados como públicos, conforme o art. 6º da Lei Municipal nº 16.211/2015.</p>
 			<p>O futuro parceiro privado será responsável pelas intervenções do PIU que forem previstas no contrato de concessão do Terminal Princesa Isabel, nos termos do art. 1º, § 2º, do Decreto Municipal nº 58.066/2018. As obras a serem realizadas no perímetro de abrangência que constarão como de obrigação da concessionária serão definidas em conjunto com os demais encargos da concessão, na medida em que forem viáveis, de acordo com o modelo de econômico-financeiro do projeto.</p>
 			<p>Já as demais intervenções tornam-se elemento de referência nas ações futuras da  Administração Municipal naquele território. Para a sua realização, poderão ser empregados recursos provenientes das fontes consideradas mais apropriadas ou convenientes a depender da intervenção, sempre respeitando a legislação vigente. Poderão ser utilizados recursos do Fundo Municipal de Habitação (FMH), nos casos previstos no art. 10º da Lei n° 11.632/1994; do Fundo de Desenvolvimento Urbano (FUNDURB), no caso de intervenções que se enquadrem nas previstas no art. 339 da Lei n° 16.050/2014; do Fundo Municipal de Saneamento Ambiental e Infraestrutura (FMSAI), nos casos previstos no art. 6º da Lei nº 14.934/2009; do Fundo Municipal de Desenvolvimento (FMD), nos casos previstos no art. 6º da Lei nº 16.651/2017, além de outras fontes orçamentárias não vinculadas.</p>
@@ -232,7 +231,7 @@
 			</blockquote>
 			<p>Desta maneira, será possível pleitear que valores captados através da outorga onerosa de potencial adicional de construção, nos terrenos no âmbito da AEL Princesa Isabel possam ser investidos na implantação do PIU Princesa Isabel.</p>
 
-			<h2 class="subtitle">Modelo de Gestão</h2>
+			<h2 class="subtitle">1.4.7 Modelo de Gestão</h2>
 			<p>O <span style="font-weight: bold; font-style: italic;">Decreto Municipal nº 56.901 / 2016</span> que disciplina a elaboração dos Projetos de Intervenção Urbana assegura a realização de consultas públicas em etapas definidas de sua elaboração, para discussão e aperfeiçoamento das propostas. Da mesma maneira, a Minuta de Decreto de implantação do PIU é colocada em consulta pública prévia, procedimento que será também adotado para o Decreto de Implantação do PIU Princesa Isabel.</p>
 			<p>Para a gestão participativa do PIU, na sua etapa de implantação, propõe-se o recurso aos órgãos colegiados já constituídos.</p>
 			<p>Cada Prefeitura Regional conta com um <span style="font-weight: bold; font-style: italic;">Núcleo Regional de Planejamento</span>, constituído por técnicos das diversas Secretarias Municipais, que, nos termos do <span style="font-weight: bold; font-style: italic;">§ 1º do art.324 do PDE</span>, atua “como um colegiado intersetorial e interdisciplinar, responsável pela integração e articulação das políticas setoriais bem como pelo acompanhamento das ações voltadas à concretização dos princípios diretrizes e ações do Plano Diretor, dos Planos Regionais e dos Planos de Desenvolvimento de Bairro”.</p>
@@ -294,6 +293,7 @@ export default {
 			jpg3: './static/img/mapas/4_eixos/Mapa5_Eixos_Term_Princesa_Isabel.jpg',
 			jpg4: './static/img/mapas/5_rota-cicloviaria/Mapa6_Rota_Cicloviaria_Term_Princesa_Isabel.jpg',
 			mapaMasterplan: './static/img/mapas/1_masterplan/Masterplan_Princesa_Isabel_tela.jpg',
+			mapaMasterplanLegenda:'./static/img/pisabel_acoes-orcamento.jpg',
 			loadingGif:'./static/img/loading.gif'
 		}
 	},

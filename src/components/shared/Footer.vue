@@ -1,7 +1,7 @@
 <template>
 <div class="Footer">
 	<nav id="goTop" class="navbar is-fixed-bottom is-transparent">
-		<div class="nabar-item">
+		<div class="navbar-item is-pulled-right">
 			<button 
 				class="button is-fixed-bottom"
 				v-scroll-to="{

@@ -192,32 +192,32 @@
 				</div>
 			</div>
 
-
 			<ul>
 				<li><p>Os parâmetros e as isenções mencionadas aplicam-se à totalidade do complexo edificado, compartilhado pelo Terminal e empreendimentos associados. Nesse sentido, aplicam-se os parâmetros de uso e ocupação constantes das tabelas abaixo: </p></li>
 			</ul>
 
-			<!-- Alterar -->
 			<div class="box">
-				<h6 class="subtitle">q1</h6>
-				<figure class="image">
-					<img src="/static/img/quadros/capelinha_q1.png">
-				</figure>
+				<h6 class="subtitle">Quadro 1</h6>
+					<img src="static/img/quadros/capelinha_quadro1.gif">
+					<p><span style="background-color:#fabf8f; width:2em; display:inline-block; 	margin-right:.5em;">&nbsp;</span>Parâmetros Pretendidos</p>
 			</div>
 			<div class="box">
-				<h6 class="subtitle">q2</h6>
-				<figure class="image">
-					<img src="/static/img/quadros/capelinha_q2.png">
-				</figure>
+				<h6 class="subtitle">Quadro 2</h6>
+				<p>Grupos de atividades autorizados no empreendimento associado ao Terminal Capelinha(*)</p>
+				<img src="static/img/quadros/capelinha_quadro2.gif">
+				<p>(*) O Terminal Capelinha está implantado em lote com duplo enquadramento ZC e ZEU. Para fins do pleno aproveitamento do terreno do terminal, nos termos previstos no Artigo 245 do PDE, parágrafo 2º, 3º e 4º, foram adotados os parâmetros de ZEU para regulação da edificação INFRA, que contém as áreas operacionais do Terminal, as atividades auxiliares e o empreendimento associado autorizado pela Lei 16.211/2015</p>
 			</div>
+
+
+			<h3 class="subtitle">1.4.2 Ações propostas</h3>
+			<img v-lazy="mapaMasterplanLegenda" width="992" height="1502">
 
 			<figure class="image">
 				<img v-lazy="mapaMasterplan" width="992" height="702">
 				<p class="legenda">Masterplan | <a href="static/img/mapas/Masterplan_Capelinha_full.jpg" download>JPG em alta resolução</a></p>
 			</figure>
 
-			<h3 class="subtitle">1.4.2 Ações propostas</h3>
-			<p class="danger">Tabela das ações + orçamento</p>
+			<h3 class="subtitle">1.4.3	Fases de implantação</h3>
 
 			<p>O Projeto de Intervenção Urbana está associado à concessão dos terminais de ônibus urbanos que tem como um dos objetivos a administração, manutenção, conservação, exploração comercial e requalificação do terminal e de seus empreendimentos associados.</p>
 
@@ -240,7 +240,7 @@
 			<p>Se por um lado os investimentos no terreno dos terminais devem beneficiar de forma similar a operação desses equipamentos, por outro lado reconhece-se que são as particularidades do entorno de cada Terminal que ditam o impacto econômico, urbanístico e social dos investimentos previstos no PIU. No caso específico do Terminal Capelinha, as intervenções previstas no PIU dialogam com uma diretriz central do PDE, a de desconcentrar as oportunidades de trabalho, emprego e renda, beneficiando os bairros periféricos (cf. art. 10°, § 2º , V, PDE). </p>
 			<p>A transformação do perímetro do Terminal Capelinha deverá ocorrer através  da recuperação dos espaços públicos de acesso preferencial ao Terminal e aos demais equipamentos existentes; da requalificação de logradouros, da implementação de cruzamentos de pedestres, alargamento de calçadas e guias rebaixadas; da arborização de vias; da implantação de ciclovia/ciclofaixa; dentre outras intervenções previstas no Mapa TMO012U200 Ø. Espera-se que tais intervenções previstas no PIU, atreladas à requalificação do Terminal e à construção de seus empreendimentos associados, sejam capazes de potencializar atividades comerciais na área, atrair novas atividades econômicas, requalificar o uso residencial e acrescentar novos espaços e equipamentos públicos de qualidade. Tais transformações, em linha com as diretrizes de fortalecimento de polos e eixos de centralidades (cf. art. 181°,I, PDE), deverão contribuir para a diminuição das desigualdades na oferta e distribuição dos serviços, equipamentos e infraestruturas urbanas entre os distritos do centro e da periferia.</p>
 
-			<h3 class="subtitle">I.4.5 A Viabilidade do PIU e da Concessão</h3>
+			<h3 class="subtitle">1.4.5 A Viabilidade do PIU e da Concessão</h3>
 			<p>A conveniência da realização do PIU do Terminal Capelinha reside não apenas na necessidade de requalificação do Terminal e de seu perímetro de abrangência, como também na condição financeira não sustentável desse equipamento que traz altos custos para a Municipalidade. Com um custo anual de mais de R$ 12.000.000,00 (doze milhões de reais) e receitas anuais de pouco mais de R$ 600.000 (seiscentos milhões de reais), o Terminal Capelinha torna-se muito oneroso para a Administração Pública Municipal, que já não dispõe de capacidade econômico-financeira para realizar os investimentos necessários para sua manutenção e operação, tampouco para novos investimentos . </p>
 			<p>Tendo em vista as questões levantadas acima, a Prefeitura Municipal de São Paulo definiu como estratégia chave a concessão do Terminal Capelinha para a administração, manutenção, conservação, exploração comercial e requalificação pelo setor privado.  A concessão não só desonerará a Administração Pública, como garantirá novos usos ao terreno do Terminal e melhor aproveitamento de seu potencial construtivo. Em conformidade com a Lei Municipal nº 16.211/2015, a remuneração dos serviços e dos investimentos despendidos pelo parceiro privado na administração, manutenção e requalificação do terminal deverão ser obtidas através de receitas decorrentes da exploração comercial, direta ou indireta, de toda a área do terminal, de edificações a serem construídas no terreno da estação, de publicidade, bem como de outras fontes de receita que não onerem o Sistema de Transporte Coletivo Urbano de Passageiros. Em outras palavras, a exploração de receitas de empreendimentos acessórios é condição para a viabilidade econômico-financeira da concessão.</p>
 			<p>É importante notar que parte do excedente econômico da concessão / o ônus da concessão terá como destino a execução do PIU, que poderá ser realizado diretamente pelo futuro concessionário (Art 6°, Lei Municipal nº 16.211/2015). A viabilidade econômico-financeira da concessão determinará, portanto, da capacidade do parceiro privado de implementar as intervenções previstas no PIU. Por sua vez, as intervenções que não forem passíveis de inclusão no objeto da concessão tornam-se elemento de referência obrigatória nas ações da municipalidade naquele território, orientando transformações urbanísticas futuras na região.</p>
@@ -307,6 +307,7 @@ export default {
 			mapaZon1:'./static/img/mapas/cap_zon_1.jpg',
 			mapaZon2:'./static/img/mapas/cap_zon_2.jpg', 
 			mapaMasterplan:'./static/img/mapas/1_masterplan/Masterplan_Capelinha_tela.jpg', 
+			mapaMasterplanLegenda:'./static/img/capelinha_acoes-orcamento.gif', 
 
 			png: './static/img/slider/960x450_1.png',
 			loadingGif:'./static/img/loading.gif'

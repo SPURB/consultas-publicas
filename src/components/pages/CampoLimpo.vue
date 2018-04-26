@@ -112,7 +112,7 @@
 			<p>Os problemas operacionais e infraestruturais do Terminal Campo Limpo contribuem para que esse equipamento público não atue como um centro dinamizador do seu entorno. Apesar de mais de 58 mil passageiros embarcarem diariamente no Terminal, a região pouco se beneficia do potencial que esse fluxo de pessoas pode trazer. O entorno de Terminal Campo Limpo caracteriza-se por ser uma área ocupada por população predominantemente de baixa renda, baixa densidade construtiva e déficit na oferta de serviços, equipamentos e infraestruturas urbanas. Nesse sentido, a requalificação desse Terminal, no contexto da Lei Municipal nº 16.211/2015, e a efetivação das intervenções previstas no seu PIU, têm o potencial de transformar esse equipamento numa âncora de desenvolvimento na zona sul de São Paulo.</p>
 
 
-			<h2 class="subtitle">I.2. Perímetro de Intervenção </h2>
+			<h2 class="subtitle">1.2. Perímetro de Intervenção </h2>
 
 			<p>Cada terminal estudado – Campo Limpo, Capelinha e Princesa Isabel – tem seu contexto específico. Assim, foram traçados polígonos para delimitação da área de intervenção, referenciados ao âmbito estabelecido em lei – círculo de raio de 600 m em torno do terminal -, porém definidos por logradouros públicos, de forma a abarcar quadras inteiras – parâmetro que perímetros circulares deixariam de atender. </p>
 
@@ -199,7 +199,7 @@
 					<ul>
 						<ol>
 							<li>O terminal está implantado na única quadra de Zona de Centralidade - ZC de um longo trecho da Zona Eixo de Transformação Urbana Previsto - ZEUP, definido em função da futura implantação do Corredor Capão Redondo/ Campo Limpo/ Vila Sônia, ao longo do eixo Avenida Carlos Lacerda e Estrada do Campo Limpo;
-							<img src="static/img/mapas/cam-lim_zon_1.jpg">
+							<img style="max-width: 550px" src="static/img/mapas/cam-lim_zon_1.jpg">
 							</li>
 							
 
@@ -217,29 +217,29 @@
 			</ul>
 
 			<div class="box">
-				<h6 class="subtitle">q1</h6>
-				<figure class="image">
-					<img src="/static/img/quadros/campo-limpo_quadro1.png">
-				</figure>
+				<h6 class="subtitle">Quadro 1</h6>
+				<p>Parâmetros de Ocupação e, exceto Quota Ambiental</p>
+				<img src="static/img/quadros/campo-limpo-q1.gif">
+				<p><span style="background-color:#fabf8f; width:2em; display:inline-block; 	margin-right:.5em;">&nbsp;</span>Parâmetros Pretendidos</p>
 			</div>
 
 			<div class="box">
-				<h6 class="subtitle">q2</h6>
-				<figure class="image">
-					<img src="/static/img/quadros/campo-limpo_quadro2.png">
-				</figure>
+				<h6 class="subtitle">Quadro 2</h6>
+				<p>Grupos de atividades autorizados no empreendimento associado ao Terminal Campo Limpo(*)</p>
+				<img src="static/img/quadros/campo-limpo-q2.gif">
+				<p>(*) O Terminal Campo Limpo está implantado em lote de ZC, que abrange uma única quadra ao longo de um extenso trecho de ZEUP. Para fins do pleno aproveitamento do terreno do terminal, nos termos previstos no Artigo 245 do PDE, parágrafos 2º, 3º e 4º, foram adotados os parâmetros de ZEU para regulação da edificação INFRA, que contém as áreas operacionais do Terminal, as atividades auxiliares e o empreendimento associado autorizado pela Lei 16.211/2015</p>
 			</div>
 
+
 			<h2>1.4.2	Ações propostas</h2>
-			<h3 class="subtitle">1.4.3	Fases de implantação</h3>
+			<img v-lazy="mapaMasterplanLegenda" width="992" height="2155">
 
 			<figure class="image">
 				<img v-lazy="mapaMasterplan" width="992" height="702">
 				<p class="legenda">Masterplan | <a href="static/img/mapas/Masterplan_Campo-limpo_full.jpg" download>JPG em alta resolução</a></p>
 			</figure>
 
-
-			<!-- mapaMasterplan:'./static/img/mapas/1_masterplan/Masterplan_Capelinha_tela.jpg',  -->
+			<h3 class="subtitle">1.4.3	Fases de implantação</h3>
 
 
 			<p>O Projeto de Intervenção Urbana está associado à concessão dos terminais de ônibus urbanos que tem como um dos objetivos a administração, manutenção, conservação, exploração comercial e requalificação do terminal e de seus empreendimentos associados.</p>
@@ -299,7 +299,7 @@ III - pedidos que se enquadrem como Projetos de Intervenção Urbana - PIU ou Á
 
 <p>Desta maneira, será possível pleitear que valores captados através da outorga onerosa de potencial adicional de construção, no âmbito da AEL Campo Limpo, sejam investidos na implantação do PIU Campo Limpo.</p>
 
-<h2 class="subtitle">I.4.7	Modelo de Gestão</h2>
+<h2 class="subtitle">1.4.7	Modelo de Gestão</h2>
 
 <p>O Decreto nº 56.901 de 29 de março de 2016 que disciplina a elaboração dos Projetos de Intervenção Urbana assegura a realização de consultas públicas em etapas definidas de sua elaboração, para discussão e aperfeiçoamento das propostas. Da mesma maneira, a Minuta de Decreto de implantação do PIU é colocada em consulta pública prévia, procedimento que será também adotado para o Decreto de Implantação do PIU Campo Limpo.
 Para a gestão participativa do PIU, na sua etapa de implantação, propõe-se o recurso aos órgãos colegiados já constituídos.</p>
@@ -366,7 +366,7 @@ export default {
 			mapa5rotaCicloviaria:'./static/img/mapas/5_rota-cicloviaria/Mapa6_Rota_Cicloviaria_Term_Capelinha.jpg', 
 
 			mapaMasterplan:'./static/img/mapas/1_masterplan/Masterplan_Campo_Limpo_tela.jpg', 
-
+			mapaMasterplanLegenda: './static/img/campo-limpo_acoes-orcamento.gif', 
 
 			png: './static/img/slider/960x450_1.png',
 			loadingGif:'./static/img/loading.gif'
