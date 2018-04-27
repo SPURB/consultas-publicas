@@ -224,7 +224,7 @@ Para a gestão participativa do PIU, na sua etapa de implantação, propõe-se o
 
 <p>Do lado dos moradores, os artigos 34 e 35 da Lei nº 15.764 de 27 de maio de 2013 dispõem sobre a constituição e atribuições dos Conselhos Participativos Municipais, dentre as quais “zelar para que os direitos da população e os interesses públicos sejam atendidos nos serviços, programas e projetos públicos da região e comunicar oficialmente aos órgãos competentes em caso de deficiências neste atendimento”.</p>
 
-<p>O Decreto nº 54.156, de 1º de agosto de 2013, que regulamenta os dois artigos citados, estabelece o número de conselheiros por Distrito e o número máximo 51 conselheiros por Prefeitura Regional, eleitos por votação secreta para um mandato de 2 anos.</p>
+<p>O Decreto nº 56.208, de 30 de Junho de 2015, que regulamenta os dois artigos citados, estabelece o número de conselheiros por Distrito e o número máximo 51 conselheiros por Prefeitura Regional, eleitos por votação secreta para um mandato de 2 anos.</p>
 
 <p>Considerando que o PIU Campo Limpo abrange áreas da Prefeitura Regional de mesmo nome, propomos a seguinte composição para o Grupo Gestor:</p>
 

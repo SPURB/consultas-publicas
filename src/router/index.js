@@ -12,7 +12,7 @@ import Capelinha from '@/components/pages/Capelinha'
 import CampoLimpo from '@/components/pages/CampoLimpo'
 import PrincesaIsabel from '@/components/pages/PrincesaIsabel'
 
-// import Anexo from '@/components/pages/Anexo'
+import Ael from '@/components/pages/galeries/Ael'
 
 Vue.use(Router);
 
@@ -54,6 +54,17 @@ const router = new Router({
 				footer: Footer
 			}
 		},
+
+		{
+			path: '/ael',
+			name: 'Ael',
+			components: {
+				header: Header,
+				main: Ael,
+				footer: Footer
+			}
+		},
+
 		// {
 		// 	path: '/admin', 
 		// 	components: {

@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="content">
 			<h1 class="title"> Terminal Capelinha </h1>
-			<h2 class="subtitle">Dados do Terminal - Condições atuais de Operação</h2>
+			<h2 class="subtitle">1.1. Dados do Terminal - Condições atuais de Operação</h2>
 
 			<p>O sistema de transporte coletivo por ônibus do Município passou por grandes transformações nos últimos anos por conta da demanda de passageiros que cresceu de modo superior ao incremento da oferta de infraestrutura de transporte coletivo.  Na ausência de adequadas conexões por meio de ligações perimetrais de transporte coletivo, aumentou o número de pessoas trafegando pelos corredores radiais que não têm como destino o centro da cidade. Esse tipo de usuário, para chegar a seu destino, num polo de atração localizado fora da região central, muitas vezes precisa embarcar em uma linha que o leve até algum terminal no centro e ali fazer o transbordo para alguma linha de outro corredor, cujo trajeto o leve até seu destino. Quase metade dos passageiros de ônibus que hoje se dirigem ao centro da cidade fazem essa transferência na área central, para alcançar seu destino final<sup><a href="#fn1">1</a></sup>. Por esse motivo, diversos terminais encontram-se com capacidade esgotada, resultado do modelo de organização e operação dos serviços de ônibus e do crescimento das viagens nas rotas em direção ao centro da cidade. É nesse contexto que se insere o Terminal Capelinha.</p>
 			<p>De acordo com a SP Trans há inúmeros problemas de infraestrutura no Terminal Capelinha, envolvendo desde sua edificação, mobiliário, acessos, até seus sistemas de comunicação e de tecnologia de informação.  Tais questões relativas à sua infraestrutura refletem-se na operação do Terminal de diversas formas; para citar algumas:</p>
@@ -186,7 +186,7 @@
 
 			<p>Do lado dos moradores, os <i class="strong">artigos 34 e 35 da Lei nº 15.764 de 27 de maio de 2013</i> dispõem sobre a constituição e atribuições dos Conselhos Participativos Municipais, dentre as quais “zelar para que os direitos da população e os interesses públicos sejam atendidos nos serviços, programas e projetos públicos da região e comunicar oficialmente aos órgãos competentes em caso de deficiências neste atendimento”.</p>
 
-			<p>O <i class="strong">Decreto nº 54.156, de 1º de agosto de 2013</i>, que regulamenta os dois artigos citados, estabelece o número de conselheiros por Distrito e o número máximo 51 conselheiros por Prefeitura Regional, eleitos por votação secreta para um mandato de 2 anos.
+			<p>O <i class="strong">Decreto nº 56.208, de 30 de Junho de 2015</i>, que regulamenta os dois artigos citados, estabelece o número de conselheiros por Distrito e o número máximo 51 conselheiros por Prefeitura Regional, eleitos por votação secreta para um mandato de 2 anos.
 			Considerando que o PIU Capelinha abrange áreas da Prefeitura Regional do Campo Limpo, propomos a seguinte composição para o Grupo Gestor:</p>
 			<ul>
 				<li>a.	5 integrantes do Conselho Participativo da Prefeitura Regional de Campo Limpo;</li>
