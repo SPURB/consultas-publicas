@@ -70,7 +70,8 @@
 					>Terminal Princesa Isabel</router-link>
 			</div>
 
-			<Ael></Ael>
+			<!-- <Ael></Ael> -->
+			<Gallery992x557 :images="images"></Gallery992x557>
 
 			<hr>
 
@@ -92,7 +93,9 @@
 <script>
 import VueLazyload from 'vue-lazyload';
 import Comments from '@/components/shared/Comments';
-import Ael from '@/components/pages/galeries/Ael';
+// import Ael from '@/components/pages/galeries/Ael';
+import Gallery992x557 from '@/components/templates/Gallery992x557';
+
 
 export default {
 	name: 'Consulta',
@@ -103,14 +106,159 @@ export default {
 				id: 1,
 				context: 'Consulta',
 			},
-			png: './static/img/slider/960x450_1.png',
-			loadingGif:'./static/img/loading.gif'
+
+			images:[
+				{
+					url: './static/img/ael/Diagramas_Terminais_AEL_0001_Folha_3.jpg', 
+					state: true,
+					title: 'Área de Estruturação Local - AEL: Diagrama explicativo',
+					icon: './static/img/ael/icone-1.png',
+					legenda: 'O PDE introduz como um de seus objetivos básicos acomodar o crescimento urbano nas áreas subutilizadas dotadas de infraestrutura e no entorno da rede de transporte coletivo de alta e média capacidade.'
+				},
+				{
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0002_Folha_4.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-2.png',
+					title: 'Áreas de Estruturação Local - Centralidades',
+					legenda: 'Estímulo à criação de novas centralidades e a dinamização das existentes através da exploração de terminais como elementos catalisadores do desenvolvimento urbano.'
+
+				},
+				{
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0003_Folha_5.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-3.png',
+					title: 'Definição do Perímetro da área de estudo',
+					legenda: 'Traça-se um raio inicial de 600 m para o estudo da área de abrangência.'
+
+				},
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0004_Folha_6.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-4.png',
+					title: 'Definição do Perímetro da área de estudo',
+					legenda: 'Delimitam-se as quadras atingidas pelo raio de abrangência.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0006_Folha_8.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-5.png',
+					title: 'Rede de equipamento públicos',
+					legenda: 'Reconhecimento da concentração de equipamentos públicos localizados na centralidade.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0007_Folha_9.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-6.png',
+					title: 'Usos comerciais',
+					legenda: 'Reconhecimento da concentração comercial localizada na centralidade.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0008_Folha_10.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-7.png',
+					title: 'Áreas Verdes',
+					legenda: 'Reconhecimento do sistema de áreas verdes.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0009_Folha_11.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-8.png',
+					title: 'Hidrografia',
+					legenda: 'Reconhecimento dos rios e córregos.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0010_Folha_12.jpg', 
+					state: false, 
+					icon: false,
+					title: 'Diagnóstico',
+					legenda: 'Diagnóstico que apresenta a somatória dos sistemas que compõem a centralidade: equipamentos, usos comerciais e sistemas ambientais.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0012_Folha_14.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-9.png',
+					title: 'Conexões: Eixos de Transporte Público',
+					legenda: 'Identificação das rotas de transporte pública irradiadas do Terminal de Ônibus. Este mapeamento permite a leitura das principais rotas e fluxos.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0013_Folha_15.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-10.png',
+					title: 'Conexões: Entre equipamentos Públicos',
+					legenda: 'Identificação das principais rotas pedonais que interligam os equipamentos públicos.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0014_Folha_16.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-11.png',
+					title: 'Conexões: Entre Parques e Praças Públicas',
+					legenda: 'Identificação das principais rotas pedonais que interligam os sistemas ambientais.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0015_Folha_17.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-12.png',
+					title: 'Conexões: Principais percursos a pé',
+					legenda: 'A somatória dos mapeamentos dos principais percursos pedonais permite a indicação das ruas a serem prioritariamente requalificadas.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0017_Folha_19.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-13.png',
+					title: 'Requalificação dos principais Eixos',
+					legenda: 'O projeto propõe a requalificação dos principais eixos pedonais, de modo a garantir maior segurança, qualidade paisagística e acessibilidade.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0018_Folha_20.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-14.png',
+					title: 'Requalificação e ampliação de áreas verdes',
+					legenda: 'Requalificação e ampliação das áreas verdes, priorizando as conexões entre as Praças, Parques e Áreas de Lazer, estruturando um sistema de corredores verdes.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0019_Folha_21.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-15.png',
+					title: 'Requalificação da ocupação das Orlas Fluviais',
+					legenda: 'Requalificação ambiental das orlas fluviais, que objetiva favorecer a retenção pluvial, minimizar o despejo de esgoto e proteger a fauna e flora nativa.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0020_Folha_22.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-16.png',
+					title: 'Qualificação da oferta habitacional',
+					legenda: 'Qualificação da oferta habitacional, seja pela regularização urbanística e fundiária de assentamentos precários ou pela provisão de Habitações de Interesse Social em suas diversas modalidades.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0021_Folha_23.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-17.png',
+					title: 'Ampliar a oferta de Equipamentos de Saúde',
+					legenda: 'Ampliar a oferta de equipamentos de saúde, articulando-os à rede existente.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0022_Folha_24.jpg', 
+					state: false, 
+					icon: './static/img/ael/icone-18.png',
+					title: 'Ampliar a oferta de Equipamentos de Educação',
+					legenda: 'Ampliar a oferta de equipamentos de educação, articulando-os à rede existente.'
+				 },
+				 {
+					url:'./static/img/ael/Diagramas_Terminais_AEL_0023_folha_25.jpg', 
+					state: false, 
+					icon: false,
+					title: 'Consolidação da Área de Estruturação Local',
+					legenda: 'Consolidação da Área de Estruturação Local através da integração de políticas públicas setoriais, associada à Rede de Estruturação da Transformação Urbana.'
+				},
+			],
 		}
 	},
 	computed: {projectTitle(){ return this.$store.state.projecttitle; }},
 	components:{ 
-		Comments, Ael
-	}
+		Comments, 
+		Gallery992x557
+		// Ael
+	}, 
 }
 </script>
 

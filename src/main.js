@@ -32,7 +32,9 @@ Vue.use(Buefy)
 
 import VueLazyload from 'vue-lazyload'
 Vue.use(VueLazyload, {
-	lazyComponent: true
+	lazyComponent: true,
+  preLoad: 1.78,
+  loading: './static/img/loading.gif',
 })
 
 Vue.config.productionTip = false
