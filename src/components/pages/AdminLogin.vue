@@ -43,60 +43,13 @@ export default {
 		isadmin(){ return this.$store.state.isadmin }
 	},
 	methods:{
-		login(){
-			// const app = this
-			// const tkn = app.createToken()
-
-			// let toSend = {
-			// 	token: tkn,
-			// 	email: app.email, 
-			// 	pass: app.pass
-			// }
-			// let memForm = app.toFormData(toSend)
-
-			// axios.post('consultas.php?crud=login/'+tkn, memForm)
-			// 	.then(function (response){
-			// 		// console.log(response)
-			// 		if(response.data.user == false){
-			// 			alert('Erro. Tente novamente.')
-			// 		}
-			// 		else{
-			// 			// alert('parabéns ' + response.data.user)
-			// 			app.$store.state.isadmin = true
-			// 		}
-			// 	})
-			// 	.catch(function (error){
-			// 		alert(error)
-			// 	})
-		},
+		login(){ },
 	}
 }
 	
 </script>
 
 <style type="text/scss" scoped>
-/*@import "../../../assets/variables.scss";*/
+/*@import "../../assets/variables.scss";*/
 
-.card{
-	padding-top:3rem;
-	padding-bottom: 4rem;
-	margin-top:2rem;
-}
-.card-title.col.s10.offset-s1{
-	margin-bottom: 1em
-}
-
-.login{
-	margin-top:2rem;
-}
-
-.btn-large.cancel{
-	background-color:#DBDBDB;
-	color:  #828282;
-	transition: background-color .2s;
-}
-
-.btn-large.cancel:hover{
-	background-color: #F2F2F2;
-}
 </style>

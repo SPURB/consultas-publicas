@@ -87,7 +87,7 @@
 </template>
 
 <script>
-import AdminLogin from '@/components/pages/admin/AdminLogin'
+import AdminLogin from '@/components/pages/AdminLogin'
 import axios from 'axios';
 
 export default {
@@ -174,7 +174,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../../assets/variables.scss";
+@import "../../assets/variables.scss";
 
 h3{
 	font-size: 36px;

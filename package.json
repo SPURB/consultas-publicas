@@ -1,7 +1,7 @@
 {
   "name": "piu-terminais",
   "version": "1.0.0",
-  "description": "Consulta pública do Projeto de Intervenção Urbana dos terminais de ônibus municipais de São Paulo ",
+  "description": "Sistema administrativo das consultas públicas",
   "author": "Thomas Yuba <yubathom@gmail.com> (http://yubathom.co)",
   "private": true,
   "scripts": {
