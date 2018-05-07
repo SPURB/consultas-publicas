@@ -24,10 +24,12 @@
 				</div>
 			</div>
 		</div>
+		<button @click="teste()">Teste</button>
 	</div>
 </template>
 
 <script>
+import Users from '../../../data/users.json';
 import axios from 'axios';
 
 export default {
@@ -37,6 +39,7 @@ export default {
 			email:null,
 			pass: null, 
 			error: null,
+			users: Users.data
 		}
 	},
 	computed:{
@@ -44,6 +47,21 @@ export default {
 	},
 	methods:{
 		login(){ },
+		teste(){
+			const url = '/api';
+
+			console.log("teste")
+
+			axios.post(url, {
+				'teste': 'teste'
+			})
+			.then(function(response){
+				console.log(response)
+			})
+			.catch(function (error){
+				console.log(error)
+			})
+		}
 	}
 }
 	

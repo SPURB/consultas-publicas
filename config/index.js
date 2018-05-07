@@ -10,7 +10,6 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
@@ -21,18 +20,18 @@ module.exports = {
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
     //Extras
-    // publicPath: "http://localhost/piu-terminais/",
+    // publicPath: "http://localhost:7080/",
     // devServer: {
     //     proxy: [
     //         {
-    //             path: /./,
-    //             target: "./static/api.php"
+    //             path: '/api',
+    //             target: "./teste/users.php"
     //         }
     //     ], 
     //     headers:{
     //         'Access-Control-Allow-Origin': '*'
     //     }
-    // },
+    // }
 
     /**
      * Source Maps

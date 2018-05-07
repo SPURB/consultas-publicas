@@ -20,5 +20,3 @@ test/unit/coverage/
 *.zip
 *.ai
 *.psd
-/static/users.json
-/static/pass.json
