@@ -4,6 +4,36 @@
 		<div class="content">
 			<h1 class="title"> Terminal Campo Limpo </h1>
 			<h2 class="subtitle">1.1.	Dados do Terminal - Condições atuais de Operação </h2>
+			<table class="table is-fullwidth is-striped is-bordered">
+					<thead>
+						<tr>
+							<td><strong>Passageiros embarcados por dia</strong>
+								<br>Fonte: SPTrans – média das medições passageiros embarcados realizadas nos dias 08 (oito), 09 (nove) e 13 (treze) de março de 2018 
+							</td>
+							<td><strong>Área do Terreno m²</strong>
+								<br>Fonte: Matrícula 
+							</td>
+							<td><strong>Área Locada m²</strong>
+								<br>Fonte: SPTrans – mar/2018 
+							</td>
+							<td><strong>Custo anual de administração, manutenção e conservação</strong>
+								<br>Fonte: SPTrans – mar/2018 
+							</td>
+							<td><strong>Receita anual</strong>
+								<br>Fonte: SPTrans – mar/2018 
+							</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>52.219</td>
+							<td>21.030,79 m²</td>
+							<td>82 m²*</td>
+							<td>8,6 milhões/ano</td>
+							<td>510 mil/ano</td>
+						</tr>
+					</tbody>
+			</table>
 
 			<p>O sistema de transporte coletivo por ônibus do Município passou por grandes transformações nos últimos anos por conta da demanda de passageiros que cresceu de modo superior ao incremento da oferta de infraestrutura de transporte coletivo.  Por ausência de conexões adequadas através de linhas perimetrais de transporte coletivo, aumentou o número de pessoas trafegando pelos corredores radiais que têm como destino o centro da cidade. Esse tipo de usuário, para chegar a seu destino, num polo de atração localizado fora da região central, muitas vezes precisa embarcar em uma linha que o leve até algum terminal no centro e ali fazer o transbordo para alguma linha de outro corredor, cujo trajeto o leve até seu destino. Quase metade dos passageiros de ônibus que hoje se dirigem ao centro da cidade faz essa transferência na área central para alcançar seu destino final.<sup><a href="#fn1">1</a></sup></p>
 
@@ -308,5 +338,6 @@ export default {
 i.strong{
 	font-weight: 700
 }
+
 
 </style>

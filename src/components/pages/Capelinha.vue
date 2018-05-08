@@ -4,6 +4,36 @@
 		<div class="content">
 			<h1 class="title"> Terminal Capelinha </h1>
 			<h2 class="subtitle">1.1. Dados do Terminal - Condições atuais de Operação</h2>
+			<table class="table is-fullwidth is-striped is-bordered">
+					<thead>
+						<tr>
+							<td><strong>Passageiros embarcados por dia</strong>
+								<br>Fonte: SPTrans – média das medições passageiros embarcados realizadas nos dias 08 (oito), 09 (nove) e 13 (treze) de março de 2018 
+							</td>
+							<td><strong>Área do Terreno m²</strong>
+								<br>Fonte: Matrícula 
+							</td>
+							<td><strong>Área Locada m²</strong>
+								<br>Fonte: SPTrans – mar/2018 
+							</td>
+							<td><strong>Custo anual de administração, manutenção e conservação</strong>
+								<br>Fonte: SPTrans – mar/2018 
+							</td>
+							<td><strong>Receita anual</strong>
+								<br>Fonte: SPTrans – mar/2018 
+							</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>53.307</td>
+							<td>28.741,24 m²</td>
+							<td>117 m²*</td>
+							<td>12,7 milhões/ano </td>
+							<td>753 mil/ano</td>
+						</tr>
+					</tbody>
+			</table>
 
 			<p>O sistema de transporte coletivo por ônibus do Município passou por grandes transformações nos últimos anos por conta da demanda de passageiros que cresceu de modo superior ao incremento da oferta de infraestrutura de transporte coletivo.  Na ausência de adequadas conexões por meio de ligações perimetrais de transporte coletivo, aumentou o número de pessoas trafegando pelos corredores radiais que não têm como destino o centro da cidade. Esse tipo de usuário, para chegar a seu destino, num polo de atração localizado fora da região central, muitas vezes precisa embarcar em uma linha que o leve até algum terminal no centro e ali fazer o transbordo para alguma linha de outro corredor, cujo trajeto o leve até seu destino. Quase metade dos passageiros de ônibus que hoje se dirigem ao centro da cidade fazem essa transferência na área central, para alcançar seu destino final<sup><a href="#fn1">1</a></sup>. Por esse motivo, diversos terminais encontram-se com capacidade esgotada, resultado do modelo de organização e operação dos serviços de ônibus e do crescimento das viagens nas rotas em direção ao centro da cidade. É nesse contexto que se insere o Terminal Capelinha.</p>
 			<p>De acordo com a SP Trans há inúmeros problemas de infraestrutura no Terminal Capelinha, envolvendo desde sua edificação, mobiliário, acessos, até seus sistemas de comunicação e de tecnologia de informação.  Tais questões relativas à sua infraestrutura refletem-se na operação do Terminal de diversas formas; para citar algumas:</p>
