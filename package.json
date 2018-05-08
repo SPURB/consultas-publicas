@@ -1,5 +1,5 @@
 {
-  "name": "piu-terminais",
+  "name": "admin-consultas",
   "version": "1.0.0",
   "description": "Sistema administrativo das consultas públicas",
   "author": "Thomas Yuba <yubathom@gmail.com> (http://yubathom.co)",
@@ -36,6 +36,7 @@
     "bulma": "^0.7.0",
     "chai": "^4.1.2",
     "chalk": "^2.0.1",
+    "compression-webpack-plugin": "^1.1.11",
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^5.0.1",
     "css-loader": "^0.28.0",

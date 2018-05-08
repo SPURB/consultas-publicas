@@ -24,12 +24,12 @@
 				</div>
 			</div>
 		</div>
-		<button @click="teste()">Teste</button>
+		<button @click="send()">Teste</button>
 	</div>
 </template>
 
 <script>
-import Users from '../../../data/users.json';
+import Properties from '../../../static/properties.json';
 import axios from 'axios';
 
 export default {
@@ -39,7 +39,7 @@ export default {
 			email:null,
 			pass: null, 
 			error: null,
-			users: Users.data
+			apiUrl: Properties.apiUrl
 		}
 	},
 	computed:{
@@ -47,21 +47,28 @@ export default {
 	},
 	methods:{
 		login(){ },
-		teste(){
-			const url = '/api';
-
-			console.log("teste")
-
-			axios.post(url, {
-				'teste': 'teste'
+		send(){
+			let memForm = this.toFormData({
+				email: this.email,
+				pass: this.pass
 			})
+
+			// const url = 'http://localhost:7080/users/index.php';
+			axios.post(this.apiUrl, memForm)
 			.then(function(response){
-				console.log(response)
+				console.log(response.data)
 			})
 			.catch(function (error){
 				console.log(error)
 			})
-		}
+		},
+		toFormData(obj) {
+			var form_data = new FormData()
+			for(var key in obj){
+				form_data.append(key, obj[key])
+			}
+			return form_data
+		},
 	}
 }
 	
