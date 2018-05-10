@@ -34,32 +34,34 @@ $link-focus-border: $primary;
 html,body, button, input, select, textarea{
 font-family: $font-stack;
 font-weight: 300
-
 }
-.container{
-	max-width: 992px;
-	.content{
-		margin: 2.5em auto;
-		figure.image {
-			margin-left: 0;
-			margin-right: 0;
-			background-color: $primary-light-grey;
+
+html, body, div#app, div.admin, div.AdminLogin{
+	height: 100%
+}
+
+div.AdminLogin{ background-color: $primary-light-grey; }
+#logincontainer{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	.columns.box{
+		margin:auto;
+		h3.title{ padding-left: 12px }
+		.column.is-one-fifth{
+			.field{
+				.control{
+					text-align: center;
+					.button{ width: 100% }
+				}
+			}
 		}
 	}
 }
 
-table.is-fullwidth.is-striped{
-	td, th{
-		font-size: .75em
-	}
-	tr {
-		td:nth-child(odd){
-			border-left:solid 1px $primary-medium-grey;
-		}
-	}
-}
-
-
+// .container{
+// 	max-width: 992px;
+// }
 @media #{$medium-and-down} {
 	.container{
 		max-width: 90%;

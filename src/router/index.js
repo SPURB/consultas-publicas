@@ -15,9 +15,9 @@ const router = new Router({
 		{
 			path: '/', 
 			components: {
-				header: Header,
+				// header: Header,
 				main: Admin,
-				header: Footer,
+				// header: Footer,
 			} 
 		}
 	]

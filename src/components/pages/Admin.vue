@@ -1,11 +1,26 @@
 <template>
 <div class="admin">
 	<AdminLogin v-if="!isadmin"></AdminLogin>
-	<div class="container">
-		<p v-if="successMessage">{{ successMessage }}</p>
-		<p v-if="errorMessage">{{ successMessage }}</p>
-		<div id="isadmin" v-if="isadmin">
 
+	<div class="container">
+		<template v-if="userinfo">
+			<p>Olá {{ userinfo.firstname }}!</p>
+			<ul v-if="!userinfo.role.total">
+				<li v-for="consulta in userinfo.role.projects">
+					<button @click="getMembers(consulta)">{{ consulta }}</button>
+				</li>
+			</ul>
+			<ul v-if="userinfo.role.total">
+				<li v-for="consulta in consultas">
+					<button @click="getMembers(consulta.nome)">{{ consulta.nome }}</button>
+				</li>
+			</ul>
+		</template>
+		<p v-if="!userinfo.status"> {{ userinfo.message }}.</p>
+
+		<h3 v-if="selectedConsulta"> Você está moderando {{ selectedConsulta }} </h3>
+
+		<div id="isadmin" v-if="isadmin">
 			<div class="row">
 				<div class="col s12 section">
 					<h3>Moderação pendente</h3>
@@ -87,38 +102,60 @@
 </template>
 
 <script>
-import AdminLogin from '@/components/pages/AdminLogin'
+import baseUrls from '../../../static/properties.json'; 
+import AdminLogin from '@/components/pages/AdminLogin';
 import axios from 'axios';
+
+const requestConsultas = axios.create({
+  baseURL: baseUrls.apiconsultas
+})
 
 export default {
 	name: 'Admin',
 	data () {
 		return {
-			members: [],
-			errorMessage: '',
-			successMessage: '',
+			members: false,
+			message: '',
+			userinfo: false,
+			consultas: false, 
+			selectedConsulta: false
 		}
 	},
-	computed:	{ isadmin(){ return this.$store.state.isadmin } },
-	watch: 		{ isadmin(){ this.getAll() } },
+	computed: { 
+		isadmin(){ return this.$store.state.isadmin } 
+	},
+	watch: {
+		isadmin(){ 
+			this.userinfo = this.$store.state.userinfo;
+			this.getConsultas();
+		} 
+	},
 	methods: {
-		getAll() {
-			// const tkn = this.createToken()
-			// const app = this
+		getConsultas(){
+			console.log('log de getConsultas')
+			let app = this
 
-			// let memForm = app.toFormData({token: tkn})
-
-			// axios.post('consultas.php?crud='+tkn, memForm)
-			// 	.then(function(response){
-			// 		// console.log(response);
-			// 		if(response.data.error){
-			// 			app.errorMessage = response.data.message;
-			// 		}
-			// 		else{
-			// 			app.members = response.data.members;
-			// 		}
-			// });
+			requestConsultas.get('consultas')
+			.then(response => {
+				// console.log(response.data)
+				app.consultas = response.data;
+			})
+			.catch( (error)=>{
+				console.log(error)
+			})
 		},
+		getMembers(nome_db){
+			this.selectedConsulta = nome_db;
+			let app = this
+
+			requestConsultas.get(nome_db)
+			.then(response => {
+				console.log(response.data)
+			})
+			.catch((error) => {
+				console.log(error)
+			})
+		}, 
 		changeApproval(id, approval) {
 			// const tkn = this.createToken()
 			// const app = this
@@ -166,6 +203,13 @@ export default {
 		sendAnswer(id, answer){
 			// console.log('id: ' + id + '| answer:' + answer)
 		},
+		toFormData(obj) {
+			var form_data = new FormData()
+			for(var key in obj){
+				form_data.append(key, obj[key])
+			}
+			return form_data
+		}
 	},
 	components: {
 		AdminLogin

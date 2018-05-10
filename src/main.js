@@ -10,29 +10,29 @@ import { store } from './store/store'
 import VeeValidate from 'vee-validate'
 Vue.use(VeeValidate)
 
-import VueScrollTo from 'vue-scrollto'
-Vue.use(VueScrollTo, {
-     container: "body",
-     duration: 750,
-     easing: "ease",
-     offset: 0,
-     cancelable: true,
-     onStart: false,
-     onDone: false,
-     onCancel: false,
-     x: false,
-     y: true
- })
+// import VueScrollTo from 'vue-scrollto'
+// Vue.use(VueScrollTo, {
+//      container: "body",
+//      duration: 750,
+//      easing: "ease",
+//      offset: 0,
+//      cancelable: true,
+//      onStart: false,
+//      onDone: false,
+//      onCancel: false,
+//      x: false,
+//      y: true
+//  })
 
-import Buefy from 'buefy'
-Vue.use(Buefy)
+// import Buefy from 'buefy'
+// Vue.use(Buefy)
 
-import VueLazyload from 'vue-lazyload'
-Vue.use(VueLazyload, {
-	lazyComponent: true,
-  preLoad: 1.78,
-  loading: './static/img/loading.gif',
-})
+// import VueLazyload from 'vue-lazyload'
+// Vue.use(VueLazyload, {
+// 	lazyComponent: true,
+//   preLoad: 1.78,
+//   loading: './static/img/loading.gif',
+// })
 
 Vue.config.productionTip = false
 

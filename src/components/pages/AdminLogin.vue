@@ -1,35 +1,38 @@
 <template>
 	<div class="AdminLogin">
-		<div class="container">
-			<div class="row">
-				<div class="col s12 card">
-					<span class="card-title col s10 offset-s1">Admin</span>
-					<form>
-						<div class="input-field col s10 offset-s1">
-							<input v-validate="'required|email'" id="signinemail" type="email" class="validate" v-model="email">
-							<label for="signinemail" class="active">Email*</label>
+		<div class="container" id="logincontainer">
+			<div class="columns box">
+				<div class="column">
+					<h3 class="title">{{projecttitle}}</h3>
+					<div class="column">
+						<div class="field">
+							<label class="label" for="signinemail">Email</label>
+							<input v-validate="'required|email'" class="input validate" type="email" name="email" v-model="email" id="signinemail">
 							<span class="helper-text" data-error="Email incorreto" data-success="Email ok!">*Coloque seu email da intranet (...gov.sp)</span>
 						</div>
-						<div class="input-field col s10 offset-s1">
-							<input id="password" type="password" class="validate" v-model="pass">
-							<label for="password" class="active">Senha</label>
+					</div>
+					<div class="column">
+						<div class="field">
+							<label class="label" for="password">Senha</label>
+							<input class="input validate" type="password" name="email" v-model="pass" id="password">
 						</div>
-
-
-						<div class="login col s10 offset-s1">
-							<router-link to='/' tag="a" class="btn-large cancel col s5">Cancelar</router-link>
-							<a class="btn-large col s5 offset-s2" @click="login">Login</a>
+					</div>
+					<div class="column is-one-fifth">
+						<div class="field">
+							<div class="control">
+								<button class="button" @click="login()">Login</button>
+							</div>
 						</div>
-					</form>
+					</div>
+					<!-- <p v-if="response">{{response.message}}</p> -->
 				</div>
 			</div>
 		</div>
-		<button @click="send()">Teste</button>
 	</div>
 </template>
 
 <script>
-import Properties from '../../../static/properties.json';
+import baseUrls from '../../../static/properties.json'; 
 import axios from 'axios';
 
 export default {
@@ -38,28 +41,34 @@ export default {
 		return{
 			email:null,
 			pass: null, 
-			error: null,
-			apiUrl: Properties.apiUrl
+			apiUrl: baseUrls.apiUrlUsersProduction,
+			response: false
 		}
 	},
-	computed:{
+	computed:{ 
+		projecttitle(){return this.$store.state.projecttitle},
 		isadmin(){ return this.$store.state.isadmin }
 	},
 	methods:{
-		login(){ },
-		send(){
+		login(){
+			let app = this // para escopo de post do axios
 			let memForm = this.toFormData({
 				email: this.email,
 				pass: this.pass
 			})
-
-			// const url = 'http://localhost:7080/users/index.php';
 			axios.post(this.apiUrl, memForm)
 			.then(function(response){
-				console.log(response.data)
+				app.$store.state.userinfo = response.data
+				if (response.data.status == "true"){
+					app.$store.state.isadmin = true;
+				}
+				else { 
+					alert(response.data.message)
+				}
 			})
 			.catch(function (error){
 				console.log(error)
+				// app.error = error
 			})
 		},
 		toFormData(obj) {
@@ -71,10 +80,8 @@ export default {
 		},
 	}
 }
-	
 </script>
 
 <style type="text/scss" scoped>
-/*@import "../../assets/variables.scss";*/
-
+@import "../../assets/variables.scss";
 </style>

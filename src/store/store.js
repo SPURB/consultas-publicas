@@ -9,6 +9,7 @@ export const store = new Vuex.Store({
 		projecttitle:'Admin consultas',
 		isadmin: false,
 		usercheck: false,
+		userinfo: undefined
 	}, 
 	// actions:{
 	// 	LOAD_COMMENTS_LIST: function({ commit }) {

@@ -12,7 +12,8 @@
 Crie o arquivo `properties.json`
 ``` json
 {
-	"apiUrl":"http://localhost/users_admin/php/users"
+	"apiUrlUsers":"http://localhost/apiconsultas/users/",
+	"apiUrl":"http://localhost/apiconsultas"
 }
 ```
 
