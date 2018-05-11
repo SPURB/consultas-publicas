@@ -1,5 +1,6 @@
 {
 	"apiUrlUsersLocal":"http://localhost/apiconsultas/users/index.php",
 	"apiUrlUsersProduction":"http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/users/index.php",
-	"apiconsultas":"http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/"
+	"apiconsultas":"http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/",
+	"apiUpdateMembers":"http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/update_members/"
 }

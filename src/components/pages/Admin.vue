@@ -5,22 +5,25 @@
 	<div class="container">
 		<template v-if="userinfo">
 			<p>Olá {{ userinfo.firstname }}!</p>
-			<ul v-if="!userinfo.role.total">
-				<li v-for="consulta in userinfo.role.projects">
-					<button @click="getMembers(consulta)">{{ consulta }}</button>
-				</li>
-			</ul>
+			<h5>Selecione uma consulta para moderar: </h5>
+			<template v-if="!userinfo.role.total">
+				<ul>
+					<li v-for="consulta in userinfo.role.projects">
+						<button @click="getMembers(consulta)">{{ sliceConsultaStringTitle(consulta) }}</button>
+					</li>
+				</ul>
+			</template>
 			<ul v-if="userinfo.role.total">
 				<li v-for="consulta in consultas">
-					<button @click="getMembers(consulta.nome)">{{ consulta.nome }}</button>
+					<button @click="getMembers(consulta.nome)">{{ sliceConsultaStringTitle(consulta.nome) }}</button>
 				</li>
 			</ul>
 		</template>
 		<p v-if="!userinfo.status"> {{ userinfo.message }}.</p>
 
-		<h3 v-if="selectedConsulta"> Você está moderando {{ selectedConsulta }} </h3>
+		<h5 v-if="selectedConsulta"> Você está moderando: {{ sliceConsultaStringTitle(selectedConsulta) }} </h5>
 
-		<div id="isadmin" v-if="isadmin">
+		<div id="isadmin" v-if="isadmin && selectedConsulta">
 			<div class="row">
 				<div class="col s12 section">
 					<h3>Moderação pendente</h3>
@@ -28,8 +31,10 @@
 						 v-for="comment in members" 
 						 v-if="comment.public == false && comment.trash == false">
 						<div class="card-content">
-							<p class="date-time">{{ filterDate(comment.commentdate) }}</p>
+							<p>{{ comment.memid }}</p>
+							<p class="date-time">{{ comment.commentdate }}</p>
 							<p class="card-title">Seção: {{ comment.postid }}</p>
+
 								<blockquote><p><span>Contexto: </span>{{ comment.commentcontext }}</p></blockquote>
 							<p><span>Autor:</span> {{ comment.name }} | <a v-bind:href=" `mailto:${comment.email}` ">{{ comment.email }}</a></p>
 							<div>
@@ -55,7 +60,8 @@
 						 v-for="comment in members" 
 						 v-if="comment.public == true" >
 						<div class="card-content">
-							<p class="date-time">{{ filterDate(comment.commentdate) }}</p>
+							<p>{{ comment.memid }}</p>
+							<p class="date-time">{{ comment.commentdate }}</p>
 							<p class="card-title">Seção: {{ comment.postid }}</p>
 								<blockquote><p><span>Contexto: </span>{{ comment.commentcontext }}</p></blockquote>
 							<p><span>Autor:</span> {{ comment.name }} | <a v-bind:href=" `mailto:${comment.email}` ">{{ comment.email }}</a></p>
@@ -80,7 +86,8 @@
 						 v-for="comment in members" 
 						 v-if="comment.trash == true" >
 						<div class="card-content">
-							<p class="date-time">{{ filterDate(comment.commentdate) }}</p>
+							<p>{{ comment.memid }}</p>
+							<p class="date-time">{{ comment.commentdate }}</p>
 							<p class="card-title">Seção: {{ comment.postid }}</p>
 								<blockquote><p><span>Contexto: </span>{{ comment.commentcontext }}</p></blockquote>
 							<p><span>Autor:</span> {{ comment.name }} | <a v-bind:href=" `mailto:${comment.email}` ">{{ comment.email }}</a></p>
@@ -128,16 +135,14 @@ export default {
 		isadmin(){ 
 			this.userinfo = this.$store.state.userinfo;
 			this.getConsultas();
-		} 
+		}
 	},
 	methods: {
 		getConsultas(){
-			console.log('log de getConsultas')
 			let app = this
 
 			requestConsultas.get('consultas')
 			.then(response => {
-				// console.log(response.data)
 				app.consultas = response.data;
 			})
 			.catch( (error)=>{
@@ -150,33 +155,45 @@ export default {
 
 			requestConsultas.get(nome_db)
 			.then(response => {
-				console.log(response.data)
+				// console.log(response.data)
+				app.members = response.data;
 			})
 			.catch((error) => {
 				console.log(error)
 			})
 		}, 
+		sliceConsultaStringTitle(nome_db){
+			if(nome_db!="teste"){ // db em produção para testes
+				return nome_db.slice(24)
+			}
+			else{ return nome_db }
+		},
 		changeApproval(id, approval) {
 			// const tkn = this.createToken()
-			// const app = this
+			const app = this
 
-			// if (approval == 0 ) { approval = 1 }
-			// else if (approval == 1) { approval = 0 }
+			if (approval == 0 ) { approval = 1 }
+			else if (approval == 1) { approval = 0 }
 
-			// let memForm = app.toFormData({token: tkn, memid : id, public: approval})
+			let memForm = app.toFormData({
+				memid: id,
+				public: approval
+			})
 
-			// axios.post('consultas.php?crud=approve/'+tkn, memForm)
-			// 	.then(function(response){
-			// 		// console.log(response);
-			// 		if(response.data.error){
-			// 			app.errorMessage = response.data.message;
-			// 		}
-			// 		else{
-			// 			app.successMessage = response.data.message
-			// 			app.getAll();
-			// 		}
-			// 	}
-			// );
+			requestConsultas.post('member_update/', memForm)
+				.then(function(response){
+					if(response.data.error){
+						console.log(resoponse)
+						// alert('deu pau: '+ resoponse.data.message)
+					}
+					else{
+						console.log('post ok')
+						console.log(resoponse)
+						// alert('sucesso: ' + response.data.message)
+						app.getMembers()
+					}
+				}
+			);
 		},
 		changeTrashState(id, approval) {
 			// const tkn = this.createToken()
