@@ -1,9 +1,11 @@
 <template>
     <div class="Commentsloader row">
         <div v-for="comment in comments">
-            <div class="comment col s10 offset-s1">
-                <h5 class="member-info">{{  comment.name }} em <span>{{ comment.commentdate }}</span> disse:</h5>
-                <p> {{comment.content}} </p>
+            <div v-if="comments" class="comment">
+                <h5 class="member-info">{{  comment.name }} em <span>{{ filterDate(comment.commentdate) }} </span> disse:</h5>
+                <p> {{comment.content}} 
+                <span class="topico">Capítulo comentado: {{ comment.commentcontext }}.</span>
+                </p>
             </div>
         </div>
     </div>
@@ -15,19 +17,11 @@ const requestConsultas = axios.create({
   baseURL: 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/',
 })
 
-const consultaName = 'gestaourbanasp_consulta_piu_pacaembu';//gestaourbanasp_consulta_piu_pacaembu
-
 export default {
     props:['commentid'],
     data(){
         return {
-            // para testes//////////////////////////////
-            // commentid: {  // deve vir de props///////
-            //     id: 10, // apagaar //////////////////
-            //     context: 'Consulta'//////////////////
-            // },
-            msg: 'Commentsloader',
-            comments: [], 
+            comments: false, 
         }
     },
     mounted(){
@@ -37,18 +31,21 @@ export default {
         loadThisComments(){
             let app = this;
 
-            requestConsultas.get(consultaName)
-            .then(response => {
-                // this.comments = response.data;
-                let comms = response.data
-                comms.filter(function(index) {
-                    if (index.postid == app.commentid.id && index.public == 1){
-                        app.comments.push(index)
-                    }
-                });
+            requestConsultas.post('members/search/',{
+                "idConsulta":"=5",
+                "public":"=1",
             })
+            .then(function(response) {
+                app.comments = response.data
+            })
+            .catch(function (error){
+                console.log(error)
+            })
+        },
+        filterDate(dataString){
+            return dataString.slice(0,10)
         }
-    },
+    }
 }
 
 
@@ -57,7 +54,18 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
 
+.Commentsloader.row{
+    border-top: solid 5px $primary-dark-grey;
+}
+
 .comment {
+    border-bottom: solid 1px $primary-dark-grey;
+    padding: 1.15em 0 1.5em;
+    p{
+        span{
+            font-size: .75em
+        }
+    }
     .member-info{
         font-size: 1em;
         font-weight: 500;

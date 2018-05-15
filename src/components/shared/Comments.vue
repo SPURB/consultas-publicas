@@ -37,6 +37,11 @@
 							<option value="geral">Comentário geral</option>
 						</select>
 					</div>
+					<!-- local -->
+					<!-- <vue-recaptcha class="comment_recaptcha" sitekey="6LeYiT0UAAAAAKjLBWb5LuDa1Inv8_0C7IF2v0-K" @verify="onVerify" @expired="onExpired"></vue-recaptcha> -->
+
+					<!-- produção -->
+					<vue-recaptcha class="comment_recaptcha" sitekey="6LfciT0UAAAAAI2YKf4Ss_cP-IVvghyUYlowsHFz" @verify="onVerify" @expired="onExpired"></vue-recaptcha> 
 				</div>
 
 				<div class="column">
@@ -55,15 +60,16 @@
 					</div>
 					<button class="button" @click="checkName">COMENTAR</button>
 				</div>
-			<!-- <Commentsloader :commentid="commentid"></Commentsloader> -->
 			</div>
+			<Commentsloader :commentid="commentid"></Commentsloader>
 		</div>
 	</div>
 </template>
 
 <script>
 import axios from 'axios';
-// import Commentsloader from '@/components/shared/Commentsloader';
+import Commentsloader from '@/components/shared/Commentsloader';
+import VueRecaptcha from 'vue-recaptcha';
 
 export default {
 	name: 'comments',
@@ -73,7 +79,8 @@ export default {
 			form_name:null,
 			form_email: null,
 			form_content: null,
-			form_context: null
+			form_context: null,
+			recaptcha_validation: false
 		}
 	},
 	computed:{
@@ -105,9 +112,24 @@ export default {
 			else if(!this.fields.content.valid){
 				alert("Inclua um comentário")
 			}
+			else if(!this.recaptcha_validation){
+				alert("Faça a validação do recaptcha")
+			}
 			else{
 				this.send();
 			}
+		},
+
+		onVerify(response) {
+			// console.log('Verify: ' + response)
+			if(response){
+				this.recaptcha_validation = true
+			}
+			else {this.recaptcha_validation = false}
+		},
+		onExpired: function () {
+			// console.log('Expired')
+			this.recaptcha_validation = false			
 		},
 		send(){
 			const url = 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/gestaourbanasp_consulta_piu_vila_leopoldina';
@@ -126,7 +148,7 @@ export default {
 				//{"name":"Thomas","email":"yubathom@gmail.com","content":"teste","public":"0","trash":"0","postid":1,"commentid":1,"commentcontext":"Consulta","idConsulta":"2","commentdate":"2018-04-02"}
 			})
 			.then(function (response) {
-				console.log(response);
+				// console.log(response);
 				let name = app.form_name;
 				let content = app.form_content;
 
@@ -138,7 +160,7 @@ export default {
 			});
 		}
 	},
-	// components:{Commentsloader},
+	components:{ Commentsloader, VueRecaptcha },
 	// computed:{
 	// 	today(){
 	// 		let now = new Date();
@@ -172,6 +194,9 @@ export default {
 					border-color:$primary-medium-grey;
 					box-shadow: 0 0 0 0.125em rgba(101, 101, 101, 0.3)
 				}
+			}
+			.comment_recaptcha{
+				margin-top: .9em;
 			}
 		}
 	}

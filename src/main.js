@@ -23,13 +23,13 @@ Vue.use(VueScrollTo, {
      y: true
  })
 
-import Buefy from 'buefy'
-Vue.use(Buefy)
+// import Buefy from 'buefy'
+// Vue.use(Buefy)
 
-import VueLazyload from 'vue-lazyload'
-Vue.use(VueLazyload, {
-	lazyComponent: true
-})
+// import VueLazyload from 'vue-lazyload'
+// Vue.use(VueLazyload, {
+// 	lazyComponent: true
+// })
 
 Vue.config.productionTip = false
 
