@@ -40,8 +40,8 @@
 					<td>N/C</td>
 				</tr>
 				<tr>
-					<td>Área Cobertura m²</td>
-					<td>5.000 m²</td>
+					<td><!-- Área Cobertura m² --></td>
+					<td><!-- 5.000 m² --></td>
 					<td>Área Especial de Tráfego AET</td>
 					<td>N/C</td>
 					<td>Área de Preservação Permanente</span></td>
@@ -57,7 +57,7 @@
 				</tr>
 				<tr>
 					<td>Custo anual de administração, manutenção e conservação</td>
-					<td>R$ 6.6 milhões (Fonte: SPTrans mar/2018)</td>
+					<td>R$ 6.6 milhões<br>Fonte: SPTrans mar/2018</td>
 					<td>Perímetro de Incentivo ao Desenvolvimento Econômico PDE Lei 16.050/2014 – Mapa 11</td>
 					<td>N/C</td>
 					<td>Plano de Proteção aos Aeródromos (menor altitude)</td>
@@ -65,7 +65,7 @@
 				</tr>
 				<tr>
 					<td>Receita anual</td>
-					<td>R$ 199 mil (3% dos custos) (Fonte: SPTrans, set/2017, anualizado)</td>
+					<td>R$ 199 mil (3% dos custos) <br>Fonte: SPTrans, set/2017, anualizado</td>
 					<td></td>
 					<td></td>
 					<td>Contaminação</td>

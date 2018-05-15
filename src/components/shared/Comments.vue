@@ -43,15 +43,15 @@
 					</div>
 					<button class="button" @click="checkName">COMENTAR</button>
 				</div>
-			<!-- <Commentsloader :commentid="commentid"></Commentsloader> -->
 			</div>
+			<Commentsloader :commentid="commentid"></Commentsloader>
 		</div>
 	</div>
 </template>
 
 <script>
 import axios from 'axios';
-// import Commentsloader from '@/components/shared/Commentsloader';
+import Commentsloader from '@/components/shared/Commentsloader';
 
 export default {
 	name: 'comments',
@@ -115,7 +115,7 @@ export default {
 			});
 		}
 	},
-	// components:{Commentsloader},
+	components:{Commentsloader},
 	// computed:{
 	// 	today(){
 	// 		let now = new Date();

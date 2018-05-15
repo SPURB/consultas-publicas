@@ -4,35 +4,90 @@
 		<div class="content">
 			<h1 class="title"> Terminal Campo Limpo </h1>
 			<h2 class="subtitle">1.1.	Dados do Terminal - Condições atuais de Operação </h2>
-			<table class="table is-fullwidth is-striped is-bordered">
-					<thead>
-						<tr>
-							<td><strong>Passageiros embarcados por dia</strong>
-								<br>Fonte: SPTrans – média das medições passageiros embarcados realizadas nos dias 08 (oito), 09 (nove) e 13 (treze) de março de 2018 
-							</td>
-							<td><strong>Área do Terreno m²</strong>
-								<br>Fonte: Matrícula 
-							</td>
-							<td><strong>Área Locada m²</strong>
-								<br>Fonte: SPTrans – mar/2018 
-							</td>
-							<td><strong>Custo anual de administração, manutenção e conservação</strong>
-								<br>Fonte: SPTrans – mar/2018 
-							</td>
-							<td><strong>Receita anual</strong>
-								<br>Fonte: SPTrans – mar/2018 
-							</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>52.219</td>
-							<td>21.030,79 m²</td>
-							<td>82 m²*</td>
-							<td>8,6 milhões/ano</td>
-							<td>510 mil/ano</td>
-						</tr>
-					</tbody>
+
+			<table class="table is-fullwidth is-striped">
+				<tbody>
+					<tr>
+						<td>Inauguração</td>
+						<td>10/31/2009</td>
+						<td>Zoneamento</td>
+						<td>ZC</td>
+						<td>Melhoramentos viários</td>
+						<td>Lei 16.402/2014, PRM 345, DUP 47.672/2006, DUP 55.783/2014</td>
+					</tr>
+					<tr>
+						<td>Passageiros embarcados por dia</td>
+						<td>52.219<br>Fonte: SPTrans – média das medições passageiros embarcados realizadas nos dias 08 (oito), 09 (nove) e 13 (treze) de março de 2018</td>
+						<td>Macrozona</td>
+						<td>Macrozona de Estruturação da Qualificação Urbana</td>
+						<td>Tombamentos</td>
+						<td>N/C</td>
+					</tr>
+					<tr>
+						<td>Área do Terreno m²</td>
+						<td>21.030,79 m²<br>Fonte: Matrícula</td>
+						<td> Macroárea/ Setor Macroárea de Estruturação Metropolitana</td>
+						<td>Macroárea de Redução da Vulnerabilidade Urbana</td>
+						<td>Área de Proteção de Manancial</td>
+						<td>N/C</td>
+					</tr>
+					<tr>
+						<td>Área Edificação m²</td>
+						<td>10.500</td>
+						<td>Operação Urbana</td>
+						<td>N/C</td>
+						<td>Área de Proteção Ambiental</td>
+						<td>N/C</td>
+					</tr>
+					<tr>
+						<td><!-- Área Cobertura m² --></td>
+						<td><!-- 8.500 --></td>
+						<td>Área Especial de Tráfego AET</td>
+						<td>N/C</td>
+						<td>Área de Preservação Permanente</td>
+						<td>Decreto 32.329/1992 – Faixa não edificávelRio Pirajussara </td>
+					</tr>
+					<tr>
+						<td>Área Locada m²</td>
+						<td>82 m²<br>Fonte: SPTrans – mar/2018</td>
+						<td>Perímetro de Incentivo para Edif. Garagem ZoneamentoLei 16.402/2016 – Mapa 4</td>
+						<td>N/C</td>
+						<td>Patrimônio Ambiental – Vegetação Significativa Decreto 30.443/89</td>
+						<td>Sim</td>
+					</tr>
+					<tr>
+						<td>Custo anual de administração, manutenção e conservação </td>
+						<td>8,6 milhões/ano<br>Fonte: SPTrans – mar/2018</td>
+						<td>Perímetro de Incentivo ao Desenvolvimento Econômico PDELei 16.050/2014 – Mapa 11</td>
+						<td>N/C</td>
+						<td>Plano de Proteção aos Aeródromos (menor altitude)</td>
+						<td>952 m</td>
+					</tr>
+					<tr>
+						<td>Receita Anual</td>
+						<td>510 mil/ano<br>Fonte: SPTrans – mar/2018 </td>
+						<td></td>
+						<td></td>
+						<td>Contaminação</td>
+						<td>Contaminado</td>
+					</tr>
+					<tr>
+						<td>Corredor existente</td>
+						<td>-</td>
+						<td></td>
+						<td></td>
+						<td>Observações</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Corredor existente</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>Corredor projetado</td>
+						<td>Fase 1: CapelinhaCampo Limpo-Vila Sonia</td>
+					</tr>
+				</tbody>
 			</table>
 
 			<p>O sistema de transporte coletivo por ônibus do Município passou por grandes transformações nos últimos anos por conta da demanda de passageiros que cresceu de modo superior ao incremento da oferta de infraestrutura de transporte coletivo.  Por ausência de conexões adequadas através de linhas perimetrais de transporte coletivo, aumentou o número de pessoas trafegando pelos corredores radiais que têm como destino o centro da cidade. Esse tipo de usuário, para chegar a seu destino, num polo de atração localizado fora da região central, muitas vezes precisa embarcar em uma linha que o leve até algum terminal no centro e ali fazer o transbordo para alguma linha de outro corredor, cujo trajeto o leve até seu destino. Quase metade dos passageiros de ônibus que hoje se dirigem ao centro da cidade faz essa transferência na área central para alcançar seu destino final.<sup><a href="#fn1">1</a></sup></p>

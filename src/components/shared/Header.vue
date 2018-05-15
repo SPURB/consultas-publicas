@@ -37,10 +37,9 @@
 							<b-dropdown-item has-link><a href="./static/pdf/4_eixos/Mapa5_Eixos_Term_Princesa_Isabel.pdf" download>Princesa Isabel</a></b-dropdown-item>
 
 							<p class="dropdown-subtitle">Rota cicloviária</p>
-							<b-dropdown-item has-link><a href="./static/pdf/5_rota-cicloviaria/Mapa6_Rota_Cicloviaria_Term_Campo_Limpo.pdf" download>Capelinha</a></b-dropdown-item>
+							<b-dropdown-item has-link><a href="./static/pdf/5_rota-cicloviaria/Mapa6_Rota_Cicloviaria_Term_Capelinha.pdf" download>Capelinha</a></b-dropdown-item>
 							<b-dropdown-item has-link><a href="./static/pdf/5_rota-cicloviaria/Mapa6_Rota_Cicloviaria_Term_Campo_Limpo.pdf" download>Campo Limpo</a></b-dropdown-item>
 							<b-dropdown-item has-link><a href="./static/pdf/5_rota-cicloviaria/Mapa6_Rota_Cicloviaria_Term_Princesa_Isabel.pdf" download>Princesa Isabel</a></b-dropdown-item>
-
 						</b-dropdown>
 
 						</div>
