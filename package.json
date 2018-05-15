@@ -1,7 +1,7 @@
 {
-  "name": "piu-terminais",
+  "name": "piu-pacaembu",
   "version": "1.0.0",
-  "description": "Consulta pública do Projeto de Intervenção Urbana dos terminais de ônibus municipais de São Paulo ",
+  "description": "Consulta pública do Projeto de Intervenção Urbana do Pacaembú",
   "author": "yubathom <yubathom@gmail.com>",
   "private": true,
   "scripts": {

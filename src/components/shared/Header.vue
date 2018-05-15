@@ -30,11 +30,7 @@ export default {
 			toggleNav: true,
 			lastYposition: 0,
 			showNavItems: false,
-			window_width: '100%'
 		}
-	},
-	mounted(){
-		this.window_width = window.screen.width
 	},
 	created(){
 		let app = this

@@ -6,28 +6,29 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
 	state: {
+		commentsopen: false,
 		projecttitle:'Consulta PIU Pacaembu',
-		isadmin: true,
+		isadmin: false,
 		usercheck: false,
 	}, 
-	// actions:{
-	// 	LOAD_COMMENTS_LIST: function({ commit }) {
-	// 		axios.get('consultas.php?crud=read').then((response) => {
-	// 				// console.log(response.data.members);
-	// 				commit('SET_COMMENTS_LIST', { list: response.data.members })
-	// 			}, (err) => {
-	// 				console.log(err)
-	// 			})
-	// 	},
-	// }, 
-	// mutations:{	
-	// 	SET_COMMENTS_LIST: (state, { list }) => {
-	// 		state.allcomments = list;
-	// 	},
-	// },
-	// getters:{
-	// 	openProjects: state => {
-	// 		return state.allcomments;
-	// 	}
-	// }
+	actions:{
+		LOAD_COMMENTS_LIST: function({ commit }) {
+			axios.get('consultas.php?crud=read').then((response) => {
+					// console.log(response.data.members);
+					commit('SET_COMMENTS_LIST', { list: response.data.members })
+				}, (err) => {
+					console.log(err)
+				})
+		},
+	}, 
+	mutations:{	
+		SET_COMMENTS_LIST: (state, { list }) => {
+			state.allcomments = list;
+		},
+	},
+	getters:{
+		openProjects: state => {
+			return state.allcomments;
+		}
+	}
 });

@@ -1,6 +1,10 @@
 <template>
     <div class="comments">
-        <div class="container">
+        <div class="container" v-if="!commentsopen">
+            <p>Desculpe, mas o período de participação já foi encerrado. Em breve publicaremos a sistematização das contribuições.</p>
+            <Commentsloader :commentid="commentid"></Commentsloader>
+        </div>
+        <div class="container" v-else-if="commentsopen">
             <h5>Participe desta consulta!</h5>
             <div class="row">
                 <div class="input-field col s12 l6">
@@ -84,7 +88,6 @@ export default {
 
             axios.post(url,{
                 'idConsulta':'3',//teste
-
                 'name': app.form_name,
                 'email':app.form_email, 
                 'content':app.form_content,
@@ -111,6 +114,7 @@ export default {
     },
     components:{Commentsloader},
     computed:{
+        commentsopen() { return this.$store.state.commentsopen },
         today(){
             let now = new Date();
             let year = now.getFullYear();

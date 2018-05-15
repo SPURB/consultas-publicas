@@ -36,13 +36,13 @@ const router = new Router({
 				footer: Footer
 			}
 		},
-		// {
-		// 	path: '/admin', 
-		// 	components: {
-		// 		header: Header,
-		// 		main: Admin,
-		// 	} 
-		// }
+		{
+			path: '/admin', 
+			components: {
+				header: Header,
+				main: Admin,
+			} 
+		}
 	]
 })
 

@@ -19,6 +19,13 @@
 				<p>A página da Secretaria de Desestatização e Parcerias disponibiliza mais informações sobre o Procedimento de Manifestação de Interesse - PMI que reuniu os estudos técnicos que subsidiaram a elaboração do PIU e também coloca em consulta pública a Minuta do Edital de Concessão do Pacaembu. Confira no endereço: <a href="http://www.prefeitura.sp.gov.br/cidade/secretarias/desestatizacao/projetos/pacaembu/">http://www.prefeitura.sp.gov.br/cidade/secretarias/desestatizacao/projetos/pacaembu/</a></p>
 
 				<p>Clique aqui (<a href="./static/piu-pacaembu_consulta_respostas_2018-02-08.zip" download>xls</a> | <a href="./static/piu-pacaembu_consulta_respostas_2018-02-08.pdf" download>pdf</a>) para acessar o Relatório da Consulta Pública realizada em 8 de janeiro de 2018, com as contribuições recebidas e a respectiva análise da Prefeitura Municipal de São Paulo. </p>
+			</div>
+		</div>
+	</div>
+	<div class="container" ref="container">
+		<div class="row">
+			<div class="col s12 chapter-content">
+	
 
 				<h5>1. Motivação </h5>
 				<p>O Estádio e o Centro Poliesportivo do Pacaembu estão enquadrados numa ZOE – Zona de Ocupação Espacial que, segundo o Artigo 39 do Plano Diretor Estratégico, compreende porções do território destinadas a abrigar atividades tais como aeroportos, centros de convenção, grandes áreas de lazer, recreação e esportes, que, por suas características únicas, necessitem disciplina especial de uso e ocupação do solo.</p>
