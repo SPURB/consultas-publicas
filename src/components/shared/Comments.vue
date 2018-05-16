@@ -41,7 +41,7 @@
 					<!-- <vue-recaptcha class="comment_recaptcha" sitekey="6LeYiT0UAAAAAKjLBWb5LuDa1Inv8_0C7IF2v0-K" @verify="onVerify" @expired="onExpired"></vue-recaptcha> -->
 
 					<!-- produção -->
-					<vue-recaptcha class="comment_recaptcha" sitekey="6LfciT0UAAAAAI2YKf4Ss_cP-IVvghyUYlowsHFz" @verify="onVerify" @expired="onExpired"></vue-recaptcha> 
+					<!-- <vue-recaptcha class="comment_recaptcha" sitekey="6LfciT0UAAAAAI2YKf4Ss_cP-IVvghyUYlowsHFz" @verify="onVerify" @expired="onExpired"></vue-recaptcha>  -->
 				</div>
 
 				<div class="column">
@@ -61,15 +61,15 @@
 					<button class="button" @click="checkName">COMENTAR</button>
 				</div>
 			</div>
-			<Commentsloader :commentid="commentid"></Commentsloader>
+			<!-- <Commentsloader :commentid="commentid"></Commentsloader> -->
 		</div>
 	</div>
 </template>
 
 <script>
 import axios from 'axios';
-import Commentsloader from '@/components/shared/Commentsloader';
-import VueRecaptcha from 'vue-recaptcha';
+// import Commentsloader from '@/components/shared/Commentsloader';
+// import VueRecaptcha from 'vue-recaptcha';
 
 export default {
 	name: 'comments',
@@ -160,7 +160,11 @@ export default {
 			});
 		}
 	},
-	components:{ Commentsloader, VueRecaptcha },
+	components:{ 
+		// Commentsloader, 
+		// VueRecaptcha 
+	},
+	
 	// computed:{
 	// 	today(){
 	// 		let now = new Date();

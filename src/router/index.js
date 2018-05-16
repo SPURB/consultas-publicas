@@ -4,6 +4,7 @@ import Router from 'vue-router'
 // shared
 import Header from '@/components/shared/Header'
 import Footer from '@/components/shared/Footer'
+import Apoio from '@/components/shared/Apoio'
 
 // pages
 import Main from '@/components/pages/Main'
@@ -18,6 +19,7 @@ const router = new Router({
 			components: {
 				header: Header,
 				main: Main,
+				apoio: Apoio,
 				footer: Footer
 			}
 		},
