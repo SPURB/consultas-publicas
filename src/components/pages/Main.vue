@@ -74,20 +74,16 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
+@import "../../assets/main.scss";
 
-.btn-terminais{
-	margin-top: 2em; 
-	margin-bottom: 2em;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	.button{
-		margin-left:1em;
-		margin-top:.75em; 
-		transition: background-color 0.25s ease;
-	}
-	.first.button{
-		margin-left: 0
-	}
+.consulta {
+	margin: 1em auto 0 auto;
+	width: 100%;
+}
+
+.content {
+	max-width: 992px;
+	padding: .5rem;
 }
 
 .sumario-linha {
@@ -95,16 +91,10 @@ export default {
 	align-items: center;
 	border-bottom: 1px solid $primary-light-grey;
 	padding: 1em 0;
-	i { margin-right: .5em; }
+	i { margin-right: .5em; transition: color .1s ease-out; }
 }
+
+.sumario-linha:hover i { color: $primary; }
 .sumario-linha:first-child { padding-top: 0; }
 .sumario-linha:last-child { border-bottom-width: 0px; padding-bottom: 0; }
-
-@media only screen and (max-width: 769px) {
-	.btn-terminais{
-		.button{
-			margin-left:0;
-		}
-	}
-}
 </style>

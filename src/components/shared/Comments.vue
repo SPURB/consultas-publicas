@@ -184,8 +184,12 @@ export default {
 
 .comments{
 	background-color:#ececec;
-	padding-top: 2em;
-	padding-bottom: 4em;
+}
+.container {
+	padding: 2em 0.5rem 4em 0.5rem;
+	max-width: 992px;
+	width: 100%;
+	margin: 0 auto;
 	.columns{
 		.column{
 			.field{
@@ -203,8 +207,6 @@ export default {
 				margin-top: .9em;
 			}
 		}
-	}
-	.select {
 	}
 }
 </style>

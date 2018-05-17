@@ -1,6 +1,10 @@
 <template>
 	<div class="Header">
-		<a class="navbar-item" href="http://gestaourbana.prefeitura.sp.gov.br/"><span class="gestao">gestão</span><span class="urbana">urbana</span><span class="sp">SP</span></a>
+		<a class="navbar-item" href="http://gestaourbana.prefeitura.sp.gov.br/">
+			<span class="gestao">gestão</span>
+			<span class="urbana">urbana</span>
+			<span class="sp">SP</span>
+		</a>
 	</div>
 </template>
 
@@ -53,7 +57,9 @@ export default {
 <style lang="scss" scoped>
 
 @import "../../assets/variables.scss";
-
+.Header {
+	display: inline-block;
+}
 .fade-enter-active, .fade-leave-active { transition: opacity .5s; }
 .fade-enter, .fade-leave-to { opacity: 0; }
 
@@ -62,6 +68,7 @@ export default {
 		background-color: $primary-light-grey
 	}
 }
+
 span.gestao{color:#BDBDBD}
 span.sp {color: #EB5757}
 span.urbana{color: black}

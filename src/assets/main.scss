@@ -26,6 +26,9 @@ $link: $primary;
 $link-invert: $primary-invert;
 $link-focus-border: $primary;
 
+// Largura texto de apoio
+$largura_apoio: 35vw;
+
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
@@ -33,24 +36,21 @@ $link-focus-border: $primary;
 
 html,body, button, input, select, textarea{
 font-family: $font-stack;
-font-weight: 300
+font-weight: 300;
+overflow: hidden;
 
 }
 .container{
-	max-width: 992px;
+	max-width: 100%;
 	.content{
 		margin: 0 auto 2.5em auto;
-		figure.image {
-			margin-left: 0;
-			margin-right: 0;
-			background-color: $primary-light-grey;
-		}
 	}
 }
 
 @media #{$medium-and-down} {
 	.container{
-		max-width: 90%;
+		max-width: 100%;
+		z-index: -1;
 		.title.is-3{
 			font-size: 1.5rem
 		}
@@ -60,5 +60,21 @@ font-weight: 300
 		nav#goTop{
 			display: block!important;
 		}
-	}		
+	}
+	.Apoio{
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		min-width: 90vw;
+		box-shadow: -4px 0 4px rgba(0,0,0,.2);
+	}
+	div.bt {
+		position: absolute;
+		z-index: 2;
+	}
+	.afastado {
+		right: 0;
+		margin: 0 !important;
+	}
 }

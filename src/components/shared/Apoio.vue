@@ -26,24 +26,16 @@
 		name: 'Apoio',
 	};
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../../assets/variables.scss";
+@import "../../assets/main.scss";
 .Apoio {
-	position: sticky;
-	position: -webkit-sticky;
-	float: right;
-	max-height: 100vh;
-	overflow: auto;
-	width: 30vw;
-	top: 0;
-	bottom: 0;
-	background-color: $primary-light-grey;
-	transition: all 300ms ease-out;
-	margin: 0 0 0 20px;
-	padding: 2em;
-}
-.Apoio:active {
-	width: 0;
-	transform: translateX(95%);
+	flex: 0 0 auto;
+	padding: 1.5rem;
+	height: 100%;
+	width: $largura_apoio;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: #FFF;
 }
 </style>

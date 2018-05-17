@@ -62,9 +62,8 @@ export default {
 	nav#goTop{
 		background-color: unset;
 		display:none
-	}
-
-	padding: 0 0;
+	};
+	padding: 0;
 	p {
 		font-size: .85em;
 	}
