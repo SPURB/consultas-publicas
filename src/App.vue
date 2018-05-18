@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<section>
+		<section v-bind:class="{ lightsOff: isApoioFechado }">
 			<router-view name="header"></router-view>
 			<router-view name="main"></router-view>
 			<router-view name="footer"></router-view>
@@ -51,7 +51,8 @@ div#app {
 		height: 1.5rem;
 		width: 1.5rem;
 		box-shadow: 0 2px 2px rgba(0,0,0,.5);
-		transition: margin .25s;
+		transition: margin .25s ease-in-out;
+		z-index: 1;
 		i {
 			color: $primary-grey;
 		};
@@ -62,6 +63,28 @@ div#app {
 			color: #FFFFFF; 
 		};
 	}
+	div.bt::after {
+		content: 'Ver/ocultar texto de apoio';
+		display: block;
+		visibility: hidden;
+		white-space: nowrap;
+		position: absolute;
+		top: 0;
+		right: 2rem;
+		font-size: small;
+		line-height: 1.5rem;
+		color: transparent;
+		transition: all .05s ease-out;
+		background-color: #FFFFFF;
+		padding: 0 4px;
+		border-radius: 2px;
+		box-sizing: content-box;
+		opacity: .8;
+	}
+	div.bt:hover::after {
+		visibility: visible;
+		color: $primary-grey;
+	}
 	.espelhado {
 		transform: rotateY(180deg);
 	};
@@ -69,7 +92,7 @@ div#app {
 		margin-right: $largura_apoio;
 	};
 	div._apoio {
-		transition: all .25s;	
+		transition: all .25s ease-in-out;	
 	};
 	.apoioTr-enter, .apoioTr-leave-to {
 		transform: translateX($largura_apoio);

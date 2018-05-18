@@ -57,9 +57,11 @@ export default {
 <style lang="scss" scoped>
 
 @import "../../assets/variables.scss";
+
 .Header {
-	display: inline-block;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
 .fade-enter-active, .fade-leave-active { transition: opacity .5s; }
 .fade-enter, .fade-leave-to { opacity: 0; }
 

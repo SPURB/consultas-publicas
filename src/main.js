@@ -11,8 +11,8 @@ Vue.use(VeeValidate)
 
 import VueScrollTo from 'vue-scrollto'
 Vue.use(VueScrollTo, {
-     container: "body",
-     duration: 750,
+     container: "#app",
+     duration: 250,
      easing: "ease",
      offset: 0,
      cancelable: true,

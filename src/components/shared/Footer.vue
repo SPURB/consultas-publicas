@@ -5,7 +5,7 @@
 			<button 
 				class="button is-fixed-bottom"
 				v-scroll-to="{
-					el: 'body',
+					el: '#app',
 				}"
 				>
 				<i class="material-icons">arrow_upward</i>
