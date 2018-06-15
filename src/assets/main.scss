@@ -31,7 +31,7 @@ $largura_apoio: 35vw;
 
 // Import Bulma and Buefy styles
 @import "~bulma";
-@import "~buefy/src/scss/buefy";
+// @import "~buefy/src/scss/buefy";
 @import "./variables.scss";
 
 html,body, button, input, select, textarea{
@@ -113,5 +113,11 @@ overflow: hidden;
 	div.bt::after { display: none !important; visibility: hidden !important; }
 	.afastado {
 		margin: 0 calc(100vw - 2.5rem) 0 0 !important;
+	}
+}
+
+@media (max-width: 1272px) {
+	div.Indice {
+		display: none;
 	}
 }

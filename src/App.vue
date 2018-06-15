@@ -2,6 +2,7 @@
 	<div id="app">
 		<section v-bind:class="{ lightsOff: isApoioFechado }">
 			<router-view name="header"></router-view>
+			<router-view name="indice" v-show="!isApoioFechado"></router-view>
 			<router-view name="main"></router-view>
 			<router-view name="footer"></router-view>
 			<div class="bt" v-bind:class="{ afastado: isApoioFechado }" @click="isApoioFechado=!isApoioFechado">

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 // shared
 import Header from '@/components/shared/Header'
+import Indice from '@/components/shared/Indice'
 import Footer from '@/components/shared/Footer'
 import Apoio from '@/components/shared/Apoio'
 
@@ -18,6 +19,7 @@ const router = new Router({
 			name: 'Main',
 			components: {
 				header: Header,
+				indice: Indice,
 				main: Main,
 				apoio: Apoio,
 				footer: Footer

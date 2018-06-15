@@ -1,7 +1,7 @@
 <template>
-	<div class="comments">
+	<div class="comments" v-bind:class="{ fechado: isCommentsFechado }">
 		<div class="container">
-			<h5 class="title is-5">Comente</h5>
+			<h5 class="title is-5" @click="isCommentsFechado = !isCommentsFechado">Comente esta seção</h5>
 			<div class="columns">
 				<div class="column is-one-third">
 					<div class="field">
@@ -25,7 +25,7 @@
 							v-model='form_email'
 							>
 					</div>
-					<label class="label">Capítulo comentado</label>
+					<!-- <label class="label">Capítulo comentado</label>
 					<div class="select is-fullwidth">
 						<select name="context" v-model='form_context' v-validate="'required:true'">
 							<option value="diagnostico-socio-territorial">Diagnóstico Sócio-Territorial</option>
@@ -36,7 +36,7 @@
 							<option value="modelo-juridico">Modelo Jurídico</option>
 							<option value="geral">Comentário geral</option>
 						</select>
-					</div>
+					</div> -->
 					<!-- local -->
 					<!-- <vue-recaptcha class="comment_recaptcha" sitekey="6LeYiT0UAAAAAKjLBWb5LuDa1Inv8_0C7IF2v0-K" @verify="onVerify" @expired="onExpired"></vue-recaptcha> -->
 
@@ -80,7 +80,8 @@ export default {
 			form_email: null,
 			form_content: null,
 			form_context: null,
-			recaptcha_validation: false
+			recaptcha_validation: false,
+			isCommentsFechado: true,
 		}
 	},
 	computed:{
@@ -183,8 +184,22 @@ export default {
 @import "../../assets/variables.scss";
 
 .comments{
-	background-color:#ececec;
+	background-color: #ececec;
+	margin: -1.5rem auto 2rem auto;
+	overflow-x: hidden;
 }
+
+.comments.fechado {
+	max-height: 5rem;
+	overflow-y: hidden;
+	background: #FFF;
+	transition: background .25s;
+}
+
+.comments.fechado:hover {
+	background: #ececec; 
+}
+
 .container {
 	padding: 2em 0.5rem 4em 0.5rem;
 	max-width: 992px;
@@ -208,5 +223,10 @@ export default {
 			}
 		}
 	}
+}
+
+h5.title:hover {
+	color: $primary-medium-grey;
+	cursor: pointer;
 }
 </style>
