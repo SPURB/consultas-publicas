@@ -19,8 +19,7 @@
 			</div>
 		</div>
 	</div>
-
-	<Comments :commentid="commentid"></Comments>
+	<Comments :commentid="1"></Comments>
 
 	<div class="container">
 		<div class="content">
@@ -43,7 +42,7 @@
 						
 						<figure class="">
 							<img src="../../../static/img/1.2.jpg" title="Figura 1.2. Maquete do projeto Parque Anhembi. (1) Pavilhão de Exposições, (2) Palácio de Convenções, (3) Hotel, (4) Praça. Fonte: PEREIRA (2016; Instituto Moreira Salles" alt="Figura 1.2. Maquete do projeto Parque Anhembi. (1) Pavilhão de Exposições, (2) Palácio de Convenções, (3) Hotel, (4) Praça. Fonte: PEREIRA (2016; Instituto Moreira Salles">
-							<figcaption>Figura 1.2. Maquete do projeto Parque Anhembi. (1) Pavilhão de Exposições, (2) Palácio de Convenções, (3) Hotel, (4) Praça. Fonte: PEREIRA (2016; Instituto Moreira Salles</figcaption>
+							<figcaption>Figura 1.2. Maquete do projeto Parque Anhembi. (1) Pavilhão de Exposições, (2) Palácio de Convenções, (3) Hotel, (4) Praça. Fonte: PEREIRA (2016) Instituto Moreira Salles</figcaption>
 						</figure>
 
 						<p>O edifício do Pavilhão de Exposições, elemento arquitetônico marcante do conjunto, constitui um amplo ambiente contínuo, com estrutura espacial pré-fabricada vencendo vãos de 60m. Seu processo de montagem representou uma inovação técnica no período, contando com operação singular de elevação de toda a treliça metálica de uma só vez a partir de guindastes, como relatado por Wilheim:</p>
@@ -91,7 +90,7 @@
 		</div>
 	</div>
 
-	<Comments :commentid="commentid"></Comments>
+	<Comments :commentid="2"></Comments>
 
 	<div class="container">
 		<div class="content">
@@ -101,11 +100,11 @@
 					<section id="diagnostico">
 						<h4 class="title is-4">Diagnóstico Socioterritorial</h4>
 						<div>
-							<a href="../../../static/pdf/1-Analise-Territorial.pdf" class="box" download="Diagnóstico_socioterritorial-Analise_territorial.pdf">
+							<a href="./static/pdf/1-Analise-Territorial.pdf" class="box" download="Diagnóstico_socioterritorial-Analise_territorial.pdf">
 								<i class="small material-icons">picture_as_pdf</i>
 								Análise territorial
 							</a>
-							<a href="../../../static/pdf/2-Analise-Ambiental.pdf" class="box"download="Diagnóstico_socioterritorial-Analise_ambiental.pdf">
+							<a href="./static/pdf/2-Analise-Ambiental.pdf" class="box"download="Diagnóstico_socioterritorial-Analise_ambiental.pdf">
 								<i class="small material-icons">picture_as_pdf</i>
 								Análiste ambiental
 							</a>
@@ -117,7 +116,7 @@
 		</div>
 	</div>
 
-	<Comments :commentid="commentid"></Comments>
+	<Comments :commentid="3"></Comments>
 
 	<div class="container">
 		<div class="content">
@@ -149,27 +148,25 @@
 		</div>
 	</div>
 
-	<Comments :commentid="commentid"></Comments>
+	<Comments :commentid="4"></Comments>
 
 	<div class="container">
 		<div class="content">
 			<div class="columns">
 				<div class="column">
-
 					<section id="diretrizes">
 						<h4 class="title is-4">Levantamento das diretrizes</h4>
 						<p>O Programa de Interesse Público do PIU Anhembi fundamenta-se a partir de diretrizes urbanísticas que foram elaboradas a partir das análises territorial e ambiental na etapa de diagnóstico. Tanto os levantamentos realizados no diagnóstico quanto as diretrizes aqui expostas deverão ser debatidos com a sociedade, de maneira a conformar a base para a definição das propostas específicas nas próximas etapas de desenvolvimento do PIU.</p>
 						<p>Para este levantamento preliminar de diretrizes urbanísticas, foram consideradas duas escalas de atuação já previstas para o PIU Anhembi na Lei n° 16.866 de 2018: o Perímetro de Abrangência e o Perímetro Expandido.</p>
 
 						<figure>
-							<img src="../../../static/img/mapa-5.1.png" alt="Mapa 5.1. Perímetro de Abrangência e Setores" title="Mapa 5.1. Perímetro de Abrangência e Setores">
-							<figcaption>Mapa 5.1. Perímetro de Abrangência e Setores</figcaption>
+							<img src="../../../static/img/mapa-5.1.jpg" alt="Mapa 5.1. Perímetro de Abrangência e Setores" title="Mapa 5.1. Perímetro de Abrangência e Setores">
+							<figcaption>Mapa 1. Perímetro de Abrangência e Setores</figcaption>
 						</figure>
-
 						<figure>
-							<img src="../../../static/img/mapa-5.2.png" alt="Mapa 5.2. Perímetro Expandido" title="Mapa 5.2. Perímetro Expandido">
-							<figcaption>Mapa 5.1. Perímetro Expandido</figcaption>
-						</figure>
+							<img src="../../../static/img/mapa-5.2.jpg" alt="Mapa 5.2. Perímetro Expandido" title="Mapa 5.2. Perímetro Expandido">
+							<figcaption>Mapa 2. Perímetro Expandido</figcaption>
+						</figure> 
 
 						<p>Conforme expresso no Art. nº 5 da referida lei, os recursos arrecadados com o pagamento de Outorga Onerosa do Direito de Construir dos empreendimentos futuros no Perímetro de Abrangência deverão ser destinados ao financiamento de investimentos tanto no Perímetro de Abrangência quanto no Expandido. Soma-se a isso a determinação da Lei nº 16.766 de 2017 que 20% dos recursos provenientes da alienação da SPTuris deverão também ser aplicados na Zona Norte e destinados para investimentos em saúde, educação, segurança, habitação, transporte, mobilidade urbana e assistência social, conforme já exposto.</p>
 						<p>Portanto, ponderando o horizonte dos recursos e investimentos que poderão ser realizados a partir PIU Anhembi, considerou-se importante diferenciar as diretrizes urbanísticas em função das especificidades dos Perímetros de Abrangência e Expandido. Ainda assim, as diretrizes poderão ser aplicadas conjuntamente ou de forma isolada ao longo dos anos e, em determinados casos, complementam ações que se desdobram em ambos os perímetros do PIU.</p>
@@ -208,7 +205,7 @@
 		</div>
 	</div>
 
-	<Comments :commentid="commentid"></Comments>
+	<Comments :commentid="6"></Comments>
 
 	<div class="container">
 		<div class="content">
@@ -233,7 +230,7 @@
 		</div>
 	</div>
 
-	<Comments :commentid="commentid"></Comments>
+	<Comments :commentid="7"></Comments>
 
 	<div class="container">
 		<div class="content">
@@ -252,7 +249,7 @@
 		</div>
 	</div>
 
-	<Comments :commentid="commentid"></Comments>
+	<Comments :commentid="8"></Comments>
 
 	<div class="container">
 		<div class="content">
@@ -273,7 +270,7 @@
 		</div>
 	</div>
 
-	<Comments :commentid="commentid"></Comments>
+	<Comments :commentid="9"></Comments>
 
 	<div class="container">
 		<div class="content">
@@ -297,7 +294,7 @@
 		</div>
 	</div>
 
-	<Comments :commentid="commentid"></Comments>
+	<Comments :commentid="10"></Comments>
 </div>
 </template>
 

@@ -32,7 +32,7 @@ export default {
             let app = this;
 
             requestConsultas.post('members/search/',{
-                "idConsulta":"=5",
+                "idConsulta":"=6",
                 "public":"=1",
             })
             .then(function(response) {
@@ -55,7 +55,7 @@ export default {
 @import "../../assets/variables.scss";
 
 .Commentsloader.row{
-    border-top: solid 5px $primary-dark-grey;
+    // border-top: solid 5px $primary-dark-grey;
 }
 
 .comment {

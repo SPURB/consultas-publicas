@@ -20,14 +20,14 @@
 </template>
 
 <script>
-	export default {
-		name: 'App',
-		data () {
-			return {
-				isApoioFechado: false,
-			}
-		},
-	};
+export default {
+	name: 'App',
+	data () {
+		return {
+			isApoioFechado: false,
+		}
+	},
+};
 </script>
 
 <style lang="scss">

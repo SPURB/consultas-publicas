@@ -32,9 +32,12 @@
 	</div>
 </template>
 <script>
-	export default {
-		name: 'Indice',
-	};
+
+// import VueScrollTo from 'vue-scrollto'
+export default {
+	name: 'Indice',
+};
+
 </script>
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
