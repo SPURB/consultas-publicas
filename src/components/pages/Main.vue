@@ -14,11 +14,11 @@
 						<p>O referido PIU parte dos índices e parâmetros de parcelamento, uso e ocupação do solo e disposições especificas estabelecidas pela Lei Municipal n° 16.886 de 2018 para o perímetro da ZOE Anhembi, composta pelos setores Sambódromo e Centro de Convenções e Exposições descritos nos incisos I e II, do Art. 2° da referida lei, propriedades hoje da São Paulo Turismo S.A. (SPTuris).</p>
 						<p>A seguir, a São Paulo Urbanismo, em cumprimento ao Decreto Municipal n° 56.901 de 2016, que define o procedimento dos PIU, apresenta os trabalhos realizados para a primeira consulta pública. Esta etapa reúne informações e dados sobre o Centro de Convenções e Exposições Anhembi e o Polo Cultural e Esportivo Grande Otelo (Sambódromo), tendo como base o diagnóstico socioterritorial e o respectivo programa de interesse público do PIU. A publicação de tais informações tem por objetivo contextualizar a discussão, permitindo ao munícipe maior compreensão do tema.</p>
 					</section>
-
 				</div>
 			</div>
 		</div>
 	</div>
+	<Diagrama></Diagrama>
 	<Comments :commentid="1"></Comments>
 
 	<div class="container">
@@ -167,6 +167,7 @@
 							<img src="../../../static/img/mapa-5.2.jpg" alt="Mapa 5.2. Perímetro Expandido" title="Mapa 5.2. Perímetro Expandido">
 							<figcaption>Mapa 2. Perímetro Expandido</figcaption>
 						</figure> 
+						<!-- <Mapa :attr="ol_attributes"></Mapa> -->
 
 						<p>Conforme expresso no Art. nº 5 da referida lei, os recursos arrecadados com o pagamento de Outorga Onerosa do Direito de Construir dos empreendimentos futuros no Perímetro de Abrangência deverão ser destinados ao financiamento de investimentos tanto no Perímetro de Abrangência quanto no Expandido. Soma-se a isso a determinação da Lei nº 16.766 de 2017 que 20% dos recursos provenientes da alienação da SPTuris deverão também ser aplicados na Zona Norte e destinados para investimentos em saúde, educação, segurança, habitação, transporte, mobilidade urbana e assistência social, conforme já exposto.</p>
 						<p>Portanto, ponderando o horizonte dos recursos e investimentos que poderão ser realizados a partir PIU Anhembi, considerou-se importante diferenciar as diretrizes urbanísticas em função das especificidades dos Perímetros de Abrangência e Expandido. Ainda assim, as diretrizes poderão ser aplicadas conjuntamente ou de forma isolada ao longo dos anos e, em determinados casos, complementam ações que se desdobram em ambos os perímetros do PIU.</p>
@@ -300,6 +301,8 @@
 
 <script>
 import Comments from '@/components/shared/Comments';
+import Diagrama from '@/components/pages/Diagrama';
+import Mapa from '@/components/pages/Mapa';
 
 export default {
 	name: 'Consulta',
@@ -310,11 +313,14 @@ export default {
 				id: 1
 			},
 			png: './static/img/slider/960x450_1.png',
-			loadingGif:'./static/img/loading.gif'
+			loadingGif:'./static/img/loading.gif',
+			ol_attributes:{
+				name:'olar mapa'
+			}
 		}
 	},
-	computed: {projectTitle(){ return this.$store.state.projecttitle; }},
-	components:{ Comments }
+	computed: { projectTitle(){ return this.$store.state.projecttitle; }},
+	components:{ Comments, Diagrama, Mapa }
 }
 </script>
 

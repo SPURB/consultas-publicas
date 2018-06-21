@@ -15,8 +15,7 @@ Vue.use(VueScrollTo, {
      easing: "ease",
  })
 
-// import Buefy from 'buefy'
-// Vue.use(Buefy)
+// import ol from 'ol'
 
 // import VueLazyload from 'vue-lazyload'
 // Vue.use(VueLazyload, {

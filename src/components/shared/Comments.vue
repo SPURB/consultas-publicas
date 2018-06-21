@@ -95,7 +95,7 @@ export default {
 				'content':app.form_content,
 				'public': '0',
 				'trash': '0',
-				'postid':app.commentid.postid,
+				'postid': '1',
 				'commentid': app.commentid,
 				'commentcontext': "Consulta"
 			})
