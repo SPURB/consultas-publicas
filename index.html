@@ -20,11 +20,16 @@
 			<title>PIU Anhembi | Consulta pública</title>
 			<link rel="stylesheet" type="text/css" href="static/css/loader.css">
 
+			<!-- alterar CDNs em produção -->
+			<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		</head>
 			<body>
 				<div id=app></div>
 				<div id="preloader">Carregando...</div>
-				<script type="text/javascript" src="static/afterload.js" async defer></script>
+
+				<!-- alterar CDNs em produção -->
+		 		<script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+		 		<script type="text/javascript" src="static/afterload.js" async defer></script>
 		</body>
 	</html>

@@ -9,11 +9,11 @@ import { store } from './store/store'
 import VeeValidate from 'vee-validate'
 Vue.use(VeeValidate)
 
-import VueScrollTo from 'vue-scrollto'
-Vue.use(VueScrollTo, {
-     duration: 250,
-     easing: "ease",
- })
+// import VueScrollTo from 'vue-scrollto'
+// Vue.use(VueScrollTo, {
+//      duration: 250,
+//      easing: "ease",
+//  })
 
 // import ol from 'ol'
 
