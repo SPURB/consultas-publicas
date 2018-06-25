@@ -2,12 +2,7 @@
 <div class="Footer">
 	<nav id="goTop" class="navbar is-fixed-bottom is-transparent">
 		<div class="navbar-item is-pulled-right">
-			<button 
-				class="button is-fixed-bottom"
-				v-scroll-to="{
-					el: '#app',
-				}"
-				>
+			<button class="button is-fixed-bottom">
 				<i class="material-icons">arrow_upward</i>
 			</button>
 		</div>

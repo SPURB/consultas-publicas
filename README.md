@@ -1,6 +1,6 @@
-# Consultas Públicas / PIU Vila Leopoldina
+# Consultas Públicas / PIU Anhembi
 
-> Consulta pública do projeto de intervenção urbana do PIU Vila Leopoldina
+> Consulta pública do projeto de intervenção urbana do PIU Anhembi
 
 ## Setup
 ### Requisitos

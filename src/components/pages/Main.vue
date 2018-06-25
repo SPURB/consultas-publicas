@@ -1,17 +1,12 @@
 <template>
 <div class="consulta">
-<div class="container">	
-	<div class="content">
-		<h1 class="title is-1">PIU Anhembi</h1>
-		<h4 class="subtitle is-4">Consulta Pública</h4>
-	</div>
-</div>
-<Mapa :attr="ol_attributes"></Mapa>
 	<div class="container">
 		<div class="content">
 			<div class="columns">
 				<div class="column">
 
+					<h1 class="title is-1">PIU Anhembi</h1>
+					<h4 class="subtitle is-4">Consulta Pública</h4>
 					<section id="apresentacao">
 						<h4 class="title is-4">Apresentação</h4>
 						<p>A Prefeitura Municipal, por meio da Secretaria de Desestatização e Parcerias (SMDP) e da Secretaria Municipal de Urbanismo e Licenciamento (SMUL), comunica que foi autorizada a elaboração de Projeto de Intervenção Urbana (PIU) para a Zona de Ocupação Especial (ZOE) do Anhembi, pela São Paulo Urbanismo.</p>
@@ -95,7 +90,7 @@
 		</div>
 	</div>
 
-	<Comments :commentid="2"></Comments>
+	<!-- <Comments :commentid="2"></Comments> -->
 
 	<div class="container">
 		<div class="content">
@@ -115,7 +110,6 @@
 							</a>
 						</div>
 					</section>
-
 				</div>
 			</div>
 		</div>
@@ -168,10 +162,24 @@
 							<img src="../../../static/img/mapa-5.1.jpg" alt="Mapa 5.1. Perímetro de Abrangência e Setores" title="Mapa 5.1. Perímetro de Abrangência e Setores">
 							<figcaption>Mapa 1. Perímetro de Abrangência e Setores</figcaption>
 						</figure>
-						<figure>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<Mapa :attr="ol_attributes"></Mapa>
+	
+	<div class="container">
+		<div class="content">
+			<div class="columns">
+				<div class="column">
+					<section>
+						<!-- <figure>
 							<img src="../../../static/img/mapa-5.2.jpg" alt="Mapa 5.2. Perímetro Expandido" title="Mapa 5.2. Perímetro Expandido">
 							<figcaption>Mapa 2. Perímetro Expandido</figcaption>
-						</figure> 
+						</figure> --> 
+
 
 						<p>Conforme expresso no Art. nº 5 da referida lei, os recursos arrecadados com o pagamento de Outorga Onerosa do Direito de Construir dos empreendimentos futuros no Perímetro de Abrangência deverão ser destinados ao financiamento de investimentos tanto no Perímetro de Abrangência quanto no Expandido. Soma-se a isso a determinação da Lei nº 16.766 de 2017 que 20% dos recursos provenientes da alienação da SPTuris deverão também ser aplicados na Zona Norte e destinados para investimentos em saúde, educação, segurança, habitação, transporte, mobilidade urbana e assistência social, conforme já exposto.</p>
 						<p>Portanto, ponderando o horizonte dos recursos e investimentos que poderão ser realizados a partir PIU Anhembi, considerou-se importante diferenciar as diretrizes urbanísticas em função das especificidades dos Perímetros de Abrangência e Expandido. Ainda assim, as diretrizes poderão ser aplicadas conjuntamente ou de forma isolada ao longo dos anos e, em determinados casos, complementam ações que se desdobram em ambos os perímetros do PIU.</p>
@@ -316,12 +324,15 @@ export default {
 				postid: 1,
 				id: 1
 			},
-			png: './static/img/slider/960x450_1.png',
-			loadingGif:'./static/img/loading.gif',
+			// png: './static/img/slider/960x450_1.png',
+			// loadingGif:'./static/img/loading.gif',
 			ol_attributes:{
-				name:'olar mapa',
-				center: [0,0], 
-				zoom: 2
+				center: [ -5193200.816167192, -2693650.9770380395 ], 
+				zoom: 14.2,
+				layersPaths:[
+					'./static/kml/anh_perimetroabrangencia.kml',
+					'./static/kml/anh_perimetroexpandido.kml'
+				]
 			}
 		}
 	},
@@ -345,13 +356,8 @@ export default {
 }
 
 h4.title {
-	margin-bottom: 0;
-	margin-top: 2rem;
-	text-transform: uppercase;
-	background: $primary-light-grey;
-	padding: 0.5rem;
-	color: $primary-grey;
-	border-radius: 4px;
+	padding-top: 1rem;
+	border-top: .3rem $primary-grey solid
 }
 
 #diagnostico {

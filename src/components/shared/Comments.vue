@@ -1,7 +1,10 @@
 <template>
 	<div class="comments" v-bind:class="{ fechado: isCommentsFechado }">
 		<div class="container">
-			<h5 class="title is-5" @click="isCommentsFechado = !isCommentsFechado">Comente aqui</h5>
+			<a href="#"  @click="isCommentsFechado = !isCommentsFechado">
+				<h5 class="title is-5">Comente aqui<i class="material-icons">chat</i><i class="material-icons open-close">expand_more</i></h5>
+
+			</a>
 			<div class="columns">
 				<div class="column is-one-third">
 					<div class="field">
@@ -142,8 +145,34 @@ export default {
 	background: #ececec; 
 }
 
+
+.material-icons{
+	padding-left: .3em;
+}
+.material-icons.open-close{
+	position: absolute;
+	right: 0;
+	font-size: 2em;
+	top: 21px;
+}
+
+h5.title{
+	padding-bottom: 2rem
+}
+
+a:hover {
+	.material-icons{
+		color: $primary-medium-grey;
+	}
+
+	h5.title {
+		color: $primary-medium-grey;
+	}
+
+}
+
 .container {
-	padding: 2em 0.5rem 4em 0.5rem;
+	padding: 1.5em 0.5rem 4em 0.5rem;
 	max-width: 992px;
 	width: 100%;
 	margin: 0 auto;
@@ -160,15 +189,10 @@ export default {
 					box-shadow: 0 0 0 0.125em rgba(101, 101, 101, 0.3)
 				}
 			}
-			.comment_recaptcha{
-				margin-top: .9em;
-			}
+			// .comment_recaptcha{
+			// 	margin-top: .9em;
+			// }
 		}
 	}
-}
-
-h5.title:hover {
-	color: $primary-medium-grey;
-	cursor: pointer;
 }
 </style>
