@@ -32,7 +32,7 @@ export default {
             let app = this;
 
             requestConsultas.post('members/search/',{
-                "idConsulta":"=6",
+                "idConsulta":"=7",
                 "public":"=1",
             })
             .then(function(response) {

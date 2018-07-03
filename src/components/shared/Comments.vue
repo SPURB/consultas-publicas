@@ -92,7 +92,7 @@ export default {
 			const url = 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/members/';
 			const app = this;
 			axios.post(url,{
-				'idConsulta':'6',
+				'idConsulta':'7',
 				'name': app.form_name,
 				'email':app.form_email, 
 				'content':app.form_content,

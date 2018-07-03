@@ -2,7 +2,7 @@
 	<div class="diagrama">
 		<div id="g-Processo_Anhembi_vertical-box" class="ai2html ai2html-box-v5">
 			<div id="g-Processo_Anhembi_vertical-Prancheta_1" class="g-artboard" data-aspect-ratio="2.213" data-min-width="1100">
-				<img id="g-Processo_Anhembi_vertical-Prancheta_1-img" class="g-aiImg" src="../../../static/img/diagrama.png"/>
+				<img id="g-Processo_Anhembi_vertical-Prancheta_1-img" class="g-aiImg" src="../../assets/img/diagrama.png"/>
 				<div id="g-ai0-1" class="g-Camada_1 g-aiAbs" style="top:2.6157%;left:5.9449%;margin-left:-65px;width:11.8182%;">
 					<p class="g-pstyle0">LPUOS</p>
 					<p class="g-pstyle0">LEI n&ordm; 16.402 de 2016</p>
