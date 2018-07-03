@@ -1,5 +1,5 @@
 <template>
-<div class="consulta">
+<div class="consulta" id="conteudoConsulta">
 	<div class="container">
 		<div class="content">
 			<div class="columns">
@@ -22,7 +22,7 @@
 			<div class="columns">
 				<div class="column">
 
-					<section id="contextualizacao">
+					<section id="motivacao">
 						<h4 class="title is-4">Lorem</h4>
 						<p>Ipsum</p>
 

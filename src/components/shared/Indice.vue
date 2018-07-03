@@ -4,18 +4,34 @@
 			<li><a href="#apresentacao">
 				Apresentação
 			</a></li>
-			<li><a href="#contextualizacao">
-				Contextualização
+			<li><a href="#motivacao">
+				Motivação
 			</a></li>
 			<li><a href="#diagnostico">
-				Diagnóstico
-			</a></li>
+				Diagnóstico</a>
+				<ul class="sub">
+					<li>
+						<a>Perímetro</a>
+					</li>
+					<li>
+						<a>Diagnóstico</a>
+					</li>
+				</ul>
+			</li>
 			<li><a href="#finalidade">
-				Finalidade
-			</a></li>
-			<li><a href="#diretrizes">
-				Diretrizes
-			</a></li>
+				Interesse público</a>
+				<ul class="sub">
+					<li>
+						<a>Princípios</a>
+					</li>
+					<li>
+						<a>Objetivos</a>
+					</li>
+					<li>
+						<a>Diretrizes</a>
+					</li>
+				</ul>
+			</li>
 			<li><a href="#viabilidade">
 				Viabilidade
 			</a></li>
@@ -35,6 +51,15 @@
 
 export default {
 	name: 'Indice',
+	methods: {
+		isAtivo(cap,capPos) {
+			if (window.scrollY >= document.getElementById(cap).offsetTop && window.scrollY < document.getElementById(capPos).offsetTop) {
+				return ativo;
+			} else {
+				return '';
+			}
+		}
+	},
 };
 
 </script>
@@ -48,17 +73,23 @@ export default {
 	height: 100vh;
 	flex-direction: column;
 	justify-content: space-around;
-	margin-left: 0.75rem;
 	ul {
 		width: 140px;
 		li {
 			margin: .5rem 0;
+			ul.sub li a {
+				font-size: small;
+				padding-left: 1rem;
+			};
 			a {
+				padding-left: .5rem;
 				display: block;
-				border-radius: 4px;
 				font-size: small;
 				color: $primary-grey;
 				transition: all .05s;
+				border-left-width: .5rem;
+				border-left-style: solid;
+				border-color: transparent;
 			};
 			a:hover {
 				color: rgba(0,0,0,.2);
@@ -68,5 +99,8 @@ export default {
 			}
 		};
 	};
+	.ativo {
+		border-left-color: $primary-grey;
+	}
 }
 </style>
