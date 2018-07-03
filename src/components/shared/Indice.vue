@@ -68,6 +68,7 @@ export default {
 @import "../../assets/main.scss";
 
 .Indice {
+	z-index: 100;
 	position: fixed;
 	display: flex;
 	height: 100vh;

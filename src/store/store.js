@@ -6,7 +6,7 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
 	state: {
-		projecttitle: 'Consulta Pública - PIU Anhembi',
+		projecttitle: 'Consulta Pública - PIU Setor Central',
 		isadmin: false,
 		usercheck: false,
 	}
