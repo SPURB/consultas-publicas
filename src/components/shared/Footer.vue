@@ -60,7 +60,7 @@ export default {
 	};
 	padding: 0;
 	p {
-		font-size: .85em;
+		font-size: .75rem;
 	}
 	.is-text{
 		span{

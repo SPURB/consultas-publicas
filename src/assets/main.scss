@@ -35,12 +35,21 @@ $largura_apoio: 35vw;
 
 html,body, button, input, select, textarea{
 font-family: $font-stack;
+font-size: 20px;
+line-height: 1.6;
 font-weight: 300;
 overflow: hidden;
-
 }
+
+.title, .subtitle, .box, table, .Header, .Footer, .Indice, .comments, .Mapa, .ai2html { font-family: $font-sec; }
+
+div.ai2html {
+	margin: 2rem 0;
+}
+
 .container{
 	max-width: 100%;
+	padding: 0 1.5rem;
 	.content{
 		margin: 0 auto 2.5em auto;
 	}
@@ -75,7 +84,9 @@ overflow: hidden;
 	.Header {
 		box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 		width: 100%;
-		a { display: flex; }
+		a { 
+			display: flex;
+		}
 	}
 	.consulta {
 		width: 100%;
@@ -118,5 +129,54 @@ overflow: hidden;
 @media (max-width: 1272px) {
 	div.Indice {
 		display: none;
+	}
+}
+
+h5, h6 {
+	margin: 2rem 0 .25rem 0 !important;
+	line-height: 1.5rem !important;
+}
+.title + .subtitle {
+	margin-top: 0 !important;
+}
+blockquote {
+	background: $primary-light-grey;
+	padding: 1.25rem 1.5rem;
+	border-left: 5px solid #dbdbdb;
+	border-radius: 0 2px 2px 0;
+	p { margin: 0.25rem 0; };
+}
+
+table {
+	font-size: 75%;
+	caption {
+		font-weight: bold;
+		text-align: left;
+		margin: .5rem 0 .25rem 0;
+	};
+	thead {
+		font-weight: bold;
+		td { text-align: center; }
+		td:first-child { text-align: left; }
+	};
+	tr {
+		border-top: 1px solid $primary-medium-grey;
+		td {
+			padding: .5rem;
+			vertical-align: middle;
+			text-align: center;
+		};
+		td:first-child { text-align: left; };
+	};
+	tr:nth-child(2n) {
+		background: $primary-light-grey;
+	};
+}
+
+.table_notes {
+	padding-bottom: 1.25rem;
+	p {
+		font-size: small;
+		font-family: $font-sec;
 	}
 }

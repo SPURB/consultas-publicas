@@ -1,7 +1,7 @@
 <template>
 	<div class="Indice">
 		<ul>
-			<li><a href="#apresentacao">
+			<li><a href="#apresentacao" @click="ativa(0)">
 				Apresentação
 			</a></li>
 			<li><a href="#motivacao">
@@ -11,24 +11,24 @@
 				Diagnóstico</a>
 				<ul class="sub">
 					<li>
-						<a>Perímetro</a>
+						<a href="#perimetro">Perímetro</a>
 					</li>
 					<li>
-						<a>Diagnóstico</a>
+						<a href="#diagnostico2">Diagnóstico</a>
 					</li>
 				</ul>
 			</li>
-			<li><a href="#finalidade">
+			<li><a href="#interesse_pub">
 				Interesse público</a>
 				<ul class="sub">
 					<li>
-						<a>Princípios</a>
+						<a href="#principios">Princípios</a>
 					</li>
 					<li>
-						<a>Objetivos</a>
+						<a href="#objetivos">Objetivos</a>
 					</li>
 					<li>
-						<a>Diretrizes</a>
+						<a href="#diretrizes">Diretrizes</a>
 					</li>
 				</ul>
 			</li>
@@ -51,6 +51,11 @@
 
 export default {
 	name: 'Indice',
+	data () {
+		return {
+			atv: false,
+		}
+	},
 	methods: {
 		isAtivo(cap,capPos) {
 			if (window.scrollY >= document.getElementById(cap).offsetTop && window.scrollY < document.getElementById(capPos).offsetTop) {
@@ -58,7 +63,11 @@ export default {
 			} else {
 				return '';
 			}
-		}
+		},
+		ativa(n) {
+			console.log(document.getElementsByTagName("li")[n]);
+			document.getElementsByTagName("li")[n].classList.add("ativo")
+		},
 	},
 };
 

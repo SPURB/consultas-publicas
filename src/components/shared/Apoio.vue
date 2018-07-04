@@ -89,15 +89,12 @@
 	overflow-x: hidden;
 	background: #FFF;
 	border-left: 1px solid $primary-light-grey;
-
-	p {
+	.table_notes p, blockquote p { text-indent: 0; }
+	.table_notes p { margin: .1rem 0; }
+	p { 
 		margin: 1rem 0;
+		text-indent: 3rem;
 	}
-
-	p:first-letter {
-		margin-left: 3rem;
-	}
-
 	p.caput {
 		font-size: 90%;
 		margin: 0 0 2rem 6rem;
@@ -106,42 +103,6 @@
 
 	p.assinat {
 		&:first-letter { margin-left: 0; };
-	}
-
-	blockquote {
-		background: $primary-light-grey;
-		padding: 1.25rem 1.5rem;
-		border-left: 5px solid #dbdbdb;
-		p { margin: 0.25rem 0; &:first-letter { margin-left: 0; }; };
-	}
-
-	table {
-		caption {
-			font-weight: bold;
-			font-size: larger;
-			text-align: left;
-			margin: .5rem 0;
-		};
-		tr {
-			border-top: 1px solid $primary-medium-grey;
-			td {
-				padding: .5rem;
-				vertical-align: middle;
-				&:nth-child(2n) { text-align: center; };
-			};
-		};
-		tr:nth-child(2n) {
-			background: $primary-light-grey;
-		};
-	}
-
-	.table_notes {
-		padding-bottom: 1.25rem;
-		p {
-			font-size: smaller;
-			margin: .3rem 0;
-			&:first-letter { margin-left: 0; };
-		}
 	}
 }
 </style>

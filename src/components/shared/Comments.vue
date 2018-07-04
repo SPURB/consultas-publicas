@@ -2,7 +2,7 @@
 	<div class="comments" v-bind:class="{ fechado: isCommentsFechado }">
 		<div class="container">
 			<a href="#"  @click="isCommentsFechado = !isCommentsFechado">
-				<h5 class="title is-5">Comente aqui<i class="material-icons">chat</i><i class="material-icons open-close">expand_more</i></h5>
+				<h2 class="title is-5 comente">Comente aqui<i class="material-icons">chat</i><i class="material-icons open-close">expand_more</i></h2>
 
 			</a>
 			<div class="columns">
@@ -46,7 +46,7 @@
 					<button class="button" @click="checkName">COMENTAR</button>
 				</div>
 			</div>
-    		<!-- <Commentsloader :commentid="commentid"></Commentsloader> -->
+			<!-- <Commentsloader :commentid="commentid"></Commentsloader> -->
 		</div>
 	</div>
 </template>
@@ -127,18 +127,27 @@ export default {
 @import "../../assets/variables.scss";
 
 .comments{
-	background-color: #ececec;
-	margin: -1.5rem auto 2rem auto;
+	background-color: #eee;
+	margin: 2rem auto;
 	overflow-x: hidden;
+	border-top: solid 1px #ececec;
+	border-bottom: solid 1px #ececec;
+	div.container h2.title i.material-icons.open-close {
+		transition: transform .25s;
+		transform: rotate(180deg);
+	};
 }
 
 .comments.fechado {
 	max-height: 5rem;
 	overflow-y: hidden;
-	background: #FFF;
+	background: transparent;
 	transition: background .25s;
 	border-top: solid 1px #ececec;
 	border-bottom: solid 1px #ececec;
+	div.container h2.title i.material-icons.open-close {
+		transform: none;
+	}
 }
 
 .comments.fechado:hover {
@@ -147,17 +156,19 @@ export default {
 
 
 .material-icons{
-	padding-left: .3em;
+	margin-left: .5rem;
 }
 .material-icons.open-close{
 	position: absolute;
 	right: 0;
 	font-size: 2em;
-	top: 21px;
 }
 
-h5.title{
-	padding-bottom: 2rem
+h2.title{
+	display: flex;
+	position: relative;
+	line-height: 5rem;
+	align-items: center;
 }
 
 a:hover {
@@ -165,22 +176,23 @@ a:hover {
 		color: $primary-medium-grey;
 	}
 
-	h5.title {
+	h2.title {
 		color: $primary-medium-grey;
 	}
 
 }
 
 .container {
-	padding: 1.5em 0.5rem 4em 0.5rem;
-	max-width: 992px;
+	padding: 0 1.5rem 2rem 1.5rem;
+	max-width: 700px;
 	width: 100%;
 	margin: 0 auto;
 	.columns{
 		.column{
 			.field{
 				label{
-					font-weight:600
+					font-weight:400;
+					font-size: smaller;
 				}
 				.control{margin-top:7px}
 				input:focus,
@@ -188,6 +200,10 @@ a:hover {
 					border-color:$primary-medium-grey;
 					box-shadow: 0 0 0 0.125em rgba(101, 101, 101, 0.3)
 				}
+			}
+			button {
+				font-family: $font-sec;
+				font-weight: 600;
 			}
 			// .comment_recaptcha{
 			// 	margin-top: .9em;

@@ -60,6 +60,11 @@ div#app {
 	};
 	div.bt:active {
 		background-color: $primary;
+		cursor: default;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 		i { 
 			color: #FFFFFF; 
 		};
@@ -73,11 +78,12 @@ div#app {
 		top: 0;
 		right: 2rem;
 		font-size: small;
+		font-family: $font-sec;
 		line-height: 1.5rem;
 		color: transparent;
 		transition: all .05s ease-out;
 		background-color: #FFFFFF;
-		padding: 0 4px;
+		padding: 0 8px;
 		border-radius: 2px;
 		box-sizing: content-box;
 		opacity: .8;

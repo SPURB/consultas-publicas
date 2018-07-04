@@ -60,6 +60,7 @@ export default {
 
 .Header {
 	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	font-size: 16px;
 }
 
 .fade-enter-active, .fade-leave-active { transition: opacity .5s; }
