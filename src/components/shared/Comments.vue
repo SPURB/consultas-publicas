@@ -3,12 +3,11 @@
 		<div class="container">
 			<a href="#"  @click="isCommentsFechado = !isCommentsFechado">
 				<h2 class="title is-5 comente">Comente aqui<i class="material-icons">chat</i><i class="material-icons open-close">expand_more</i></h2>
-
 			</a>
 			<div class="columns">
 				<div class="column is-one-third">
 					<div class="field">
-						<label class="label" for="nome">Nome / organização</label>
+						<label for="nome">Nome</label>
 						<input 
 							class="input"
 							type="text"
@@ -16,6 +15,28 @@
 							v-validate="'required:true'" 
 							:class="{'input': true, 'is-danger': errors.has('name') }" 
 							v-model='form_name'
+							>
+					</div>
+					<div class="field">
+						<label for="surname">Sobrenome</label>
+						<input 
+							class="input"
+							type="text"
+							name="surname" 
+							v-validate="'required:true'" 
+							:class="{'input': true, 'is-danger': errors.has('surname') }" 
+							v-model='form_surname'
+							>
+					</div>
+					<div class="field">
+						<label for="organization">Organização (opcional)</label>
+						<input 
+							class="input"
+							type="text"
+							name="organization" 
+							v-validate="'required:false'" 
+							:class="{'input': true, 'is-danger': errors.has('organization') }" 
+							v-model='form_organization'
 							>
 					</div>
 					<div class="field">
@@ -60,11 +81,13 @@ export default {
 	props:['commentid'],
 	data(){
 		return{
-			form_name:null,
+			form_name: null,
+			form_surname: null,
+			form_organization: null,
 			form_email: null,
 			form_content: null,
 			form_context: null,
-			isCommentsFechado: true,
+			isCommentsFechado: true
 		}
 	},
 	computed:{
@@ -72,11 +95,14 @@ export default {
 	},
 	methods:{
 		checkName(){
-			if(!this.fields.name.valid && !this.fields.email.valid){
+			if(!this.fields.name.valid && !this.fields.email.valid && !this.fields.surname.valid){
 				alert('Preencha corretamente os campos Nome e Email')
 			}
 			else if (!this.fields.name.valid) {
 				alert('Inclua um nome')
+			}
+			else if (!this.fields.surname.valid) {
+				alert('Inclua um sobrenome')
 			}
 			else if(!this.fields.email.valid){
 				alert('Corrija email')
@@ -88,14 +114,24 @@ export default {
 				this.send();
 			}
 		},
+
+		returnFormNameObject(){
+			if (this.form_organization != null){
+				return '"{ name: "'+ app.form_name + ' ' + app.form_surname + ', organizatio: ' + app.form_organization + '}"'   
+			} 
+			else{
+				return app.form_name + ' ' + app.form_surname;
+			}
+		},
+
 		send(){
 			const url = 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/members/';
 			const app = this;
 			axios.post(url,{
 				'idConsulta':'7',
-				'name': app.form_name,
-				'email':app.form_email, 
-				'content':app.form_content,
+				'name': app.returnFormNameObject(),
+				'email': app.form_email, 
+				'content': app.form_content,
 				'public': '0',
 				'trash': '0',
 				'postid': '1',
@@ -183,8 +219,8 @@ a:hover {
 }
 
 .container {
-	padding: 0 1.5rem 2rem 1.5rem;
-	max-width: 700px;
+	padding: 0 0 2rem;
+	max-width: 992px;
 	width: 100%;
 	margin: 0 auto;
 	.columns{
@@ -194,20 +230,19 @@ a:hover {
 					font-weight:400;
 					font-size: smaller;
 				}
-				.control{margin-top:7px}
 				input:focus,
 				textarea:focus{
 					border-color:$primary-medium-grey;
 					box-shadow: 0 0 0 0.125em rgba(101, 101, 101, 0.3)
+				}
+				.radio{
+					font-size: small;
 				}
 			}
 			button {
 				font-family: $font-sec;
 				font-weight: 600;
 			}
-			// .comment_recaptcha{
-			// 	margin-top: .9em;
-			// }
 		}
 	}
 }
