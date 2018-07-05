@@ -43,8 +43,8 @@ overflow: hidden;
 
 .title, .subtitle, .box, table, .Header, .Footer, .Indice, .comments, .Mapa, .ai2html { font-family: $font-sec; }
 
-div.ai2html {
-	margin: 2rem 0;
+section p:first-child {
+	padding-top: 2rem;
 }
 
 .container{
@@ -171,6 +171,10 @@ table {
 	tr:nth-child(2n) {
 		background: $primary-light-grey;
 	};
+}
+
+ol, ul {
+	padding-left: 1rem;
 }
 
 .table_notes {

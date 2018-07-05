@@ -60,6 +60,7 @@ export default {
 	};
 	padding: 0;
 	p {
+		padding-top: .5rem;
 		font-size: .75rem;
 	}
 	.is-text{

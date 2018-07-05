@@ -1,11 +1,11 @@
 <template>
-	<div id="g-Apoio_sul-box" class="ai2html">
-		<div id="g-Apoio_sul-Prancheta_1" class="g-artboard g-artboard-v4" data-min-width='992'>
-			<img id="g-Apoio_sul-Prancheta_1-img" class="g-aiImg" src="../../assets/img/Apoio_sul-Prancheta_1.png"/>
-			<div id="g-ai0-1" class="g-legenda g-aiAbs g-aiPointText" style="top:7.0354%;margin-top:-10.5px;left:70.9171%;width:77px;">
-				<p class="g-pstyle0">Legenda</p>
+	<div id="g-apoiosul-box" class="ai2html ai2html-box-v5">
+		<div id="g-apoiosul-Prancheta_1" class="g-artboard" data-aspect-ratio="1.439" data-min-width="992">
+			<img id="g-apoiosul-Prancheta_1-img" class="g-aiImg" src="../../assets/img/apoiosul-Prancheta_1.png"/>
+			<div id="g-ai0-1" class="g-legenda g-aiAbs" style="top:4.9328%;left:70.9423%;width:29.0323%;">
+				<p class="g-pstyle0">APOIO SUL</p>
 			</div>
-			<div id="g-ai0-2" class="g-legenda g-aiAbs" style="top:10.1558%;left:76.0186%;width:18.0444%;">
+			<div id="g-ai0-2" class="g-legenda g-aiAbs" style="top:9.5754%;left:75.0337%;width:25%;">
 				<p class="g-pstyle1">Perímetro do PIU Setor Central</p>
 				<p class="g-pstyle2">Perímetros OUCBT e OUCAB</p>
 				<p class="g-pstyle2">Quadras Viárias</p>
@@ -15,10 +15,10 @@
 				<p class="g-pstyle2">Estações de Metrô</p>
 				<p class="g-pstyle2">Estações da CPTM</p>
 			</div>
-			<div id="g-ai0-3" class="g-legenda g-aiAbs g-aiPointText" style="top:39.9485%;margin-top:-10.4px;left:71.0235%;width:116px;">
+			<div id="g-ai0-3" class="g-legenda g-aiAbs" style="top:39.3173%;left:70.9423%;width:29.0323%;">
 				<p class="g-pstyle3">Apoio Urbano Sul</p>
 			</div>
-			<div id="g-ai0-4" class="g-legenda g-aiAbs" style="top:42.0739%;left:76.0186%;width:21.1694%;">
+			<div id="g-ai0-4" class="g-legenda g-aiAbs" style="top:44.5403%;left:75.0337%;width:25%;">
 				<p class="g-pstyle2">Perímetro Arco Tietê</p>
 				<p class="g-pstyle2">Alinhamentos Viários Propostos</p>
 			</div>
@@ -35,6 +35,7 @@
 				<p class="g-pstyle4">N</p>
 			</div>
 		</div>
+		<figcaption class="legenda">Apoio Urbano Sul – Lei nº 16.541/2016</figcaption>
 	</div>
 </template>
 
@@ -44,11 +45,11 @@
 	}
 </script>
 
-<style type='text/css' media='screen,print'>
-	#g-Apoio_sul-box .g-artboard {
+<style type='text/css' media='screen,print' scoped>
+	#g-apoiosul-box .g-artboard {
 		margin:0 auto;
 	}
-	#g-Apoio_sul-box .g-artboard p {
+	#g-apoiosul-box .g-artboard p {
 		margin:0;
 	}
 	.g-aiAbs {
@@ -58,15 +59,19 @@
 		display:block;
 		width:100% !important;
 	}
+	.g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
 	.g-aiPointText p { white-space: nowrap; }
-	#g-Apoio_sul-Prancheta_1 {
+	#g-apoiosul-Prancheta_1 {
 		position:relative;
 		overflow:hidden;
 		width:992px;
 	}
-	#g-Apoio_sul-Prancheta_1 p {
+	#g-apoiosul-Prancheta_1 p {
 		font-weight:500;
-		font-size:12px;
+		font-size:13px;
 		line-height:19px;
 		filter:alpha(opacity=100);
 		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -81,24 +86,27 @@
 		font-style:normal;
 		height:auto;
 	}
-	#g-Apoio_sul-Prancheta_1 .g-pstyle0 {
-		font-size:14px;
-		height:19px;
-		padding-bottom:2px;
+	#g-apoiosul-Prancheta_1 .g-pstyle0 {
+		font-weight:700;
+		font-size:16px;
 	}
-	#g-Apoio_sul-Prancheta_1 .g-pstyle1 {
+	#g-apoiosul-Prancheta_1 .g-pstyle1 {
 		padding-bottom:6px;
 	}
-	#g-Apoio_sul-Prancheta_1 .g-pstyle2 {
+	#g-apoiosul-Prancheta_1 .g-pstyle2 {
 		padding-bottom:4px;
 	}
-	#g-Apoio_sul-Prancheta_1 .g-pstyle3 {
-		height:19px;
+	#g-apoiosul-Prancheta_1 .g-pstyle3 {
 		padding-bottom:2px;
 	}
-	#g-Apoio_sul-Prancheta_1 .g-pstyle4 {
+	#g-apoiosul-Prancheta_1 .g-pstyle4 {
+		font-size:12px;
 		height:19px;
 		padding-bottom:4px;
 	}
-
+	.legenda {
+		font-size: small;
+		text-align: center;
+		margin: .5rem auto 0 auto;
+	}
 </style>
