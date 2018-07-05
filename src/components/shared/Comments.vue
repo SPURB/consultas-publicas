@@ -92,6 +92,14 @@ export default {
 	},
 	computed:{
 		currentRoute(){ return this.$route.name },
+		returnFormNameObject(){
+			if (this.form_organization != null){
+				return this.form_name + ' ' + this.form_surname + ' (' + this.form_organization + ')'
+			} 
+			else{
+				return this.form_name + ' ' + this.form_surname
+			}
+		}		
 	},
 	methods:{
 		checkName(){
@@ -114,22 +122,12 @@ export default {
 				this.send();
 			}
 		},
-
-		returnFormNameObject(){
-			if (this.form_organization != null){
-				return '"{ name: "'+ app.form_name + ' ' + app.form_surname + ', organizatio: ' + app.form_organization + '}"'   
-			} 
-			else{
-				return app.form_name + ' ' + app.form_surname;
-			}
-		},
-
 		send(){
 			const url = 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/members/';
 			const app = this;
 			axios.post(url,{
 				'idConsulta':'7',
-				'name': app.returnFormNameObject(),
+				'name': app.returnFormNameObject,
 				'email': app.form_email, 
 				'content': app.form_content,
 				'public': '0',
@@ -143,7 +141,7 @@ export default {
 				let name = app.form_name;
 				let content = app.form_content;
 
-				alert("Agradecemos a sua contribuição! Seu comentário ("  + content + ") foi enviado e aguarda aprovação da moderação para ser publicado. Obrigado por sua contribuição.")
+				alert("Obrigado," + name + "Agradecemos a sua contribuição! Seu comentário ("  + content + ") foi enviado e aguarda aprovação da moderação para ser publicado. Obrigado por sua contribuição.")
 			})
 			.catch(function (error) {
 				// console.log(error)

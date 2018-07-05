@@ -1,10 +1,10 @@
 <template>
 	<div class="Indice">
-		<ul>
+		<ul ref="nav_indice">
 			<li><a href="#apresentacao" @click="ativa(0)">
 				Apresentação
 			</a></li>
-			<li><a href="#motivacao">
+			<li><a href="#motivacao" @click="ativaEvento">
 				Motivação
 			</a></li>
 			<li><a href="#diagnostico">
@@ -68,6 +68,10 @@ export default {
 			console.log(document.getElementsByTagName("li")[n]);
 			document.getElementsByTagName("li")[n].classList.add("ativo")
 		},
+		ativaEvento(event){
+			event.target.className = "ativo";
+			console.log(this.$refs.nav_indice.children[1].childNodes[0].className) // TODO: iterar elementos da lista e remover class "ativo"
+		}
 	},
 };
 
