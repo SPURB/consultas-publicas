@@ -95,6 +95,9 @@ export default{
 		line-height:22px;
 		text-align:center;
 	}
+	img {
+		border-width: 0 !important;
+	}
 	.legenda {
 		font-size: small;
 		text-align: center;

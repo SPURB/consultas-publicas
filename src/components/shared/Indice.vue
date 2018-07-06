@@ -71,11 +71,13 @@ export default {
 	position: fixed;
 	display: flex;
 	height: 100vh;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-around;
+	top: 0;
 	ul {
 		padding-left: 0;
 		width: 140px;
+		align-self: center;
 		li {
 			margin: .5rem 0;
 			a {
@@ -98,6 +100,6 @@ export default {
 		li.sub a {
 			padding-left: 1rem;
 		}
-	};
+	}
 }
 </style>

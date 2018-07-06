@@ -67,6 +67,7 @@ section p:first-child {
 		display: block !important;
 		position: relative;
 		overflow-y: scroll;
+		font-size: 18px;
 	}
 	section {
 		z-index: 0;
@@ -131,6 +132,9 @@ section p:first-child {
 	.afastado {
 		margin: 0 calc(100vw - 2.5rem) 0 0 !important;
 	}
+	div#map {
+		width: 100vw !important;
+	}
 }
 
 @media (max-width: 1272px) {
@@ -157,12 +161,16 @@ blockquote {
 table {
 	font-size: 75%;
 	caption {
+		font-size: .8rem;
 		font-weight: bold;
 		text-align: left;
 		margin: .5rem 0 .25rem 0;
+		border-top: 1px solid #bcbcbc;
+		padding-top: 1rem;
 	};
 	thead {
 		font-weight: bold;
+		font-size: .65rem;
 		td { text-align: center; }
 		td:first-child { text-align: left; }
 	};
@@ -189,5 +197,15 @@ ol, ul {
 	p {
 		font-size: small;
 		font-family: $font-sec;
+		padding-top: 0 !important;
+		margin-top: 0 !important;
 	}
+}
+
+div.legenda {
+	font-family: $font-sec;
+	font-size: small;
+	text-align: center;
+	font-style: none !important;
+	margin: .5rem auto 0 auto;
 }

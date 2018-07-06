@@ -1,5 +1,5 @@
 <template>
-<div class="consulta">
+<div class="consulta" id="topo">
 	<section class="hero is-light is-medium">
 		<div class="hero-body">
 			<div class="container">
@@ -28,7 +28,6 @@
 	</div>
 
 	<Processo></Processo>
-	<Gallery :gallery_attrs="gallery_attrs"></Gallery>
 	
 	<Comments :commentid="1"></Comments>
 	<div class="container">
@@ -95,11 +94,13 @@
 						<div class="contPdf">
 							<a href="http://minuta.gestaourbana.prefeitura.sp.gov.br/piu-setor-central/anexos/Diagnostico_Socio-Territorial.pdf" class="box" download>
 								<i class="small material-icons">picture_as_pdf</i>
-								Diagnóstico Sócio-Territorial <span> 126mb</span>
+								<div>Diagnóstico Sócio-Territorial</div>
+								<span>126mb</span>
 							</a>
 							<a href="http://minuta.gestaourbana.prefeitura.sp.gov.br/piu-setor-central/anexos/Diagnostico_Ambiental.pdf" class="box" download>
 								<i class="small material-icons">picture_as_pdf</i>
-								Diagnóstico Ambiental <span> 220mb</span>
+								<div>Diagnóstico Ambiental</div>
+								<span>220mb</span>
 							</a>
 						</div>
 					</section>
@@ -124,16 +125,16 @@
 						</ul>
 						<p>O <a href="http://gestaourbana.prefeitura.sp.gov.br/marco-regulatorio/plano-diretor/" title="Plano Diretor Estratégico do Município de São Paulo" target="_blank">Plano Diretor Estratégico do Município de São Paulo</a> (Lei Municipal nº 16.050 de 31 de julho de 2014) nasce alinhado a essa Nova Agenda Urbana instituída pela ONU-HABITAT, trazendo como estruturadores os mesmos temas ali discutidos. São eles:</p>
 						<ol style="list-style-type: upper-roman">
-							<li>Socializar os ganhos da produção da cidade, combater a terra ociosa que não cumpre a função social;</li>
-							<li>Assegurar o direito à moradia digna para quem precisa, priorizar a população com renda até 3 salários mínimos;</li>
-							<li>Melhorar a mobilidade urbana, priorizar o transporte público e desestimular o uso de transporte individual motorizado;</li>
-							<li>Qualificar a vida dos bairros;</li>
-							<li>Orientar o crescimento da cidade nas proximidades do transporte público; </li>
-							<li>Reorganizar as dinâmicas metropolitanas definir incentivos urbanísticos e fiscais para levar emprego aos perímetros de incentivo ao desenvolvimento econômico;</li>
-							<li>Promover o desenvolvimento econômico da cidade, proteger áreas industriais; atrair investimentos em atividades produtivas; potencializar a capacidade criativa e o conhecimento científico e tecnológico;</li>
-							<li>Incorporar a agenda ambiental ao desenvolvimento da cidade;</li>
-							<li>Preservar o patrimônio e valorizar as iniciativas culturais;</li>
-							<li>Fortalecer a participação popular nas decisões dos rumos da cidade.</li>
+							<li><strong>Socializar os ganhos da produção da cidade</strong>, combater a terra ociosa que não cumpre a função social;</li>
+							<li><strong>Assegurar o direito à moradia digna para quem precisa</strong>, priorizar a população com renda até 3 salários mínimos;</li>
+							<li><strong>Melhorar a mobilidade urbana</strong>, priorizar o transporte público e desestimular o uso de transporte individual motorizado;</li>
+							<li><strong>Qualificar a vida dos bairros</strong>;</li>
+							<li><strong>Orientar o crescimento da cidade nas proximidades do transporte público</strong>;</li>
+							<li><strong>Reorganizar as dinâmicas metropolitanas</strong> definir incentivos urbanísticos e fiscais para levar emprego aos perímetros de incentivo ao desenvolvimento econômico;</li>
+							<li><strong>Promover o desenvolvimento econômico da cidade</strong>, proteger áreas industriais; atrair investimentos em atividades produtivas; potencializar a capacidade criativa e o conhecimento científico e tecnológico;</li>
+							<li><strong>Incorporar a agenda ambiental</strong> ao desenvolvimento da cidade;</li>
+							<li><strong>Preservar o patrimônio</strong> e valorizar as iniciativas culturais;</li>
+							<li><strong>Fortalecer a participação popular</strong> nas decisões dos rumos da cidade.</li>
 						</ol>
 						<p>Os <strong>Planos Regionais das Subprefeituras</strong> (atuais Prefeituras Regionais) desenvolvidos entre 2015 e 2016, resultaram de um processo participativo que reuniu técnicos das várias secretarias e sociedade civil em encontros propositivos e de coleta de demandas locais.</p>
 						<p>As principais diretrizes urbanísticas apresentadas nos Planos Regionais elaborados para as Prefeituras Regionais da Sé e da Mooca da Sé são as seguintes:</p>
@@ -147,14 +148,17 @@
 							<li>Melhoria das condições ambientais através da ampliação de áreas permeáveis e de áreas verdes, da recuperação de áreas contaminadas e da manutenção das áreas verdes existentes; </li>
 							<li>Indução ao desenvolvimento econômico dos polos comerciais e estímulo às atividades industriais.</li>
 						</ol>
+						<p>Para a leitura completa das propostas, consultar:</p>
 						<div class="contPdf">
 							<a href="http://gestaourbana.prefeitura.sp.gov.br/wp-content/uploads/2018/02/PA-MO.pdf" class="box" download>
 								<i class="small material-icons">picture_as_pdf</i>
-								Caderno de Propostas dos Planos Regionais das Subprefeituras Perímetros de Ação Mooca
+								<div>Caderno de Propostas dos Planos Regionais das Subprefeituras Perímetros de Ação Mooca</div>
+								<span>23,9 mb</span>
 							</a>
 							<a href="http://gestaourbana.prefeitura.sp.gov.br/wp-content/uploads/2018/02/PA-SE.pdf" class="box" download>
 								<i class="small material-icons">picture_as_pdf</i>
-								Caderno de Propostas dos Planos Regionais das Subprefeituras Perímetros de Ação Sé
+								<div>Caderno de Propostas dos Planos Regionais das Subprefeituras Perímetros de Ação Sé</div>
+								<span>26,8 mb</span>
 							</a>
 						</div>
 						<h5 class="title is-5" id="objetivos">Objetivos para o Setor Central da MEM</h5>
@@ -194,11 +198,11 @@
 						<table>
 							<caption>Áreas construídas totais e Coeficiente de Aproveitamento médio residencial e não-residencial</caption>
 							<thead valign="">
-								<td width="10%">Distrito</td>
-								<td width="22.5%">Coeficiente Aproveitamento residencial</td>
-								<td width="22.5%">% Área construída residencial</td>
-								<td width="22.5%">Coeficiente de Aproveitamento não-residencial</td>
-								<td width="22.5%">% Área construída não-residencial</td>
+								<td width="16%">Distrito</td>
+								<td width="21%">Coeficiente Aproveitamento residencial</td>
+								<td width="21%">% Área construída residencial</td>
+								<td width="21%">Coeficiente de Aproveitamento não-residencial</td>
+								<td width="21%">% Área construída não-residencial</td>
 							</thead>
 							<tr>
 								<td>Santa Cecília</td>
@@ -260,7 +264,7 @@
 				<div class="column">
 					<section>
 						<p>Nessa parcela, com terrenos de grandes dimensões subaproveitados e extensões de terras públicas passíveis de transformação, poderão ser propostos novos padrões de ocupação do solo e incentivos que impulsionem a renovação da área.</p>
-						<p>Nessa faixa, também está prevista a implantação do Apoio Urbano Sul, melhoramento viário previsto na Lei Municipal nº 16.401/2016 cuja implantação cria a oportunidade de renovação das quadras lindeiras em toda a sua extensão.</p>
+						<p>Nessa faixa, também está prevista a implantação do <em>Apoio Urbano Sul</em>, melhoramento viário previsto na Lei Municipal nº 16.401/2016 cuja implantação cria a oportunidade de renovação das quadras lindeiras em toda a sua extensão.</p>
 						</section>
 				</div>
 			</div>
@@ -286,7 +290,7 @@
 				<div class="column">
 					<section>
 						<h6 class="subtitle is-6">Áreas de Projeto Estratégicos</h6>
-						<p>Imóveis há muito tempo vagos ou subutilizados, áreas públicas em processo de transformação, vizinhanças fisicamente degradadas, potencialidades de aproveitamento inexploradas são situações que justificam a inclusão dessas áreas no rol dos <em>Projetos Estratégicos</em>.</p>
+						<p>Imóveis há muito tempo vagos ou subutilizados, áreas públicas em processo de transformação, vizinhanças fisicamente degradadas, potencialidades de aproveitamento inexploradas são situações que justificam a inclusão dessas áreas no rol dos <i>Projetos Estratégicos</i>.</p>
 						<p>Apesar das condições distintas dessas áreas, a proposta é conformar uma rede de intervenções estratégicas para as quais se estabeleçam diretrizes e parâmetros urbanísticos, procedimentos de intervenção e acompanhamento dirigido que possam deflagrar a sua transformação.</p>
 						<p>A lista de imóveis indicados na figura seguinte é apenas referencial, para subsidiar a estruturação de um plano de intervenção em imóveis ou contextos urbanos em condição estacionária, aquém de suas possibilidades de aproveitamento.</p>
 					</section>
@@ -303,7 +307,7 @@
 						<h6 class="title is-6">2. Garantir a moradia digna</h6>
 						<h6 class="subtitle is-6">Manutenção dos vetores em atividade</h6>
 						<p>A produção voltada para mercado tem explorado com eficiência a compactação da unidade residencial nos distritos Sé e República, voltada para moradores que se valem da diversidade da oferta de serviços da região e dispõem-se ao compartilhamento condominial de ambientes  antes privativos da unidades. Esse vetor será incentivado nesses dois distritos e a produção de unidades maiores, voltadas às famílias com filhos, será direcionada para o arco norte do âmbito estudado.</p>
-						<h6 class="subtitle is-6">Incentivo ao retrofit de edifícios </h6>
+						<h6 class="subtitle is-6">Incentivo ao <i>retrofit</i> de edifícios </h6>
 						<p>Outra ação específica desse território é o melhor aproveitamento do estoque construído, parte significativa constituída de edificações tombadas, cuja utilização requer alternativas de atendimento às normas de licenciamento de projetos.</p>
 						<p>Equacionadas as questões do licenciamento de edifícios antigos em ações de reconversão, reforma ou restauração, trata-se de estabelecer facilidades para que investidores privados participem do financiamento dessas ações.</p>
 						<h6 class="subtitle is-6">Aproveitamento de imóveis públicos</h6>
@@ -349,7 +353,7 @@
 				<div class="column">
 					<section>
 						<h6 class="title is-6">4. Fortalecer a Base Econômica local</h6>
-						<p>O PDE define Economia Criativa como o ciclo de criação, produção e distribuição de bens e serviços tangíveis e intangíveis que utilizam a criatividade, a habilidade e o talento de indivíduos ou grupos como insumos primários, sendo composta por atividades econômicas baseadas no conhecimento e capazes de produzir riqueza, gerar emprego e distribuir renda. Dentro desse contexto, o PDE instituiu os <em>PEC</em> (Polos de Economia Criativa) – territórios destinados ao fomento e desenvolvimento de atividades relacionadas a essa nova economia, mediante a possibilidade de concessão de incentivos fiscais.</p> 
+						<p>O PDE define Economia Criativa como o ciclo de criação, produção e distribuição de bens e serviços tangíveis e intangíveis que utilizam a criatividade, a habilidade e o talento de indivíduos ou grupos como insumos primários, sendo composta por atividades econômicas baseadas no conhecimento e capazes de produzir riqueza, gerar emprego e distribuir renda. Dentro desse contexto, o PDE instituiu os <em>PEC (Polos de Economia Criativa)</em> – territórios destinados ao fomento e desenvolvimento de atividades relacionadas a essa nova economia, mediante a possibilidade de concessão de incentivos fiscais.</p> 
 						<p>A figura seguinte destaca polos de economia criativa já tradicionais da área central – ligados à atividade teatral, à gastronomia, à produção de vídeo, ao entretenimento em geral – e os vigorosos polos comerciais de Brás, Pari e Bom Retiro.</p>
 					</section>
 				</div>
@@ -369,14 +373,14 @@
 
 						<figure>
 							<img src="../../assets/img/circular.jpg" title="Proposta e elaboração Jaime Lerner Associados - 2017">
+							<div class="legenda">Proposta e elaboração: Jaime Lerner Associados - 2017</div>
 						</figure>
 	
 
-						<p>Esse estudo fundamentou a proposta de multiplicação dos Circuitos de Mobilidade possíveis conectando os polos comerciais e produtivos do anel central às demais estruturas representativas da região e às redes de transporte coletivo.</p>
-						<!--imagem10 circuitos de mob-->
+						<p>Esse estudo fundamentou a proposta de multiplicação dos <strong>Circuitos de Mobilidade</strong> possíveis conectando os polos comerciais e produtivos do anel central às demais estruturas representativas da região e às redes de transporte coletivo.</p>
 						<figure>
-							<img src="../../assets/img/circuitos-de-mobilidade.jpg" title="Circuitos de mobilidade 
-Elaboração: São Paulo Urbanismo – 2017">
+							<img src="../../assets/img/circuitos-de-mobilidade.jpg" title="Circuitos de mobilidade. Elaboração: São Paulo Urbanismo – 2017">
+							<div class="legenda"><strong>Circuitos de mobilidade</strong><br> Elaboração: São Paulo Urbanismo – 2017</div>
 						</figure>
 
 
@@ -458,6 +462,7 @@ Elaboração: São Paulo Urbanismo – 2017">
 			</div>
 		</div>
 	</div>	
+	<Gallery :gallery_attrs="gallery_attrs"></Gallery>
 	<Comments :commentid="4"></Comments>
 	<div class="container">
 		<div class="content">
@@ -473,10 +478,10 @@ Elaboração: São Paulo Urbanismo – 2017">
 						</ul>
 						<p>Na última década foi possível verificar um aumento significativo da produção imobiliária na região, que teve entre seus motivadores: a estruturação econômica do setor da produção imobiliária, mediante a disponibilidade de crédito, abertura de capital e segmentação empresarial das incorporadoras e surgimento de investidores no mercado de aluguéis; a segmentação produto/consumidor, pelo surgimento de nichos específicos voltados ao atendimento de novos consumidores e pela ausência de controle de tipologia mínima; o esgotamento de estoques de potencial construtivo estabelecidos pela lei 13.885/04, em alguns distritos do município; e, por fim, a disponibilidade de CA=6 para uso residencial na OU Centro.</p>
 						<p>Foram quase 12.000 unidades habitacionais produzidas na Operação Urbana Centro nos últimos 15 anos, sendo mais de 9.000 nos últimos 5 anos. Nesse período, na área correspondente ao PIU Área Central, este número se aproxima de 15.000.</p>
-						<p>Na comercialização das unidades habitacionais foram observadas áreas úteis bem reduzidas, sem a presença de vagas de garagem e com atributos agregados tais como áreas de lazer e serviços de suporte pay per use, etc. Esse vetor de produção continua ativo e sua manutenção será incentivada nos distritos centrais, Sé e República.</p>
+						<p>Na comercialização das unidades habitacionais foram observadas áreas úteis bem reduzidas, sem a presença de vagas de garagem e com atributos agregados tais como áreas de lazer e serviços de suporte <i>pay per use</i>, etc. Esse vetor de produção continua ativo e sua manutenção será incentivada nos distritos centrais, Sé e República.</p>
 						<p>Foi constatado que mais da metade dos empreendimentos foi erguida em terrenos ocupados por estacionamentos e pouco edificados, sem ponto comercial agregado. Como primeiros resultados da aplicação do PEUC – Parcelamento, Edificação e Urbanização Compulsórios - imóveis vazios e ociosos têm sido recolocados no circuito da produção imobiliária, impulsionando a renovação do estoque edificado.</p>
 						<p>A viabilidade da transformação de edificações existentes começa a ser comprovada pelo surgimento desses empreendimentos no âmbito de projeto. Os estudos econômicos que subsidiam a elaboração do PIU Setor Central avançam em medidas que tragam maior agilidade ao processo de aprovação de projetos de <i>retrofit</i> e de incentivos econômicos para aumento da escala de produção nesse segmento.</p>
-						<p>Em relação à produção habitacional de interesse social, verifica-se interesse e viabilidade em empreender para as classes de baixa renda, mediante as possibilidades de financiamento público -principalmente pelo Programa Minha Casa Minha Vida do Governo Federal. Estão em desenvolvimento propostas de concessão de incentivos a empreendedores que já atuam nesse segmento para viabilizar sua participação na produção de unidades habitacionais direcionadas para a faixa de renda 1, nas ZEIS   contidas no perímetro do projeto.</p>
+						<p>Em relação à produção habitacional de interesse social, verifica-se interesse e viabilidade em empreender para as classes de baixa renda, mediante as possibilidades de financiamento público – principalmente pelo Programa Minha Casa Minha Vida do Governo Federal. Estão em desenvolvimento propostas de concessão de incentivos a empreendedores que já atuam nesse segmento para viabilizar sua participação na produção de unidades habitacionais direcionadas para a faixa de renda 1, nas ZEIS   contidas no perímetro do projeto.</p>
 						<p>Cabe também uma análise mais aprofundada do mercado de aluguéis, modalidade que já aparece nas motivações de negócios imobiliários futuros e que pode beneficiar-se da alta demanda por habitações na área central.</p>
 						<p>Em relação à viabilidade da transformação das áreas públicas, é necessário completar o diagnóstico das áreas municipais, incluindo levantamento da origem do bem público (desapropriação, remanescente, terras devolutas, etc), documentação existente, termos de cessão de uso, utilização fática, interesse público, regional, social, cultural e ambiental), assim como consulta às demais esferas públicas, estadual e federal. O ponto de partida será a proposta de aproveitamento de áreas públicas estudada no projeto do Arco Tietê.</p>
 						<p>Outra questão a ser enfrentada é a situação registraria das propriedades da área central, em sua maioria, pendentes de partilhas e processos judiciais, situações por vezes só equacionadas mediante interveniência da Prefeitura.
@@ -588,6 +593,11 @@ Elaboração: São Paulo Urbanismo – 2017">
 						Rafael Henrique de Oliveira<br>
 						Rita Cassia G. S. Gonçalves <br>
 						Thiago Francisco L. Carneiro</p>
+
+						<p><strong>Designers programadores</strong><br>
+						Davi Masayuki Hosogiri<br>
+						Flávia Lopes Martins Pereira<br>
+						Thomas Len Yuba</p>
 						
 						<p><strong>Economista</strong><br>
 						Matias Chambouleyron</p>
@@ -649,37 +659,37 @@ export default {
 					{
 						url:"./static/galeria/1_Estrategias_PIU_Setor_Central.jpg", 
 						state: true,
-						title: 'Image 1',
+						title: 'Principais diretrizes do projeto',
 						icon: false,
-						legenda: 'Lorem 1'
+						legenda: 'Definição de Perímetros de Requalificação Integrada de Imóveis Tombados'
 					},
 					{
 						url:"./static/galeria/2_Estrategias_PIU_Setor_Central.jpg", 
 						state: false, 
 						icon: false,
-						title: 'Image 2',
-						legenda: 'Lorem 2'
+						title: 'Principais diretrizes do projeto',
+						legenda: 'Conformação do anel de bairros populares qualificados'
 					},
 					{
 						url:"./static/galeria/3_Estrategias_PIU_Setor_Central.jpg", 
 						state: false, 
 						icon: false,
-						title: 'Image 3',
-						legenda: 'Lorem 3'
+						title: 'Principais diretrizes do projeto',
+						legenda: 'Implantação do Apoio Urbano Sul e reorganização da oferta de vagas nos polos comerciais'
 					},
 					{
 						url:"./static/galeria/4_Estrategias_PIU_Setor_Central.jpg", 
 						state: false, 
 						icon: false,
-						title: 'Image 4',
-						legenda: 'Lorem 4'
+						title: 'Principais diretrizes do projeto',
+						legenda: 'Implantação de novas transposições e qualificação das transposições existentes'
 					},
 					{
 						url:"./static/galeria/5_Estrategias_PIU_Setor_Central.jpg", 
 						state: false, 
 						icon: false,
-						title: 'Image 5',
-						legenda: 'Lorem 5'
+						title: 'Principais diretrizes do projeto',
+						legenda: 'Elaboração do Plano de Adensamento Populacional e Construtivo'
 					}
 				]
 			}			
@@ -741,16 +751,23 @@ div.contPdf {
 	border-radius: 2px;
 	a {
 		display: flex;
-		align-items: baseline;
+		flex-direction: row;
+		align-items: center;
 		padding: 1rem;
-		span{
-			font-size: .75em;
-			margin-left: .25em
-		}
 		i { 
 			margin-right: 1rem; 
 			align-self:center
 		}
-	}
+		div {
+			width: 100%;
+		}
+		span{
+			display: block;
+			font-size: .75em;
+			margin-left: 1rem;
+			white-space: nowrap;
+			color: $primary-medium-grey;
+		}
+	}	
 }
 </style>

@@ -5,7 +5,7 @@
 			<router-view name="indice" v-show="!isApoioFechado"></router-view>
 			<router-view name="main"></router-view>
 			<router-view name="footer"></router-view>
-			<div class="bt" v-bind:class="{ afastado: isApoioFechado }" @click="isApoioFechado=!isApoioFechado">
+			<div class="bt" v-bind:class="{ afastado: isApoioFechado }" @click="isApoioFechado=!isApoioFechado" v-on:passive.scroll="handleScroll()">
 				<span class="icon" v-bind:class="{ espelhado: isApoioFechado }">
 					<i class="material-icons">chevron_left</i>
 				</span>
@@ -25,6 +25,17 @@ export default {
 	data () {
 		return {
 			isApoioFechado: false,
+		};
+	},
+	methods: {
+		handleScroll () {
+		    console.log('scrolling')
+		},
+		created () {
+		  document.body.addEventListener('scroll', this.handleScroll);
+		},
+		destroyed () {
+		  document.body.removeEventListener('scroll', this.handleScroll);
 		}
 	},
 };
@@ -53,7 +64,7 @@ div#app {
 		width: 1.5rem;
 		box-shadow: 0 2px 2px rgba(0,0,0,.5);
 		transition: margin .25s ease-in-out;
-		z-index: 1;
+		z-index: 2;
 		i {
 			color: $primary-grey;
 		};
@@ -70,17 +81,17 @@ div#app {
 		};
 	}
 	div.bt::after {
-		content: 'Ver/ocultar texto de apoio';
+		content: 'Ver texto de apoio';
 		display: block;
-		visibility: hidden;
+		visibility: visible;
 		white-space: nowrap;
 		position: absolute;
 		top: 0;
 		right: 2rem;
 		font-size: small;
 		font-family: $font-sec;
+		color: $primary-grey;
 		line-height: 1.5rem;
-		color: transparent;
 		transition: all .05s ease-out;
 		background-color: #FFFFFF;
 		padding: 0 8px;
@@ -88,9 +99,8 @@ div#app {
 		box-sizing: content-box;
 		opacity: .8;
 	}
-	div.bt:hover::after {
-		visibility: visible;
-		color: $primary-grey;
+	div.bt.afastado::after {
+		visibility: hidden;
 	}
 	.espelhado {
 		transform: rotateY(180deg);

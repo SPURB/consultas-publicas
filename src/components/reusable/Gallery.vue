@@ -115,6 +115,9 @@ export default {
 			h3{
 				display: flex;
 				align-items: center;
+				padding-top: .75rem;
+				font-size: 1.25rem;
+				font-weight: 500;
 				min-height: 40px;
 				img.is-64x64{ margin: .3em }
 				span { padding-left:0 } 

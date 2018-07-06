@@ -219,7 +219,7 @@ a:hover {
 .container {
 	padding: 0 0 2rem;
 	max-width: 992px;
-	width: 100%;
+	width: calc(100% - 2rem);
 	margin: 0 auto;
 	.columns{
 		.column{
