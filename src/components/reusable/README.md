@@ -20,3 +20,31 @@ mapa_attrs:{
 ```
 > Gerará um mapa com base fotográfica do bing maps, camadas kml e legenda. `Layers` aceita um número indefinido de objetos.
 ___
+
+### Gallery.vue 
+Registrar localmente `<Gallery :gallery_attrs="gallery_attrs"></Gallery>`
+Definir parâmetros de `gallery_attrs` no componente pai. Exemplo:
+``` Javascript
+gallery_attrs: {
+	width:992,  // largura das imagens
+	height:557, // altura das imagens
+	images:[
+		{
+			url:"./static/galeria/img1.jpg", 
+			state: true,
+			title: 'Image 1',
+			icon: false,
+			legenda: 'Lorem 1'
+		},
+		{
+			url:"./static/galeria/img2.jpg", 
+			state: false, 
+			icon: false,
+			title: 'Image 2',
+			legenda: false
+		}
+	]
+}
+```
+> Cria galeria com lazy-load no tamanho 992x557. `images` aceita indefinido de objetos. `state` define se imagem primeira imagem. `icon` ´deve ser a path para um ícone com de 64x64. As imagens devem estar no diretório `src/static/` 
+___

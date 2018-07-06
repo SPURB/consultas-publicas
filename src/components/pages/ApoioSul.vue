@@ -46,6 +46,7 @@
 </script>
 
 <style type='text/css' media='screen,print' scoped>
+	.ai2html > .g-artboard > img{border: 1px solid #F2F2F2}
 	#g-apoiosul-box .g-artboard {
 		margin:0 auto;
 	}

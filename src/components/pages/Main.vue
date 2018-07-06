@@ -9,7 +9,6 @@
 			</div>
 		</div>
 	</section>
-	<!-- <Diagrama></Diagrama> -->
 	<div class="container">
 		<div class="content">
 			<div class="columns">
@@ -22,12 +21,15 @@
 						<p>Neste momento que precede a elaboração do PIU Setor Central, são apresentados o diagnóstico socioterritorial e o programa de interesse público resultante dessa análise.</p>
 						<p>Trata-se de uma publicação extensa, como requer a complexa Área Central, que pode ser comentada no seu todo ou apenas nas partes mais significativas para cada munícipe.</p>
 						<p>Além de comentários a respeito do material divulgado, são bem-vindas as manifestações que expressem as expectativas dos munícipes em relação ao futuro dos bairros do anel central que, segundo esta proposta, deve ser preparado para receber muitos moradores a mais.</p>
-						<!--diagrama1-->
 					</section>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<Processo></Processo>
+	<Gallery :gallery_attrs="gallery_attrs"></Gallery>
+	
 	<Comments :commentid="1"></Comments>
 	<div class="container">
 		<div class="content">
@@ -56,39 +58,48 @@
 		</div>
 	</div>
 	<Comments :commentid="2"></Comments>
+
+	<Mapa :mapa_attrs="mapa_attrs" id="perimetro"></Mapa>
+
 	<div class="container">
 		<div class="content">
 			<div class="columns">
 				<div class="column">
 					<section id="diagnostico">
 						<h4 class="title is-4">Diagnóstico</h4>
-					</section>
-				</div>
-			</div>
-		</div>
-	</div>
-	<Mapa :mapa_attrs="mapa_attrs" id="perimetro"></Mapa>
-	<div class="container">
-		<div class="content">
-			<div class="columns">
-				<div class="column">
-					<section>
 						<h5 class="title is-5">Perímetro de Estudo</h5>
 						<p>Na abordagem inicial, o estudo que subsidia a revisão da Operação Urbana Centro abrangeu os distritos da Prefeitura Regional da Sé - Cambuci, Liberdade, Bela Vista, Consolação, Santa Cecília, Bom Retiro, República e Sé - mais os distritos do Brás e do Pari, da Prefeitura Regional da Mooca.</p>
 						<p>Porém, elaborado o Diagnóstico Sócio-Territorial, foram descartados Consolação, Bela Vista e Liberdade, distritos contidos na Macroárea de Urbanização Consolidada, que já possuem densidade populacional e construtiva característicos de áreas consolidadas, com baixa possibilidade de transformação.</p>
 						<p>O Perímetro proposto avança sobre algumas quadras limítrofes dos distritos da Consolação e Liberdade, onde se observa a continuidade da dinâmica urbana ou da paisagem dos distritos abarcados no projeto. Pela mesma razão, foram incluídas parcelas dos distritos do Belém e da Mooca, que além de similaridades com os distritos centrais parecem apresentar grande possibilidade de transformação urbana positiva por meio dos instrumentos viabilizadores do PIU.</p>
 						<p>Essa abrangência foi estabelecida para a maior e melhor compreensão da dinâmica do centro de São Paulo e das relações que se estabelecem entre os distritos, podendo resultar na proposição de instrumentos de intervenção diversos, para problemáticas ou setores específicos, integrados no objetivo central desse projeto  que é ter mais pessoas morando no Anel Central de São Paulo.</p>
+	
+						<figure>
+							<img src="../../assets/img/image4.png"  title="PIU Setor Central - Diagnóstico">
+						</figure>
+	
 						<h6 class="title is-6" id="diagnostico2">Diagnóstico</h6>
 						<h6 class="subtitle is-6">PIU do Setor Central em Resumo</h6>
-						<!--imagem resumo info-->
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<Dados></Dados>
+
+	<div class="container">
+		<div class="content">
+			<div class="columns">
+				<div class="column">
+					<section>
 						<div class="contPdf">
-							<a href="./static/pdf/#" class="box" download="SomeTitle.pdf">
+							<a href="http://minuta.gestaourbana.prefeitura.sp.gov.br/piu-setor-central/anexos/Diagnostico_Socio-Territorial.pdf" class="box" download>
 								<i class="small material-icons">picture_as_pdf</i>
-								Diagnóstico Sócio-Territorial
+								Diagnóstico Sócio-Territorial <span> 126mb</span>
 							</a>
-							<a href="./static/pdf/#" class="box" download="SomeTitle.pdf">
+							<a href="http://minuta.gestaourbana.prefeitura.sp.gov.br/piu-setor-central/anexos/Diagnostico_Ambiental.pdf" class="box" download>
 								<i class="small material-icons">picture_as_pdf</i>
-								Diagnóstico Ambiental
+								Diagnóstico Ambiental <span> 220mb</span>
 							</a>
 						</div>
 					</section>
@@ -355,9 +366,20 @@
 						<p>No âmbito da intervenção urbanística, as propostas voltadas ao fortalecimento econômico da região estão ligadas aos temas da mobilidade e da qualificação dos espaços públicos.</p>
 						<p>O escritório Jaime Lerner, num estudo apresentado à Prefeitura de São Paulo, propôs a implantação da <a href="http://www.capital.sp.gov.br/noticia/prefeitura-recebe-o-projeto-centro-novo" target="_blank">Linha Circular Centro</a>, conectando diversos pontos de interesse na região central através de um veículo inovador e amigável ao pedestre.</p>
 						<p>São dois circuitos propostos, em sentidos opostos, que conectam equipamentos culturais, monumentos históricos, polos de comércio, galerias especializadas, centros de ensino e pesquisa, espaços de lazer, entretenimento e gastronomia. A Linha também se conecta às infraestruturas de transporte fartas no centro – estações de metrô, terminais de ônibus, estações de trem, linhas de superfície – facilitando a troca entre modais e aproximando as pessoas de seu destino final. Associada à intervenção, foi proposta a requalificação das áreas lindeiras ao seu itinerário e dos Bulevares Centrais.</p>
-						<!--imagem9 jaime lerner-->
+
+						<figure>
+							<img src="../../assets/img/circular.jpg" title="Proposta e elaboração Jaime Lerner Associados - 2017">
+						</figure>
+	
+
 						<p>Esse estudo fundamentou a proposta de multiplicação dos Circuitos de Mobilidade possíveis conectando os polos comerciais e produtivos do anel central às demais estruturas representativas da região e às redes de transporte coletivo.</p>
 						<!--imagem10 circuitos de mob-->
+						<figure>
+							<img src="../../assets/img/circuitos-de-mobilidade.jpg" title="Circuitos de mobilidade 
+Elaboração: São Paulo Urbanismo – 2017">
+						</figure>
+
+
 						<p>Outra ação de estímulo à economia da área central é a melhoria da circulação veicular atraída por e gerada nos polos comerciais, mediante a organização da oferta de vagas de estacionamento, baseada nas seguintes medidas:</p>
 						<ul>
 							<li>restrição de estacionamento junto ao meio-fio na área interna à rótula;</li>
@@ -582,7 +604,8 @@
 
 <script>
 import Comments from '@/components/shared/Comments';
-import Diagrama from '@/components/pages/Diagrama';
+import Processo from '@/components/pages/Processo';
+import Dados from '@/components/pages/Dados';
 import MapaAdensamento from '@/components/pages/MapaAdensamento';
 import MapaZoneamento from '@/components/pages/MapaZoneamento';
 import ApoioSul from '@/components/pages/ApoioSul';
@@ -596,6 +619,7 @@ import PossibilidadeTransformacao from '@/components/pages/PossibilidadeTransfor
 import ProjetosEstrategicos from '@/components/pages/ProjetosEstrategicos';
 import ZEIS from '@/components/pages/ZEIS';
 import ConselhoGestor from '@/components/pages/ConselhoGestor';
+import Gallery from '@/components/reusable/Gallery';
 
 export default {
 	name: 'Consulta',
@@ -610,20 +634,62 @@ export default {
 				zoom: 13.5,
 				layers:[
 					{
-						title: "Perímetro de adesão", 
+						title: "Perímetro do PIU Setor Central", 
 						path:'./static/kml/perimetro_piu_setor_central.kml',
 						stroke_color: 'rgba(208, 100, 35, 1)',
 						fill_color: 'rgba(208, 100, 35, 0.25)',
 						stroke_width: 3,
 					}
+				],
+			},
+			gallery_attrs: {
+				width: 1134,  // largura das imagens
+				height: 850, // altura das imagens
+				images:[
+					{
+						url:"./static/galeria/1_Estrategias_PIU_Setor_Central.jpg", 
+						state: true,
+						title: 'Image 1',
+						icon: false,
+						legenda: 'Lorem 1'
+					},
+					{
+						url:"./static/galeria/2_Estrategias_PIU_Setor_Central.jpg", 
+						state: false, 
+						icon: false,
+						title: 'Image 2',
+						legenda: 'Lorem 2'
+					},
+					{
+						url:"./static/galeria/3_Estrategias_PIU_Setor_Central.jpg", 
+						state: false, 
+						icon: false,
+						title: 'Image 3',
+						legenda: 'Lorem 3'
+					},
+					{
+						url:"./static/galeria/4_Estrategias_PIU_Setor_Central.jpg", 
+						state: false, 
+						icon: false,
+						title: 'Image 4',
+						legenda: 'Lorem 4'
+					},
+					{
+						url:"./static/galeria/5_Estrategias_PIU_Setor_Central.jpg", 
+						state: false, 
+						icon: false,
+						title: 'Image 5',
+						legenda: 'Lorem 5'
+					}
 				]
-			}
+			}			
 		}
 	},
 	computed: { projectTitle(){ return this.$store.state.projecttitle; }},
 	components:{ 
 		Comments, 
-		// Diagrama, 
+		Processo, 
+		Dados,
 		Mapa,
 		MapaAdensamento,
 		MapaZoneamento,
@@ -637,6 +703,7 @@ export default {
 		ProjetosEstrategicos,
 		ZEIS,
 		ConselhoGestor,
+		Gallery
 		}
 }
 </script>
@@ -664,7 +731,9 @@ h4.title {
 		justify-content: center;
 	}
 }
-
+section#diagnostico{
+	img { border: 1px solid $primary-light-grey}
+}
 div.contPdf {
 	padding: 2rem;
 	margin: 2rem 0;
@@ -672,9 +741,16 @@ div.contPdf {
 	border-radius: 2px;
 	a {
 		display: flex;
-		align-items: center;
+		align-items: baseline;
 		padding: 1rem;
-		i { margin-right: 1rem; }
+		span{
+			font-size: .75em;
+			margin-left: .25em
+		}
+		i { 
+			margin-right: 1rem; 
+			align-self:center
+		}
 	}
 }
 </style>

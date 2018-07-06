@@ -33,6 +33,10 @@ $largura_apoio: 35vw;
 @import "~bulma";
 @import "./variables.scss";
 
+// Bordas de ilustrações de ai2html
+.ai2html > .g-artboard > img{border: 1px solid $primary-light-grey}
+
+
 html,body, button, input, select, textarea{
 font-family: $font-stack;
 font-size: 20px;
@@ -54,6 +58,9 @@ section p:first-child {
 		margin: 0 auto 2.5em auto;
 	}
 }
+
+.ai2html > .g-artboard > img{border: 1px solid #F2F2F2}
+
 
 @media #{$medium-and-down} {
 	div#app {

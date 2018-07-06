@@ -66,7 +66,7 @@
 	}
 </script>
 
-<style type='text/css' media='screen,print'>
+<style media='screen,print'>
 	#g-Zoneamento-box .g-artboard {
 		margin:0 auto;
 	}
