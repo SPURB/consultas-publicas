@@ -1,9 +1,12 @@
 <template>
 	<div class="comments" v-bind:class="{ fechado: isCommentsFechado }">
-		<div class="container">
+		<div class="container encerrado" v-if="!isOpen">
+			<p class="message">Desculpe, mas o período de participação já foi encerrado. Em breve publicaremos a sistematização das contribuições.</p>
+			<Commentsloader :commentid="commentid"></Commentsloader>
+		</div>
+		<div class="container" v-else-if="isOpen">
 			<a href="#"  @click="isCommentsFechado = !isCommentsFechado">
 				<h5 class="title is-5">Comente aqui<i class="material-icons">chat</i><i class="material-icons open-close">expand_more</i></h5>
-
 			</a>
 			<div class="columns">
 				<div class="column is-one-third">
@@ -69,6 +72,8 @@ export default {
 	},
 	computed:{
 		currentRoute(){ return this.$route.name },
+		isOpen(){ return this.$store.state.isopen }
+
 	},
 	methods:{
 		checkName(){
@@ -194,5 +199,10 @@ a:hover {
 			// }
 		}
 	}
+}
+.container.encerrado{
+	p.message{
+		background-color: unset
+	}	
 }
 </style>

@@ -5,7 +5,7 @@
 			<div class="columns">
 				<div class="column">
 
-					<h1 class="title is-1">PIU Anhembi</h1>
+					<h1 class="title is-1" :class="consultaState()">PIU Anhembi</h1>
 					<h4 class="subtitle is-4">Consulta Pública</h4>
 					<section id="apresentacao">
 						<h4 class="title is-4">Apresentação</h4>
@@ -90,7 +90,6 @@
 		</div>
 	</div>
 
-	<!-- <Comments :commentid="2"></Comments> -->
 
 	<div class="container">
 		<div class="content">
@@ -289,7 +288,6 @@
 		<div class="content">
 			<div class="columns">
 				<div class="column">
-
 					<section id="gestao">
 						<h4 class="title is-4">Modelo de gestão democrática</h4>
 						<p>Dentre as estratégias do Plano Diretor Estratégico (PDE), tem destaque o fortalecimento da participação popular nas decisões dos rumos da cidade, considerando as diversas instâncias e por meio de diferentes instrumentos de participação e controle social. Tais estratégias garantem a participação de representantes dos diferentes segmentos da população de forma direta ou por intermédio de associações representativas, nos processos de planejamento e gestão da cidade, de realização de investimentos públicos e na elaboração, implementação e avaliação de planos, programas e projetos de desenvolvimento.</p>
@@ -300,19 +298,30 @@
 							<img src="../../../static/img/diagrama-gestao.png" alt="Diagrama do Conselho Gestor" title="Diagrama do Conselho Gestor">
 						</figure>
 					</section>
-
 				</div>
 			</div>
-
+		</div>
+	</div>
+	<!-- <Comments :commentid="10"></Comments> -->
+	<div class="container">
+		<div class="content">
+			<div class="columns">
+				<div class="column">
+					<section id="comentarios">
+						<h4 class="title is-4">Contribuições</h4>
+						<Commentsloader></Commentsloader>
+					</section>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<Comments :commentid="10"></Comments>
 </div>
 </template>
 
 <script>
 import Comments from '@/components/shared/Comments';
+import Commentsloader from '@/components/shared/Commentsloader';
 import Diagrama from '@/components/pages/Diagrama';
 import Mapa from '@/components/pages/Mapa';
 
@@ -336,8 +345,19 @@ export default {
 			}
 		}
 	},
-	computed: { projectTitle(){ return this.$store.state.projecttitle; }},
-	components:{ Comments, Diagrama, Mapa }
+	computed: { 
+		projectTitle(){ return this.$store.state.projecttitle; },
+		isOpen(){ return this.$store.state.isopen }
+	},
+	methods:{
+		consultaState(){ return (this.isOpen ? "consultaAberta" : "consultaEncerrada") }
+	},
+	components:{ 
+		Comments, 
+		Commentsloader,
+		Diagrama, 
+		Mapa 
+	}
 }
 </script>
 
@@ -353,6 +373,32 @@ export default {
 .content {
 	max-width: 992px;
 	padding: .5rem;
+
+	h1.consultaAberta, 
+	h1.consultaEncerrada {
+		align-items: center;
+		display: flex;
+	}
+	h1.consultaAberta::after,
+	h1.consultaEncerrada::after {
+		font-size: 10px;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 500;
+		padding: 4px 5px;
+		border-radius: 2px;
+		white-space: nowrap;
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+	h1.consultaAberta::after{
+		content: "Consulta Aberta";
+		background-color: #008015;
+	}
+	h1.consultaEncerrada::after{
+		content: "Consulta Encerrada";
+		background-color: #EB5757;
+	}
 }
 
 h4.title {
@@ -373,4 +419,9 @@ h4.title {
 		}
 	}
 }
+
+#comentarios{
+	border-top: 10px solid $primary-grey;
+}
+
 </style>

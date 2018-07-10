@@ -9,5 +9,6 @@ export const store = new Vuex.Store({
 		projecttitle: 'Consulta Pública - PIU Anhembi',
 		isadmin: false,
 		usercheck: false,
+		isopen: false
 	}
 });
