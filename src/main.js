@@ -13,7 +13,7 @@ Vue.use(VeeValidate)
 Vue.use(VueLazyload, {
 	// lazyComponent: true,
 	preLoad: 1.3,
-	loading: './static/galeria/loading.gif',
+	loading: './static/galeria/carregando.gif',
 })
 
 Vue.config.productionTip = false
