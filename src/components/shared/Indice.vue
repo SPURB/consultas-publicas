@@ -43,6 +43,9 @@
 			<li><a href="#ficha" @click="ativaEvento">
 				Ficha técnica
 			</a></li>
+			<li><a href="#commloader" @click="ativaEvento">
+				Contribuições
+			</a></li>
 		</ul>
 	</div>
 </template>

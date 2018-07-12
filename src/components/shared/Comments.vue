@@ -67,14 +67,12 @@
 					<button class="button" @click="checkName">COMENTAR</button>
 				</div>
 			</div>
-			<!-- <Commentsloader :commentid="commentid"></Commentsloader> -->
 		</div>
 	</div>
 </template>
 
 <script>
 import axios from 'axios';
-// import Commentsloader from '@/components/shared/Commentsloader';
 
 export default {
 	name: 'comments',
@@ -148,9 +146,6 @@ export default {
 				alert("Estamos com um erro de comunicação com o servidor. Tente novamente mais tarde.")
 			});
 		}
-	},
-	components:{ 
-		// Commentsloader, 
 	}
 };
 

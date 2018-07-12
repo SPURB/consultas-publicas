@@ -1,55 +1,26 @@
 <template>
 	<div class="Header">
-		<a class="navbar-item" href="http://gestaourbana.prefeitura.sp.gov.br/">
-			<span class="gestao">gestão</span>
-			<span class="urbana">urbana</span>
-			<span class="sp">SP</span>
-		</a>
+		<nav class='navbar'>
+			<h2 class="navbar-start">
+				<a class="subtitle is-6" href="http://gestaourbana.prefeitura.sp.gov.br/">
+					<span class="gestao">gestão</span><span class="urbana">urbana</span><span class="sp">SP</span>
+				</a>
+			</h2>
+			<h1 class="title is-6 navbar-end" :class="consultaState()">{{projectTitle}}</h1>
+		</nav>
 	</div>
 </template>
 
 <script>
 export default {
 	name: 'Header',
-	data () {
-		return {
-			navitems: [],
-			firstview: false,
-			toggleNav: true,
-			lastYposition: 0,
-			showNavItems: false,
-			window_width: '100%'
-		}
-	},
-	mounted(){
-		this.window_width = window.screen.width
-	},
-	created(){
-		let app = this
-		const routes = app.$router.options.routes
-		routes.filter(function(index) {
-			if('name' in index){
-				app.navitems.push(index)
-			}
-		})
-		app.firstview = true;
+	computed:{ 
+		projectTitle(){ return this.$store.state.projecttitle; },
+		isOpen(){ return this.$store.state.isopen }
 
-		// watch for scroll
-		window.addEventListener('scroll', this.scrolling);
 	},
-	destroyed(){ window.removeEventListener('scroll', this.scrolling); },
 	methods:{
-		scrolling(){
-			this.lastYposition > window.scrollY ? this.toggleNav = true : this.toggleNav = false;
-			this.lastYposition = window.scrollY;
-		},
-	},
-	computed:{ projectTitle(){ return this.$store.state.projecttitle; }
-	},
-	watch:{
-		showNavItems(){
-			this.showNavItems ? document.getElementById("menu-icon").firstChild.textContent = "close" : document.getElementById("menu-icon").firstChild.textContent = "menu"
-		}
+		consultaState(){ return (this.isOpen ? "consultaAberta" : "consultaEncerrada") }
 	}
 }
 </script>
@@ -59,22 +30,68 @@ export default {
 @import "../../assets/variables.scss";
 
 .Header {
-	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-	font-size: 16px;
+	nav.navbar{
+		background-color: unset;
+		z-index:auto;
+		display: flex
+	}
+	h2.navbar-start, h1.navbar-end{
+		align-items: center;
+		display: flex;
+	}
+	h2.navbar-start{
+		a.subtitle{
+				margin: 0 .25rem;
+			}
+	}
+	h1.navbar-end{
+		padding: .25em;
+		font-weight: unset;
+		margin-left: auto
+	}
+	h1.consultaAberta::after,
+	h1.consultaEncerrada::after {
+		font-size: 10px;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 500;
+		padding: 4px 5px;
+		border-radius: 2px;
+		white-space: nowrap;
+		margin: 0 .5rem;
+	}
+	h1.consultaAberta::after{
+		content: "Consulta Aberta";
+		background-color: #008015;
+	}
+	h1.consultaEncerrada::after{
+		content: "Consulta Encerrada";
+		background-color: #EB5757;
+	}
+	span.gestao{color:#BDBDBD}
+	span.sp {color: #EB5757}
+	span.urbana{color: black}
 }
-
-.fade-enter-active, .fade-leave-active { transition: opacity .5s; }
-.fade-enter, .fade-leave-to { opacity: 0; }
-
-.navbar-end{
-	.router-link-exact-active{
-		background-color: $primary-light-grey
+@media #{$small-and-down}{
+	.Header{
+		nav.navbar{
+			flex-direction: column;
+			h2.navbar-start, h1.navbar-end{
+				margin: auto;
+			}	
+		}
 	}
 }
+@media #{$extrasmall-and-down}{
+	.Header{
+		nav.navbar{
+			h2.navbar-start, h1.navbar-end{
+				margin: 0;
+			}	
+		}
 
-span.gestao{color:#BDBDBD}
-span.sp {color: #EB5757}
-span.urbana{color: black}
+	}
+}
 
 </style>
 

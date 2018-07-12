@@ -1,12 +1,11 @@
 <template>
-	<div class="Commentsloader row">
-		<div v-for="comment in comments">
-			<div v-if="comments" class="comment">
-				<h5 class="member-info">{{  comment.name }} em <span>{{ filterDate(comment.commentdate) }} </span> disse:</h5>
-				<p> {{comment.content}} 
-				<span class="topico">Capítulo comentado: {{ comment.commentcontext }}.</span>
-				</p>
-			</div>
+	<div  v-if="comments" class="Commentsloader row">
+		<h4 class="title is-4">Contribuições</h4>
+		<div class="comment"  v-for="comment in comments">
+			<h5 class="member-info">{{  comment.name }} em <span>{{ filterDate(comment.commentdate) }} </span> disse:</h5>
+			<p> {{comment.content}} 
+			<span class="topico">Capítulo comentado: {{ comment.commentcontext }}.</span>
+			</p>
 		</div>
 	</div>
 </template>
@@ -21,11 +20,11 @@ export default {
 	props:['commentid'],
 	data(){
 		return {
-			comments: false, 
+			comments: false
 		}
 	},
 	mounted(){
-		this.loadThisComments();
+		// this.loadThisComments();
 	},
 	methods:{
 		loadThisComments(){
@@ -54,13 +53,19 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/variables.scss";
 
-.Commentsloader.row{
-	// border-top: solid 5px $primary-dark-grey;
+h4.title.is-4{
+	margin-bottom: 0;
+	padding-top: .5em;
+	border-top: solid .35rem $primary-dark-grey
 }
 
 .comment {
+	font-family: $font-sec;
 	border-bottom: solid 1px $primary-dark-grey;
 	padding: 1.15em 0 1.5em;
+	h5.member-info{
+		margin-top: 0 !important
+	}
 	p{
 		span{
 			font-size: .75em

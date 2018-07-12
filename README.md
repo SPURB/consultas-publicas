@@ -1,6 +1,6 @@
-# Consultas Públicas / PIU Anhembi
+# Consultas Públicas / PIU Setor Central
 
-> Consulta pública do projeto de intervenção urbana do PIU Anhembi
+> Consulta pública do projeto de intervenção urbana do PIU Setor Central
 
 ## Setup
 ### Requisitos

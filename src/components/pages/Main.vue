@@ -572,7 +572,7 @@
 						Presidente</p>
 
 						<p><strong>Leonardo Amaral Castro</strong><br>
-						Diretor de Intervenções Urbanas</p>
+						Diretor de Desenvolvimento</p>
 
 						<p><strong>Vladimir Ávila</strong><br>
 						Diretor de Gestão das Operações Urbanas</p>
@@ -590,6 +590,7 @@
 						Marcos Alexandre Moraes Mastropaulo<br>
 						Melina Giannoni de Araujo<br>
 						Patrícia Saran<br>
+						Priscila Souza Gyenge<br>
 						Rafael Henrique de Oliveira<br>
 						Rita Cassia G. S. Gonçalves <br>
 						Thiago Francisco L. Carneiro</p>
@@ -609,11 +610,23 @@
 			</div>
 		</div>
 	</div>
+	<div class="container">
+		<div class="content">
+			<div class="columns">
+				<div class="column">
+					<section id="commloader">
+						<Commentsloader></Commentsloader>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 </template>
 
 <script>
 import Comments from '@/components/shared/Comments';
+import Commentsloader from '@/components/shared/Commentsloader';
 import Processo from '@/components/pages/Processo';
 import Dados from '@/components/pages/Dados';
 import MapaAdensamento from '@/components/pages/MapaAdensamento';
@@ -698,6 +711,7 @@ export default {
 	computed: { projectTitle(){ return this.$store.state.projecttitle; }},
 	components:{ 
 		Comments, 
+		Commentsloader, 
 		Processo, 
 		Dados,
 		Mapa,
