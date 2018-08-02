@@ -141,9 +141,6 @@
 				<img v-lazy="jpg1" width="992px" hegiht="718px">
 				<p class="legenda">Análiste Urbanística - Terminal Princesa Isabel | <a href="/static/pdf/2_analise-urb/Mapa3_Analise_Urbanistica_Term_Princesa_Isabel.pdf" download>PDF</a></p>
 			</figure>
-
-			<p>Os Projetos de Intervenção Urbana elaborados para os entornos dos Terminais Campo Limpo, Capelinha e Princesa Isabel exploram alternativas de qualificação da circulação no âmbito de influência dos terminais, com a proposta de melhoramento de ruas que conectam os terminais aos endereços referenciais do perímetro ou a concentrações habitacionais hoje apartadas desses equipamentos.</p>
-			<p>Os PIUs também propõem condições para o aproveitamento dos terrenos onde estão implantados os terminais em conformidade com a legislação urbanística vigente - considerada a possibilidade de recurso à CTLU para solicitação de exceções aos parâmetros de parcelamento, uso e ocupação do solo, facultada pelo inciso I, do § 1.º do art. 107 da Lei 16.402.2016 -, passíveis de serem implementadas através do Decreto do Executivo que disciplina a implantação do PIU.</p>
 			<p>Os Projetos de Intervenção Urbana elaborados para os entornos dos Terminais Campo Limpo, Capelinha e Princesa Isabel exploram alternativas de qualificação da circulação no perímetro de abrangência dos terminais, com a proposta de melhoramento de ruas que conectam os terminais aos endereços referenciais do perímetro ou a concentrações habitacionais hoje apartadas desses equipamentos.</p>
 
 			<figure class="image">

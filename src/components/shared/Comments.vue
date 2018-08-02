@@ -86,11 +86,10 @@ export default {
 		},
 		send(){
 			const url = 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/gestaourbanasp_consulta_piu_terminais';
-			//criar db gestaourbanasp_consulta_piu_terminais
 			const app = this;
 
 			axios.post(url,{
-				'idConsulta':'3',//teste
+				'idConsulta':'3',
 				'name': app.form_name,
 				'email':app.form_email, 
 				'content':app.form_content,
@@ -99,8 +98,6 @@ export default {
 				'postid':app.commentid.postid,
 				'commentid': app.commentid.id,
 				'commentcontext': app.commentid.context,
-				// 'commentdate':app.today
-				//{"name":"Thomas","email":"yubathom@gmail.com","content":"teste","public":"0","trash":"0","postid":1,"commentid":1,"commentcontext":"Consulta","idConsulta":"2","commentdate":"2018-04-02"}
 			})
 			.then(function (response) {
 				console.log(response);
@@ -116,15 +113,6 @@ export default {
 		}
 	},
 	components:{Commentsloader},
-	// computed:{
-	// 	today(){
-	// 		let now = new Date();
-	// 		let year = now.getFullYear();
-	// 		let month = now.getMonth();
-	// 		let day = now.getDay();
-	// 		return year+'-'+month+'-'+day;
-	// 	}
-	// }
 };
 
 </script>

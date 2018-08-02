@@ -6,13 +6,11 @@ import Header from '@/components/shared/Header'
 import Footer from '@/components/shared/Footer'
 
 // pages
-// import Admin from '@/components/pages/admin/Admin'
-import Introducao from '@/components/pages/Introducao'
-import Capelinha from '@/components/pages/Capelinha'
-import CampoLimpo from '@/components/pages/CampoLimpo'
-import PrincesaIsabel from '@/components/pages/PrincesaIsabel'
+const Introducao = () => import('@/components/pages/Introducao') //load asíncrono
+const Capelinha = () => import('@/components/pages/Capelinha')
+const PrincesaIsabel = () => import('@/components/pages/PrincesaIsabel')
+const CampoLimpo = () => import('@/components/pages/CampoLimpo')
 
-// import Ael from '@/components/pages/galeries/Ael'
 
 Vue.use(Router);
 
