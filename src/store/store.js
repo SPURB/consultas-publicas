@@ -9,6 +9,7 @@ export const store = new Vuex.Store({
 		projecttitle:'Consulta PIU Terminais',
 		isadmin: false,
 		usercheck: false,
+		isOpen: false
 	}, 
 	// actions:{
 	// 	LOAD_COMMENTS_LIST: function({ commit }) {

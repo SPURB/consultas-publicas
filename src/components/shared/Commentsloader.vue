@@ -13,15 +13,21 @@
 
 <script>
 import axios from 'axios';
-const requestConsultas = axios.create({
-  baseURL: 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/',
-})
-
 export default {
     props:['commentid'],
     data(){
         return {
             comments: false
+        }
+    },
+    computed:{
+        apiPathMembersSearch() {
+            if(location.port == '8080' || location.port == '8082' || location.port == '7080'){
+                return 'http://spurbsp163:7080/apiconsultas/members/search/'
+            }
+            else{
+                return 'http://minuta.gestaourbana.prefeitura.sp.gov.br/apiconsultas/members/search/' 
+            }
         }
     },
     mounted(){
@@ -30,8 +36,7 @@ export default {
     methods:{
         loadThisComments(){
             let app = this;
-
-            requestConsultas.post('members/search/',{
+            axios.post(app.apiPathMembersSearch,{
                 "idConsulta":"=1",
                 "public":"=1",
             })
